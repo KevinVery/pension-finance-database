@@ -21,8 +21,8 @@
     },
     {
       "path": "app.js",
-      "bytes": 35681,
-      "sha256": "1ddd3176b6885c4e2f4ca97996611f499332cc1c0a0b700e5227bbc0ba3edaaa"
+      "bytes": 21312,
+      "sha256": "86aadd6662c5cb7f607d7aa4ce4fdc75910ac2219c91da342f87cef09d7b1d84"
     },
     {
       "path": "charts.js",
@@ -117,7 +117,7 @@
     {
       "path": "index.html",
       "bytes": 6502,
-      "sha256": "1b79f3df102bf879e4c80a2f0f7b1201633a3db85ab2f3bb5d61a4a912c0c520"
+      "sha256": "21249571241e2233fb19be48afc5915a122ab1855be2f5799903315df0293c2f"
     },
     {
       "path": "style.css",

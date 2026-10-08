@@ -16,5 +16,5 @@ for(const name of ['app.js','style.css','charts.js','download.js'])assert(html.i
 const headers=fs.readFileSync(path.join(root,'site/_headers'),'utf8');
 assert(/\n\/\s*\n\s*Cache-Control: no-cache/.test('\n'+headers),'首页必须禁长缓存');
 const app=fs.readFileSync(path.join(root,'site/app.js'),'utf8');
-assert(app.includes('framework_v01')&&app.includes('完整框架')&&app.includes('已有指标'),'缺少完整框架及已有指标视图');
+assert(app.includes('仅展示当前数据口径下已有的指标')&&!app.includes('PORTAL_FRAMEWORK')&&!app.includes('data-mode="framework"'),'公开导航须仅展示已有指标');
 console.log(JSON.stringify({ok:true,files:manifest.files.length,version:manifest.version,records:manifest.records,indicators:manifest.indicators}));
