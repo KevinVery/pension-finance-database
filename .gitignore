@@ -1,0 +1,7 @@
+.DS_Store
+node_modules/
+.wrangler/
+.env
+.env.*
+*.log
+_临时*
