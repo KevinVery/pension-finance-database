@@ -20,8 +20,8 @@ assert(app.includes('仅展示当前数据口径下已有的指标')&&!app.inclu
 console.log(JSON.stringify({ok:true,files:manifest.files.length,version:manifest.version,records:manifest.records,indicators:manifest.indicators}));
 assert(html.includes('href="policy.html"'),'缺少政策库导航');
 const policy=fs.readFileSync(path.join(root,'site/policy.html'),'utf8');
-assert(policy.includes('policy_v10.js?v=') && policy.includes('policy_v10.css?v='),'政策资源缺少版本');
-const data=JSON.parse(fs.readFileSync(path.join(root,'site/data/policy_public_v10.json'),'utf8'));
+assert(policy.includes('policy_v12.js?v=') && policy.includes('policy_v12.css?v='),'政策资源缺少版本');
+const data=JSON.parse(fs.readFileSync(path.join(root,'site/data/policy_public_v12.json'),'utf8'));
 assert(data.meta.policies===data.policies.length,'政策数量不一致');
 assert(data.policies.filter(p=>p['核验状态']==='原文已核验').length===data.meta.originals,'核验数量不一致');
 assert(!JSON.stringify(data).includes('D:\\') && !JSON.stringify(data).includes('本地只读路径'),'公开数据包含本地路径');
@@ -30,7 +30,7 @@ assert(data.meta.national+data.meta.provincial===data.policies.length,'全国/�
 assert(data.policies.every(p=>['全国政策','分省政策'].includes(p['政策层级'])),'政策层级缺失');
 assert(data.meta.defaultScope==='全国政策' && data.meta.defaultSort==='成文日期升序','默认应全国政策、时间升序');
 assert(policy.includes('id="national"')&&policy.includes('id="provincial"'),'缺少全国/分省栏目');
-const css=fs.readFileSync(path.join(root,'site/policy_v10.css'),'utf8');
+const css=fs.readFileSync(path.join(root,'site/policy_v12.css'),'utf8');
 assert(css.includes('.header nav a,.header nav a:visited,.header nav a:hover{color:#fff'),'政策页导航必须白色');
 assert(html.includes('href="policy.html" style="color:#fff'),'首页导航必须白色');
 assert(data.meta.auditedNationalLeads===125 && data.nationalAudit.length===125,'必须逐条交代原125条全国线索');
