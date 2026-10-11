@@ -61,10 +61,13 @@
   function rowsFor(st, scope) {
     st = st || {};
     var data = st.data || window.PORTAL_DATA || { records: [], indicators: [] };
+    if (scope !== 'indicator' && scope !== 'filtered') throw Error('仅允许下载选中指标');
+    if (!st.code || !(data.indicators || []).some(function(i) { return i['指标代码'] === st.code; })) throw Error('请先选择一个有效指标');
+    if ([st.yearFrom, st.yearTo].some(function(y) { return y != null && y !== '' && !/^\d{4}$/.test(String(y)); }) || (st.yearFrom && st.yearTo && +st.yearFrom > +st.yearTo)) throw Error('时间区间无效');
     var im = indMap(data), out = [];
     var regions = st.regions || [];
     (data.records || []).forEach(function (r) {
-      if (scope !== 'all') {
+      {
         if (st.code && r['指标代码'] !== st.code) return;
         if (regions.length && regions.indexOf(r['地区名称']) < 0) return;
         var y = String(r['统计期'] || '');
@@ -272,8 +275,7 @@
       ['底库版本', data.version || ''],
       ['生成时间', new Date().toLocaleString('zh-CN')],
       ['导出格式', String(fmt).toUpperCase()],
-      ['导出范围', scope === 'indicators' ? '全部指标元数据' :
-        (scope === 'all' ? '全库' : ('指标：' + (cur ? cur['指标名称'] : st.code)))],
+      ['导出范围', '指标：' + (cur ? cur['指标名称'] : st.code)],
       ['地区筛选', st.regions.length ? st.regions.join('、') : '全部'],
       ['年份筛选', (st.yearFrom || '不限') + ' ~ ' + (st.yearTo || '不限')],
       ['记录条数', rows.length],
@@ -301,11 +303,13 @@
   }
 
   function doDownload(scope, fmt) {
+    if (scope !== 'indicator' || ['csv','xlsx'].indexOf(fmt) < 0) throw Error('仅支持当前指标的 CSV 或 Excel 下载');
     var st = state();
-    var indScope = scope !== 'all' && scope !== 'indicators';
+    var indScope = true;
     // 带上页面当前选中的地区与时间区间，让「本指标」下载只导出所选范围，
     // 而不是一股脑导出该指标的全部记录。
     var f = window.PortalFilter || null;
+    if (f && f.indicator) st.code = f.indicator();
     var cur = f ? {
       regions: f.regions ? f.regions() : [],
       yearFrom: f.yearFrom ? f.yearFrom() : null,
@@ -324,26 +328,14 @@
       yearFrom: indScope ? (cur.yearFrom == null ? '' : cur.yearFrom) : '',
       yearTo: indScope ? (cur.yearTo == null ? '' : cur.yearTo) : ''
     };
+    var validatedRows = rowsFor(st, 'indicator');
+    if (!validatedRows.length) { alert('当前筛选条件下没有数据。'); return; }
     if (HAS_API) { window.location.href = apiUrl(params); return; }
 
-    /* 纯静态：浏览器内生成 */
-    if (scope === 'indicators') {
-      var inds = (st.data.indicators || []).map(function (i) {
-        var o = {}; IND_COLS.forEach(function (k) { o[k] = i[k] == null ? '' : i[k]; }); return o;
-      });
-      if (fmt === 'csv') {
-        saveBlob(new Blob([toCsv(inds, IND_COLS)], { type: 'text/csv;charset=utf-8' }),
-          'PensionRegionalIndexDB_indicators_' + stamp() + '.csv');
-      } else {
-        saveBlob(toXlsx([{ name: '指标元数据', rows: [IND_COLS].concat(inds.map(function (r) {
-          return IND_COLS.map(function (k) { return r[k]; });
-        })) }]), 'PensionRegionalIndexDB_indicators_' + stamp() + '.xlsx');
-      }
-      return;
-    }
-    var rows = rowsFor(st, scope === 'all' ? 'all' : 'filtered');
+    /* 纯静态：浏览器内生成当前指标的筛选结果 */
+    var rows = validatedRows;
     if (!rows.length) { alert('当前筛选条件下没有数据。'); return; }
-    var tail = scope === 'all' ? 'all' : ('data_' + (st.code || ''));
+    var tail = 'data_' + st.code;
     if (fmt === 'csv') {
       saveBlob(new Blob([toCsv(rows, EXPORT_COLS)], { type: 'text/csv;charset=utf-8' }),
         'PensionRegionalIndexDB_' + tail + '_' + stamp() + '.csv');
@@ -381,11 +373,6 @@
           '<div class="dl-menu-title">本指标（按当前所选地区与时间）</div>' +
           '<button type="button" class="dl-btn" data-scope="indicator" data-fmt="csv">CSV 格式</button>' +
           '<button type="button" class="dl-btn" data-scope="indicator" data-fmt="xlsx">Excel 格式</button>' +
-          '<div class="dl-menu-title">全库（全部指标、全部地区、全部年份）</div>' +
-          '<button type="button" class="dl-btn" data-scope="all" data-fmt="csv">CSV 格式</button>' +
-          '<button type="button" class="dl-btn" data-scope="all" data-fmt="xlsx">Excel 格式</button>' +
-          '<div class="dl-menu-title">指标目录</div>' +
-          '<button type="button" class="dl-btn" data-scope="indicators" data-fmt="xlsx">Excel 格式</button>' +
         '</div>' +
       '</div>';
     tabs.parentNode.insertBefore(bar, tabs.nextSibling);

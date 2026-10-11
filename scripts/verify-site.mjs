@@ -28,7 +28,11 @@ assert(!JSON.stringify(data).includes('D:\\') && !JSON.stringify(data).includes(
 assert(!/_内部质检[\\/]/.test(JSON.stringify(data)),'公开政策历史核验记录不得包含内部快照路径');
 console.log(JSON.stringify({policyLibrary:true,...data.meta}));
 const literature=fs.readFileSync(path.join(root,'site/literature.html'),'utf8');
-assert(literature.includes('literature_v02.js?v=')&&literature.includes('社保文献库'),'缺少社保文献库页面');
+assert(literature.includes('literature_v03.js?v=')&&literature.includes('社保文献库'),'缺少社保文献库页面');
+assert(literature.includes('library-layout')&&literature.includes('topic-chips')&&literature.includes('id="sort"'),'文献布局缺失');
+const downloads=fs.readFileSync(path.join(root,'site/download.js'),'utf8');
+assert(!downloads.includes('data-scope="all"')&&!downloads.includes('data-scope="indicators"'),'不得提供整库导出');
+assert(downloads.includes("scope !== 'indicator' ||")&&downloads.includes('f.indicator()'),'下载必须校验单指标且使用当前筛选');
 const literatureData=JSON.parse(fs.readFileSync(path.join(root,'site/data/literature_public_v02.json'),'utf8'));
 assert(literatureData.meta.records===literatureData.records.length,'文献数量不一致');
 assert(literatureData.meta.records===2155&&literatureData.meta.chineseRecords===299,'中文文献或总量不符');

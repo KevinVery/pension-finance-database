@@ -121,18 +121,18 @@
     },
     {
       "path": "download.js",
-      "bytes": 22104,
-      "sha256": "96be515a4e1282be6e7429d0d0d7782fd8cfc2ebc80ae65eddaa098275e6cee5"
+      "bytes": 21536,
+      "sha256": "03bfe42c1903658ef9c1cdcf252cb5fdb72e446ba8be9553f5f2153d57eca90e"
     },
     {
       "path": "index.html",
       "bytes": 6784,
-      "sha256": "aeaf65c3f7ce2675615ef9e0e2f641861b4252ffbb28f5ef9a80d195752353e5"
+      "sha256": "096aa5c8283797da06a1c7ef23972cac7ad280b16221a2323fb252be1eb4abe6"
     },
     {
       "path": "literature.html",
-      "bytes": 3281,
-      "sha256": "f842f5a5696bb628bdc76bbd74c90f4e6159f7d73ef3e15a8f39bb3668212b1c"
+      "bytes": 3302,
+      "sha256": "a9aff853f5b975ed4bbae1527248f49267e89515fe28f928815c3efafdb13a2d"
     },
     {
       "path": "literature_v01.css",
@@ -153,6 +153,16 @@
       "path": "literature_v02.js",
       "bytes": 6224,
       "sha256": "e584911a47bda25cd334706b3c52b5caf3dea7f50be23e02cc378eb8f087b1ba"
+    },
+    {
+      "path": "literature_v03.css",
+      "bytes": 7501,
+      "sha256": "5b33e28e92ead17755d0ebe7f24aad302eeba37d6d85216bd89364d5b5caf684"
+    },
+    {
+      "path": "literature_v03.js",
+      "bytes": 7687,
+      "sha256": "3667ddfb9ccea2caebb43d9d2e0b6071bc8ea4196bddd919ed057ea5e6eb60ef"
     },
     {
       "path": "policy.html",
