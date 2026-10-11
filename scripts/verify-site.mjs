@@ -29,18 +29,24 @@ assert(!JSON.stringify(data).includes('D:\\') && !JSON.stringify(data).includes(
 assert(!/_内部质检[\\/]/.test(JSON.stringify(data)),'公开政策历史核验记录不得包含内部快照路径');
 console.log(JSON.stringify({policyLibrary:true,...data.meta}));
 const literature=fs.readFileSync(path.join(root,'site/literature.html'),'utf8');
-assert(literature.includes('literature_v03.js?v=')&&literature.includes('社保文献库'),'缺少社保文献库页面');
+assert(literature.includes('literature_v04.js?v=')&&literature.includes('社保文献库'),'缺少社保文献库页面');
 assert(literature.includes('library-layout')&&literature.includes('topic-chips')&&literature.includes('id="sort"'),'文献布局缺失');
 const downloads=fs.readFileSync(path.join(root,'site/download.js'),'utf8');
 assert(!downloads.includes('data-scope="all"')&&!downloads.includes('data-scope="indicators"'),'不得提供整库导出');
 assert(downloads.includes("scope !== 'indicator' ||")&&downloads.includes('f.indicator()'),'下载必须校验单指标且使用当前筛选');
-const literatureData=JSON.parse(fs.readFileSync(path.join(root,'site/data/literature_public_v02.json'),'utf8'));
+const literatureData=JSON.parse(fs.readFileSync(path.join(root,'site/data/literature_public_v03.json'),'utf8'));
 assert(literatureData.meta.records===literatureData.records.length,'文献数量不一致');
-assert(literatureData.meta.records===2155&&literatureData.meta.chineseRecords===299,'中文文献或总量不符');
+const baseline=JSON.parse(fs.readFileSync(path.join(root,'site/data/literature_public_v02.json'),'utf8'));
+const byId=new Map(literatureData.records.map(r=>[r['文献ID'],r]));
+assert(baseline.records.length===2155&&baseline.records.every(r=>byId.has(r['文献ID'])),'既有2155条基线未保留');
+assert(baseline.records.filter(r=>r['文献ID'].startsWith('CN6-')).every(r=>byId.get(r['文献ID']).原件SHA256===r.原件SHA256),'中文原件哈希基线被更改');
+assert(literatureData.meta.chineseRecords===literatureData.records.filter(r=>r['语言']==='中文').length,'中文数量不一致');
+assert(literatureData.meta.recordsSince2010===literatureData.records.filter(r=>Number(r['年份'])>=2010).length,'2010年及以后视图数量不一致');
+assert(literature.includes('id="period"')&&literature.includes('id="verification"')&&literature.includes('id="path"'),'时间或来源核验筛选缺失');
 assert(literatureData.records.every(r=>/^https?:\/\//.test(r['来源页'])&&r['研究主题'].length),'文献来源或研究主题缺失');
-assert(literatureData.records.filter(r=>r['语言']==='英文').every(r=>r['官方PDF'].startsWith('https://')),'NBER全文入口缺失');
-assert(new Set(literatureData.records.map(r=>r['文献ID'])).size===2155,'文献ID重复');
-assert(literatureData.meta.chineseLocalFulltexts===298&&literatureData.meta.chineseMissingFulltexts===1,'中文全文状态不符');
+assert(literatureData.records.filter(r=>baseline.records.some(b=>b['文献ID']===r['文献ID'])&&r['语言']==='英文').every(r=>r['官方PDF'].startsWith('https://')),'NBER全文入口缺失');
+assert(new Set(literatureData.records.map(r=>r['文献ID'])).size===literatureData.records.length,'文献ID重复');
+assert(literatureData.meta.legacyChineseLocalFulltexts===298&&literatureData.meta.legacyChineseMissingFulltexts===1,'中文全文状态不符');
 assert(!JSON.stringify(literatureData).includes('D:\\codex')&&!JSON.stringify(literatureData).includes('D:\\deepseek'),'文献公开数据包含本地路径');
 console.log(JSON.stringify({literatureLibrary:true,...literatureData.meta}));
 assert(data.meta.national+data.meta.provincial===data.policies.length,'全国/分省数量不一致');
@@ -60,3 +66,6 @@ for(const [id,date] of [['POL-CN-2015-001','2014-10-01'],['POL-CN-2019-001','201
 }
 
 assert(data.meta.nationalPkulawTexts===28&&data.meta.pkulawPrimaryTexts===28,"法宝新增政策数量不符");
+
+assert(literatureData.records.every(r=>Array.isArray(r['发现来源'])&&r['官网核验']),'来源或核验层级缺失');
+assert(literatureData.records.every(r=>!r['官方PDF']||/^https:\/\//.test(r['官方PDF'])),'新全文链接协议非法');

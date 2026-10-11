@@ -30,6 +30,16 @@
       "sha256": "567296160b28a442576033c7c867f60d048ad071c7be724528dc8b0bb713560b"
     },
     {
+      "path": "data/literature_coverage_v03.csv",
+      "bytes": 7509,
+      "sha256": "088380e9bf78b1fdf8db118c2431265323ec706e047cd9543d3836609216e69e"
+    },
+    {
+      "path": "data/literature_extension_report_v03.md",
+      "bytes": 20508,
+      "sha256": "8bca421588cbf358ee3c1478f9913d098134da39df6da5d89b4d3889a04c0329"
+    },
+    {
       "path": "data/literature_public_v01.json",
       "bytes": 2231166,
       "sha256": "768ac966c0dc7e73a2850f36d4e8d0fc5136951d9d6ec8e39ad28ad2a0e987db"
@@ -38,6 +48,11 @@
       "path": "data/literature_public_v02.json",
       "bytes": 3878499,
       "sha256": "baffa8337ab87c92e210da6a78f98511cdb49a21a5ff19724197be7d78000ca6"
+    },
+    {
+      "path": "data/literature_public_v03.json",
+      "bytes": 5396630,
+      "sha256": "936105b35c84ad171a18fcc4853e647e08a24727bbf845c3eba99094a80048e6"
     },
     {
       "path": "data/part01.js",
@@ -127,12 +142,12 @@
     {
       "path": "index.html",
       "bytes": 6784,
-      "sha256": "61c084c199d3e91b2bd058cc0d1a3512c60436ef0c90208b12c4136a9455d5e2"
+      "sha256": "2142a24e1583777a47f961f85c0317c05dda484e387416477ed581f21cb4e667"
     },
     {
       "path": "literature.html",
-      "bytes": 3302,
-      "sha256": "a9aff853f5b975ed4bbae1527248f49267e89515fe28f928815c3efafdb13a2d"
+      "bytes": 4188,
+      "sha256": "af3fc77d980c8aa507eb92645ebc7eaec4ed476be5eedf07433e33a710e89a73"
     },
     {
       "path": "literature_v01.css",
@@ -163,6 +178,11 @@
       "path": "literature_v03.js",
       "bytes": 7687,
       "sha256": "3667ddfb9ccea2caebb43d9d2e0b6071bc8ea4196bddd919ed057ea5e6eb60ef"
+    },
+    {
+      "path": "literature_v04.js",
+      "bytes": 8573,
+      "sha256": "951e32a176a9ff5a7a28003eb9b271e1f08070f24919b97cf19f24aede826491"
     },
     {
       "path": "policy.html",
