@@ -309,6 +309,8 @@
     // 带上页面当前选中的地区与时间区间，让「本指标」下载只导出所选范围，
     // 而不是一股脑导出该指标的全部记录。
     var f = window.PortalFilter || null;
+    // 下载前提交尚未失焦的时间输入，避免输入框与内部筛选状态不同步。
+    if (f && f.apply) f.apply();
     if (f && f.indicator) st.code = f.indicator();
     var cur = f ? {
       regions: f.regions ? f.regions() : [],

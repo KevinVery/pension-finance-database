@@ -21,8 +21,8 @@
     },
     {
       "path": "app.js",
-      "bytes": 21312,
-      "sha256": "86aadd6662c5cb7f607d7aa4ce4fdc75910ac2219c91da342f87cef09d7b1d84"
+      "bytes": 21340,
+      "sha256": "3ce6e800918cf071caa8adfd508830cd5484e8719f15a69ebda85a5101769f98"
     },
     {
       "path": "charts.js",
@@ -121,13 +121,13 @@
     },
     {
       "path": "download.js",
-      "bytes": 21536,
-      "sha256": "03bfe42c1903658ef9c1cdcf252cb5fdb72e446ba8be9553f5f2153d57eca90e"
+      "bytes": 21670,
+      "sha256": "48c1fe25be6d6d5e6ac484528a36da2378578549e72fdee3cea3f0217329e5b3"
     },
     {
       "path": "index.html",
       "bytes": 6784,
-      "sha256": "096aa5c8283797da06a1c7ef23972cac7ad280b16221a2323fb252be1eb4abe6"
+      "sha256": "c489a78e9eb9e536caaf997aa16a16e731692a23e822a39b1f33228973eff936"
     },
     {
       "path": "literature.html",

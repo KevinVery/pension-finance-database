@@ -329,6 +329,7 @@
 
   // 供下载模块读取当前筛选条件
   window.PortalFilter = {
+    apply: applyYearRange,
     regions: () => state.regions.slice(),
     yearFrom: () => state.yearFrom,
     yearTo: () => state.yearTo,
