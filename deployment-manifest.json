@@ -127,7 +127,7 @@
     {
       "path": "index.html",
       "bytes": 6784,
-      "sha256": "c489a78e9eb9e536caaf997aa16a16e731692a23e822a39b1f33228973eff936"
+      "sha256": "61c084c199d3e91b2bd058cc0d1a3512c60436ef0c90208b12c4136a9455d5e2"
     },
     {
       "path": "literature.html",
@@ -166,8 +166,8 @@
     },
     {
       "path": "policy.html",
-      "bytes": 6423,
-      "sha256": "5e2742916006f391e328b6bf13747aa473055dc034e476432770fae977bdeaae"
+      "bytes": 5633,
+      "sha256": "1a09d36485398defef99613dda12aa43b198d71ed64570cb16117c37f647fee9"
     },
     {
       "path": "policy_v18.css",
@@ -178,6 +178,16 @@
       "path": "policy_v18.js",
       "bytes": 13817,
       "sha256": "a99d46456b9b086e74b4ae8cfed1a0cd2f6df79cbfe5595b9be507fecf9b938f"
+    },
+    {
+      "path": "policy_v19.css",
+      "bytes": 9292,
+      "sha256": "95c59c21271e5b3ef121193a9fb212e5fe4611c68529c4396f77627104703a18"
+    },
+    {
+      "path": "policy_v19.js",
+      "bytes": 15542,
+      "sha256": "c07cef31f0ee93eea0397c4df02c18001f45805254babe4d0fc05f3168f2617e"
     },
     {
       "path": "style.css",
