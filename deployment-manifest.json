@@ -36,8 +36,8 @@
     },
     {
       "path": "data/literature_extension_report_v03.md",
-      "bytes": 20508,
-      "sha256": "8bca421588cbf358ee3c1478f9913d098134da39df6da5d89b4d3889a04c0329"
+      "bytes": 20609,
+      "sha256": "71a256c85a433013296256b5fba8b588530986f72b88037e0d9e42badaee535b"
     },
     {
       "path": "data/literature_public_v01.json",
@@ -51,8 +51,8 @@
     },
     {
       "path": "data/literature_public_v03.json",
-      "bytes": 5396630,
-      "sha256": "936105b35c84ad171a18fcc4853e647e08a24727bbf845c3eba99094a80048e6"
+      "bytes": 5396693,
+      "sha256": "3a80e4366db37b770ee9e39f464fd4c60aef87709db6fcfadfb18a3a7eaf2fed"
     },
     {
       "path": "data/part01.js",
@@ -147,7 +147,7 @@
     {
       "path": "literature.html",
       "bytes": 4188,
-      "sha256": "af3fc77d980c8aa507eb92645ebc7eaec4ed476be5eedf07433e33a710e89a73"
+      "sha256": "2af584367040d48760db4a28cb3efe6760e7c2c05b0e5b229247d8c7266191a7"
     },
     {
       "path": "literature_v01.css",
@@ -181,8 +181,8 @@
     },
     {
       "path": "literature_v04.js",
-      "bytes": 8573,
-      "sha256": "951e32a176a9ff5a7a28003eb9b271e1f08070f24919b97cf19f24aede826491"
+      "bytes": 8588,
+      "sha256": "008d094631cf05ec68b33c3087825b21e8dae4a46f326d4173413727f58fccd6"
     },
     {
       "path": "policy.html",

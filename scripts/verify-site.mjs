@@ -69,3 +69,9 @@ assert(data.meta.nationalPkulawTexts===28&&data.meta.pkulawPrimaryTexts===28,"�
 
 assert(literatureData.records.every(r=>Array.isArray(r['发现来源'])&&r['官网核验']),'来源或核验层级缺失');
 assert(literatureData.records.every(r=>!r['官方PDF']||/^https:\/\//.test(r['官方PDF'])),'新全文链接协议非法');
+
+
+
+assert(literatureData.meta.recordsBefore2010+literatureData.meta.recordsSince2010+literatureData.meta.recordsUnknownYear===literatureData.records.length,'时间范围数量不闭合');
+
+for(const id of ['period','verification','path'])assert(literature.split('id="'+id+'"').length===2,'文献筛选控件重复');

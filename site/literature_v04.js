@@ -54,7 +54,7 @@
   }
   async function init() {
     let d = window.LITERATURE_LIBRARY;
-    if (!d) {const res=await fetch('data/literature_public_v03.json'); if (!res.ok) throw Error('文献库数据暂未加载，请刷新页面'); d=await res.json();}
+    if (!d) {const res=await fetch('data/literature_public_v03.json?v=3a80e4366db3'); if (!res.ok) throw Error('文献库数据暂未加载，请刷新页面'); d=await res.json();}
     data = d.records || [];
     options('theme',data.flatMap(r=>r['研究主题'])); options('language',data.map(r=>r['语言'])); options('journal',data.map(series));
     options('year',data.map(r=>r['年份'])); options('source',data.map(r=>r['来源'])); options('relevance',data.map(r=>r['主题级别'])); options('verification',data.map(r=>r['官网核验'])); options('path',data.flatMap(r=>r['发现来源']||[]));
