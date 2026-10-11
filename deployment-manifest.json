@@ -16,8 +16,8 @@
     },
     {
       "path": "_redirects",
-      "bytes": 160,
-      "sha256": "229d50b65ba91c433e68aa7b1c3c25954ad00dd65d132045712b791b53a38fa9"
+      "bytes": 97,
+      "sha256": "fa4152efc898ffb6e1e2a6fecff01ac7242869b975ff8cb50afdf69438e6c697"
     },
     {
       "path": "app.js",
@@ -122,7 +122,7 @@
     {
       "path": "index.html",
       "bytes": 6778,
-      "sha256": "5f42778983ece7d3b6307e57bf7e32dc531e5d3f39a4cd3184cefb7d1c125ecd"
+      "sha256": "5c817c36b631e52a22fd22e6ddff7b3a69dd2e8870aa0fda3c549b1548c37680"
     },
     {
       "path": "literature.html",
