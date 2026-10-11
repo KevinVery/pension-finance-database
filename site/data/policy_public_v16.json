@@ -1,6 +1,6 @@
 {
  "meta": {
-  "version": "policy_v15",
+  "version": "policy_v16",
   "updatedAt": "2026-10-10",
   "policies": 368,
   "originals": 365,
@@ -15,7 +15,7 @@
   "unresolvedNationalLeads": 0,
   "relations": 42,
   "defaultScope": "全国政策",
-  "defaultSort": "成文日期升序",
+  "defaultSort": "成文日期降序",
   "expansionAdded": 4,
   "sources": 634,
   "earliestDate": "1951-02-26",
