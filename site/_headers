@@ -9,6 +9,12 @@
 /index.html
   Cache-Control: no-cache, no-store, must-revalidate
 
+/policy
+  Cache-Control: no-cache, no-store, must-revalidate
+
+/literature
+  Cache-Control: no-cache, no-store, must-revalidate
+
 /*.html
   Cache-Control: no-cache, no-store, must-revalidate
 
