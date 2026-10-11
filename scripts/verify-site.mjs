@@ -28,10 +28,14 @@ assert(!JSON.stringify(data).includes('D:\\') && !JSON.stringify(data).includes(
 assert(!/_内部质检[\\/]/.test(JSON.stringify(data)),'公开政策历史核验记录不得包含内部快照路径');
 console.log(JSON.stringify({policyLibrary:true,...data.meta}));
 const literature=fs.readFileSync(path.join(root,'site/literature.html'),'utf8');
-assert(literature.includes('literature_v01.js')&&literature.includes('社保文献库'),'缺少社保文献库页面');
-const literatureData=JSON.parse(fs.readFileSync(path.join(root,'site/data/literature_public_v01.json'),'utf8'));
+assert(literature.includes('literature_v02.js?v=')&&literature.includes('社保文献库'),'缺少社保文献库页面');
+const literatureData=JSON.parse(fs.readFileSync(path.join(root,'site/data/literature_public_v02.json'),'utf8'));
 assert(literatureData.meta.records===literatureData.records.length,'文献数量不一致');
-assert(literatureData.meta.records>0&&literatureData.records.every(r=>r['来源页']&&r['官方PDF']),'文献官方链接缺失');
+assert(literatureData.meta.records===2155&&literatureData.meta.chineseRecords===299,'中文文献或总量不符');
+assert(literatureData.records.every(r=>/^https?:\/\//.test(r['来源页'])&&r['研究主题'].length),'文献来源或研究主题缺失');
+assert(literatureData.records.filter(r=>r['语言']==='英文').every(r=>r['官方PDF'].startsWith('https://')),'NBER全文入口缺失');
+assert(new Set(literatureData.records.map(r=>r['文献ID'])).size===2155,'文献ID重复');
+assert(literatureData.meta.chineseLocalFulltexts===298&&literatureData.meta.chineseMissingFulltexts===1,'中文全文状态不符');
 assert(!JSON.stringify(literatureData).includes('D:\\codex')&&!JSON.stringify(literatureData).includes('D:\\deepseek'),'文献公开数据包含本地路径');
 console.log(JSON.stringify({literatureLibrary:true,...literatureData.meta}));
 assert(data.meta.national+data.meta.provincial===data.policies.length,'全国/分省数量不一致');
