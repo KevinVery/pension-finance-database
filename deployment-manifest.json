@@ -16,8 +16,8 @@
     },
     {
       "path": "_redirects",
-      "bytes": 97,
-      "sha256": "fa4152efc898ffb6e1e2a6fecff01ac7242869b975ff8cb50afdf69438e6c697"
+      "bytes": 160,
+      "sha256": "229d50b65ba91c433e68aa7b1c3c25954ad00dd65d132045712b791b53a38fa9"
     },
     {
       "path": "app.js",
@@ -28,6 +28,11 @@
       "path": "charts.js",
       "bytes": 15297,
       "sha256": "567296160b28a442576033c7c867f60d048ad071c7be724528dc8b0bb713560b"
+    },
+    {
+      "path": "data/literature_public_v01.json",
+      "bytes": 2231166,
+      "sha256": "768ac966c0dc7e73a2850f36d4e8d0fc5136951d9d6ec8e39ad28ad2a0e987db"
     },
     {
       "path": "data/part01.js",
@@ -116,13 +121,28 @@
     },
     {
       "path": "index.html",
-      "bytes": 6693,
-      "sha256": "37ab4250dc19d521999ffc43782533ec5c8eedf378cab5fe87741080b9b22df2"
+      "bytes": 6778,
+      "sha256": "5f42778983ece7d3b6307e57bf7e32dc531e5d3f39a4cd3184cefb7d1c125ecd"
+    },
+    {
+      "path": "literature.html",
+      "bytes": 2342,
+      "sha256": "8b540ec12e450f97dff8971758411af69138855d2d1953d3c9aea541a58e2531"
+    },
+    {
+      "path": "literature_v01.css",
+      "bytes": 3616,
+      "sha256": "d2f8714a5d52bf845616084924a6e2ca1d3f3de0a40bcec2c70e16671c440819"
+    },
+    {
+      "path": "literature_v01.js",
+      "bytes": 3240,
+      "sha256": "06841091bfce3dce0d4151ac35c57a67aeb952b7e9886516226dc47382f3692e"
     },
     {
       "path": "policy.html",
-      "bytes": 5711,
-      "sha256": "a08b96a457488034a923a0e196168b836d1c1a4b02d174d16d368da406d397af"
+      "bytes": 5946,
+      "sha256": "24b06431cb49182d2022a14b39acc16dbc5b9d161dc0c14b821a258a442ff6f9"
     },
     {
       "path": "policy_v16.css",
@@ -131,8 +151,8 @@
     },
     {
       "path": "policy_v16.js",
-      "bytes": 12248,
-      "sha256": "feeeb7fb5f4bb1b0ed590a426fb150a869b876586d559a8c90d69e086ea89079"
+      "bytes": 12406,
+      "sha256": "8ec5cd09c0f37eb4fbe5aec88016f03728db47cae8e48341dfdee6a55b0c4c03"
     },
     {
       "path": "style.css",
