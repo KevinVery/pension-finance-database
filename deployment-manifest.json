@@ -140,6 +140,11 @@
       "sha256": "149618c38e788675233e0d85e1a185d90058a05eeac3fdb766bd263b75ad56c6"
     },
     {
+      "path": "data/policy_public_v22.json",
+      "bytes": 6171023,
+      "sha256": "acaf59e5d7dbaf79a2113da53aa87fede119afb87e77f155ef70bc30056e97dc"
+    },
+    {
       "path": "data/portal.js",
       "bytes": 1247,
       "sha256": "61dc3c25a9e2d4074e7a96af3d928a84e4af79cb51bd801768e6f29f4d1747a9"
@@ -157,7 +162,7 @@
     {
       "path": "index.html",
       "bytes": 6784,
-      "sha256": "b0586bfa04a0e6cde4d54ba906a1314615914ae3b71b54a4af4b40b728263d72"
+      "sha256": "1c9a2c7772e1d3d7db9294e68535e9805fba34e8f00affcd953a23dd7fadc1af"
     },
     {
       "path": "literature.html",
@@ -202,7 +207,7 @@
     {
       "path": "policy.html",
       "bytes": 5633,
-      "sha256": "781836e5ca99840925ac6fd27ccdb1297c0f5e96582f99b5b416b2c3bd49f1e3"
+      "sha256": "a103c4d9d6f9e7077cf4bab19c2d171e14e590cd51fcdc66a575bb1afa9af768"
     },
     {
       "path": "policy_v18.css",
@@ -253,6 +258,16 @@
       "path": "policy_v22.js",
       "bytes": 15542,
       "sha256": "b20befd5408a79423bce5215a6853a4ac598211f0238913432476468cd7aaa23"
+    },
+    {
+      "path": "policy_v23.css",
+      "bytes": 9292,
+      "sha256": "95c59c21271e5b3ef121193a9fb212e5fe4611c68529c4396f77627104703a18"
+    },
+    {
+      "path": "policy_v23.js",
+      "bytes": 15542,
+      "sha256": "8c85850abdefeaade5dd3ee47e950871b34ac2eb0720e8fb4ab77b57cccfa0d4"
     },
     {
       "path": "style.css",
