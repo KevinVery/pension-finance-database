@@ -64,7 +64,7 @@
       }).join('');
     }
     nav.innerHTML = categories.map(category=>{
-      const items = portal.indicators.filter(i=>i['四大类']===category);
+      const items = portal.indicators.filter(i=>i['四大类']===category && i['网站展示']!=='否');
       const content = category === '养老保险' ? ['第一支柱','第二支柱','第三支柱'].map(pillar=>{
         const rows = items.filter(i=>String(i['支柱层次']).startsWith(pillar));
         return rows.length ? branch(pillar, groups(rows,category+' '+pillar), 'nav-pillar') : '';
@@ -117,7 +117,7 @@
     const box = $("scope-tabs");
     if (!box) return;
     box.innerHTML = SCOPE_TABS.map((t) => {
-      const n = portal.indicators.filter(t.match).length;
+      const n = portal.indicators.filter(i=>i['网站展示']!=='否' && t.match(i)).length;
       return `<button type="button" class="scope-tab${state.scope === t.key ? " on" : ""}" `
         + `data-scope="${t.key}">${t.label}<span class="n">${n}</span></button>`;
     }).join("");
@@ -131,7 +131,7 @@
 
   function selectIndicator(code) {
     const meta=indicatorByCode(code);
-    if(!meta)return;
+    if(!meta || meta['网站展示']==='否')return;
     if(meta['地区层级']!==state.scope){state.scope=meta['地区层级'];renderScopeTabs();applyScope();}
     if(navCategory!=='all' || navQuery){navCategory='all';navQuery='';$('nav-search').value='';filterNav();}
     const selected=[...$('navigation').querySelectorAll('.nav-item')].find(i=>i.dataset.code===code);
