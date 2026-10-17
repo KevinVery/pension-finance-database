@@ -1,8 +1,8 @@
 {
-  "version": "v120",
+  "version": "v121",
   "framework": "framework_v01",
-  "records": 207019,
-  "indicators": 709,
+  "records": 207065,
+  "indicators": 711,
   "files": [
     {
       "path": "404.html",
@@ -106,8 +106,8 @@
     },
     {
       "path": "data/part11.js",
-      "bytes": 14480271,
-      "sha256": "3cd1533cbf88151b09976d2e0624c688026af202e7da83c42b90937c7bf87c0e"
+      "bytes": 14542170,
+      "sha256": "10494aecbaba22ff39cfc81b2d4d61d83815ab09aa0cdd5cfe18163086ec266d"
     },
     {
       "path": "data/part12.js",
@@ -272,7 +272,7 @@
     {
       "path": "data/version.js",
       "bytes": 109,
-      "sha256": "8329f9ad3ba8b5767ac0d713c3fe09edd0011bf0ac09bf65f83f4a20be174deb"
+      "sha256": "ecbc1781954bf7a92f2ec49c3240c8eec4338b3e48f5ca9f64c812533089fdf5"
     },
     {
       "path": "download.js",
@@ -282,7 +282,7 @@
     {
       "path": "index.html",
       "bytes": 6784,
-      "sha256": "f3603180d2619349b9cb148005e942b50449ed4cd6d1eacb77b320a4bc60112e"
+      "sha256": "8a528c231f6ca8f3f8dfa66ad12922cc5f182e719a4005fd73668415d6d7242b"
     },
     {
       "path": "literature.html",
