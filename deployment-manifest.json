@@ -297,7 +297,7 @@
     {
       "path": "index.html",
       "bytes": 6784,
-      "sha256": "0f6354e7563be00b4d12f8f94e82dd21cabbef4a98f82ffaa7a95a656e94d60a"
+      "sha256": "4c70c2a1e05e8159addbb6f8717c05f8801779e68a6d4ab0a87b0b326366f347"
     },
     {
       "path": "library_links_v01.css",
@@ -310,9 +310,19 @@
       "sha256": "6f4b8e680777d4e37d545575396698d6ab164181646143c40e8fc5b499360230"
     },
     {
+      "path": "library_links_v02.css",
+      "bytes": 2186,
+      "sha256": "36e5526c45f05acf1116f57fa82a8309f6903b930768fd5c74bb469f4585020f"
+    },
+    {
+      "path": "library_links_v02.js",
+      "bytes": 3693,
+      "sha256": "15b55476ed2d549a7721a8f928c6cf2c9f0c4fb5ec9953089ee301c93b9a09d3"
+    },
+    {
       "path": "literature.html",
-      "bytes": 4693,
-      "sha256": "1a8d4eb9c431762b6cd3f1e81646f7c205a92ce3357d428cfe51dd1c70123190"
+      "bytes": 3789,
+      "sha256": "feedfdf70f5d8bacf3d845d04216e3227046910b41e012b8e1a86e64cca21a65"
     },
     {
       "path": "literature_v01.css",
@@ -355,9 +365,14 @@
       "sha256": "e0a0fcac648eb38271a74ce52a2e3850c8e680ad571a521963f27cab8d507773"
     },
     {
+      "path": "literature_v06.js",
+      "bytes": 8346,
+      "sha256": "a63d8a7c321088005e13160f78baefdf1c39ae6cd212c612a5d4d18bae7bbb2e"
+    },
+    {
       "path": "policy.html",
-      "bytes": 5962,
-      "sha256": "929df2c1e58dde8f1d003813d1cf8ac228be8f6d101f36a7a0fa591f61b1aaa2"
+      "bytes": 5300,
+      "sha256": "1417266a66af2cd00723817ffa513ac995e46b85d82a646abfddbebfcef20598"
     },
     {
       "path": "policy_v18.css",
@@ -668,6 +683,16 @@
       "path": "policy_v48.js",
       "bytes": 16330,
       "sha256": "36e27afd8195060f03c3f25c2992f8c49bad7efb50cd0af8b60dead0d7533c9f"
+    },
+    {
+      "path": "policy_v49.css",
+      "bytes": 9292,
+      "sha256": "95c59c21271e5b3ef121193a9fb212e5fe4611c68529c4396f77627104703a18"
+    },
+    {
+      "path": "policy_v49.js",
+      "bytes": 15013,
+      "sha256": "76dc3a25693b6ceddd480b9bdfbbdcd4a3265dfddc3ecb65cad9efdfd0bf9e24"
     },
     {
       "path": "style.css",

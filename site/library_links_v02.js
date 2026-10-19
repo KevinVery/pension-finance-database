@@ -1,0 +1,14 @@
+(function(){
+ 'use strict';
+ const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+ const params=new URLSearchParams(location.search);
+ window.LibraryLinks={
+  data:null,
+  async init(){this.data=window.POLICY_PAPER_LINKS;if(!this.data){const r=await fetch('data/policy_paper_links_v01.json?v=20261019');if(!r.ok)throw Error('政策与文献关联数据加载失败，请刷新重试');this.data=await r.json();}return this.data;},
+  paperMatches(r){const id=params.get('policy'),focus=params.get('id');return (!focus||r['文献ID']===focus)&&(!id||this.data.relations.some(e=>e['政策ID']===id&&e['文献ID']===r['文献ID']));},
+  policyMatches(p){const id=params.get('paper'),focus=params.get('id');return (!focus||p['政策ID']===focus)&&(!id||this.data.relations.some(e=>e['文献ID']===id&&e['政策ID']===p['政策ID']));},
+  context(type){const key=type==='paper'?'policy':'paper',id=params.get(key),focus=params.get('id');if(!id&&!focus)return '';const source=id?(key==='policy'?this.data.policies:this.data.papers).find(r=>(r['政策ID']||r['文献ID'])===id):null;return '<div class="link-context">'+esc(source?'关联检索：'+source['标题']:focus?'指定条目':'关联条目不存在')+' <a href="'+(type==='paper'?'literature.html':'policy.html')+'">返回全部条目</a></div>';},
+  paperPanel(r){const es=r['政策关联']||[];const citation=r['被引次数']===null||r['被引次数']===undefined?'被引次数：未收录':'Crossref 被引 '+esc(r['被引次数'])+' 次（'+esc(r['被引核对日期'])+'）';return '<div class="link-metrics"><span>关联政策 '+es.length+' 项</span><span>'+citation+'</span></div><details class="related-panel"><summary>政策关联与证据'+(es.length?' · '+es.length+' 项':'')+'</summary><p>依据题名或摘要，不等同全文引用或政策采纳。</p>'+ (es.length?'<ul>'+es.map(e=>{const p=this.data.policies.find(p=>p['政策ID']===e['政策ID']);return '<li><a href="policy.html?id='+encodeURIComponent(e['政策ID'])+'">'+esc(p?.['标题']||e['政策ID'])+'</a><small>'+esc(e['关系类型'])+' · '+esc(e['证据字段'])+'</small><blockquote>'+esc(e['证据摘录'])+'</blockquote></li>';}).join('')+'</ul><a href="policy.html?paper='+encodeURIComponent(r['文献ID'])+'">查看该论文涉及的政策 →</a>':'<p>尚无可定位的政策关联证据。理论研究、国外研究和未核全文不据此视为没有政策价值。</p>')+(r['被引来源链接']?'<p><a href="'+esc(r['被引来源链接'])+'" target="_blank" rel="noopener">核对 Crossref 被引来源 ↗</a>（不同平台覆盖范围不同）</p>':'')+'</details>';},
+  policyPanel(p){const es=p['文献关联']||[];return '<div class="link-metrics"><span>关联论文 '+es.length+' 篇</span><span>库内文件引用 '+Number(p['库内文件引用数']||0)+' 次</span></div><details class="related-panel"><summary>相关研究论文'+(es.length?' · '+es.length+' 篇':'')+'</summary><p>按本库题名或摘要提及的文件／制度关联；库内文件引用只计已登记的有向引用关系，均非全网总量。</p>'+(es.length?'<ul>'+es.slice(0,12).map(e=>{const r=this.data.papers.find(r=>r['文献ID']===e['文献ID']);return '<li><a href="literature.html?id='+encodeURIComponent(e['文献ID'])+'">'+esc(r?.['标题']||e['文献ID'])+'</a><small>'+esc(r?.['年份'])+' · '+esc(e['关系类型'])+'</small></li>';}).join('')+'</ul><a href="literature.html?policy='+encodeURIComponent(p['政策ID'])+'">查看全部关联论文 →</a>':'<p>本库尚未登记相关论文证据；不代表该政策没有被研究。</p>')+'</details>';}
+ };
+})();

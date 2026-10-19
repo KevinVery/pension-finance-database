@@ -1,0 +1,11 @@
+.link-metrics{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0;color:#35546d;font-size:13px}.link-metrics span{background:#edf4f8;border:1px solid #dce7ee;border-radius:4px;padding:5px 9px}.related-panel{border-top:1px solid #e3e9ef;padding:12px 0;margin-top:12px}.related-panel summary{color:#175989;cursor:pointer;font-weight:600}.related-panel p,.related-panel small{color:#607184;font-size:13px;line-height:1.8}.related-panel li{margin:12px 0}.related-panel small{display:block}.related-panel blockquote{margin:8px 0;padding:10px 12px;border-left:3px solid #adc9dc;background:#f7f9fb;line-height:1.8;font-size:13px;max-height:160px;overflow:auto}.link-context{background:#edf5fb;border-left:3px solid #21668f;padding:14px;margin:12px 0;line-height:1.8}.link-context a{margin-left:12px}.metrics-note{font-size:13px;line-height:1.8;color:#596c7d;margin:12px 0}.topic-chips{gap:8px}.related-panel a,.link-context a{color:#175989;text-decoration:underline}.category-intro{color:#526a7d;font-size:14px;line-height:1.8}
+
+.sort-shortcuts{display:flex;flex-wrap:wrap;align-items:center;gap:10px;padding:16px 18px;margin:0 0 16px;background:#fff;border:1px solid #dce5ef;border-radius:8px}
+.sort-shortcuts strong{color:#334b67;font-size:14px;margin-right:4px}
+.sort-shortcuts button{border:1px solid #b7c9de;background:#f5f8fc;color:#244f80;border-radius:5px;padding:10px 14px;font-size:14px;line-height:1.5;cursor:pointer}
+.sort-shortcuts button:hover{background:#e7f0fc;border-color:#4079bd}
+.sort-shortcuts button.selected{background:#285f9e;color:#fff;border-color:#285f9e;font-weight:600}
+.resultbar,.result-toolbar{width:100%;min-width:0}.resultbar label,.result-toolbar label{min-width:0;flex-wrap:wrap}
+.resultbar select,.result-toolbar select{max-width:100%;min-width:190px}
+.category-intro{padding:0 28px}.link-context{margin:12px 28px}
+@media(max-width:760px){.sort-shortcuts{gap:8px;padding:12px}.sort-shortcuts strong{flex-basis:100%}.sort-shortcuts button{font-size:13px;padding:9px 11px}.resultbar label,.result-toolbar label{flex:1 1 100%}.resultbar select,.result-toolbar select{flex:1;min-width:0}.category-intro{padding:0 16px}.link-context{margin:12px 16px}}
