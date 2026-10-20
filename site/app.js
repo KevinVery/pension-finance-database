@@ -331,6 +331,13 @@
       + (meta["覆盖完整性"] ? "　" + meta["覆盖完整性"] : "");
     $("meta-unit").textContent = "见各指标名称";
     $("method-note").textContent = "仅展示已核验数值；— 表示暂无数据，不代表零。不同单位、适用人群和地区档次分别列示，不相加。图表及单指标下载使用当前选中指标。";
+    if (meta["制度对象"] === "个人养老金") {
+      const link = document.createElement("a");
+      link.href = "https://pension-regional-index.pages.dev/data/personal_pension_fund_catalog_v01.csv";
+      link.textContent = " 下载证监会基金逐产品名录CSV（2025、2026年三季度，合计651条产品明细）";
+      link.setAttribute("download", "personal_pension_fund_catalog_v01.csv");
+      $("method-note").appendChild(link);
+    }
     $("source-agency").textContent = meta["来源机构"];
     $("source-detail").textContent = meta["权威来源"];
     $("scope-detail").textContent = meta["统计范围"];
