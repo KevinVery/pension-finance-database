@@ -21,8 +21,8 @@
     },
     {
       "path": "app.js",
-      "bytes": 21436,
-      "sha256": "19bf402d91b89dc0d54e72eac437ff320fdf7df219b637f4e54b8081aca07b52"
+      "bytes": 25985,
+      "sha256": "24f729537823eca3a523427d01237efce90de7ad1f654a6f2d2003a4be81ca4a"
     },
     {
       "path": "charts.js",
@@ -321,13 +321,13 @@
     },
     {
       "path": "download.js",
-      "bytes": 21670,
-      "sha256": "48c1fe25be6d6d5e6ac484528a36da2378578549e72fdee3cea3f0217329e5b3"
+      "bytes": 23032,
+      "sha256": "8029eda67f13b3a58582e8efc5a487fe75852bbc740bd409568de54500ed02db"
     },
     {
       "path": "index.html",
-      "bytes": 6898,
-      "sha256": "501b83a1a344b92997a4e612dd2c2a1ea3408feabc4ee0a11ba54a5ed547d8f4"
+      "bytes": 6969,
+      "sha256": "a926d8dec160dd8f1bb66e6d025921f19b6010ac61a0f756f9ddd08b70c0837e"
     },
     {
       "path": "library_links_v01.css",
@@ -362,7 +362,7 @@
     {
       "path": "literature.html",
       "bytes": 4079,
-      "sha256": "7834d524703f0dc8bd643ad8d8ab0307bdb414605b1a72f1cb031b48591ba21a"
+      "sha256": "6f11c93d459ca81f602cb0177c312c4a0e8b39dbe7566311bde49ed275a68084"
     },
     {
       "path": "literature_v01.css",
@@ -427,7 +427,7 @@
     {
       "path": "policy.html",
       "bytes": 5490,
-      "sha256": "725ae95845343501f96253ade20a220fc0dbaf283ab84a857b3d6905a0643757"
+      "sha256": "3f856fc4ad036a1f718ec90a8ea5e6bf89215517865e5a45ab23ecdf167e5530"
     },
     {
       "path": "policy_v18.css",
@@ -776,13 +776,13 @@
     },
     {
       "path": "research_ui_v01.css",
-      "bytes": 20641,
-      "sha256": "2dc3495e108980d9ef7b2095dc7aeadb3ec0da175ed5ff0fc491c15f9918b963"
+      "bytes": 22889,
+      "sha256": "ef25129faea4cfb2d22277af4530420420dae3d8181665f8208d5527c5891af4"
     },
     {
       "path": "research_ui_v01.js",
-      "bytes": 8395,
-      "sha256": "d0beaf7e389b1f93e4769624b6c04ec46bc3b996bc58e83dd2a498802dac3c11"
+      "bytes": 8469,
+      "sha256": "ed608b2a4d904a76ea69c23a260c0b82de679ac3f44392737c464dc224681831"
     },
     {
       "path": "style.css",

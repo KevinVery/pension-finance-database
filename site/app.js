@@ -74,12 +74,19 @@
     window.PortalTreeNavigation = true;
     nav.addEventListener('click', event=>{
       const toggle = event.target.closest('.nav-toggle');
-      if(toggle) setOpen(toggle.parentElement, toggle.parentElement.classList.contains('collapsed'));
+      if(toggle) {
+        const branch=toggle.parentElement;
+        setOpen(branch, branch.classList.contains('collapsed'));
+        if(branch.classList.contains('nav-system')) {
+          const first=[...branch.querySelectorAll('.nav-item')].find(b=>b.style.display!=='none');
+          if(first) selectIndicator(first.dataset.code);
+        }
+      }
       const item = event.target.closest('[data-code]');
       if(item) selectIndicator(item.dataset.code);
     });
     const box = document.createElement('div'); box.className='side-search';
-    box.innerHTML='<p class="framework-hint">仅展示当前数据口径下已有的指标。目录计数含候选指标，核验状态请查看记录。</p><input id="nav-search" type="search" aria-label="搜索当前口径的制度、主题或指标" placeholder="搜索制度、主题或指标"><div class="nav-chips" id="nav-chips"></div><div class="nav-tools"><button type="button" data-act="expand">全部展开</button><button type="button" data-act="collapse">全部折叠</button></div>';
+    box.innerHTML='<p class="framework-hint">仅展示当前数据口径下已有的指标。点击制度直接查看指标与年份面板；也可搜索单个指标。</p><input id="nav-search" type="search" aria-label="搜索当前口径的制度、主题或指标" placeholder="搜索制度、主题或指标"><div class="nav-chips" id="nav-chips"></div><div class="nav-tools"><button type="button" data-act="expand">全部展开</button><button type="button" data-act="collapse">全部折叠</button></div>';
     nav.before(box);
     box.querySelector('input').addEventListener('input', event=>{ navQuery=event.target.value.trim().toLowerCase(); filterNav(); });
     box.querySelectorAll('[data-act]').forEach(button=>button.addEventListener('click', ()=>nav.querySelectorAll('.nav-branch').forEach(b=>setOpen(b, button.dataset.act==='expand'))));
@@ -91,6 +98,7 @@
   }
   function filterNav() {
     const nav=$('navigation'), tab=SCOPE_TABS.find(t=>t.key===state.scope);
+    nav.classList.toggle('is-searching',!!navQuery);
     nav.querySelectorAll('.nav-item').forEach(item=>{
       const match=tab.match(indicatorByCode(item.dataset.code)) && (!navQuery || item.dataset.search.toLowerCase().includes(navQuery));
       item.style.display=match?'':'none';
@@ -122,7 +130,7 @@
         + `data-scope="${t.key}">${t.label}<span class="n">${n}</span></button>`;
     }).join("");
     box.querySelectorAll(".scope-tab").forEach((b) => b.addEventListener("click", () => {
-      state.scope = b.dataset.scope; renderScopeTabs(); applyScope();
+      state.scope = b.dataset.scope; state.indicator=null; renderScopeTabs(); applyScope(); showWelcome();
     }));
   }
 
@@ -156,6 +164,51 @@
     empty.innerHTML += `<p>目录仅展示所选地区层级下已有的指标；核验状态和适用范围请查看指标说明与数据记录。</p>`;
   }
 
+  function panelIndicators() {
+    const meta=indicatorByCode(state.indicator);
+    if(!meta)return [];
+    return portal.indicators.filter(i=>i['网站展示']!=='否' && i['地区层级']===meta['地区层级']
+      && i['四大类']===meta['四大类'] && i['指标分组']===meta['指标分组']
+      && (i['支柱层次']||'')===(meta['支柱层次']||''));
+  }
+  function panelRecords() {
+    const codes=new Set(panelIndicators().map(i=>i['指标代码']));
+    return portal.records.filter(r=>codes.has(r['指标代码']));
+  }
+  function panelData() {
+    const records=panelRecords().filter(r=>r['审查状态']==='已核验'
+      && (!state.regions.length || state.regions.includes(r['地区名称']))
+      && (state.yearFrom==null || Number(r['统计期'])>=state.yearFrom)
+      && (state.yearTo==null || Number(r['统计期'])<=state.yearTo));
+    const years=[...new Set(records.map(r=>String(r['统计期'])))].sort((a,b)=>b.localeCompare(a,undefined,{numeric:true}));
+    const dimensions=['适用险种','适用人群','统筹区','地区档次'];
+    const grouped=new Map();
+    records.forEach(r=>{
+      const key=JSON.stringify([r['指标代码'],r['地区名称'],r['单位'],...dimensions.map(k=>r[k]||'')]);
+      if(!grouped.has(key))grouped.set(key,{record:r,cells:new Map()});
+      const g=grouped.get(key),year=String(r['统计期']);
+      if(!g.cells.has(year))g.cells.set(year,[]);
+      g.cells.get(year).push(r);
+    });
+    const priority=i=>{const n=i['指标名称']||'';if(/参保总人数|参加.*总人数/.test(n))return 0;if(/在职.*人数/.test(n))return 1;if(/离退休.*人数/.test(n))return 2;if(/基金收入/.test(n))return 3;if(/基金支出/.test(n))return 4;if(/累计结余/.test(n))return 5;return 10;};
+    const ordered=panelIndicators().slice().sort((a,b)=>priority(a)-priority(b));
+    const order=new Map(ordered.map((i,n)=>[i['指标代码'],n]));
+    grouped.forEach(g=>{g.decimals=Math.min(4,Math.max(...[...g.cells.values()].flat().map(r=>(String(r['数值']).split('.')[1]||'').length)));});
+    const rows=[...grouped.values()].sort((a,b)=>order.get(a.record['指标代码'])-order.get(b.record['指标代码'])
+      || String(a.record['地区代码']).localeCompare(String(b.record['地区代码'])));
+    const multiRegion=new Set(records.map(r=>r['地区名称'])).size>1;
+    const label=r=>{
+      const meta=indicatorByCode(r['指标代码']);
+      const parts=dimensions.map(k=>r[k]).filter(Boolean);
+      return (meta?.['指标名称']||r['指标名称'])+'（'+r['单位']+'）'+(parts.length?' · '+[...new Set(parts)].join(' / '):'');
+    };
+    // Never overwrite colliding observations. Distinct values remain visible and exportable.
+    const cellValue=list=>!list?'':list.length===1?Number(list[0]['数值']):list.map(r=>String(r['数值'])+(r['生效日期']?' ['+r['生效日期']+']':'')).join(' / ');
+    const fields=['指标',...(multiRegion?['地区']:[]),...years.map(y=>y+'年')];
+    const values=rows.map(g=>[label(g.record),...(multiRegion?[g.record['地区名称']]:[]),...years.map(y=>cellValue(g.cells.get(y)))]);
+    return {records,years,rows,multiRegion,label,fields,values};
+  }
+
   function relevantRecords() { return portal.records.filter((record) => record["指标代码"] === state.indicator); }
 
   function filteredRecords() {
@@ -170,7 +223,7 @@
 
   /* 时间区间：默认展示该指标的全部年份，可手动输入起止年 */
   function yearBounds() {
-    const ys = relevantRecords().map((r) => Number(r["统计期"])).filter((n) => Number.isFinite(n));
+    const ys = panelRecords().map((r) => Number(r["统计期"])).filter((n) => Number.isFinite(n));
     return ys.length ? [Math.min(...ys), Math.max(...ys)] : [null, null];
   }
 
@@ -205,7 +258,7 @@
   function renderRegionPicker() {
     const box = $("region-picker");
     if (!box) return;
-    const names = [...new Set(relevantRecords().map((r) => r["地区名称"]))];
+    const names = [...new Set(panelRecords().map((r) => r["地区名称"]))];
     box.innerHTML = `<button type="button" class="rp-toggle" id="rp-toggle" aria-expanded="false">`
       + `<span>地区</span><span class="rp-sum">${state.regions.length ? state.regions.length + " 个" : "全部"}</span>`
       + `<span class="rp-arrow">▾</span></button>`
@@ -260,16 +313,11 @@
   function renderWorkspace() {
     const meta = indicatorByCode(state.indicator);
     const workspace = $("workspace"), empty = $("empty-state");
-    if (meta["是否可视化"] !== "是") {
-      workspace.hidden = true; empty.hidden = false;
-      empty.innerHTML = `<h1>${escapeHtml(meta["指标名称"])}</h1><p>${escapeHtml(meta["口径提示"])}</p>`;
-      return;
-    }
     empty.hidden = true; workspace.hidden = false;
     $("category-label").textContent = meta["四大类"];
     $("group-label").textContent = [meta["指标分组"], meta["指标主题"]].filter(Boolean).join(" / ");
-    $("indicator-title").textContent = meta["指标名称"];
-    $("indicator-subtitle").textContent = `${meta["地区层级"]}口径　${meta["覆盖期"]}　${meta["统计范围"]}`;
+    $("indicator-title").textContent = meta["指标分组"] || meta["指标名称"];
+    $("indicator-subtitle").textContent = `${meta["地区层级"]} · 指标按行、年份按列 · 点击指标名称查看该指标图表`;
     $("meta-level").textContent = meta["地区层级"];
     // ★ 2026-10-08：把「覆盖完整性」追加到「覆盖期」后面 ✓
     //   该字段由脚本自动反算（满员年数/总年数 + 不满年份）✓
@@ -279,8 +327,8 @@
     //     直接改 web/ 下的副本会在下次构建时被覆盖 ✗（2026-10-08 已踩过）
     $("meta-period").textContent = meta["覆盖期"]
       + (meta["覆盖完整性"] ? "　" + meta["覆盖完整性"] : "");
-    $("meta-unit").textContent = meta["单位"];
-    $("method-note").textContent = meta["口径提示"];
+    $("meta-unit").textContent = "见各指标名称";
+    $("method-note").textContent = "仅展示已核验数值；— 表示暂无数据，不代表零。不同单位、适用人群和地区档次分别列示，不相加。图表及单指标下载使用当前选中指标。";
     $("source-agency").textContent = meta["来源机构"];
     $("source-detail").textContent = meta["权威来源"];
     $("scope-detail").textContent = meta["统计范围"];
@@ -288,7 +336,6 @@
     $("time-detail").textContent = meta["时间类型"];
     $("update-detail").textContent = relevantRecords().map((record) => record["更新时间"])[0] || "";
     renderRegionPicker();
-    resetYearRange();
     const chartViewsAllowed = relevantRecords().some((r) => r["审查状态"] === "已核验") && meta["是否可视化"] !== "否";
     if (!chartViewsAllowed) state.view = "table";
     document.querySelector(".view-tabs").hidden = !chartViewsAllowed;
@@ -300,15 +347,17 @@
     const rows = filteredRecords(), table = $("data-table"), chart = $("chart-view");
     table.hidden = state.view !== "table"; chart.hidden = state.view === "table";
     if (state.view === "table") {
-      table.innerHTML = `<div class="table-note">共 ${rows.length} 条记录`
-        + `（地区 ${state.regions.length ? state.regions.length + " 个" : "全部"}`
-        + `，时间 ${state.yearFrom ?? "-"} 至 ${state.yearTo ?? "-"}）</div>`
-        + `<table class="data-table"><thead><tr><th>地区</th><th>统计期</th><th>数值</th><th>单位</th>`
-        + `<th>制度对象</th><th>适用范围与执行期</th><th>审查状态</th><th>来源机构</th></tr></thead><tbody>`
-        + rows.map((r) => `<tr><td>${escapeHtml(r["地区名称"])}</td><td>${escapeHtml(r["统计期"])}</td>`
-            + `<td class="number">${format(r["数值"])}</td><td>${escapeHtml(r["单位"])}</td>`
-            + `<td>${escapeHtml(r["制度对象"])}</td><td>${escapeHtml([r["适用险种"], r["统筹区"], r["地区档次"], r["生效日期"] ? r["生效日期"] + "至" + (r["终止日期"] || "待核") : "", r["政策文号"]].filter(Boolean).join("；"))}</td><td>${escapeHtml(r["审查状态"] || "待核验")}</td><td>${escapeHtml(r["来源机构"])}</td></tr>`).join("")
-        + `</tbody></table>`;
+      const panel=panelData();
+      table.innerHTML = `<div class="table-note">${panel.rows.length} 行指标与地区序列 · ${panel.years.length} 个年份 · ${panel.records.length} 个观测值。年份从新到旧，可横向滚动。当前图表指标：${escapeHtml(indicatorByCode(state.indicator)['指标名称'])}</div>`
+        + `<div class="panel-scroll" tabindex="0" role="region" aria-label="指标年度面板，可横向滚动"><table class="data-table panel-table"><thead><tr><th scope="col">指标</th>${panel.multiRegion?'<th scope="col">地区</th>':''}${panel.years.map(y=>`<th scope="col">${escapeHtml(y)}年</th>`).join('')}</tr></thead><tbody>`
+        + panel.rows.map(g=>`<tr><th scope="row"><button class="panel-indicator${g.record['指标代码']===state.indicator?' selected':''}" data-panel-code="${escapeHtml(g.record['指标代码'])}">${escapeHtml(panel.label(g.record))}</button></th>${panel.multiRegion?`<td>${escapeHtml(g.record['地区名称'])}</td>`:''}`
+          + panel.years.map(y=>{const list=g.cells.get(y);return `<td class="number">${list?list.map(r=>`<span class="panel-value">${Number(r['数值']).toLocaleString('zh-CN',{minimumFractionDigits:g.decimals,maximumFractionDigits:g.decimals})}${list.length>1&&r['生效日期']?` <small>(${escapeHtml(r['生效日期'])})</small>`:''}</span>`).join('<br>'):'<span class="missing">—</span>'}</td>`;}).join('')+'</tr>').join('')
+        + `</tbody></table></div>${panel.rows.length?'':'<p class="empty">当前筛选下暂无已核验数据。</p>'}`;
+      table.querySelectorAll('[data-panel-code]').forEach(b=>b.addEventListener('click',()=>{
+        state.indicator=b.dataset.panelCode;
+        document.querySelectorAll('.nav-item').forEach(i=>i.classList.toggle('active',i.dataset.code===state.indicator));
+        renderView();
+      }));
       return;
     }
     const verifiedRows = rows.filter((r) => r["审查状态"] === "已核验");
@@ -321,6 +370,8 @@
     else chart.innerHTML += '<div class="empty-chart">图表组件未加载。</div>';
   }
 
+  $("apply-year").addEventListener("click", applyYearRange);
+  [$("year-from"),$("year-to")].forEach(el=>el.addEventListener("keydown",e=>{if(e.key==="Enter")applyYearRange();}));
   $("year-from").addEventListener("change", applyYearRange);
   $("year-to").addEventListener("change", applyYearRange);
   document.querySelectorAll(".view-button").forEach((b) => b.addEventListener("click", () => {
@@ -329,6 +380,7 @@
 
   // 供下载模块读取当前筛选条件
   window.PortalFilter = {
+    panel: () => state.view === "table" && state.indicator ? panelData() : null,
     apply: applyYearRange,
     regions: () => state.regions.slice(),
     yearFrom: () => state.yearFrom,

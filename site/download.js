@@ -306,11 +306,21 @@
     if (scope !== 'indicator' || ['csv','xlsx'].indexOf(fmt) < 0) throw Error('仅支持当前指标的 CSV 或 Excel 下载');
     var st = state();
     var indScope = true;
-    // 带上页面当前选中的地区与时间区间，让「本指标」下载只导出所选范围，
+    // 带上页面当前选中的地区与时间区间，让「当前表格／指标」下载只导出所选范围，
     // 而不是一股脑导出该指标的全部记录。
     var f = window.PortalFilter || null;
     // 下载前提交尚未失焦的时间输入，避免输入框与内部筛选状态不同步。
     if (f && f.apply) f.apply();
+    if (f && f.panel) {
+      var panel=f.panel();
+      if(panel){
+        if(!panel.values.length){alert('当前面板没有已核验数据。');return;}
+        var matrix=[panel.fields].concat(panel.values);
+        if(fmt==='xlsx')saveBlob(toXlsx([{name:'面板数据',rows:matrix},{name:'使用说明',rows:[['说明','内容'],['范围','当前制度、地区与年份筛选的已核验数据'],['缺失值','空白表示暂无数据，不代表零'],['口径','各行按原单位；不同人群、地区档次不可相加'],['版本',String(st.data.version||'')]]}]),'PensionRegionalIndexDB_panel_'+stamp()+'.xlsx');
+        else {var objects=panel.values.map(function(v){var r={};panel.fields.forEach(function(k,n){r[k]=v[n];});return r;});saveBlob(new Blob([toCsv(objects,panel.fields)],{type:'text/csv;charset=utf-8'}),'PensionRegionalIndexDB_panel_'+stamp()+'.csv');}
+        return;
+      }
+    }
     if (f && f.indicator) st.code = f.indicator();
     var cur = f ? {
       regions: f.regions ? f.regions() : [],
@@ -372,7 +382,7 @@
           '<span class="dl-icon">⤓</span>下载<span class="dl-caret">▾</span>' +
         '</button>' +
         '<div class="dl-menu" id="dl-menu" hidden>' +
-          '<div class="dl-menu-title">本指标（按当前所选地区与时间）</div>' +
+          '<div class="dl-menu-title">当前表格／指标（按当前所选地区与时间）</div>' +
           '<button type="button" class="dl-btn" data-scope="indicator" data-fmt="csv">CSV 格式</button>' +
           '<button type="button" class="dl-btn" data-scope="indicator" data-fmt="xlsx">Excel 格式</button>' +
         '</div>' +
