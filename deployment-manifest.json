@@ -26,8 +26,8 @@
     },
     {
       "path": "charts.js",
-      "bytes": 15297,
-      "sha256": "567296160b28a442576033c7c867f60d048ad071c7be724528dc8b0bb713560b"
+      "bytes": 15298,
+      "sha256": "eb27233175faf40bc523b82c2f675f15558f6d3af521a94642a1ce338cd78a0e"
     },
     {
       "path": "data/literature_coverage_v03.csv",
@@ -326,8 +326,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 6784,
-      "sha256": "31b160b14a845066f9e45cd8d2e31dd4cfaf898104640a247107b5268ec37dc8"
+      "bytes": 6898,
+      "sha256": "501b83a1a344b92997a4e612dd2c2a1ea3408feabc4ee0a11ba54a5ed547d8f4"
     },
     {
       "path": "library_links_v01.css",
@@ -361,8 +361,8 @@
     },
     {
       "path": "literature.html",
-      "bytes": 3957,
-      "sha256": "82c15dd919669af5e56844e6d74409a618b1b393dd2993c7d2acb2b51eb3303a"
+      "bytes": 4079,
+      "sha256": "7834d524703f0dc8bd643ad8d8ab0307bdb414605b1a72f1cb031b48591ba21a"
     },
     {
       "path": "literature_v01.css",
@@ -420,9 +420,14 @@
       "sha256": "41973bb746370f1f9cbcb7f4ab0d8396b25109f8d9305b1d70ddef4429c70121"
     },
     {
+      "path": "literature_v09.js",
+      "bytes": 9137,
+      "sha256": "954bc16419adae8775ddbf0cd4096a9009b0a8d0803ff9843bc9046ae5eb74a9"
+    },
+    {
       "path": "policy.html",
-      "bytes": 5351,
-      "sha256": "b5926e247ce0b9db52e1e9996fb2dbb6c176ccca438b2e15fc77cf090499590a"
+      "bytes": 5490,
+      "sha256": "725ae95845343501f96253ade20a220fc0dbaf283ab84a857b3d6905a0643757"
     },
     {
       "path": "policy_v18.css",
@@ -763,6 +768,21 @@
       "path": "policy_v51.js",
       "bytes": 15248,
       "sha256": "55289bcce2eabc3d7a4be28cb8d4beea3a5c7b204efdd7aad81737f2669f0690"
+    },
+    {
+      "path": "policy_v52.js",
+      "bytes": 15930,
+      "sha256": "6a31f369d33136b9a406281f1a52d39457c6d8e72151a7c28ac2e7a6bb47d5b1"
+    },
+    {
+      "path": "research_ui_v01.css",
+      "bytes": 20641,
+      "sha256": "2dc3495e108980d9ef7b2095dc7aeadb3ec0da175ed5ff0fc491c15f9918b963"
+    },
+    {
+      "path": "research_ui_v01.js",
+      "bytes": 8395,
+      "sha256": "d0beaf7e389b1f93e4769624b6c04ec46bc3b996bc58e83dd2a498802dac3c11"
     },
     {
       "path": "style.css",

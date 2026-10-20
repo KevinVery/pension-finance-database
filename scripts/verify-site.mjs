@@ -20,7 +20,7 @@ assert(app.includes('仅展示当前数据口径下已有的指标')&&!app.inclu
 console.log(JSON.stringify({ok:true,files:manifest.files.length,version:manifest.version,records:manifest.records,indicators:manifest.indicators}));
 assert(html.includes('href="policy.html"'),'缺少政策库导航');
 const policy=fs.readFileSync(path.join(root,'site/policy.html'),'utf8');
-assert(policy.includes('policy_v51.js?v=') && policy.includes('policy_v51.css?v='),'政策资源缺少版本');
+assert(policy.includes('policy_v52.js?v=') && policy.includes('policy_v51.css?v='),'政策资源缺少版本');
 assert(policy.includes('library-layout')&&policy.includes('id="policy-chips"')&&policy.includes('id="decades"'),'政策布局缺少专题、侧栏或年代检索');
 const data=JSON.parse(fs.readFileSync(path.join(root,'site/data/policy_public_v49.json'),'utf8'));
 assert(data.meta.policies===data.policies.length,'政策数量不一致');
@@ -29,7 +29,7 @@ assert(!JSON.stringify(data).includes('D:\\') && !JSON.stringify(data).includes(
 assert(!/_内部质检[\\/]/.test(JSON.stringify(data)),'公开政策历史核验记录不得包含内部快照路径');
 console.log(JSON.stringify({policyLibrary:true,...data.meta}));
 const literature=fs.readFileSync(path.join(root,'site/literature.html'),'utf8');
-assert(literature.includes('literature_v08.js?v=')&&literature.includes('社保文献库'),'缺少社保文献库页面');
+assert(literature.includes('literature_v09.js?v=')&&literature.includes('社保文献库'),'缺少社保文献库页面');
 assert(literature.includes('library-layout')&&literature.includes('topic-chips')&&literature.includes('id="sort"'),'文献布局缺失');
 for(const [page,keys] of [[policy,['papers','references']],[literature,['policy','cited']]]){
  for(const key of keys)assert(page.includes('data-sort="'+key+'"'),'缺少直接可见排序按钮 '+key);

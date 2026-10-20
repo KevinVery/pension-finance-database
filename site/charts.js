@@ -8,10 +8,10 @@
 (function () {
   'use strict';
 
-  var PALETTE = ['#2379b8', '#d98b24', '#2e8b57', '#c0504d', '#7b68a8',
+  var PALETTE = ['#407CA7', '#B7004F', '#30536E', '#78A3BF', '#172A3A',
     '#489e9e', '#c48f3c', '#5f7387', '#b5651d', '#3f7fbf',
     '#8e6c88', '#6b9e3f', '#bf5b77', '#3d8b8b', '#a3782c'];
-  var INK = '#263543', MUTED = '#7a8c9c', GRID = '#dbe6ef', AXIS = '#8fa3b0';
+  var INK = '#25313D', MUTED = '#5d6770', GRID = '#E9E7E2', AXIS = '#a5a6a3';
 
   function esc(s) {
     return String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
@@ -265,7 +265,7 @@
 
   /* ---------------------------------------------------------- 趋势图 */
   function drawLine(d) {
-    var W = 1100, H = 430, L = 92, R = 30, B = 64;
+    var W = 1100, H = 430, L = 92, R = 106, B = 64;
     var lg = d.regions.length > 1 ? layoutLegend(d.regions, W - L - R) : { svg: '', rows: 0, height: 0 };
     var T = lg.rows ? legendTop(lg.rows) : 22;
     var pw = W - L - R, ph = H - T - B;
