@@ -70,7 +70,7 @@
       {
         if (st.code && r['指标代码'] !== st.code) return;
         if (regions.length && regions.indexOf(r['地区名称']) < 0) return;
-        var y = String(r['统计期'] || '');
+        var y = String(r['统计期'] || '').slice(0, 4);
         if (st.yearFrom && /^\d+$/.test(y) && +y < +st.yearFrom) return;
         if (st.yearTo && /^\d+$/.test(y) && +y > +st.yearTo) return;
       }

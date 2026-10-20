@@ -1,8 +1,8 @@
 {
-  "version": "v126",
+  "version": "v127",
   "framework": "framework_v01",
-  "records": 207391,
-  "indicators": 767,
+  "records": 207407,
+  "indicators": 777,
   "files": [
     {
       "path": "404.html",
@@ -21,8 +21,8 @@
     },
     {
       "path": "app.js",
-      "bytes": 25978,
-      "sha256": "aeccd7db12c70036023bf9c0413294f527965b4ae022e05277fbe93c3f002241"
+      "bytes": 26210,
+      "sha256": "e14531bae03d294447abd76b0523199f236685eb2146670ce6343644eb331c51"
     },
     {
       "path": "charts.js",
@@ -121,8 +121,8 @@
     },
     {
       "path": "data/part11.js",
-      "bytes": 14841967,
-      "sha256": "eff03caa0a87d983a28a174b0e0df8332a95b6dc4f557fe883fdba441b0c2026"
+      "bytes": 14874249,
+      "sha256": "55d308a4d60c39977619578fbd7e59251e15defc71e007493e0b0b485919d846"
     },
     {
       "path": "data/part12.js",
@@ -317,17 +317,17 @@
     {
       "path": "data/version.js",
       "bytes": 109,
-      "sha256": "b981a23a17ddfdf943019d815786b6c518e4ee7e11b166bd3223018ecb3e63b4"
+      "sha256": "33de89b839df06abb866fab0b6419c367ea0abfae1eb25aac945e744e15db176"
     },
     {
       "path": "download.js",
-      "bytes": 23032,
-      "sha256": "8029eda67f13b3a58582e8efc5a487fe75852bbc740bd409568de54500ed02db"
+      "bytes": 23044,
+      "sha256": "479155f1cb90dce083894fa15dd6a03fda6d6dd367b04bf0b4c367287284ae29"
     },
     {
       "path": "index.html",
       "bytes": 6969,
-      "sha256": "ae2e366bd206904edcc8605737d8539429bd222a896dfe66990289990585bd30"
+      "sha256": "3a0fac4ed1af965b001f51b65442c7ac2285959505da4d7e7ce744595fb1bad7"
     },
     {
       "path": "library_links_v01.css",

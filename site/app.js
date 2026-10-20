@@ -3,6 +3,8 @@
   const $ = (id) => document.getElementById(id);
   const escapeHtml = (value) => String(value ?? "").replace(/[&<>'"]/g, (char) => ({ "&":"&amp;", "<":"&lt;", ">":"&gt;", "'":"&#39;", "\"":"&quot;" }[char]));
   const format = (value) => Number(value).toLocaleString("zh-CN", { maximumFractionDigits: 4 });
+  const observationYear = (value) => Number(String(value ?? '').slice(0, 4));
+  const periodLabel = (value) => /^\d{4}$/.test(String(value)) ? value + '年' : String(value);
   const indicatorByCode = (code) => portal.indicators.find((item) => item["指标代码"] === code);
 
   // 板块按业务重要性排序，不用字典序
@@ -178,8 +180,8 @@
   function panelData() {
     const records=panelRecords().filter(r=>r['审查状态']==='已核验'
       && (!state.regions.length || state.regions.includes(r['地区名称']))
-      && (state.yearFrom==null || Number(r['统计期'])>=state.yearFrom)
-      && (state.yearTo==null || Number(r['统计期'])<=state.yearTo));
+      && (state.yearFrom==null || observationYear(r['统计期'])>=state.yearFrom)
+      && (state.yearTo==null || observationYear(r['统计期'])<=state.yearTo));
     const years=[...new Set(records.map(r=>String(r['统计期'])))].sort((a,b)=>b.localeCompare(a,undefined,{numeric:true}));
     const dimensions=['适用险种','适用人群','统筹区','地区档次'];
     const grouped=new Map();
@@ -204,7 +206,7 @@
     };
     // Never overwrite colliding observations. Distinct values remain visible and exportable.
     const cellValue=list=>!list?'':list.length===1?Number(list[0]['数值']):list.map(r=>String(r['数值'])+(r['生效日期']?' ['+r['生效日期']+']':'')).join(' / ');
-    const fields=['指标',...(multiRegion?['地区']:[]),...years.map(y=>y+'年')];
+    const fields=['指标',...(multiRegion?['地区']:[]),...years.map(periodLabel)];
     const values=rows.map(g=>[label(g.record),...(multiRegion?[g.record['地区名称']]:[]),...years.map(y=>cellValue(g.cells.get(y)))]);
     return {records,years,rows,multiRegion,label,fields,values};
   }
@@ -214,7 +216,7 @@
   function filteredRecords() {
     return relevantRecords().filter((record) => {
       if (state.regions.length && !state.regions.includes(record["地区名称"])) return false;
-      const y = Number(record["统计期"]);
+      const y = observationYear(record["统计期"]);
       if (state.yearFrom != null && y < state.yearFrom) return false;
       if (state.yearTo != null && y > state.yearTo) return false;
       return true;
@@ -223,7 +225,7 @@
 
   /* 时间区间：默认展示该指标的全部年份，可手动输入起止年 */
   function yearBounds() {
-    const ys = panelRecords().map((r) => Number(r["统计期"])).filter((n) => Number.isFinite(n));
+    const ys = panelRecords().map((r) => observationYear(r["统计期"])).filter((n) => Number.isFinite(n));
     return ys.length ? [Math.min(...ys), Math.max(...ys)] : [null, null];
   }
 
@@ -348,8 +350,8 @@
     table.hidden = state.view !== "table"; chart.hidden = state.view === "table";
     if (state.view === "table") {
       const panel=panelData();
-      table.innerHTML = `<div class="table-note">${panel.rows.length} 行指标与地区序列 · ${panel.years.length} 个年份 · ${panel.records.length} 个观测值。年份从新到旧，可横向滚动。当前图表指标：${escapeHtml(indicatorByCode(state.indicator)['指标名称'])}</div>`
-        + `<div class="panel-scroll" tabindex="0" role="region" aria-label="指标年度面板，可横向滚动"><table class="data-table panel-table"><thead><tr><th scope="col">指标</th>${panel.multiRegion?'<th scope="col">地区</th>':''}${panel.years.map(y=>`<th scope="col">${escapeHtml(y)}年</th>`).join('')}</tr></thead><tbody>`
+      table.innerHTML = `<div class="table-note">${panel.rows.length} 行指标与地区序列 · ${panel.years.length} 个统计期 · ${panel.records.length} 个观测值。统计期从新到旧，可横向滚动。当前图表指标：${escapeHtml(indicatorByCode(state.indicator)['指标名称'])}</div>`
+        + `<div class="panel-scroll" tabindex="0" role="region" aria-label="指标统计期面板，可横向滚动"><table class="data-table panel-table"><thead><tr><th scope="col">指标</th>${panel.multiRegion?'<th scope="col">地区</th>':''}${panel.years.map(y=>`<th scope="col">${escapeHtml(periodLabel(y))}</th>`).join('')}</tr></thead><tbody>`
         + panel.rows.map(g=>`<tr><th scope="row"><button class="panel-indicator${g.record['指标代码']===state.indicator?' selected':''}" data-panel-code="${escapeHtml(g.record['指标代码'])}">${escapeHtml(panel.label(g.record))}</button></th>${panel.multiRegion?`<td>${escapeHtml(g.record['地区名称'])}</td>`:''}`
           + panel.years.map(y=>{const list=g.cells.get(y);return `<td class="number">${list?list.map(r=>`<span class="panel-value">${Number(r['数值']).toLocaleString('zh-CN',{minimumFractionDigits:g.decimals,maximumFractionDigits:g.decimals})}${list.length>1&&r['生效日期']?` <small>(${escapeHtml(r['生效日期'])})</small>`:''}</span>`).join('<br>'):'<span class="missing">—</span>'}</td>`;}).join('')+'</tr>').join('')
         + `</tbody></table></div>${panel.rows.length?'':'<p class="empty">当前筛选下暂无已核验数据。</p>'}`;

@@ -1,1 +1,1 @@
-window.PORTAL_DATA_META={"version": "v126", "updatedAt": "2026-10-18", "records": 207391, "indicators": 767};
+window.PORTAL_DATA_META={"version": "v127", "updatedAt": "2026-10-20", "records": 207407, "indicators": 777};
