@@ -205,7 +205,7 @@
       return (meta?.['指标名称']||r['指标名称'])+'（'+r['单位']+'）'+(parts.length?' · '+[...new Set(parts)].join(' / '):'');
     };
     // Never overwrite colliding observations. Distinct values remain visible and exportable.
-    const cellValue=list=>!list?'':list.length===1?Number(list[0]['数值']):list.map(r=>String(r['数值'])+(r['生效日期']?' ['+r['生效日期']+']':'')).join(' / ');
+    const cellValue=list=>!list?'':list.length===1?(list[0]['数值限定']?list[0]['数值限定']+String(list[0]['数值']):Number(list[0]['数值'])):list.map(r=>(r['数值限定']||'')+String(r['数值'])+(r['生效日期']?' ['+r['生效日期']+']':'')).join(' / ');
     const fields=['指标',...(multiRegion?['地区']:[]),...years.map(periodLabel)];
     const values=rows.map(g=>[label(g.record),...(multiRegion?[g.record['地区名称']]:[]),...years.map(y=>cellValue(g.cells.get(y)))]);
     return {records,years,rows,multiRegion,label,fields,values};
@@ -330,7 +330,7 @@
     $("meta-period").textContent = meta["覆盖期"]
       + (meta["覆盖完整性"] ? "　" + meta["覆盖完整性"] : "");
     $("meta-unit").textContent = "见各指标名称";
-    $("method-note").textContent = "仅展示已核验数值；— 表示暂无数据，不代表零。不同单位、适用人群和地区档次分别列示，不相加。图表及单指标下载使用当前选中指标。";
+    $("method-note").textContent = "仅展示已核验披露；约、近、超过保留官方限定，非精确值不作精确点绘图。— 表示暂无数据，不代表零。不同单位、适用人群和地区档次分别列示，不相加。图表及单指标下载使用当前选中指标。";
     if (meta["制度对象"] === "个人养老金") {
       const link = document.createElement("a");
       link.href = "https://pension-regional-index.pages.dev/data/personal_pension_fund_catalog_v01.csv";
@@ -360,7 +360,7 @@
       table.innerHTML = `<div class="table-note">${panel.rows.length} 行指标与地区序列 · ${panel.years.length} 个统计期 · ${panel.records.length} 个观测值。统计期从新到旧，可横向滚动。当前图表指标：${escapeHtml(indicatorByCode(state.indicator)['指标名称'])}</div>`
         + `<div class="panel-scroll" tabindex="0" role="region" aria-label="指标统计期面板，可横向滚动"><table class="data-table panel-table"><thead><tr><th scope="col">指标</th>${panel.multiRegion?'<th scope="col">地区</th>':''}${panel.years.map(y=>`<th scope="col">${escapeHtml(periodLabel(y))}</th>`).join('')}</tr></thead><tbody>`
         + panel.rows.map(g=>`<tr><th scope="row"><button class="panel-indicator${g.record['指标代码']===state.indicator?' selected':''}" data-panel-code="${escapeHtml(g.record['指标代码'])}">${escapeHtml(panel.label(g.record))}</button></th>${panel.multiRegion?`<td>${escapeHtml(g.record['地区名称'])}</td>`:''}`
-          + panel.years.map(y=>{const list=g.cells.get(y);return `<td class="number">${list?list.map(r=>`<span class="panel-value">${Number(r['数值']).toLocaleString('zh-CN',{minimumFractionDigits:g.decimals,maximumFractionDigits:g.decimals})}${list.length>1&&r['生效日期']?` <small>(${escapeHtml(r['生效日期'])})</small>`:''}</span>`).join('<br>'):'<span class="missing">—</span>'}</td>`;}).join('')+'</tr>').join('')
+          + panel.years.map(y=>{const list=g.cells.get(y);return `<td class="number">${list?list.map(r=>`<span class="panel-value">${escapeHtml(r['数值限定']||'')}${Number(r['数值']).toLocaleString('zh-CN',{minimumFractionDigits:g.decimals,maximumFractionDigits:g.decimals})}${list.length>1&&r['生效日期']?` <small>(${escapeHtml(r['生效日期'])})</small>`:''}</span>`).join('<br>'):'<span class="missing">—</span>'}</td>`;}).join('')+'</tr>').join('')
         + `</tbody></table></div>${panel.rows.length?'':'<p class="empty">当前筛选下暂无已核验数据。</p>'}`;
       table.querySelectorAll('[data-panel-code]').forEach(b=>b.addEventListener('click',()=>{
         state.indicator=b.dataset.panelCode;
@@ -369,7 +369,7 @@
       }));
       return;
     }
-    const verifiedRows = rows.filter((r) => r["审查状态"] === "已核验");
+    const verifiedRows = rows.filter((r) => r["审查状态"] === "已核验" && !r["数值限定"]);
     if (!verifiedRows.length) { chart.innerHTML = '<div class="empty-chart">当前筛选条件下没有已核验记录。</div>'; return; }
     const title = `${indicatorByCode(state.indicator)["指标名称"]}（${rows[0]["单位"]}）`;
     chart.innerHTML = `<div class="chart-title">${escapeHtml(title)}</div>`
