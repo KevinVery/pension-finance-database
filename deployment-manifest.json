@@ -1,8 +1,8 @@
 {
-  "version": "v129",
+  "version": "v130",
   "framework": "framework_v01",
-  "records": 207501,
-  "indicators": 801,
+  "records": 207584,
+  "indicators": 807,
   "files": [
     {
       "path": "404.html",
@@ -111,8 +111,8 @@
     },
     {
       "path": "data/part09.js",
-      "bytes": 19245578,
-      "sha256": "50c5826f83f3dd71641669e377ac77f82abb34600b90ba51aac9aa7fc508aa11"
+      "bytes": 19307204,
+      "sha256": "a7d128c2d303c151b872e355409e148f49d7c64da7c7d40df686fea24dc9d6c3"
     },
     {
       "path": "data/part10.js",
@@ -121,8 +121,8 @@
     },
     {
       "path": "data/part11.js",
-      "bytes": 15092083,
-      "sha256": "f84e28c8daa40aa639f74423c95d55a8e8b67bd6a7ea033adf654126ecaed4ac"
+      "bytes": 15099375,
+      "sha256": "d79d563d12694c162b9000a63a46fcb4c35ba8d90aa139fb9427be7470588857"
     },
     {
       "path": "data/part12.js",
@@ -322,7 +322,7 @@
     {
       "path": "data/version.js",
       "bytes": 109,
-      "sha256": "f29ad158ed77ccaf842206197c52747c083115b9741eb3bbda9daaa0aafbc311"
+      "sha256": "7d3c3e27f660b59103c795a772ea07564edefaabead0d0ac16edcd577b08c70e"
     },
     {
       "path": "download.js",
@@ -332,7 +332,7 @@
     {
       "path": "index.html",
       "bytes": 6969,
-      "sha256": "bf6dd4a01d8bbf802f0ea06333d927c5a2bab922c50147476f1af1932646c553"
+      "sha256": "0d6de9e3037413227f0b8c28604b033a8a4a4c960595123c542b0c502e42cc84"
     },
     {
       "path": "library_links_v01.css",
