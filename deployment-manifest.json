@@ -1,7 +1,7 @@
 {
-  "version": "v130",
+  "version": "v131",
   "framework": "framework_v01",
-  "records": 207584,
+  "records": 207585,
   "indicators": 807,
   "files": [
     {
@@ -121,18 +121,18 @@
     },
     {
       "path": "data/part11.js",
-      "bytes": 15099375,
-      "sha256": "d79d563d12694c162b9000a63a46fcb4c35ba8d90aa139fb9427be7470588857"
+      "bytes": 15116343,
+      "sha256": "2749a1a57b1441825ee37aea9c2150b1c5c25fbfdb27ff0739a27204c1ff2694"
     },
     {
       "path": "data/part12.js",
-      "bytes": 6920816,
-      "sha256": "25d0c1ca45b0852585526b89085eb86ddba8cc84438b83a331e4734672a92d46"
+      "bytes": 6943440,
+      "sha256": "9211c3edc17d4862963c7a85c4d62dc5476b6bfb1903d41221d137e28e9ff573"
     },
     {
       "path": "data/part13.js",
-      "bytes": 6518771,
-      "sha256": "476b05df4699a51a79400605bbf3dfd9830955e4b43a813344f7a7e7dfa68d41"
+      "bytes": 6519861,
+      "sha256": "1e3e4f9848d84cd65d5328feb9b78ba1ab89eeebace1abed058761437e7364f6"
     },
     {
       "path": "data/personal_pension_fund_catalog_v01.csv",
@@ -322,7 +322,7 @@
     {
       "path": "data/version.js",
       "bytes": 109,
-      "sha256": "7d3c3e27f660b59103c795a772ea07564edefaabead0d0ac16edcd577b08c70e"
+      "sha256": "40cf7cce6ee53a62470847ee0fc3a0d0ad682e43e701dc4db06c895d6674baa2"
     },
     {
       "path": "download.js",
@@ -332,7 +332,7 @@
     {
       "path": "index.html",
       "bytes": 6969,
-      "sha256": "0d6de9e3037413227f0b8c28604b033a8a4a4c960595123c542b0c502e42cc84"
+      "sha256": "2b1cb3c05bc27b1e164e6e374f6eaf2c64da92a9fe02220e560661b3a7cc96c8"
     },
     {
       "path": "library_links_v01.css",
