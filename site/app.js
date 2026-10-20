@@ -158,10 +158,10 @@
     const empty = $("empty-state");
     empty.hidden = false;
     empty.innerHTML = `<h1>养老金融区域指数数据库</h1>`
-      + `<p>请从左侧选择数据口径与指标。</p>`
+      + `<p>请从左侧选择地区层级，再点击制度查看年度面板。</p>`
       + `<p>统计覆盖包括全国、分省、单省明细、地级市、区县、国际和汇总层级，各层级分别浏览。</p>`
-      + `<p>养老保险按「支柱 → 制度 → 主题 → 指标」逐层展开；点击各层标题可以收起。其他大项按分类与主题浏览。</p>`;
-    empty.innerHTML += `<p>目录仅展示所选地区层级下已有的指标；核验状态和适用范围请查看指标说明与数据记录。</p>`;
+      + `<p>养老保险按「支柱 → 制度」浏览；点击制度直接查看相关指标，年份横向排列。也可搜索单个指标。</p>`;
+    empty.innerHTML += `<p>面板仅显示已核验数值；不同单位和适用人群分别列示，缺失值不作零值。</p>`;
   }
 
   function panelIndicators() {
@@ -315,7 +315,7 @@
     const workspace = $("workspace"), empty = $("empty-state");
     empty.hidden = true; workspace.hidden = false;
     $("category-label").textContent = meta["四大类"];
-    $("group-label").textContent = [meta["指标分组"], meta["指标主题"]].filter(Boolean).join(" / ");
+    $("group-label").textContent = [meta["支柱层次"], meta["指标分组"]].filter(Boolean).join(" / ");
     $("indicator-title").textContent = meta["指标分组"] || meta["指标名称"];
     $("indicator-subtitle").textContent = `${meta["地区层级"]} · 指标按行、年份按列 · 点击指标名称查看该指标图表`;
     $("meta-level").textContent = meta["地区层级"];

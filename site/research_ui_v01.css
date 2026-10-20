@@ -70,3 +70,5 @@ body:not(.data-page) main{max-width:1384px;margin:auto;padding:0 28px 48px;heigh
 .data-page .panel-indicator:hover,.data-page .panel-indicator.selected{color:var(--blue-mid)}
 .data-page .panel-value{display:inline-block}.data-page .missing{color:#92999f}.data-page .panel-value small{font:11px Arial,sans-serif;color:var(--muted)}
 @media(max-width:760px){.data-page .panel-table tr>:first-child{min-width:190px;width:190px;max-width:210px}.data-page .panel-table th,.data-page .panel-table td{padding:12px;min-width:115px}.data-page .number{font-size:14px}.data-page .panel-indicator{font-size:12px}}
+
+.data-page #apply-year{padding:8px 16px;border:1px solid var(--blue-mid);background:var(--navy);color:#fff;border-radius:2px;font-size:13px}
