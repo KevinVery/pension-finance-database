@@ -338,10 +338,15 @@
       link.setAttribute("download", "personal_pension_fund_history_v132.csv");
       $("method-note").appendChild(link);
       const coverage = document.createElement("a");
-      coverage.href = "https://pension-regional-index.pages.dev/data/personal_pension_annual_coverage_v132.csv";
+      coverage.href = "https://pension-regional-index.pages.dev/data/personal_pension_annual_coverage_v133.csv";
       coverage.textContent = " 下载个人养老金逐年数据与缺口说明CSV（制度实施前不适用，年内值不替代年末值）";
-      coverage.setAttribute("download", "personal_pension_annual_coverage_v132.csv");
+      coverage.setAttribute("download", "personal_pension_annual_coverage_v133.csv");
       $("method-note").appendChild(coverage);
+      const wealth = document.createElement("a");
+      wealth.href = "https://pension-regional-index.pages.dev/data/personal_pension_wealth_history_v133.csv";
+      wealth.textContent = " 下载个人养老金理财业务历史CSV（仅理财子市场，不代表全国实缴总量）";
+      wealth.setAttribute("download", "personal_pension_wealth_history_v133.csv");
+      $("method-note").appendChild(wealth);
     }
     $("source-agency").textContent = meta["来源机构"];
     $("source-detail").textContent = meta["权威来源"];

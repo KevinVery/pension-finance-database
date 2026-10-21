@@ -1,8 +1,8 @@
 {
-  "version": "v132",
+  "version": "v133",
   "framework": "framework_v01",
-  "records": 207615,
-  "indicators": 809,
+  "records": 207649,
+  "indicators": 815,
   "files": [
     {
       "path": "404.html",
@@ -21,8 +21,8 @@
     },
     {
       "path": "app.js",
-      "bytes": 27359,
-      "sha256": "a9e0307455698b9a28a406a41bcdd1e62e2385fda87c613565bd7080c21005fe"
+      "bytes": 27779,
+      "sha256": "a94e30279ff4602567b88bbea81f4357045c360cd7b8a96a23ff7fd0953997d2"
     },
     {
       "path": "charts.js",
@@ -121,8 +121,8 @@
     },
     {
       "path": "data/part11.js",
-      "bytes": 15175227,
-      "sha256": "bda326be7d69648affb35b58724fc8dc95c7c714b5dbd1e4953b037ab74cd71e"
+      "bytes": 15230679,
+      "sha256": "5669a58928c7f1b0c18551a41682a6e71f408ae4294e7760b62ff50f5a4fe27d"
     },
     {
       "path": "data/part12.js",
@@ -140,6 +140,11 @@
       "sha256": "a9f788645143e174d79ece6c1626ef38b040d7235da3bedd59a4a2eaa1fcea55"
     },
     {
+      "path": "data/personal_pension_annual_coverage_v133.csv",
+      "bytes": 72396,
+      "sha256": "492763ff4cada8025cf4b9af38939b2a3fcf1ef811dd55d315253aca0aa033bb"
+    },
+    {
       "path": "data/personal_pension_fund_catalog_v01.csv",
       "bytes": 224292,
       "sha256": "bd23d39129cc5c9aa0f07e3bb9096b463d841690fcf47bf2b67b6b87807af281"
@@ -148,6 +153,11 @@
       "path": "data/personal_pension_fund_history_v132.csv",
       "bytes": 838838,
       "sha256": "9881344dac263e11554633e63645f6d25767101539bb010583b005affb5b45b8"
+    },
+    {
+      "path": "data/personal_pension_wealth_history_v133.csv",
+      "bytes": 32691,
+      "sha256": "00de5579c9d26f1f7a9806aa0ec884c06f20ce9eae08bb59d5f966b994142dad"
     },
     {
       "path": "data/policy_paper_links_v01.json",
@@ -332,7 +342,7 @@
     {
       "path": "data/version.js",
       "bytes": 109,
-      "sha256": "3e9d53c61eb482ca08d90bf47ecd2d263a563780867cd3527df10c0800bf130e"
+      "sha256": "93bc5010bfde5cd654b1f3314d273c2513b6861a3da30d05fcc107471bc8fd98"
     },
     {
       "path": "download.js",
@@ -342,7 +352,7 @@
     {
       "path": "index.html",
       "bytes": 6969,
-      "sha256": "304ce927ab598c57d6b3328f3705967fe90a5ee96e2cf7bc80583aa9033a1f5f"
+      "sha256": "be7c31cf7a191242a758e60660923442218356c12450cce97bc8133a06a15b60"
     },
     {
       "path": "library_links_v01.css",
