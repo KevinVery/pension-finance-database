@@ -1,8 +1,8 @@
 {
-  "version": "v133",
+  "version": "v134",
   "framework": "framework_v01",
-  "records": 207649,
-  "indicators": 815,
+  "records": 208046,
+  "indicators": 824,
   "files": [
     {
       "path": "404.html",
@@ -111,13 +111,13 @@
     },
     {
       "path": "data/part09.js",
-      "bytes": 19307204,
-      "sha256": "a7d128c2d303c151b872e355409e148f49d7c64da7c7d40df686fea24dc9d6c3"
+      "bytes": 19370120,
+      "sha256": "f03a93edb4cb8832e2b14f1b3a25ace602b7985c4e6ad7372adbbc997eb6ea53"
     },
     {
       "path": "data/part10.js",
-      "bytes": 11575969,
-      "sha256": "94398179f3260b01731a02df936dc74274725a0b1ccb7cbf261a4b119a75264c"
+      "bytes": 11883502,
+      "sha256": "b72c36e3354adff2e1211704513677a5bb139c6f177092849a10d21633b064f0"
     },
     {
       "path": "data/part11.js",
@@ -131,8 +131,8 @@
     },
     {
       "path": "data/part13.js",
-      "bytes": 6519861,
-      "sha256": "1e3e4f9848d84cd65d5328feb9b78ba1ab89eeebace1abed058761437e7364f6"
+      "bytes": 6540148,
+      "sha256": "7106bcedf3c9e06e4ad9717f858105454e4fb2db626744442649ebe13dd1e421"
     },
     {
       "path": "data/personal_pension_annual_coverage_v132.csv",
@@ -342,7 +342,7 @@
     {
       "path": "data/version.js",
       "bytes": 109,
-      "sha256": "93bc5010bfde5cd654b1f3314d273c2513b6861a3da30d05fcc107471bc8fd98"
+      "sha256": "0492889be68a01bc029eb55c5a3f4553e469b70ef9870569a47dccdbea7da3f6"
     },
     {
       "path": "download.js",
@@ -352,7 +352,7 @@
     {
       "path": "index.html",
       "bytes": 6969,
-      "sha256": "be7c31cf7a191242a758e60660923442218356c12450cce97bc8133a06a15b60"
+      "sha256": "0f38b3954b84e8e5d01f6c213eee3852ff49eafd38b6602bcd23511edfbc0dff"
     },
     {
       "path": "library_links_v01.css",
