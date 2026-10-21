@@ -1,8 +1,8 @@
 {
-  "version": "v131",
+  "version": "v132",
   "framework": "framework_v01",
-  "records": 207585,
-  "indicators": 807,
+  "records": 207615,
+  "indicators": 809,
   "files": [
     {
       "path": "404.html",
@@ -21,8 +21,8 @@
     },
     {
       "path": "app.js",
-      "bytes": 26908,
-      "sha256": "1ea9c047d8fa0c67497732c185848fda056781b3ff163c0eb724b070e38e072d"
+      "bytes": 27359,
+      "sha256": "a9e0307455698b9a28a406a41bcdd1e62e2385fda87c613565bd7080c21005fe"
     },
     {
       "path": "charts.js",
@@ -121,8 +121,8 @@
     },
     {
       "path": "data/part11.js",
-      "bytes": 15116343,
-      "sha256": "2749a1a57b1441825ee37aea9c2150b1c5c25fbfdb27ff0739a27204c1ff2694"
+      "bytes": 15175227,
+      "sha256": "bda326be7d69648affb35b58724fc8dc95c7c714b5dbd1e4953b037ab74cd71e"
     },
     {
       "path": "data/part12.js",
@@ -135,9 +135,19 @@
       "sha256": "1e3e4f9848d84cd65d5328feb9b78ba1ab89eeebace1abed058761437e7364f6"
     },
     {
+      "path": "data/personal_pension_annual_coverage_v132.csv",
+      "bytes": 57600,
+      "sha256": "a9f788645143e174d79ece6c1626ef38b040d7235da3bedd59a4a2eaa1fcea55"
+    },
+    {
       "path": "data/personal_pension_fund_catalog_v01.csv",
       "bytes": 224292,
       "sha256": "bd23d39129cc5c9aa0f07e3bb9096b463d841690fcf47bf2b67b6b87807af281"
+    },
+    {
+      "path": "data/personal_pension_fund_history_v132.csv",
+      "bytes": 838838,
+      "sha256": "9881344dac263e11554633e63645f6d25767101539bb010583b005affb5b45b8"
     },
     {
       "path": "data/policy_paper_links_v01.json",
@@ -322,7 +332,7 @@
     {
       "path": "data/version.js",
       "bytes": 109,
-      "sha256": "40cf7cce6ee53a62470847ee0fc3a0d0ad682e43e701dc4db06c895d6674baa2"
+      "sha256": "3e9d53c61eb482ca08d90bf47ecd2d263a563780867cd3527df10c0800bf130e"
     },
     {
       "path": "download.js",
@@ -332,7 +342,7 @@
     {
       "path": "index.html",
       "bytes": 6969,
-      "sha256": "2b1cb3c05bc27b1e164e6e374f6eaf2c64da92a9fe02220e560661b3a7cc96c8"
+      "sha256": "304ce927ab598c57d6b3328f3705967fe90a5ee96e2cf7bc80583aa9033a1f5f"
     },
     {
       "path": "library_links_v01.css",

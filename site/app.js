@@ -333,10 +333,15 @@
     $("method-note").textContent = "仅展示已核验披露；约、近、超过保留官方限定，非精确值不作精确点绘图。— 表示暂无数据，不代表零。不同单位、适用人群和地区档次分别列示，不相加。图表及单指标下载使用当前选中指标。";
     if (meta["制度对象"] === "个人养老金") {
       const link = document.createElement("a");
-      link.href = "https://pension-regional-index.pages.dev/data/personal_pension_fund_catalog_v01.csv";
-      link.textContent = " 下载证监会基金逐产品名录CSV（2025、2026年三季度，合计651条产品明细）";
-      link.setAttribute("download", "personal_pension_fund_catalog_v01.csv");
+      link.href = "https://pension-regional-index.pages.dev/data/personal_pension_fund_history_v132.csv";
+      link.textContent = " 下载证监会基金历史名录CSV（2024年末至2026年三季度，8期2459条产品明细）";
+      link.setAttribute("download", "personal_pension_fund_history_v132.csv");
       $("method-note").appendChild(link);
+      const coverage = document.createElement("a");
+      coverage.href = "https://pension-regional-index.pages.dev/data/personal_pension_annual_coverage_v132.csv";
+      coverage.textContent = " 下载个人养老金逐年数据与缺口说明CSV（制度实施前不适用，年内值不替代年末值）";
+      coverage.setAttribute("download", "personal_pension_annual_coverage_v132.csv");
+      $("method-note").appendChild(coverage);
     }
     $("source-agency").textContent = meta["来源机构"];
     $("source-detail").textContent = meta["权威来源"];
