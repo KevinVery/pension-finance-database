@@ -1,5 +1,5 @@
 {
-  "version": "v139",
+  "version": "v140",
   "framework": "framework_v01",
   "records": 208130,
   "indicators": 858,
@@ -102,7 +102,7 @@
     {
       "path": "data/part07.js",
       "bytes": 25165084,
-      "sha256": "0480017e444851d6a0bd680a3ebc9b5b01400bf61883c0c146f35f84a750b277"
+      "sha256": "b79d8b7c1433349c508b1cbd3e935c4dee55d96adf220288280cd9ee3c3b4b94"
     },
     {
       "path": "data/part08.js",
@@ -342,7 +342,7 @@
     {
       "path": "data/version.js",
       "bytes": 109,
-      "sha256": "f2ed72864c875fc9fbe0b38c21994ce4527b3c1c4550be12a327079052c744f0"
+      "sha256": "4cbb0f63c3d7bc17380483c60ac5d3cce6f1b27d156a6668542bf6591ef36a4b"
     },
     {
       "path": "download.js",
@@ -352,7 +352,7 @@
     {
       "path": "index.html",
       "bytes": 6969,
-      "sha256": "77ef0ad0f67633deda395ff607825632fcb607a2d682511032b1d99b8eee8ea0"
+      "sha256": "011e2d2970b0a3ad589df24d8006435beca0ec5aa2f20f285517d37d159fbca2"
     },
     {
       "path": "library_links_v01.css",
