@@ -5,8 +5,10 @@
   const safeURL = v => {try {const u = new URL(v); return ['https:','http:'].includes(u.protocol) ? u.href : '';} catch {return '';}};
   function versionPanel(r) {
     const versions = r['官方版本核验'] || [];
-    if (!versions.length) return '';
-    return '<details class="version-panel"><summary>官方版本依据</summary>'+versions.map(v=>
+    const notes=['摘要来源说明','全文状态','官网核验','核验状态'].filter(k=>r[k]);
+    const scope=notes.length?'<details class="verification-panel"><summary>来源与核验范围</summary>'+notes.map(k=>'<p><strong>'+esc(k)+'：</strong>'+esc(r[k])+'</p>').join('')+'</details>':'';
+    if (!versions.length) return scope;
+    return scope+'<details class="version-panel"><summary>官方版本依据</summary>'+versions.map(v=>
       '<p>'+esc(v['版本说明'])+'</p><p>'+esc(v['核验边界'])+'</p><div class="links">'+
       [{text:'版本来源',url:v['来源页']},...(v['原站链接']||[])].filter(a=>safeURL(a.url)).map(a=>
         '<a href="'+esc(safeURL(a.url))+'" target="_blank" rel="noopener noreferrer">'+esc(a.text)+' ↗</a>').join('')+
@@ -59,7 +61,7 @@
     $('download').disabled = !filtered.length;
   }
   function download() {
-    const fields = ['文献ID','标题','作者','年份','语言','文献类型','期刊','期号','页码','分类大类','研究主题','关联政策数','明确提及政策数','被引次数','被引来源','被引核对日期','被引来源链接','摘要','来源','来源页','官方PDF','论文版本关联','摘要来源说明','官方版本核验'];
+    const fields = ['文献ID','标题','作者','年份','语言','文献类型','期刊','期号','页码','分类大类','研究主题','关联政策数','明确提及政策数','被引次数','被引来源','被引核对日期','被引来源链接','摘要','来源','来源页','官方PDF','论文版本关联','摘要来源说明','官方版本核验','全文状态','官网核验','核验状态'];
     const cell = value => {let s = Array.isArray(value) ? value.map(v=>typeof v==='object'?JSON.stringify(v):v).join('；') : String(value ?? ''); if (/^[=+\-@\t\r]/.test(s)) s = "'"+s; return '"'+s.replace(/"/g,'""')+'"';};
     const csv = '\uFEFF'+[fields,...filtered.map(r=>fields.map(f=>r[f]))].map(row=>row.map(cell).join(',')).join('\r\n');
     const url = URL.createObjectURL(new Blob([csv],{type:'text/csv;charset=utf-8'}));
@@ -67,7 +69,7 @@
   }
   async function init() {
     let d = window.LITERATURE_LIBRARY;
-    if (!d) {const res=await fetch('data/literature_public_v12.json?v=20261106b'); if (!res.ok) throw Error('文献库数据暂未加载，请刷新页面'); d=await res.json();}
+    if (!d) {const res=await fetch('data/literature_public_v13.json?v=20261106b'); if (!res.ok) throw Error('文献库数据暂未加载，请刷新页面'); d=await res.json();}
     await window.LibraryLinks.init();
     data = d.records || [];
     $('link-context').innerHTML=window.LibraryLinks.context('paper');
