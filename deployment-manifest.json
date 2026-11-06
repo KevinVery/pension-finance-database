@@ -1,38 +1,38 @@
 {
-  "version": "v156",
+  "version": "v157",
   "framework": "framework_v01",
   "libraries": {
-    "release": "libraries_20261106_v09",
+    "release": "libraries_20261106_v10",
     "updatedAt": "2026-11-06",
     "policy": {
-      "data": "policy_public_v58.json",
-      "page": "policy_v61.html",
-      "script": "policy_v61.js",
+      "data": "policy_public_v59.json",
+      "page": "policy_v62.html",
+      "script": "policy_v62.js",
       "css": "policy_v51.css",
-      "csv": "policies_v58.csv",
-      "sources": "policy_sources_v58.csv"
+      "csv": "policies_v59.csv",
+      "sources": "policy_sources_v59.csv"
     },
     "literature": {
-      "data": "literature_public_v15.json",
-      "page": "literature_v18.html",
-      "script": "literature_v18.js",
+      "data": "literature_public_v16.json",
+      "page": "literature_v19.html",
+      "script": "literature_v19.js",
       "css": "literature_v03.css"
     },
     "links": {
-      "data": "policy_paper_links_v12.json",
-      "script": "library_links_v13.js",
+      "data": "policy_paper_links_v13.json",
+      "script": "library_links_v14.js",
       "css": "library_links_v02.css"
     },
     "supersedes": {
-      "policy": "policy_v57",
-      "literature": "literature_v14",
-      "links": "policy_paper_links_v11"
+      "policy": "policy_v58",
+      "literature": "literature_v15",
+      "links": "policy_paper_links_v12"
     },
     "versionPolicy": "superseded versions are invalid for active work; historical evidence stays local and is not bundled",
-    "releaseSummary": "统计v156新增广东2022/2023三制度支出6条，5条单格原值及2023企业同表本级加上解明确汇总1条，六个收入减支出与官方本年结余精确闭合；旧记录不变，三指标8字段同步，不关闭年度解释台账。政策2011年四机关11号令自身文号及署名日与会议日分开，2020年95号文号规范；仅2013年23号按明确条款核定2021-01-01整件废止，其他不符内容调整不作整件废止。文献三WP14字段、两条截断摘要补全；原作者寿命比较措辞疑点保留待审，不擅改结论，正式期刊端20对缺口与全文学术终审0保持。"
+    "releaseSummary": "统计v157新增广东2024三制度养老保险待遇支出3条/3指标，单省明细；保留官方待遇科目，非基本养老金或基金总支出，不推算人均待遇和替代率。旧208295条/863指标不变。政策据地方人社部门官方转载前言确认2014年35号整件废止，精确失效日期未明示仍留空；新增1来源1废止边。2011年第六章历史30%原文保留，提示后继不符内容调整，非整件废止。文献五条26字段、五份完整作者摘要，ACA正式登记与NBER发表关系匹配；活动正式端摘要缺口20降为19，正式全文与学术终审未完成，33组关联不变。"
   },
-  "records": 208295,
-  "indicators": 863,
+  "records": 208298,
+  "indicators": 866,
   "files": [
     {
       "path": "404.html",
@@ -61,13 +61,13 @@
     },
     {
       "path": "data/library_current.json",
-      "bytes": 1352,
-      "sha256": "ee510e8458b0ddaafddc285783c935fce9be80275a38f7e90114ab4cbcdfb91b"
+      "bytes": 1368,
+      "sha256": "5767dbd73414381824b47a63930dbe6dca8aa286356787d7c2a0d01cd4bbeeb8"
     },
     {
-      "path": "data/literature_public_v15.json",
-      "bytes": 5362147,
-      "sha256": "7f96fcf1335410b212e45d55be188f088e8820194c5c9f79323eec7bff6fd745"
+      "path": "data/literature_public_v16.json",
+      "bytes": 5366876,
+      "sha256": "6cfdd30b0047df828812cbf82f8928b20c9446a432fd8977b0327b45c6f6254c"
     },
     {
       "path": "data/part01.js",
@@ -121,8 +121,8 @@
     },
     {
       "path": "data/part11.js",
-      "bytes": 15773141,
-      "sha256": "2f45c8fa2515adf27ed3e8679773a2946235e3f11ea4c1f134b6cd7d93f1927b"
+      "bytes": 15782172,
+      "sha256": "0fe07284474c14fa23ee267428b1da2a8add001fbf0caae9a300e125414c020b"
     },
     {
       "path": "data/part12.js",
@@ -160,14 +160,14 @@
       "sha256": "00de5579c9d26f1f7a9806aa0ec884c06f20ce9eae08bb59d5f966b994142dad"
     },
     {
-      "path": "data/policy_paper_links_v12.json",
+      "path": "data/policy_paper_links_v13.json",
       "bytes": 751221,
-      "sha256": "e10a7a22dbbdd50dbdee96b18874a8cbca10dd12eab1a036392d0db67a510b76"
+      "sha256": "42cde2f1a8564e251854dc1c904acd6746b674291c4fe216681cef910a0a8b82"
     },
     {
-      "path": "data/policy_public_v58.json",
-      "bytes": 6881760,
-      "sha256": "960194fd08bfe331832a6289235baca576e08c500020644e195270b396c51865"
+      "path": "data/policy_public_v59.json",
+      "bytes": 6884923,
+      "sha256": "0dc286fe58147d0cf71c73be6641525c820b6b5f24ac34d16510fef51ab4b742"
     },
     {
       "path": "data/portal.js",
@@ -177,7 +177,7 @@
     {
       "path": "data/version.js",
       "bytes": 109,
-      "sha256": "056282670915bd8c43e55410591ec199051fc85da6315cab7709cc84bfa92541"
+      "sha256": "2da9417c42137a391d7c72b36a364a9fc86aa73da60a61d91ea415d919967522"
     },
     {
       "path": "download.js",
@@ -187,7 +187,7 @@
     {
       "path": "index.html",
       "bytes": 6969,
-      "sha256": "ce024f8c9a2108d191eba524e0a6b2b422f2278b644ee95ed15e354924f58227"
+      "sha256": "a8bcb4822be1d9beb3a2710dc5835c6e27c32a4bfab85248ee968ab8e065bff6"
     },
     {
       "path": "library_links_v02.css",
@@ -195,14 +195,14 @@
       "sha256": "36e5526c45f05acf1116f57fa82a8309f6903b930768fd5c74bb469f4585020f"
     },
     {
-      "path": "library_links_v13.js",
+      "path": "library_links_v14.js",
       "bytes": 5308,
-      "sha256": "80e18a499591ded89ec74320497db5037fc7254524b267d8e69e55affc3853df"
+      "sha256": "0039c58e695cc214dc462121369ba2a84819ec0311b8423c4ec918777a1d2b90"
     },
     {
       "path": "literature.html",
       "bytes": 4079,
-      "sha256": "b525a1065d95591fd364566ed14bb2853b4d733c2fc8998959cccb98475cfec9"
+      "sha256": "b60655091c3c851fbb2ad77a50f4fdec437a3b845b26213b8f6e63fd268ea214"
     },
     {
       "path": "literature_v03.css",
@@ -210,14 +210,14 @@
       "sha256": "5b33e28e92ead17755d0ebe7f24aad302eeba37d6d85216bd89364d5b5caf684"
     },
     {
-      "path": "literature_v18.js",
+      "path": "literature_v19.js",
       "bytes": 10199,
-      "sha256": "ef10ef7a0058979906f2295cae3ab964834d2d7e4f4c64c0d6e44a528b949174"
+      "sha256": "2a9d8951ff25518e0b379f04a9a079e595ae0dfed573b96ef63d9fcaf621a7b3"
     },
     {
       "path": "policy.html",
       "bytes": 5490,
-      "sha256": "484f168ea72bd1276832f045b321b7447e275b5140b6de1e97ea575f34c3f1f5"
+      "sha256": "ede216f7a759cf1ba40d7c24f6446d39d916f5f8fe7b4be752da247be21610b3"
     },
     {
       "path": "policy_v51.css",
@@ -225,9 +225,9 @@
       "sha256": "95c59c21271e5b3ef121193a9fb212e5fe4611c68529c4396f77627104703a18"
     },
     {
-      "path": "policy_v61.js",
+      "path": "policy_v62.js",
       "bytes": 15930,
-      "sha256": "f4d5f9961f3dae09675a405af6dd738466fe7ebcbb11282a076938debcc4ff59"
+      "sha256": "e1b79daa1baa8918c6f3f360d7a26a06c63765be2bd9335de34737cc0354ebc2"
     },
     {
       "path": "research_ui_v01.css",
