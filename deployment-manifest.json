@@ -1,16 +1,16 @@
 {
-  "version": "v157",
+  "version": "v158",
   "framework": "framework_v01",
   "libraries": {
-    "release": "libraries_20261106_v10",
-    "updatedAt": "2026-11-06",
+    "release": "libraries_20261107_v11",
+    "updatedAt": "2026-11-07",
     "policy": {
-      "data": "policy_public_v59.json",
-      "page": "policy_v62.html",
-      "script": "policy_v62.js",
+      "data": "policy_public_v60.json",
+      "page": "policy_v63.html",
+      "script": "policy_v63.js",
       "css": "policy_v51.css",
-      "csv": "policies_v59.csv",
-      "sources": "policy_sources_v59.csv"
+      "csv": "policies_v60.csv",
+      "sources": "policy_sources_v60.csv"
     },
     "literature": {
       "data": "literature_public_v16.json",
@@ -24,14 +24,12 @@
       "css": "library_links_v02.css"
     },
     "supersedes": {
-      "policy": "policy_v58",
-      "literature": "literature_v15",
-      "links": "policy_paper_links_v12"
+      "policy": "policy_v59"
     },
     "versionPolicy": "superseded versions are invalid for active work; historical evidence stays local and is not bundled",
-    "releaseSummary": "统计v157新增广东2024三制度养老保险待遇支出3条/3指标，单省明细；保留官方待遇科目，非基本养老金或基金总支出，不推算人均待遇和替代率。旧208295条/863指标不变。政策据地方人社部门官方转载前言确认2014年35号整件废止，精确失效日期未明示仍留空；新增1来源1废止边。2011年第六章历史30%原文保留，提示后继不符内容调整，非整件废止。文献五条26字段、五份完整作者摘要，ACA正式登记与NBER发表关系匹配；活动正式端摘要缺口20降为19，正式全文与学术终审未完成，33组关联不变。"
+    "releaseSummary": "统计v158新增广东机关事业单位2022/2023年待遇支出2条，866指标不增，政府待遇覆盖2022—2024；同名科目不代表内部细项完全统一，企业居民历史不强拼。旧208298记录不变、一个指标5字段同步。政策2019年84号与岳塘区政府官方转载主体70条102段归一交叉通过，新增1来源；附表未逐格核、非部委原件逐字鉴定，法宝身份、全文、日期、待核效力和132关系均保持。文献lit16及33关联无新入库证据，正式端摘要缺口19、全文学术终审0保持。"
   },
-  "records": 208298,
+  "records": 208300,
   "indicators": 866,
   "files": [
     {
@@ -61,8 +59,8 @@
     },
     {
       "path": "data/library_current.json",
-      "bytes": 1368,
-      "sha256": "5767dbd73414381824b47a63930dbe6dca8aa286356787d7c2a0d01cd4bbeeb8"
+      "bytes": 1227,
+      "sha256": "f89bf4c20dbc2da6ded56351243dfed90a6b03f08aa785638983391235c0f2a0"
     },
     {
       "path": "data/literature_public_v16.json",
@@ -121,8 +119,8 @@
     },
     {
       "path": "data/part11.js",
-      "bytes": 15782172,
-      "sha256": "0fe07284474c14fa23ee267428b1da2a8add001fbf0caae9a300e125414c020b"
+      "bytes": 15784928,
+      "sha256": "6feac3f8637b70205324db84e19344e710ad4552a30aeb4430ded651bac9ed81"
     },
     {
       "path": "data/part12.js",
@@ -165,9 +163,9 @@
       "sha256": "42cde2f1a8564e251854dc1c904acd6746b674291c4fe216681cef910a0a8b82"
     },
     {
-      "path": "data/policy_public_v59.json",
-      "bytes": 6884923,
-      "sha256": "0dc286fe58147d0cf71c73be6641525c820b6b5f24ac34d16510fef51ab4b742"
+      "path": "data/policy_public_v60.json",
+      "bytes": 6885942,
+      "sha256": "e5046dd8288a3ee4a52a3b9edb257fd366d130dac645d54e4aed9f5e331266f7"
     },
     {
       "path": "data/portal.js",
@@ -177,7 +175,7 @@
     {
       "path": "data/version.js",
       "bytes": 109,
-      "sha256": "2da9417c42137a391d7c72b36a364a9fc86aa73da60a61d91ea415d919967522"
+      "sha256": "5a5a378626dedee864ddb220c86701edb4b3cb1b64ed1259ea36198b692da2f4"
     },
     {
       "path": "download.js",
@@ -187,7 +185,7 @@
     {
       "path": "index.html",
       "bytes": 6969,
-      "sha256": "a8bcb4822be1d9beb3a2710dc5835c6e27c32a4bfab85248ee968ab8e065bff6"
+      "sha256": "a81191b6357ac89f307390171a9d3178459380c2b7080f8cda25d8654e97b354"
     },
     {
       "path": "library_links_v02.css",
@@ -217,7 +215,7 @@
     {
       "path": "policy.html",
       "bytes": 5490,
-      "sha256": "ede216f7a759cf1ba40d7c24f6446d39d916f5f8fe7b4be752da247be21610b3"
+      "sha256": "4a19bfdeda38f49b5166d5dd0eb1227109d50e2d173ac7caea15696dab9bc3be"
     },
     {
       "path": "policy_v51.css",
@@ -225,9 +223,9 @@
       "sha256": "95c59c21271e5b3ef121193a9fb212e5fe4611c68529c4396f77627104703a18"
     },
     {
-      "path": "policy_v62.js",
+      "path": "policy_v63.js",
       "bytes": 15930,
-      "sha256": "e1b79daa1baa8918c6f3f360d7a26a06c63765be2bd9335de34737cc0354ebc2"
+      "sha256": "24a9378c3cd6da5cb6be8be787b9c15f715fa5b90f572343781b52a8912c876c"
     },
     {
       "path": "research_ui_v01.css",
