@@ -46,8 +46,8 @@
     },
     {
       "path": "_redirects",
-      "bytes": 97,
-      "sha256": "fa4152efc898ffb6e1e2a6fecff01ac7242869b975ff8cb50afdf69438e6c697"
+      "bytes": 80,
+      "sha256": "2fd5a7f4c7f33f3c1b7e2a119008ae7f21d6e5493ca928924dbc8c91bbee8e09"
     },
     {
       "path": "app.js",
