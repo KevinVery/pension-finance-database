@@ -1,35 +1,35 @@
 {
-  "version": "v150",
+  "version": "v152",
   "framework": "framework_v01",
   "libraries": {
-    "release": "libraries_20261106_v04_corrected",
+    "release": "libraries_20261106_v05",
     "updatedAt": "2026-11-06",
     "policy": {
-      "data": "policy_public_v54.json",
-      "page": "policy_v57.html",
-      "script": "policy_v57.js",
+      "data": "policy_public_v55.json",
+      "page": "policy_v58.html",
+      "script": "policy_v58.js",
       "css": "policy_v51.css",
-      "csv": "policies_v54.csv",
-      "sources": "policy_sources_v54.csv"
+      "csv": "policies_v55.csv",
+      "sources": "policy_sources_v55.csv"
     },
     "literature": {
-      "data": "literature_public_v11.json",
-      "page": "literature_v14.html",
-      "script": "literature_v14.js",
+      "data": "literature_public_v12.json",
+      "page": "literature_v15.html",
+      "script": "literature_v15.js",
       "css": "literature_v03.css"
     },
     "links": {
-      "data": "policy_paper_links_v08.json",
-      "script": "library_links_v09.js",
+      "data": "policy_paper_links_v09.json",
+      "script": "library_links_v10.js",
       "css": "library_links_v02.css"
     },
     "supersedes": {
-      "policy": "policy_v53 (unpublished)",
-      "literature": "literature_v10 (unpublished)",
-      "links": "policy_paper_links_v07 (unpublished)"
+      "policy": "policy_v54",
+      "literature": "literature_v11",
+      "links": "policy_paper_links_v08"
     },
     "versionPolicy": "superseded versions are invalid for active work; historical evidence stays local and is not bundled",
-    "releaseSummary": "统计底库保持v150。政策修正原始123项全国基线以外累计新增为420；历史v05初轮525条线索处置分布明确为历史批次，非全库累计，正文及549项政策不变。文献57条修正题名作者污染、正式卷期年份、工作论文编号和文稿类型，补齐原摘要并追加16条官方版本依据；匿名或无署期稿保持待核，研究计划不冒充已完成研究，明确请勿引用初稿只保留题录与使用边界。稳定ID及33组政策关联保留。 年份撤回后的汇总数及无关联政策数已按实际题录重算，未发布的v53/v10/v07构建作废。"
+    "releaseSummary": "统计v152明确河北2019—2024六条候选实际对应机关事业单位参保职工，禁止用于实际缴费人数或分母；仅更新口径提示，原值和待核验候选身份不变，证据为本地既有官报视觉核读，不冒称本轮在线回源。政策新增财税〔2018〕164号官源正文及税率附件，按明确条款核定财税〔2013〕103号仅第三条第1、3项废止，其余待核；成文、网页公开、执行日期分开记载。文献4条会议稿原摘要与来源修订，旧稿与新版结论分开，稳定ID和33组关联保持。"
   },
   "records": 208289,
   "indicators": 863,
@@ -61,13 +61,13 @@
     },
     {
       "path": "data/library_current.json",
-      "bytes": 1399,
-      "sha256": "ecc00589d82853730d289f3a7c9476e53e0df66041bb0d8b01956b5d522bbe88"
+      "bytes": 1299,
+      "sha256": "2609a579de19c504fdfb08899412c4a7efe3c0ae1d532133489f0d299aef6a12"
     },
     {
-      "path": "data/literature_public_v11.json",
-      "bytes": 5350136,
-      "sha256": "749ad098585d888e8e18d43942473be135567d8fa01cce8dd9e08b0e75bf1de0"
+      "path": "data/literature_public_v12.json",
+      "bytes": 5352818,
+      "sha256": "34eb407b06702e94d7d42aaf7be2676cacb90401e08b55984453b7a40842ef5a"
     },
     {
       "path": "data/part01.js",
@@ -121,8 +121,8 @@
     },
     {
       "path": "data/part11.js",
-      "bytes": 15758044,
-      "sha256": "eec11641475b1169c91615d59b7a47132eff0cb4a28796766f00249490210cae"
+      "bytes": 15758900,
+      "sha256": "92ed520ca0d06a14f345b556aca1352fb21482715f8cec781dec96b036a3a1fa"
     },
     {
       "path": "data/part12.js",
@@ -160,14 +160,14 @@
       "sha256": "00de5579c9d26f1f7a9806aa0ec884c06f20ce9eae08bb59d5f966b994142dad"
     },
     {
-      "path": "data/policy_paper_links_v08.json",
-      "bytes": 751232,
-      "sha256": "e4e1deb6c06b0a06bdd7483c3994e2aa11e4c03508b1994f3922691cd4193fec"
+      "path": "data/policy_paper_links_v09.json",
+      "bytes": 751221,
+      "sha256": "8cef1e516b93074a240bdcfe54d3e9ef01100d054e987b3a5f07444cdd93b09d"
     },
     {
-      "path": "data/policy_public_v54.json",
-      "bytes": 6854638,
-      "sha256": "051cbea470970a345596509e012b6f15525967d32223b629d629499c3d3019f6"
+      "path": "data/policy_public_v55.json",
+      "bytes": 6870192,
+      "sha256": "ebac67bcb9bd4e8348f368fd8ce7981fcdffa25021271573efd6174a25f6ba7b"
     },
     {
       "path": "data/portal.js",
@@ -177,17 +177,17 @@
     {
       "path": "data/version.js",
       "bytes": 109,
-      "sha256": "615bea3419d414bb0dae7107f4e036da9be3770123222ac0accce715a154f869"
+      "sha256": "981c4d141d4aa07a279d92c9b979b101fa3cbc388e2d01c7d1d1a381106700a0"
     },
     {
       "path": "download.js",
-      "bytes": 23060,
-      "sha256": "fdaf71ec5aae92bcf2c29b9bd28c71dfc9e32c71c4a7d3955eaf41fe9703dad4"
+      "bytes": 23089,
+      "sha256": "3f3e210fd20e42a484c6c06c80f0ef788fd3f4728d658bedda0864bca1f5d74f"
     },
     {
       "path": "index.html",
       "bytes": 6969,
-      "sha256": "9e92b7c253824ad7d067947512bc81cd389b848ff0abba75533983ddfc34d036"
+      "sha256": "b3991eee60a1f913a28544042e0177ca2aa2309b68c99c4ddef23ffa45e72039"
     },
     {
       "path": "library_links_v02.css",
@@ -195,14 +195,14 @@
       "sha256": "36e5526c45f05acf1116f57fa82a8309f6903b930768fd5c74bb469f4585020f"
     },
     {
-      "path": "library_links_v09.js",
+      "path": "library_links_v10.js",
       "bytes": 5308,
-      "sha256": "7d6419c7321b0cc2949673c7d4217d5231d751fbc4dbda2531807f2979409def"
+      "sha256": "9de800916b58d3a3917a856a75ae523e0a211f3874ac65b4ed29f992a797a129"
     },
     {
       "path": "literature.html",
       "bytes": 4079,
-      "sha256": "ef840663b85e176e2d8c904d7a4607517572c9d41e9878f20193d358185ac2ac"
+      "sha256": "b75482f6ee7d7bb0ee978ed3d9ff9b769ed082824e2472d9c52fd21e95d00d3f"
     },
     {
       "path": "literature_v03.css",
@@ -210,14 +210,14 @@
       "sha256": "5b33e28e92ead17755d0ebe7f24aad302eeba37d6d85216bd89364d5b5caf684"
     },
     {
-      "path": "literature_v14.js",
+      "path": "literature_v15.js",
       "bytes": 9841,
-      "sha256": "bdfa20676d9ac03b30abcabce31eca9e9395fc10ed66653c42371b13bd047c47"
+      "sha256": "0d1566714035742959327037b08cdcef655fe587e2efaa0815750baa4921be09"
     },
     {
       "path": "policy.html",
       "bytes": 5490,
-      "sha256": "5ce844f607f92fc198f903827ebabfdbf98b4a377deb2d924c0441404ccc6031"
+      "sha256": "c20dea77c499edda2711f5ca70c3c9b7cfbcc6f717488385326c2eba8b84dec0"
     },
     {
       "path": "policy_v51.css",
@@ -225,9 +225,9 @@
       "sha256": "95c59c21271e5b3ef121193a9fb212e5fe4611c68529c4396f77627104703a18"
     },
     {
-      "path": "policy_v57.js",
+      "path": "policy_v58.js",
       "bytes": 15930,
-      "sha256": "93283ccf975685dee3bf649a7b052881307ceeeff4aa9e2370cf11fbdffda584"
+      "sha256": "ed9468eaeae701d7989184682f549d0c46da5a3944b6f2b29408b834e8920c03"
     },
     {
       "path": "research_ui_v01.css",
