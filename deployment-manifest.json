@@ -1,35 +1,35 @@
 {
-  "version": "v153",
+  "version": "v155",
   "framework": "framework_v01",
   "libraries": {
-    "release": "libraries_20261106_v06",
+    "release": "libraries_20261106_v08",
     "updatedAt": "2026-11-06",
     "policy": {
-      "data": "policy_public_v56.json",
-      "page": "policy_v59.html",
-      "script": "policy_v59.js",
+      "data": "policy_public_v57.json",
+      "page": "policy_v60.html",
+      "script": "policy_v60.js",
       "css": "policy_v51.css",
-      "csv": "policies_v56.csv",
-      "sources": "policy_sources_v56.csv"
+      "csv": "policies_v57.csv",
+      "sources": "policy_sources_v57.csv"
     },
     "literature": {
-      "data": "literature_public_v13.json",
-      "page": "literature_v16.html",
-      "script": "literature_v16.js",
+      "data": "literature_public_v14.json",
+      "page": "literature_v17.html",
+      "script": "literature_v17.js",
       "css": "literature_v03.css"
     },
     "links": {
-      "data": "policy_paper_links_v10.json",
-      "script": "library_links_v11.js",
+      "data": "policy_paper_links_v11.json",
+      "script": "library_links_v12.js",
       "css": "library_links_v02.css"
     },
     "supersedes": {
-      "policy": "policy_v55",
-      "literature": "literature_v12",
-      "links": "policy_paper_links_v09"
+      "policy": "policy_v56",
+      "literature": "literature_v13",
+      "links": "policy_paper_links_v10"
     },
     "versionPolicy": "superseded versions are invalid for active work; historical evidence stays local and is not bundled",
-    "releaseSummary": "统计v153仅追加广东五条口径提示：2022/2023投资收益年度增长与预算差异分开，2024收入增长有缴费比例14%至15%的官方定性解释；利息含投资跨年合并可比、其中分项未列尽不补差额。原值和状态不变，不关闭固定39099台账。政策三条既存文件补文号和成文日期，新增四项官源；2020成文按两站正文署名核为4月10日，政府网元数据4月17日冲突保留。文献七篇正式摘要及来源状态修订，两篇全文只读指定章节；旧稿美国外推不替代正式稿经验问题边界，全文学术终审0，33组关联保持。"
+    "releaseSummary": "统计v155修订15条支出口径提示的地区年份页码模板误植，广东2024、北京2022/2024/2025及河北2024原决算数值全部一致；仅修说明，原值状态不变，禁止重跑历史v122模板构建器。政策四项地方官源引用补齐国家文件自身文号，2004企业年金试行办法据后继办法第32条核定2018-02-01废止并增明确关系，部令署名日与会议通过日分开。文献两工作论文现行修订PDF与历史rev0分开，补全一条截断摘要；正式期刊端仍有20对缺口，全文学术终审0，33组关联保持。同步修订三项指标元数据的全省/全市、通用口径及实际六条三地区覆盖，未发布v154退出活动起点；不计尚未入库续采。"
   },
   "records": 208289,
   "indicators": 863,
@@ -61,13 +61,13 @@
     },
     {
       "path": "data/library_current.json",
-      "bytes": 1355,
-      "sha256": "f6da9835780a019dec65bbca5d7630791f3d2174b4b6f0b5c5c2c4e1adf05052"
+      "bytes": 1636,
+      "sha256": "214622712940a14758f486e8a977d9fa260e5bdbe9c6bb29fdca13502e06343a"
     },
     {
-      "path": "data/literature_public_v13.json",
-      "bytes": 5358609,
-      "sha256": "159c55079bab6b5de07b916b6315d5cb3dcd1b1653aa89685926433193b75051"
+      "path": "data/literature_public_v14.json",
+      "bytes": 5359903,
+      "sha256": "08da41d8af3aa0a4ad7586aeff4ba78ca2ae2b5a78e7de3d54415472d1804a02"
     },
     {
       "path": "data/part01.js",
@@ -121,8 +121,8 @@
     },
     {
       "path": "data/part11.js",
-      "bytes": 15762590,
-      "sha256": "0f95c94ee5fd9756b8aca29b98264d8b26a80ea71ae034bd8022c4e5e17b76ed"
+      "bytes": 15766510,
+      "sha256": "200d2b078b71c0540e4f1085c3dec96e509f48309acc5de84ec0aab8710bcdf5"
     },
     {
       "path": "data/part12.js",
@@ -160,14 +160,14 @@
       "sha256": "00de5579c9d26f1f7a9806aa0ec884c06f20ce9eae08bb59d5f966b994142dad"
     },
     {
-      "path": "data/policy_paper_links_v10.json",
+      "path": "data/policy_paper_links_v11.json",
       "bytes": 751221,
-      "sha256": "521b2bd3d33ef8c07c8cb3d863b867c78ad425248aba9c52a6ce562f300d5b78"
+      "sha256": "5e92747516297b0a8d3da56c8335129955394431198b47e3e15e9d3faaeb9f71"
     },
     {
-      "path": "data/policy_public_v56.json",
-      "bytes": 6873787,
-      "sha256": "ba7f8b1f45618cfc45574088bf1ca32f379d5b4931010974f54c00b2fbd7d8fa"
+      "path": "data/policy_public_v57.json",
+      "bytes": 6879131,
+      "sha256": "e26147355bb62990067d443a0257ddc6e947d04e2e5a5befb585453b04bb3267"
     },
     {
       "path": "data/portal.js",
@@ -177,7 +177,7 @@
     {
       "path": "data/version.js",
       "bytes": 109,
-      "sha256": "67b6084504391353bd461419958501af7289c298ccdaeba21bf45138af1370de"
+      "sha256": "e91ab5cba1e1fb6ef766167bb431cf692f7d37edafa130077703a509f1edc61e"
     },
     {
       "path": "download.js",
@@ -187,7 +187,7 @@
     {
       "path": "index.html",
       "bytes": 6969,
-      "sha256": "90f066ff072d50ac833f534265ee423163881fbb2397fa2b03d79d4e6ab0b47d"
+      "sha256": "ffe79a1e085a765cd8931b06bdf64235a94c072ae5f54456ea9b2105193eff66"
     },
     {
       "path": "library_links_v02.css",
@@ -195,14 +195,14 @@
       "sha256": "36e5526c45f05acf1116f57fa82a8309f6903b930768fd5c74bb469f4585020f"
     },
     {
-      "path": "library_links_v11.js",
+      "path": "library_links_v12.js",
       "bytes": 5308,
-      "sha256": "ce8b655a52e4511f4b24a47e0b544f1e5ee3ba7272a5c4e20995c67d9a93a4ba"
+      "sha256": "bb3ef032a31140d5188939d514241cc9e2925c0530d9368eab70e6d6ecd006e0"
     },
     {
       "path": "literature.html",
       "bytes": 4079,
-      "sha256": "7faf79047c4c6b3cbf0cc3effe8ac9c141c7bb6bb1ec6da5e1d430c7113601b0"
+      "sha256": "f5d762946aa27c116464ebc296b15ccfefb85c1cdd930c0be8e3df9bfcfe7872"
     },
     {
       "path": "literature_v03.css",
@@ -210,14 +210,14 @@
       "sha256": "5b33e28e92ead17755d0ebe7f24aad302eeba37d6d85216bd89364d5b5caf684"
     },
     {
-      "path": "literature_v16.js",
+      "path": "literature_v17.js",
       "bytes": 10199,
-      "sha256": "1c881a4b0216445c71a69eb4511bda2789569488dd11e8d83dc2c61117938430"
+      "sha256": "764475adc9c0b7727cdff19a1d8f7f246e9b3479a26873820f3b581a680648df"
     },
     {
       "path": "policy.html",
       "bytes": 5490,
-      "sha256": "646ac8f762629288847d7a2e2e3a4d415275ca001b193e23a51561b2cd9c4ed5"
+      "sha256": "50d7244b9ffc314f6a2ee1c5ebb7f27d5b7971e4542d64ccf9c5d1b35774b61c"
     },
     {
       "path": "policy_v51.css",
@@ -225,9 +225,9 @@
       "sha256": "95c59c21271e5b3ef121193a9fb212e5fe4611c68529c4396f77627104703a18"
     },
     {
-      "path": "policy_v59.js",
+      "path": "policy_v60.js",
       "bytes": 15930,
-      "sha256": "3b2e83fadf9b62f45d85b844d986fd4ee94ee659ac2a71773d6d92c5164f57a1"
+      "sha256": "4024cb752e62b7dd8b3c3d0200b8885fda4ab5f6b2d72dfc0a883177c475f598"
     },
     {
       "path": "research_ui_v01.css",
