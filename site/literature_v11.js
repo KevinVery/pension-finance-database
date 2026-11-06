@@ -3,6 +3,15 @@
   const $ = id => document.getElementById(id);
   const esc = v => String(v ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const safeURL = v => {try {const u = new URL(v); return ['https:','http:'].includes(u.protocol) ? u.href : '';} catch {return '';}};
+  function versionPanel(r) {
+    const versions = r['官方版本核验'] || [];
+    if (!versions.length) return '';
+    return '<details class="version-panel"><summary>官方版本依据</summary>'+versions.map(v=>
+      '<p>'+esc(v['版本说明'])+'</p><p>'+esc(v['核验边界'])+'</p><div class="links">'+
+      [{text:'版本来源',url:v['来源页']},...(v['原站链接']||[])].filter(a=>safeURL(a.url)).map(a=>
+        '<a href="'+esc(safeURL(a.url))+'" target="_blank" rel="noopener noreferrer">'+esc(a.text)+' ↗</a>').join('')+
+      '</div>').join('')+'</details>';
+  }
   const relevanceNames = {core_pension:'养老核心候选',core_social_security:'社保核心文献',adjacent_mechanism:'相关机制文献',manual_review:'相关性待复核'};
   const filters = ['theme','language','journal','year','period'];
   const series = r => r['期刊'] || (r['文献类型'] === '工作论文' ? 'NBER 工作论文' : 'NBER 会议论文');
@@ -42,7 +51,7 @@
       const issueLabel = r['文献ID']==='CN6-SS054' ? '增刊' : /^\d+$/.test(issue) ? (Number(issue)>12 ? '源目录刊期编号'+issue+'（刊期待核）' : '第'+Number(issue)+'期') : issue;
       const citation = r['期刊'] ? '《'+r['期刊']+'》 · '+r['年份']+'年'+issueLabel+' · '+r['页码'] : series(r)+' · '+r['NBER编号']+' · '+r['年份'];
       const source = safeURL(r['来源页']), pdf = safeURL(r['官方PDF']);
-      return '<article class="paper" data-id="'+esc(r['文献ID'])+'" data-year="'+esc(r['年份'])+'" data-language="'+esc(r['语言'])+'"><div class="paper-top"><div class="topics">'+[r['分类大类']].map(t=>'<span class="theme">'+esc(t)+'</span>').join('')+'</div><span>'+esc(r['语言'])+' · '+esc(r['文献类型'])+'</span></div><h2>'+esc(r['标题'])+'</h2><p class="authors">'+esc(r['作者'])+'</p><p class="citation">'+esc(citation)+'</p>'+window.LibraryLinks.paperPanel(r)+'<details class="abstract-panel"><summary>查看摘要</summary><p class="abstract">'+esc(r['摘要']||'暂无摘要，请进入来源页面核对。')+'</p></details><details><summary>研究主题</summary><p>'+esc(r['研究主题'].join('；'))+'</p></details><div class="links">'+(source?'<a href="'+esc(source)+'" target="_blank" rel="noopener noreferrer">'+(r['文献类型']==='工作论文'&&r['NBER编号']?'NBER 原站页面':'期刊／论文原站')+' ↗</a>':'')+(pdf?'<a href="'+esc(pdf)+'" target="_blank" rel="noopener noreferrer">原站全文入口 ↗</a>':'')+'</div></article>';
+      return '<article class="paper" data-id="'+esc(r['文献ID'])+'" data-year="'+esc(r['年份'])+'" data-language="'+esc(r['语言'])+'"><div class="paper-top"><div class="topics">'+[r['分类大类']].map(t=>'<span class="theme">'+esc(t)+'</span>').join('')+'</div><span>'+esc(r['语言'])+' · '+esc(r['文献类型'])+'</span></div><h2>'+esc(r['标题'])+'</h2><p class="authors">'+esc(r['作者'])+'</p><p class="citation">'+esc(citation)+'</p>'+window.LibraryLinks.paperPanel(r)+'<details class="abstract-panel"><summary>查看摘要</summary><p class="abstract">'+esc(r['摘要']||'暂无摘要，请进入来源页面核对。')+'</p></details>'+versionPanel(r)+'<details><summary>研究主题</summary><p>'+esc(r['研究主题'].join('；'))+'</p></details><div class="links">'+(source?'<a href="'+esc(source)+'" target="_blank" rel="noopener noreferrer">'+(r['文献类型']==='工作论文'&&r['NBER编号']?'NBER 原站页面':'期刊／论文原站')+' ↗</a>':'')+(pdf?'<a href="'+esc(pdf)+'" target="_blank" rel="noopener noreferrer">原站全文入口 ↗</a>':'')+'</div></article>';
     }).join('') || '<p class="empty">当前条件下没有文献，请调整筛选条件。</p>';
     window.ResearchUI?.refresh();
     $('more').textContent='继续显示后24篇（已显示 '+Math.min(limit,filtered.length)+' / '+filtered.length+' 篇）';
@@ -50,15 +59,15 @@
     $('download').disabled = !filtered.length;
   }
   function download() {
-    const fields = ['文献ID','标题','作者','年份','语言','文献类型','期刊','期号','页码','分类大类','研究主题','关联政策数','明确提及政策数','被引次数','被引来源','被引核对日期','被引来源链接','摘要','来源','来源页','官方PDF','论文版本关联'];
-    const cell = value => {let s = Array.isArray(value) ? value.join('；') : String(value ?? ''); if (/^[=+\-@\t\r]/.test(s)) s = "'"+s; return '"'+s.replace(/"/g,'""')+'"';};
+    const fields = ['文献ID','标题','作者','年份','语言','文献类型','期刊','期号','页码','分类大类','研究主题','关联政策数','明确提及政策数','被引次数','被引来源','被引核对日期','被引来源链接','摘要','来源','来源页','官方PDF','论文版本关联','摘要来源说明','官方版本核验'];
+    const cell = value => {let s = Array.isArray(value) ? value.map(v=>typeof v==='object'?JSON.stringify(v):v).join('；') : String(value ?? ''); if (/^[=+\-@\t\r]/.test(s)) s = "'"+s; return '"'+s.replace(/"/g,'""')+'"';};
     const csv = '\uFEFF'+[fields,...filtered.map(r=>fields.map(f=>r[f]))].map(row=>row.map(cell).join(',')).join('\r\n');
     const url = URL.createObjectURL(new Blob([csv],{type:'text/csv;charset=utf-8'}));
     const a = document.createElement('a'); a.href=url; a.download='社保文献题录_'+($('period').value?'2010年及以后':'全部年份')+'_'+filtered.length+'篇.csv'; a.click(); setTimeout(()=>URL.revokeObjectURL(url),1000);
   }
   async function init() {
     let d = window.LITERATURE_LIBRARY;
-    if (!d) {const res=await fetch('data/literature_public_v07.json?v=20261106a'); if (!res.ok) throw Error('文献库数据暂未加载，请刷新页面'); d=await res.json();}
+    if (!d) {const res=await fetch('data/literature_public_v08.json?v=20261106b'); if (!res.ok) throw Error('文献库数据暂未加载，请刷新页面'); d=await res.json();}
     await window.LibraryLinks.init();
     data = d.records || [];
     $('link-context').innerHTML=window.LibraryLinks.context('paper');

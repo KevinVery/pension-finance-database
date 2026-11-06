@@ -1,1 +1,2 @@
-# Cloudflare Pages static site: missing backend/API paths use native 404.html.
+# Cloudflare Pages纯静态发布：未部署后台/API文件，由404.html原生返回404。
+# 不使用Netlify式404重定向，Cloudflare仅接受200或3xx规则。

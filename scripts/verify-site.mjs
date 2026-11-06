@@ -25,6 +25,21 @@ const policy=fs.readFileSync(path.join(root,'site/policy.html'),'utf8');
 assert(policy.includes(current.policy.script+'?v=') && policy.includes('policy_v51.css?v='),'政策资源缺少版本');
 assert(policy.includes('library-layout')&&policy.includes('id="policy-chips"')&&policy.includes('id="decades"'),'政策布局缺少专题、侧栏或年代检索');
 const data=readData('policy');
+const policyByID=new Map(data.policies.map(p=>[p['政策ID'],p]));
+const relationIDs=new Set(),relationKeys=new Set();
+for(const edge of data.relations){
+ const a=policyByID.get(edge['起始政策ID']),b=policyByID.get(edge['目标政策ID']);
+ assert(a&&b&&a!==b,'政策内部关系外键无效');
+ const key=JSON.stringify([a['政策ID'],b['政策ID'],edge['关系类型']]);
+ assert(!relationIDs.has(edge['关系ID'])&&!relationKeys.has(key),'政策关系重复');
+ relationIDs.add(edge['关系ID']);relationKeys.add(key);
+ if(['引用依据','依据','引用'].includes(edge['关系类型'])){
+  const number=(b['文号']||'').normalize('NFKC');
+  assert(!number||(/\d/.test(number)&&/[号令]/.test(number)),'非文号标签不得生成引用关系');
+  assert(!/引用文号\s*来\s*源/.test(edge['关系说明']||''),'来源标签污染引用关系');
+  if(a['成文日期']&&b['成文日期'])assert(b['成文日期']<=a['成文日期'],'引用目标晚于源文');
+ }
+}
 assert(data.meta.policies===data.policies.length,'政策数量不一致');
 assert(data.policies.filter(p=>['原文已核验','法宝转载文本已核验'].includes(p['核验状态'])).length===data.meta.originals,'核验数量不一致');
 assert(!JSON.stringify(data).includes('D:\\') && !JSON.stringify(data).includes('本地只读路径'),'公开数据包含本地路径');
