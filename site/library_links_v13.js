@@ -6,7 +6,7 @@
   data:null,papers:new Map(),policies:new Map(),paperFilter:null,policyFilter:null,scores:new Map(),
   async init(){
    this.data=window.POLICY_PAPER_LINKS;
-   if(!this.data){const r=await fetch('data/policy_paper_links_v11.json?v=20261106b');if(!r.ok)throw Error('关联研究暂未加载，请刷新重试');this.data=await r.json();}
+   if(!this.data){const r=await fetch('data/policy_paper_links_v12.json?v=20261106b');if(!r.ok)throw Error('关联研究暂未加载，请刷新重试');this.data=await r.json();}
    this.data.papers.forEach((r,i)=>this.papers.set(r.id,{...r,index:i}));
    this.data.policies.forEach((p,i)=>this.policies.set(p.id,{...p,index:i}));
    const p=params.get('policy'),r=params.get('paper');
