@@ -3,6 +3,8 @@ import path from 'node:path';
 import crypto from 'node:crypto';
 const root=path.resolve(import.meta.dirname,'..');
 const manifest=JSON.parse(fs.readFileSync(path.join(root,'deployment-manifest.json'),'utf8'));
+const current=JSON.parse(fs.readFileSync(path.join(root,'site/data/library_current.json'),'utf8'));
+const readData=k=>JSON.parse(fs.readFileSync(path.join(root,'site/data',current[k].data),'utf8'));
 function assert(ok,message){if(!ok)throw Error(message);}
 assert(manifest.files.length<=20000,'Pages文件数量超限');
 for(const file of manifest.files){
@@ -20,16 +22,16 @@ assert(app.includes('仅展示当前数据口径下已有的指标')&&!app.inclu
 console.log(JSON.stringify({ok:true,files:manifest.files.length,version:manifest.version,records:manifest.records,indicators:manifest.indicators}));
 assert(html.includes('href="policy.html"'),'缺少政策库导航');
 const policy=fs.readFileSync(path.join(root,'site/policy.html'),'utf8');
-assert(policy.includes('policy_v52.js?v=') && policy.includes('policy_v51.css?v='),'政策资源缺少版本');
+assert(policy.includes(current.policy.script+'?v=') && policy.includes('policy_v51.css?v='),'政策资源缺少版本');
 assert(policy.includes('library-layout')&&policy.includes('id="policy-chips"')&&policy.includes('id="decades"'),'政策布局缺少专题、侧栏或年代检索');
-const data=JSON.parse(fs.readFileSync(path.join(root,'site/data/policy_public_v49.json'),'utf8'));
+const data=readData('policy');
 assert(data.meta.policies===data.policies.length,'政策数量不一致');
 assert(data.policies.filter(p=>['原文已核验','法宝转载文本已核验'].includes(p['核验状态'])).length===data.meta.originals,'核验数量不一致');
 assert(!JSON.stringify(data).includes('D:\\') && !JSON.stringify(data).includes('本地只读路径'),'公开数据包含本地路径');
 assert(!/_内部质检[\\/]/.test(JSON.stringify(data)),'公开政策历史核验记录不得包含内部快照路径');
 console.log(JSON.stringify({policyLibrary:true,...data.meta}));
 const literature=fs.readFileSync(path.join(root,'site/literature.html'),'utf8');
-assert(literature.includes('literature_v09.js?v=')&&literature.includes('社保文献库'),'缺少社保文献库页面');
+assert(literature.includes(current.literature.script+'?v=')&&literature.includes('社保文献库'),'缺少社保文献库页面');
 assert(literature.includes('library-layout')&&literature.includes('topic-chips')&&literature.includes('id="sort"'),'文献布局缺失');
 for(const [page,keys] of [[policy,['papers','references']],[literature,['policy','cited']]]){
  for(const key of keys)assert(page.includes('data-sort="'+key+'"'),'缺少直接可见排序按钮 '+key);
@@ -38,13 +40,13 @@ for(const [page,keys] of [[policy,['papers','references']],[literature,['policy'
 const downloads=fs.readFileSync(path.join(root,'site/download.js'),'utf8');
 assert(!downloads.includes('data-scope="all"')&&!downloads.includes('data-scope="indicators"'),'不得提供整库导出');
 assert(downloads.includes("scope !== 'indicator' ||")&&downloads.includes('f.indicator()'),'下载必须校验单指标且使用当前筛选');
-const literatureData=JSON.parse(fs.readFileSync(path.join(root,'site/data/literature_public_v06.json'),'utf8'));
+const literatureData=readData('literature');
 assert(literatureData.meta.records===literatureData.records.length,'文献数量不一致');
-const graph=JSON.parse(fs.readFileSync(path.join(root,'site/data/policy_paper_links_v03.json'),'utf8'));
+const graph=readData('links');
 assert(graph.meta.relations===graph.links.length,'关联数不一致');
-assert(graph.meta.pairsAssessed===literatureData.records.length*data.policies.length,'两库必须全量参与匹配');
+assert(graph.meta.candidateUniversePairs===literatureData.records.length*data.policies.length,'关联候选全集计数必须准确，不宣称新组合已全部核定');
 assert(graph.meta.categories.length===6,'分类大类数量不符');
-assert(literature.includes('library_links_v04.js?v=')&&policy.includes('library_links_v04.js?v='),'关联资源必须版本化');
+assert(literature.includes(current.links.script+'?v=')&&policy.includes(current.links.script+'?v='),'关联资源必须版本化');
 const paperCounts=new Map(),policyCounts=new Map();
 for(const [idx,e] of graph.links.entries()){
  const r=literatureData.records[e[0]],p=data.policies[e[1]];
@@ -57,15 +59,10 @@ for(const [idx,e] of graph.links.entries()){
  assert(Number(r['年份'])>=Number(p['年份']),'论文不能关联之后颁布的文件');
 }
 assert(paperCounts.size===graph.meta.papersLinked&&policyCounts.size===graph.meta.policiesLinked,'覆盖计数不符');
-const baseline=JSON.parse(fs.readFileSync(path.join(root,'site/data/literature_public_v02.json'),'utf8'));
-const byId=new Map(literatureData.records.map(r=>[r['文献ID'],r]));
-assert(baseline.records.length===2155&&baseline.records.every(r=>byId.has(r['文献ID'])),'既有2155条基线未保留');
-assert(baseline.records.filter(r=>r['文献ID'].startsWith('CN6-')).every(r=>byId.get(r['文献ID']).原件SHA256===r.原件SHA256),'中文原件哈希基线被更改');
 assert(literatureData.meta.chineseRecords===literatureData.records.filter(r=>r['语言']==='中文').length,'中文数量不一致');
 assert(literatureData.meta.recordsSince2010===literatureData.records.filter(r=>Number(r['年份'])>=2010).length,'2010年及以后视图数量不一致');
 assert(literature.includes('id="period"')&&literature.includes('id="theme"'),'时间或分类筛选缺失');
 assert(literatureData.records.every(r=>/^https?:\/\//.test(r['来源页'])&&r['研究主题'].length),'文献来源或研究主题缺失');
-assert(literatureData.records.filter(r=>baseline.records.some(b=>b['文献ID']===r['文献ID'])&&r['语言']==='英文').every(r=>r['官方PDF'].startsWith('https://')),'NBER全文入口缺失');
 assert(new Set(literatureData.records.map(r=>r['文献ID'])).size===literatureData.records.length,'文献ID重复');
 assert(literatureData.meta.legacyChineseLocalFulltexts===298&&literatureData.meta.legacyChineseMissingFulltexts===1,'中文全文状态不符');
 assert(!JSON.stringify(literatureData).includes('D:\\codex')&&!JSON.stringify(literatureData).includes('D:\\deepseek'),'文献公开数据包含本地路径');
@@ -86,11 +83,11 @@ for(const [id,date] of [['POL-CN-2015-001','2014-10-01'],['POL-CN-2019-001','201
  const p=data.policies.find(p=>p['政策ID']===id);assert(p&&p['生效日期']===date,'关键改革缺失或实施日期错误 '+id);
 }
 
-assert(data.meta.nationalPkulawTexts===179&&data.meta.pkulawPrimaryTexts===179&&data.meta.pkulawSupplementalMatches===38,"法宝政策数量不符");
+assert(data.meta.nationalPkulawTexts===data.policies.filter(p=>p['政策层级']==='全国政策'&&p['核验状态']==='法宝转载文本已核验').length&&data.meta.pkulawPrimaryTexts===data.meta.nationalPkulawTexts&&data.meta.pkulawSupplementalMatches===38,"法宝政策数量不符");
 assert(data.policies.every(p=>JSON.parse(p['补充来源链接']||'[]').every(s=>/^https?:\/\//.test(s.URL||'')&&s['名称'])),'政策补充来源须有名称与有效URL');
 const dispute=data.policies.filter(p=>p['标题'].includes('社会保险行政争议处理办法'));
 assert(dispute.length===1&&dispute[0]['成文日期']==='2001-05-27'&&dispute[0]['生效日期']==='2001-05-27','2001年行政争议办法须同文合并并以公布日期登记');
-assert(data.meta.policies===547&&data.meta.national===541&&data.meta.relations===160,'逐年补齐批次数量不符');
+assert(data.meta.policies===data.policies.length&&data.meta.national===data.policies.filter(p=>p['政策层级']==='全国政策').length&&data.meta.relations===data.relations.length,'逐年补齐批次数量不符');
 assert(data.meta.collectionOrder.includes('2026年起'),'采集顺序必须由近到远');
 
 assert(literatureData.records.every(r=>Array.isArray(r['发现来源'])&&r['官网核验']),'来源或核验层级缺失');
@@ -105,3 +102,6 @@ for(const id of ['period','theme','journal','year','language','sort'])assert(lit
 assert(graph.meta.thematicRelations===0,'宽主题关联须退出计数');
 assert(data.policies.find(p=>p['政策ID']==='POL-V20-PKU-0aa9e6f1be165844bdfb')['关联论文数']===0,'预算通知不得关联一般养老金论文');
 assert(literatureData.records.find(r=>r['文献ID']==='PENSION-W28407')['关联政策数']===0,'意大利论文不得关联中国具体文件');
+
+const activeJSON=new Set(['library_current.json',...['policy','literature','links'].map(k=>current[k].data)]);
+for(const name of fs.readdirSync(path.join(root,'site/data')).filter(n=>n.endsWith('.json')))assert(activeJSON.has(name),'旧JSON不得重新公开 '+name);

@@ -18,6 +18,9 @@
 /*.html
   Cache-Control: no-cache, no-store, must-revalidate
 
+/data/library_current.json
+  Cache-Control: no-cache, no-store, must-revalidate
+
 /data/version.js
   Cache-Control: no-cache, no-store, must-revalidate
 
