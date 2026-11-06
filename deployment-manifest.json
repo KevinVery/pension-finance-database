@@ -75,19 +75,9 @@
       "sha256": "7df6a37d8bacca4259dcf9b18ee55be588fdddee5fd249cfeb23e08ee4858525"
     },
     {
-      "path": "data/part01.js.gz",
-      "bytes": 425687,
-      "sha256": "48568706513048d123fee75e727ea1694c13f541cde7bfd79a99290fe6c3fe05"
-    },
-    {
       "path": "data/part02.js",
       "bytes": 25164087,
       "sha256": "ed30aa10f8ad7258df9d0c34d30e605bf640beb226a211f60f8c5706d685b7ff"
-    },
-    {
-      "path": "data/part02.js.gz",
-      "bytes": 381196,
-      "sha256": "25e3a0f985e06de02a4f84cd4a9ee7afa4b5d05e07aed1d48cff1b66b7b0a99d"
     },
     {
       "path": "data/part03.js",
@@ -95,19 +85,9 @@
       "sha256": "749437d16fd78939950d329f348c2e08e19ea715832a3060da8ab039f5b53373"
     },
     {
-      "path": "data/part03.js.gz",
-      "bytes": 379962,
-      "sha256": "4ae0eb39de240a8c7726cf1101201c1ebf034e886a335f016de579f83bb1ad1c"
-    },
-    {
       "path": "data/part04.js",
       "bytes": 25165572,
       "sha256": "8744e3a4bf6c63d8b02223ae35c73463c9dc1956eea8fdf529017167a4308b61"
-    },
-    {
-      "path": "data/part04.js.gz",
-      "bytes": 379276,
-      "sha256": "e3ccba35ae09785659d948b214a13153af69117c7d5b89591854aef026118003"
     },
     {
       "path": "data/part05.js",
@@ -115,19 +95,9 @@
       "sha256": "748f7d9efd74dc6bf883881e1fec02b9a712b9f943a2f54b10be074d1f83d66c"
     },
     {
-      "path": "data/part05.js.gz",
-      "bytes": 380324,
-      "sha256": "dd975a36794883c8c3b9619eb245113de37166a4b284f7b6429f113990d91cd1"
-    },
-    {
       "path": "data/part06.js",
       "bytes": 25136706,
       "sha256": "0ee03bbe9d4eb45d33c2cc2554d03730975f90081d90cab78fae14b736dd3233"
-    },
-    {
-      "path": "data/part06.js.gz",
-      "bytes": 383951,
-      "sha256": "1663c72b94359a5ef58c7d4acbaf3e96e2f5d627c011683a8b50af4620938ce1"
     },
     {
       "path": "data/part07.js",
@@ -135,19 +105,9 @@
       "sha256": "caf57188cbbbfae3e82e3495d19022572276880f187dd5c746ed940f3378780d"
     },
     {
-      "path": "data/part07.js.gz",
-      "bytes": 476230,
-      "sha256": "4fa281ea35ccc253fc21a5338317bcb5e50327d8b3e419f816d8f14d4c2cac00"
-    },
-    {
       "path": "data/part08.js",
       "bytes": 956612,
       "sha256": "b4149e2241d596e1884594f55bdab98b12543e6c87e4e708275af7cbe89f1fea"
-    },
-    {
-      "path": "data/part08.js.gz",
-      "bytes": 21753,
-      "sha256": "2d90b450fabb64a821bf827fcd04a6b2a213e5de9dcba07c362283d1eb7fd677"
     },
     {
       "path": "data/part09.js",
@@ -155,19 +115,9 @@
       "sha256": "f03a93edb4cb8832e2b14f1b3a25ace602b7985c4e6ad7372adbbc997eb6ea53"
     },
     {
-      "path": "data/part09.js.gz",
-      "bytes": 425308,
-      "sha256": "c8a563b5fc8d0fb47fee0ef64da6bb01bb4d310dfdf5d09917219a40910bee32"
-    },
-    {
       "path": "data/part10.js",
       "bytes": 11885772,
       "sha256": "123a56ac39c6e2562559072605aa56060a85b444986c86833020445e6ab09d3d"
-    },
-    {
-      "path": "data/part10.js.gz",
-      "bytes": 231208,
-      "sha256": "c967d07ade7abd374f9b8c401b056fafccae043441e941b63e95d6cb17e8b113"
     },
     {
       "path": "data/part11.js",
@@ -175,29 +125,14 @@
       "sha256": "6467f8f364ab81ecaea8ebc8e13841c311eeca9b876fdd7d75c4c42afc6a987c"
     },
     {
-      "path": "data/part11.js.gz",
-      "bytes": 385049,
-      "sha256": "774d3308647b2bdaa206045d7cd0452edb3a37c4b3ed6dbd0a3030a8efc6b34f"
-    },
-    {
       "path": "data/part12.js",
       "bytes": 6932103,
       "sha256": "7932c40a64be87221a897039e8def97e52016f71b140560c07646ca9a1c6918e"
     },
     {
-      "path": "data/part12.js.gz",
-      "bytes": 160588,
-      "sha256": "af87e935dc65fa08598795624ee3443434336297c331b4e60fff0a6774fbfe9c"
-    },
-    {
       "path": "data/part13.js",
       "bytes": 6540148,
       "sha256": "7106bcedf3c9e06e4ad9717f858105454e4fb2db626744442649ebe13dd1e421"
-    },
-    {
-      "path": "data/part13.js.gz",
-      "bytes": 145452,
-      "sha256": "2c68ff70a9c96af21340ed5a3b7e755a7bb05fe97ff01e83ab530f278a73cbdb"
     },
     {
       "path": "data/personal_pension_annual_coverage_v132.csv",
