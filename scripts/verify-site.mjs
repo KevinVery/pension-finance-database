@@ -76,6 +76,11 @@ for(const [idx,e] of graph.links.entries()){
 assert(paperCounts.size===graph.meta.papersLinked&&policyCounts.size===graph.meta.policiesLinked,'覆盖计数不符');
 assert(literatureData.meta.chineseRecords===literatureData.records.filter(r=>r['语言']==='中文').length,'中文数量不一致');
 assert(literatureData.meta.recordsSince2010===literatureData.records.filter(r=>Number(r['年份'])>=2010).length,'2010年及以后视图数量不一致');
+const knownYears=literatureData.records.filter(r=>/^\d{4}$/.test(String(r['年份'])));
+assert(literatureData.meta.recordsUnknownYear===literatureData.records.length-knownYears.length,'未知年份汇总不一致');
+assert(literatureData.meta.recordsBefore2010===knownYears.filter(r=>Number(r['年份'])<2010).length,'2010年以前汇总不一致');
+assert(graph.meta.unmatchedPolicies===data.policies.length-graph.meta.policiesLinked,'当前未关联政策数不一致');
+assert(graph.meta.unmatchedPapers===literatureData.records.length-graph.meta.papersLinked,'当前未关联文献数不一致');
 assert(literature.includes('id="period"')&&literature.includes('id="theme"'),'时间或分类筛选缺失');
 assert(literatureData.records.every(r=>/^https?:\/\//.test(r['来源页'])&&r['研究主题'].length),'文献来源或研究主题缺失');
 assert(new Set(literatureData.records.map(r=>r['文献ID'])).size===literatureData.records.length,'文献ID重复');
