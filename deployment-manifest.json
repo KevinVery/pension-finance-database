@@ -1,21 +1,21 @@
 {
-  "version": "v177",
+  "version": "v178",
   "framework": "framework_v01",
   "libraries": {
-    "release": "libraries_20261108_v30",
+    "release": "libraries_20261108_v31",
     "updatedAt": "2026-11-08",
     "policy": {
-      "data": "policy_public_v80.json",
-      "page": "policy_v83.html",
-      "script": "policy_v83.js",
+      "data": "policy_public_v81.json",
+      "page": "policy_v84.html",
+      "script": "policy_v84.js",
       "css": "policy_v51.css",
-      "csv": "policies_v80.csv",
-      "sources": "policy_sources_v80.csv"
+      "csv": "policies_v81.csv",
+      "sources": "policy_sources_v81.csv"
     },
     "literature": {
-      "data": "literature_public_v37.json",
-      "page": "literature_v40.html",
-      "script": "literature_v40.js",
+      "data": "literature_public_v38.json",
+      "page": "literature_v41.html",
+      "script": "literature_v41.js",
       "css": "literature_v03.css"
     },
     "links": {
@@ -24,14 +24,14 @@
       "css": "library_links_v02.css"
     },
     "supersedes": {
-      "policy": "policy_v79",
-      "literature": "literature_v36",
+      "policy": "policy_v80",
+      "literature": "literature_v37",
       "links": "unchanged_policy_paper_links_v14"
     },
     "versionPolicy": "superseded versions are invalid for active work; historical evidence stays local and is not bundled",
-    "releaseSummary": "统计v177仅补上海2020机关其他收入0.1亿元一条候选口径：预算2/决算0.1亿元、5%，低于预算因跨省流入低于预期；非同比降幅，不推无人转入或补确认额，原值身份及元数据保持。政策policy80/页面83一文件4字段，2016年92号组合权益上限30%与2020年95号40%同分母及指定产品港股通范围对照；550政策/840来源/143关系，非整件效力终审。文献literature37/页面40一记录4字段，补全W5429完整WP摘要及Implications指定页；1910历史弹性不得外推现代，86%为作者假设估计，JPE正式端未取得，固定10、全文终审0及33关联保持。"
+    "releaseSummary": "统计v178新增重庆2020三制度总收入、社会保险费及利息9条已核验省年记录、0指标，9项元数据45字段同步；208348记录/887指标。只取表11决算列，不推算其中未列项，社会保险费非仅个人负担；广东年度原因仍开放。政策policy81/页面84一记录4字段，区分2013年24号产品自身净值与计划、组合配置分母，对照2020年95号，非整件效力终审，550/840/143保持。文献literature38/页面41双记录4字段，Frames规范248卷及105419文章号、2024修订WP与2025正式版身份分列；摘要不变、固定10/全文终审0、2654题录及33关联保持。"
   },
-  "records": 208339,
+  "records": 208348,
   "indicators": 887,
   "files": [
     {
@@ -61,13 +61,13 @@
     },
     {
       "path": "data/library_current.json",
-      "bytes": 1391,
-      "sha256": "828b6f0a6d7ccd9cf4605ffe0e97b3fedde1db212f3ce9a878ff1d37aaa265ac"
+      "bytes": 1384,
+      "sha256": "0a6c52669a58c6ecee6cd57b0b8bc44143520a5d51f792ef996a641cdee58fc0"
     },
     {
-      "path": "data/literature_public_v37.json",
-      "bytes": 5424106,
-      "sha256": "d335a2e7ba182893d7242749d475b7c79661330771470478bc2126d5a0b01a73"
+      "path": "data/literature_public_v38.json",
+      "bytes": 5425014,
+      "sha256": "0ab11b3a14baf731d4e0a40e317736d537f84c343569400afe1a6354323905bf"
     },
     {
       "path": "data/part01.js",
@@ -121,8 +121,8 @@
     },
     {
       "path": "data/part11.js",
-      "bytes": 15921558,
-      "sha256": "17b4ed2e83ad1d88f463cfa429c294632f23e0eac661cd5eeb1f84597083e1ff"
+      "bytes": 15936931,
+      "sha256": "56c5782f1b82882e9ccaeb78c480fd42961d6df6c35a14b2a70318434e2aa4fe"
     },
     {
       "path": "data/part12.js",
@@ -165,9 +165,9 @@
       "sha256": "474c14fe50907469e1f5d15cdd35edd9fb1d3482a313d680e4e4a8d21bb90e90"
     },
     {
-      "path": "data/policy_public_v80.json",
-      "bytes": 6935742,
-      "sha256": "81b7cd8acadd6895465934c30d3a567190d283ca03dbfaf79afd4cbe999b38a8"
+      "path": "data/policy_public_v81.json",
+      "bytes": 6937269,
+      "sha256": "282a6d9db996ac758235bfa46a80e99546f3a3dbc042dfc0665063d1b54efba0"
     },
     {
       "path": "data/portal.js",
@@ -177,7 +177,7 @@
     {
       "path": "data/version.js",
       "bytes": 109,
-      "sha256": "f095929e10e437339af8408e8af7eba9204ae005b63cbbf19cdd330c7837f275"
+      "sha256": "2de70a6be9035b53d737a051d4aae2c27e24231c07a56b78c56f1d7e59bf5965"
     },
     {
       "path": "download.js",
@@ -187,7 +187,7 @@
     {
       "path": "index.html",
       "bytes": 6969,
-      "sha256": "b88f04b28c90922c1dff43a85320b6604e4127d527f081e3f596e28e286fda49"
+      "sha256": "b242c78757ca62d4fc0d8e52356f4e3c339413d2e772fdf6a04f21be508cebf7"
     },
     {
       "path": "library_links_v02.css",
@@ -202,7 +202,7 @@
     {
       "path": "literature.html",
       "bytes": 4079,
-      "sha256": "2494db1374b560eb6fd53149e45181158a3fa09c867135dfc6ae91a095319189"
+      "sha256": "eec010f7150913cc1812c7a3b779c7b92b7aaf4d2e26e0d4967091e6e7f46f9a"
     },
     {
       "path": "literature_v03.css",
@@ -210,14 +210,14 @@
       "sha256": "5b33e28e92ead17755d0ebe7f24aad302eeba37d6d85216bd89364d5b5caf684"
     },
     {
-      "path": "literature_v40.js",
+      "path": "literature_v41.js",
       "bytes": 10199,
-      "sha256": "6e585623c89ce9eb4ed6fd8a0f1bf27af7c61b1bc9cdc2ac3b089f678f6ca760"
+      "sha256": "bea63c305f41f9bf2c03b16951402b30b939735b12f0000b586e9b39daf6b572"
     },
     {
       "path": "policy.html",
       "bytes": 5490,
-      "sha256": "121f351830dacbc03c375199dc667308728ab681a205cea475e69767279e28a0"
+      "sha256": "78c1aad60d46d16a65d3d9968aebe802aeac643e1f4fa1433712e10d4e5b4ac5"
     },
     {
       "path": "policy_v51.css",
@@ -225,9 +225,9 @@
       "sha256": "95c59c21271e5b3ef121193a9fb212e5fe4611c68529c4396f77627104703a18"
     },
     {
-      "path": "policy_v83.js",
+      "path": "policy_v84.js",
       "bytes": 15930,
-      "sha256": "dc71f8de55d523445155f5c5190879889b0a7616c5dc6ee9cefa93b410a19811"
+      "sha256": "c5c4334b88f52e321fee58a4a7a290d62a22ab3902e4a756fe7ca08e55c5c822"
     },
     {
       "path": "research_ui_v01.css",

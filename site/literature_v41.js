@@ -69,7 +69,7 @@
   }
   async function init() {
     let d = window.LITERATURE_LIBRARY;
-    if (!d) {const res=await fetch('data/literature_public_v37.json?v=20261106b'); if (!res.ok) throw Error('文献库数据暂未加载，请刷新页面'); d=await res.json();}
+    if (!d) {const res=await fetch('data/literature_public_v38.json?v=20261106b'); if (!res.ok) throw Error('文献库数据暂未加载，请刷新页面'); d=await res.json();}
     await window.LibraryLinks.init();
     data = d.records || [];
     $('link-context').innerHTML=window.LibraryLinks.context('paper');
