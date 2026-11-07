@@ -1,21 +1,21 @@
 {
-  "version": "v172",
+  "version": "v173",
   "framework": "framework_v01",
   "libraries": {
-    "release": "libraries_20261108_v25",
+    "release": "libraries_20261108_v26",
     "updatedAt": "2026-11-08",
     "policy": {
-      "data": "policy_public_v74.json",
-      "page": "policy_v77.html",
-      "script": "policy_v77.js",
+      "data": "policy_public_v75.json",
+      "page": "policy_v78.html",
+      "script": "policy_v78.js",
       "css": "policy_v51.css",
-      "csv": "policies_v74.csv",
-      "sources": "policy_sources_v74.csv"
+      "csv": "policies_v75.csv",
+      "sources": "policy_sources_v75.csv"
     },
     "literature": {
-      "data": "literature_public_v31.json",
-      "page": "literature_v34.html",
-      "script": "literature_v34.js",
+      "data": "literature_public_v32.json",
+      "page": "literature_v35.html",
+      "script": "literature_v35.js",
       "css": "literature_v03.css"
     },
     "links": {
@@ -24,12 +24,12 @@
       "css": "library_links_v02.css"
     },
     "supersedes": {
-      "policy": "policy_v73",
-      "literature": "literature_v30",
+      "policy": "policy_v74",
+      "literature": "literature_v31",
       "links": "unchanged_policy_paper_links_v14"
     },
     "versionPolicy": "superseded versions are invalid for active work; historical evidence stays local and is not bundled",
-    "releaseSummary": "统计v172仅追加上海2019及2021企业9.4/31.9、居民0.5/2.8亿元四条候选口径提示；预算偏离非同比，2019已确认与2020合并收益逐笔范围未明，不分摊减除或改0。原值及候选身份保持，本地既有PDF核读不称在线回源；208339记录/887指标不变，年度解释未整体闭合。政策劳社部发2002年12号六字段加一官源，550政策/840来源/134关系；双官源主体2236字符归一化一致，四署名机构全称简称及长短题名差异保留，原文SHA主源和待核效力日期保持。文献Paternalism双版本两记录8字段，NBER当前42页封面2017/Revised2022与UCSD2022作者稿41页分列，完整结论三页归一一致仅限指定范围；模型优化及理性预期假设不作现实政府最优证明。全部摘要、固定10、全文终审0及33关联保持。"
+    "releaseSummary": "统计v173仅追加上海2021企业其他收入52.6亿元一条候选口径提示：高于预算主要因一次性确认历年转移收入。预算比较非同比，不把52.6全部视为本年新增转移或把同比差32.1视为补确认额。208339记录/887指标、原值与候选身份不变。政策policy75/页面78共550政策/840来源/135关系，2001年13号六字段及一限定部分停止执行链，复核既有2019年19号官源，仅一次性补贴范围，非整件废止。文献literature32/页面35共2654题录，Capitation两记录8字段，第6.2节两稿公式rho(eta_i)字面差异定位，不推定正误或影响。全部摘要、固定10、全文终审0及33关联保持。"
   },
   "records": 208339,
   "indicators": 887,
@@ -61,13 +61,13 @@
     },
     {
       "path": "data/library_current.json",
-      "bytes": 1587,
-      "sha256": "6fc0dc0cef42358eacac6a045768fe65f23f9f9112c65b7f4e6e23754b430cd0"
+      "bytes": 1433,
+      "sha256": "1d987a9d5d2cafc005f0966a17a1a1c3440fcf7b3e26d58995061c42a9e5e0dc"
     },
     {
-      "path": "data/literature_public_v31.json",
-      "bytes": 5411947,
-      "sha256": "723c1eed5c8bb62acc93fc6a007dae9e3baf61277164825119a1e184392d512f"
+      "path": "data/literature_public_v32.json",
+      "bytes": 5416477,
+      "sha256": "25090999720c790153c915e386253462dff7b0a4067a92fb07913189cac01e83"
     },
     {
       "path": "data/part01.js",
@@ -121,8 +121,8 @@
     },
     {
       "path": "data/part11.js",
-      "bytes": 15914845,
-      "sha256": "537df8b2035f7cda585ec0ef5fdc3bc77dbb5b761e54fd5acf618f8ae93e1457"
+      "bytes": 15916028,
+      "sha256": "a71f64926bc5b999e484e77b09c445a0bceaa1e1a37240daf875c5eb22e217f8"
     },
     {
       "path": "data/part12.js",
@@ -165,9 +165,9 @@
       "sha256": "474c14fe50907469e1f5d15cdd35edd9fb1d3482a313d680e4e4a8d21bb90e90"
     },
     {
-      "path": "data/policy_public_v74.json",
-      "bytes": 6910317,
-      "sha256": "9bb0e9ce3421ebdaf222e7c490b2dc58eca0ed89eaa9500411d390b62c337163"
+      "path": "data/policy_public_v75.json",
+      "bytes": 6913567,
+      "sha256": "2a25d5c12d2fcca3cde1674b83147990e7ffb2933553cf463c34959015dad604"
     },
     {
       "path": "data/portal.js",
@@ -177,7 +177,7 @@
     {
       "path": "data/version.js",
       "bytes": 109,
-      "sha256": "7343b10172bcce10f5630fd2e70f3e3123dd00884898ca69f84899dd6d674e9c"
+      "sha256": "eede9caf874644b800d9da0255d08c1b37c204b8e4c073f3361080134a9d5af6"
     },
     {
       "path": "download.js",
@@ -187,7 +187,7 @@
     {
       "path": "index.html",
       "bytes": 6969,
-      "sha256": "112a80c4715d371e70adb4a8958a5abc2e59d12f5e800031cc8a3acc224c7f98"
+      "sha256": "799cd03e1e4a813db5d2cfb16f1dbf41da7c31dd487a31d2a3603c02f7466a39"
     },
     {
       "path": "library_links_v02.css",
@@ -202,7 +202,7 @@
     {
       "path": "literature.html",
       "bytes": 4079,
-      "sha256": "67af331ad7a1b6a95635cb6287d247545fc150bcbf65c4c7f946d353089eb7be"
+      "sha256": "43e1e0cd98f506d491c0a5b9355fecb136cd1fd6576819e36ba750460f129eba"
     },
     {
       "path": "literature_v03.css",
@@ -210,14 +210,14 @@
       "sha256": "5b33e28e92ead17755d0ebe7f24aad302eeba37d6d85216bd89364d5b5caf684"
     },
     {
-      "path": "literature_v34.js",
+      "path": "literature_v35.js",
       "bytes": 10199,
-      "sha256": "427c8abc03ea925fe9d9962818c78bb98b14cb9cd9a9fe7033728a2c1113dbcc"
+      "sha256": "f1446b837287dd18926149d6223a0c6ef0c5788c3ab208a8ded176fd9c8690cf"
     },
     {
       "path": "policy.html",
       "bytes": 5490,
-      "sha256": "642afc650102251ac9e5d6f4af882d3e49b4f5d2e5a1060ba98a0ef532fee7cc"
+      "sha256": "27e4b6c9dd5acaa54c5b21e8b677f696f5a92a7082326b6863d5a602caab54e7"
     },
     {
       "path": "policy_v51.css",
@@ -225,9 +225,9 @@
       "sha256": "95c59c21271e5b3ef121193a9fb212e5fe4611c68529c4396f77627104703a18"
     },
     {
-      "path": "policy_v77.js",
+      "path": "policy_v78.js",
       "bytes": 15930,
-      "sha256": "627471eb43459ee1ed44338b2e77cbc20e5d8c80eeafb068461017af673b39e9"
+      "sha256": "00d8e7910ee55057a0f4684481e5cc644dd5e8b7904a93e389ff9608a3cef39f"
     },
     {
       "path": "research_ui_v01.css",
