@@ -1,21 +1,21 @@
 {
-  "version": "v162",
+  "version": "v163",
   "framework": "framework_v01",
   "libraries": {
-    "release": "libraries_20261107_v15",
+    "release": "libraries_20261107_v16",
     "updatedAt": "2026-11-07",
     "policy": {
-      "data": "policy_public_v64.json",
-      "page": "policy_v67.html",
-      "script": "policy_v67.js",
+      "data": "policy_public_v65.json",
+      "page": "policy_v68.html",
+      "script": "policy_v68.js",
       "css": "policy_v51.css",
-      "csv": "policies_v64.csv",
-      "sources": "policy_sources_v64.csv"
+      "csv": "policies_v65.csv",
+      "sources": "policy_sources_v65.csv"
     },
     "literature": {
-      "data": "literature_public_v20.json",
-      "page": "literature_v23.html",
-      "script": "literature_v23.js",
+      "data": "literature_public_v22.json",
+      "page": "literature_v25.html",
+      "script": "literature_v25.js",
       "css": "literature_v03.css"
     },
     "links": {
@@ -24,15 +24,15 @@
       "css": "library_links_v02.css"
     },
     "supersedes": {
-      "policy": "policy_v63",
-      "literature": "literature_v19",
+      "policy": "policy_v64",
+      "literature": "literature_v20; unpublished_v21_superseded",
       "links": "unchanged_policy_paper_links_v14"
     },
     "versionPolicy": "superseded versions are invalid for active work; historical evidence stays local and is not bundled",
-    "releaseSummary": "统计v162新增广东2021三制度转移支出和其他支出6记录6指标，原208312记录和877元数据不变，三处1万元差额仍开放；不同制度分列，不拆其他支出或构造待遇总额。政策2011年9号与2009年694号两目标政策10字段补103号第七项后继官源废止链，原公告全文仍待官方交叉，550政策/833来源/133关系保持。文献生命周期人力资本双版本2记录13字段，作者机构所链JPE出版排版稿第1页完整摘要及2024年132(1)题录核定，000占位分页不冒充最终分页PDF，正文未通读；正式端摘要缺口15降14，全文学术终审0，33组关联证据保持。"
+    "releaseSummary": "统计v163新增广东2021企业基本养老金其中离休金支出3.8472亿元，1记录1指标，旧208318记录和883元数据不变；其中项不与基本养老金重复加总，三处1万元差额仍开放。政策2016年101号8字段据财政部2017年144号第六十二条核定整件废止和2018-01-01失效日，新增1条明确废止关系，550政策/833来源/134关系；自身全文官源交叉仍待核，后继整体现行效力未改。文献Paternalism双版本2记录11字段，补全928字符NBER工作论文摘要，核定UCSD所链41页2022-10-05作者稿第1页及正式第216卷及文章号104763；作者稿不冒充出版者正式版，正式摘要缺口14保持，全文学术终审0，33组关联证据保持。"
   },
-  "records": 208318,
-  "indicators": 883,
+  "records": 208319,
+  "indicators": 884,
   "files": [
     {
       "path": "404.html",
@@ -61,13 +61,13 @@
     },
     {
       "path": "data/library_current.json",
-      "bytes": 1396,
-      "sha256": "4289004af14fc2b2d5cd4ad0629043e1998af786fe2ddf95bbf340c8e9f53407"
+      "bytes": 1500,
+      "sha256": "660ac335ed55f3ac0afaefeed8efa47d8b13819bfd625bbfe8bd42cd8eb75b42"
     },
     {
-      "path": "data/literature_public_v20.json",
-      "bytes": 5378127,
-      "sha256": "e8177c599fe7f5a18e62d215494639bca34f598b6104f25a49f2c3b70e4669cb"
+      "path": "data/literature_public_v22.json",
+      "bytes": 5380280,
+      "sha256": "d889c22c2c2252a08f0e55ef4010fea663eba8f8783322858682cb4bbff25bc8"
     },
     {
       "path": "data/part01.js",
@@ -121,8 +121,8 @@
     },
     {
       "path": "data/part11.js",
-      "bytes": 15850726,
-      "sha256": "ef86a601957e451f7072cb78335034d6ca7fd75c4b70b9e0bba874da7c4bcf55"
+      "bytes": 15854561,
+      "sha256": "184be7569eca66aba7b47deecf369564b8f3fd4fbdb7534d1033df41de7f8d21"
     },
     {
       "path": "data/part12.js",
@@ -165,9 +165,9 @@
       "sha256": "474c14fe50907469e1f5d15cdd35edd9fb1d3482a313d680e4e4a8d21bb90e90"
     },
     {
-      "path": "data/policy_public_v64.json",
-      "bytes": 6894187,
-      "sha256": "4adb7db8c873f3e2bd4fb96e2d2ba82d70b9bd4574c51c9870d6c3b8e20a73e8"
+      "path": "data/policy_public_v65.json",
+      "bytes": 6896099,
+      "sha256": "c8f1b97cfba6d4cde9be83087f1671f864d1c02cf2772c31e5e7c32f5810f2af"
     },
     {
       "path": "data/portal.js",
@@ -177,7 +177,7 @@
     {
       "path": "data/version.js",
       "bytes": 109,
-      "sha256": "ef3ff8eccf5b9495af23cbeafcf57081c8e02a68198658aa2c8949cf55057de5"
+      "sha256": "944b36ec32cacc8116acfa3703e6636fccd982eb50d573a05b16f5666eddd391"
     },
     {
       "path": "download.js",
@@ -187,7 +187,7 @@
     {
       "path": "index.html",
       "bytes": 6969,
-      "sha256": "a66dbe58213d482df1cc0251dea8dc0182148198a6ba6f6c8ab2651a61aa8a6d"
+      "sha256": "fb1ed2d1a04389c63d65174807dfad0da4ba8ce9a47849c327a524d12d9cfbad"
     },
     {
       "path": "library_links_v02.css",
@@ -202,7 +202,7 @@
     {
       "path": "literature.html",
       "bytes": 4079,
-      "sha256": "ce273202eac2930d6b10b39e3898d4856f7dbaf1ff98b989e1c3d54e4b9ed782"
+      "sha256": "cd7f9637e08138659f6a94ed5bcb838b842cf891c4abd69ae28b77503956a1de"
     },
     {
       "path": "literature_v03.css",
@@ -210,14 +210,14 @@
       "sha256": "5b33e28e92ead17755d0ebe7f24aad302eeba37d6d85216bd89364d5b5caf684"
     },
     {
-      "path": "literature_v23.js",
+      "path": "literature_v25.js",
       "bytes": 10199,
-      "sha256": "687bef2277536b403e02af27b592d9fd3e408b7a637f55a3d9adf42d4bcd805b"
+      "sha256": "e341fa826dd3820d32ae36db082c8398048824792ba7489e8bf04607ec54d8f5"
     },
     {
       "path": "policy.html",
       "bytes": 5490,
-      "sha256": "007a8d7155ada708fa501c210cefe1a18178d7485c1534541cd047bbf0b02d18"
+      "sha256": "080e0ddc519a7da1dc0900f6107edd2578e28194f43494332e6c1bfde544401a"
     },
     {
       "path": "policy_v51.css",
@@ -225,9 +225,9 @@
       "sha256": "95c59c21271e5b3ef121193a9fb212e5fe4611c68529c4396f77627104703a18"
     },
     {
-      "path": "policy_v67.js",
+      "path": "policy_v68.js",
       "bytes": 15930,
-      "sha256": "6b5039b28bd22982d2bfb51412f0310fa15456ae70fb93111313ca0135f93ea5"
+      "sha256": "122bb7f7212c730d0ef0b46abd7c30cdbdee50bc017828fcbdbf3963ca6adafc"
     },
     {
       "path": "research_ui_v01.css",
