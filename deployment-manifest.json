@@ -1,21 +1,21 @@
 {
-  "version": "v170",
+  "version": "v171",
   "framework": "framework_v01",
   "libraries": {
-    "release": "libraries_20261107_v23",
-    "updatedAt": "2026-11-07",
+    "release": "libraries_20261108_v24",
+    "updatedAt": "2026-11-08",
     "policy": {
-      "data": "policy_public_v72.json",
-      "page": "policy_v75.html",
-      "script": "policy_v75.js",
+      "data": "policy_public_v73.json",
+      "page": "policy_v76.html",
+      "script": "policy_v76.js",
       "css": "policy_v51.css",
-      "csv": "policies_v72.csv",
-      "sources": "policy_sources_v72.csv"
+      "csv": "policies_v73.csv",
+      "sources": "policy_sources_v73.csv"
     },
     "literature": {
-      "data": "literature_public_v29.json",
-      "page": "literature_v32.html",
-      "script": "literature_v32.js",
+      "data": "literature_public_v30.json",
+      "page": "literature_v33.html",
+      "script": "literature_v33.js",
       "css": "literature_v03.css"
     },
     "links": {
@@ -24,12 +24,12 @@
       "css": "library_links_v02.css"
     },
     "supersedes": {
-      "policy": "policy_v71",
-      "literature": "literature_v28",
+      "policy": "policy_v72",
+      "literature": "literature_v29",
       "links": "unchanged_policy_paper_links_v14"
     },
     "versionPolicy": "superseded versions are invalid for active work; historical evidence stays local and is not bundled",
-    "releaseSummary": "统计v170补广东2021三制度财政补贴2.9682/234.543/231.8685亿元，三条0指标、9元数据字段，208339记录/887指标，旧208336条保持；补贴、上下级往来、居民其中项及困难代缴分开，年度解释及三处1万元差额开放。政策国发1990年24号六字段及一官方公报来源，550政策/838来源/134关系；1990第8号PDF7/印刷279整页目视交叉，这些/这一些、矛盾/予盾两异文留证，正文SHA及效力日期保持。文献Lagged-Price IRP1101五字段，作者官网2026年256卷/105595文章号与登记及NBER交叉；另一作者网页forthcoming差异保留，不回退年份，不把题录或工作论文摘要当正式摘要；2654文献、固定10缺口、全文终审0及33关联保持。"
+    "releaseSummary": "统计v171仅追加上海2020企业109.8/居民9.8亿元两条候选口径提示，2019与2020委托收益合并计入2020；631%/612.5%为预算完成率非同比，原值与候选身份保持。本地既有PDF1—2核读不称本轮在线回源；208339记录/887指标不变，年度解释未整体闭合。政策国函1993年149号六字段加一公报来源，550政策/839来源/134关系；PDF56/印1208整页目视交叉未见实体条款差异，逐字终审未完，全文SHA身份及效力日期保持。文献Legal Representation双版本两记录8字段，2022WP结论与2026作者定稿指定福利/成本/结论页对照，平均预期净损失与精神诊断组正收益分别保留；最终获批-7pp为统计功效不足的点估计，不称显著反转。全部摘要、固定10、全文终审0及33关联保持。"
   },
   "records": 208339,
   "indicators": 887,
@@ -61,13 +61,13 @@
     },
     {
       "path": "data/library_current.json",
-      "bytes": 1497,
-      "sha256": "2fd9711e90f600300c8219c6cffef2e6aa5ac23f3cdda8219076444b776837e0"
+      "bytes": 1563,
+      "sha256": "b9f5303e9d86451faae12dbec66be06542ccce6ccb2bfb884519124dafe76634"
     },
     {
-      "path": "data/literature_public_v29.json",
-      "bytes": 5404313,
-      "sha256": "cd2066a6347559dec64c748a96748f780df0d741217a98506de6d9533ff5d57a"
+      "path": "data/literature_public_v30.json",
+      "bytes": 5407473,
+      "sha256": "4201b6aa29a0a10687c2af04f11b1101c1be2b60933974eb91d28970e464b46c"
     },
     {
       "path": "data/part01.js",
@@ -121,8 +121,8 @@
     },
     {
       "path": "data/part11.js",
-      "bytes": 15907129,
-      "sha256": "cdb9e78e8a6fbda88407913cc3eb776f7c1ad0a6896946640f7696cdf6d7c85e"
+      "bytes": 15909858,
+      "sha256": "e5a648f0023fdbb8686ee541ad10de00d6eeb29ab2e157445ee30cfbc5ecfdd8"
     },
     {
       "path": "data/part12.js",
@@ -165,9 +165,9 @@
       "sha256": "474c14fe50907469e1f5d15cdd35edd9fb1d3482a313d680e4e4a8d21bb90e90"
     },
     {
-      "path": "data/policy_public_v72.json",
-      "bytes": 6906384,
-      "sha256": "4a90f345408896ef24ae50f98786e7f0f2bd02a65e3caf0c78aa1d5930ce5fed"
+      "path": "data/policy_public_v73.json",
+      "bytes": 6908238,
+      "sha256": "0861f36382d29ec8ffe5234f2ee0d0907bc5d491d056f243a0d21caecc87cbbb"
     },
     {
       "path": "data/portal.js",
@@ -177,7 +177,7 @@
     {
       "path": "data/version.js",
       "bytes": 109,
-      "sha256": "3b29a108f657ec891d2d8940c340517aa7fafdb8d0ab58c79ee5e9e102f62055"
+      "sha256": "7d0f7d234b61da095701e1d3adf7dd2bb099d1e9482b87f76e6662eccbc810b4"
     },
     {
       "path": "download.js",
@@ -187,7 +187,7 @@
     {
       "path": "index.html",
       "bytes": 6969,
-      "sha256": "afcb51bc2792082deec8f456967cbf54208b32290d1d99e3dbee6bc5b1df65b4"
+      "sha256": "d55a8200fc0500f73a2e9929a34a3572b783877fba38f87620f909d010f41afd"
     },
     {
       "path": "library_links_v02.css",
@@ -202,7 +202,7 @@
     {
       "path": "literature.html",
       "bytes": 4079,
-      "sha256": "aaffa671959f896d7c32df1fb8bfeb78691f321709122da3fac0be12eb61d1e9"
+      "sha256": "daff9462afdb3247785b6c2ff105441199f315aa68afe8937818d7e3138d3884"
     },
     {
       "path": "literature_v03.css",
@@ -210,14 +210,14 @@
       "sha256": "5b33e28e92ead17755d0ebe7f24aad302eeba37d6d85216bd89364d5b5caf684"
     },
     {
-      "path": "literature_v32.js",
+      "path": "literature_v33.js",
       "bytes": 10199,
-      "sha256": "183881053ada03882112f64cc105a1388363dc32a14d9b77e72d4afcd17b316b"
+      "sha256": "e15ae8eb517830e27090f7e5e00fda9d92e54f6cfb9db0390dc3c3950a582ec3"
     },
     {
       "path": "policy.html",
       "bytes": 5490,
-      "sha256": "9fb4580713e27729f0da2993fc7b478fe3baf2b802994a3ca1b5bbbb5293b43b"
+      "sha256": "6e8a179c107ad6a3850a1a8ad2909e07ac62526b1a7107d20bcf0b21ed5b3a8f"
     },
     {
       "path": "policy_v51.css",
@@ -225,9 +225,9 @@
       "sha256": "95c59c21271e5b3ef121193a9fb212e5fe4611c68529c4396f77627104703a18"
     },
     {
-      "path": "policy_v75.js",
+      "path": "policy_v76.js",
       "bytes": 15930,
-      "sha256": "b85cfa552f64c17933693bf448f8cbe8741c6da6be9f7b70ec9c562948bd3583"
+      "sha256": "966ee1bc8aed4365ec19901b6059ef6b17e276313dbaf57329a5ead3d350666c"
     },
     {
       "path": "research_ui_v01.css",
