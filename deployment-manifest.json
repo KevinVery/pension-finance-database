@@ -1,21 +1,21 @@
 {
-  "version": "v167",
+  "version": "v168",
   "framework": "framework_v01",
   "libraries": {
-    "release": "libraries_20261107_v20",
+    "release": "libraries_20261107_v21",
     "updatedAt": "2026-11-07",
     "policy": {
-      "data": "policy_public_v69.json",
-      "page": "policy_v72.html",
-      "script": "policy_v72.js",
+      "data": "policy_public_v70.json",
+      "page": "policy_v73.html",
+      "script": "policy_v73.js",
       "css": "policy_v51.css",
-      "csv": "policies_v69.csv",
-      "sources": "policy_sources_v69.csv"
+      "csv": "policies_v70.csv",
+      "sources": "policy_sources_v70.csv"
     },
     "literature": {
-      "data": "literature_public_v26.json",
-      "page": "literature_v29.html",
-      "script": "literature_v29.js",
+      "data": "literature_public_v27.json",
+      "page": "literature_v30.html",
+      "script": "literature_v30.js",
       "css": "literature_v03.css"
     },
     "links": {
@@ -24,14 +24,14 @@
       "css": "library_links_v02.css"
     },
     "supersedes": {
-      "policy": "policy_v68",
-      "literature": "literature_v25",
+      "policy": "policy_v69",
+      "literature": "literature_v26",
       "links": "unchanged_policy_paper_links_v14"
     },
     "versionPolicy": "superseded versions are invalid for active work; historical evidence stays local and is not bundled",
-    "releaseSummary": "统计v167补广东2021三制度其他收入三条27.4429/8.0045/0.6286亿元，208331记录/887指标，三指标9元数据字段同步；其他收入组成未明示不拆构，旧208328条保持，年度异常与尾差继续开放。政策财企2009年94号与国务院公报21条46段核对，37段归一一致、9段具体异文并存，版本差异审定未完成；五字段及一官源，550政策/835来源/134关系，全文日期效力保持。文献退休与养老金结构、健康与退休两组4记录25字段，JHR正式及NBER完整摘要分别核定，正式缺口12降10；健康摘要可见与元数据worker编码异文留证，DOI及精确日期不推填，正式全文未取得及学术终审0，2654文献33关联保持。"
+    "releaseSummary": "统计v168补广东2021三制度纯利息收入三条344.7527/11.7952/7.7097亿元，208334记录/887指标，三指标9元数据字段同步；委托投资收益另列，不拼2024合并科目，不补机关未列收益，年度异常与尾差继续开放。政策国办1995年51号七字段及一官方题录时效来源，550政策/836来源/134关系；官方页称根据2016年38号已宣布失效，但原正文及后继附件未独立取得，整体效力仍待核、失效日空。文献Family Welfare Cultures双版本2记录13字段，Crossref出版登记及NBER完整摘要分别核定，作者页码修补；Oxford可见页未取得，既有证据回填不称首次新增，不减少固定10组，正式全文及学术终审0，2654文献33关联保持。"
   },
-  "records": 208331,
+  "records": 208334,
   "indicators": 887,
   "files": [
     {
@@ -61,13 +61,13 @@
     },
     {
       "path": "data/library_current.json",
-      "bytes": 1475,
-      "sha256": "c819bd689f61a3d1e42cd41f070e98ed3e024f5e9735a53cea6a73c9bcb14dd4"
+      "bytes": 1497,
+      "sha256": "73b738bd08aa9e237451a49b0c1fd2a5bd6334ca5cc180be222df128d705a6c3"
     },
     {
-      "path": "data/literature_public_v26.json",
-      "bytes": 5394570,
-      "sha256": "20b6cd859d98e777452bc9427804fc891f662f0b185e9673a1ab437eb5c61fa0"
+      "path": "data/literature_public_v27.json",
+      "bytes": 5399941,
+      "sha256": "4c23ea948b2cfb80a1c3d1e8484948b01b4df40942f9f35a3ebaec1954ee795d"
     },
     {
       "path": "data/part01.js",
@@ -121,8 +121,8 @@
     },
     {
       "path": "data/part11.js",
-      "bytes": 15888229,
-      "sha256": "0fe88a5d3e791e85f5e41252080e514d5df73b9159ffb0f64f93f4fe4a2abe3e"
+      "bytes": 15894842,
+      "sha256": "0871489d62a257c79209151f4fcaeeeeab50cbf1f4043f1cf2059b0cba96d8ee"
     },
     {
       "path": "data/part12.js",
@@ -165,9 +165,9 @@
       "sha256": "474c14fe50907469e1f5d15cdd35edd9fb1d3482a313d680e4e4a8d21bb90e90"
     },
     {
-      "path": "data/policy_public_v69.json",
-      "bytes": 6901762,
-      "sha256": "8eca2bd488c201d8c0b39e7cb9a5bc9bf61615eb9124e7024ba58a5c0ceb99cc"
+      "path": "data/policy_public_v70.json",
+      "bytes": 6903417,
+      "sha256": "f3f9797200435155f9f8203f7e9020ef0c07164135af055ab881682eaa6859f2"
     },
     {
       "path": "data/portal.js",
@@ -177,7 +177,7 @@
     {
       "path": "data/version.js",
       "bytes": 109,
-      "sha256": "5ba034733ac339fe215e1f6bb5266da04c7f38a19176e29322861740d57302f5"
+      "sha256": "5197b3bafa321e6dda750d1d4b838462c8705c28218628475bdac1a86e2e036d"
     },
     {
       "path": "download.js",
@@ -187,7 +187,7 @@
     {
       "path": "index.html",
       "bytes": 6969,
-      "sha256": "b77361a8c0cec735bf3505f5e10e15a6066a16342fa4c3a301175c25a7733586"
+      "sha256": "be8773ed6793d7811fb18eda7ed65654ebcf7dc5d70802aacefc6f905046cd7d"
     },
     {
       "path": "library_links_v02.css",
@@ -202,7 +202,7 @@
     {
       "path": "literature.html",
       "bytes": 4079,
-      "sha256": "419638d4e09526b9a41ac54d08ddea16e9685bb4d8b3527c72a98ae8a2b15753"
+      "sha256": "21487be2bf894521cefc60b632dc6cf5b60a5e0f28560009f17527134b4148a3"
     },
     {
       "path": "literature_v03.css",
@@ -210,14 +210,14 @@
       "sha256": "5b33e28e92ead17755d0ebe7f24aad302eeba37d6d85216bd89364d5b5caf684"
     },
     {
-      "path": "literature_v29.js",
+      "path": "literature_v30.js",
       "bytes": 10199,
-      "sha256": "9ad62310f4da208c0cbdfcfc4a8207f85c9d9366d341101e392e221fe63f662b"
+      "sha256": "8fac8ed062af76b77a05f5e58ac8d5893901007b864b521bc60b06ddf33fe5ee"
     },
     {
       "path": "policy.html",
       "bytes": 5490,
-      "sha256": "cb883160cea1ba48ffc4135d9650294e0eedf8ee63bc6ea6cadc103438a373ed"
+      "sha256": "98a4a63bafd245deeecedf64bf870aa4035760f2edc8aef136af2e997c2bfbb5"
     },
     {
       "path": "policy_v51.css",
@@ -225,9 +225,9 @@
       "sha256": "95c59c21271e5b3ef121193a9fb212e5fe4611c68529c4396f77627104703a18"
     },
     {
-      "path": "policy_v72.js",
+      "path": "policy_v73.js",
       "bytes": 15930,
-      "sha256": "3e085bc0c31688b25743e2d627436f7a3e7ae171d25c4baa25898dec6c4ef32a"
+      "sha256": "49213a0bc80e121d773d1cca4a3bf5442bb4458d2bc0ceaccb698e419c9ee209"
     },
     {
       "path": "research_ui_v01.css",
