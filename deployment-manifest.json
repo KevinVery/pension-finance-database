@@ -1,21 +1,21 @@
 {
-  "version": "v164",
+  "version": "v165",
   "framework": "framework_v01",
   "libraries": {
-    "release": "libraries_20261107_v17",
+    "release": "libraries_20261107_v18",
     "updatedAt": "2026-11-07",
     "policy": {
-      "data": "policy_public_v66.json",
-      "page": "policy_v69.html",
-      "script": "policy_v69.js",
+      "data": "policy_public_v67.json",
+      "page": "policy_v70.html",
+      "script": "policy_v70.js",
       "css": "policy_v51.css",
-      "csv": "policies_v66.csv",
-      "sources": "policy_sources_v66.csv"
+      "csv": "policies_v67.csv",
+      "sources": "policy_sources_v67.csv"
     },
     "literature": {
-      "data": "literature_public_v23.json",
-      "page": "literature_v26.html",
-      "script": "literature_v26.js",
+      "data": "literature_public_v24.json",
+      "page": "literature_v27.html",
+      "script": "literature_v27.js",
       "css": "literature_v03.css"
     },
     "links": {
@@ -24,15 +24,15 @@
       "css": "library_links_v02.css"
     },
     "supersedes": {
-      "policy": "policy_v65",
-      "literature": "literature_v22",
+      "policy": "policy_v66",
+      "literature": "literature_v23",
       "links": "unchanged_policy_paper_links_v14"
     },
     "versionPolicy": "superseded versions are invalid for active work; historical evidence stays local and is not bundled",
-    "releaseSummary": "统计v164新增广东2021个人缴费其中财政为困难人员代缴收入2.5685亿元，1记录1指标；原208319条和884项元数据保持，不与个人缴费或财政补贴重复加总，不推断人数，三处1万元差额仍开放。政策2011年16号9字段据财政部2017年144号第六十二条及既存REL-V15-39同步整件废止与2018-01-01失效日，550政策/833来源/134关系保持，2011历史官方44条原文及后继自身待核效力不变。文献Ambulance Taxis双版本2记录14字段，JPE正式42页PDF1–2完整712字符摘要及2025年133(5)1661–1702核定，电子出版2025-03-19与5月刊期分开，WP原摘要不改；正式摘要缺口14降13，全文未通读及学术终审0，33关联保持。"
+    "releaseSummary": "统计v165新增广东2021财政对基础养老金补贴213.8038亿元和对个人缴费补贴9.2346亿元，2记录2指标；原208320条和885项元数据保持。两项属财政补贴其中项，不与总额重复加总；与总额差88301万元未明示，不补构第三项，三处1万元差额仍开放。政策财会2011年3号8字段据财政部财会2017年28号90页附件第5页第十三项及既存REL-V15-34补2018-01-01失效日；已废止状态及摘录身份保持，550政策/833来源/134关系不变。文献Legal Representation双版本2记录9字段，作者官网明确Final Draft April2026的86页稿仅第1页1633字符摘要核读，正式259卷及105661题录交叉；作者稿不代替出版者正式摘要，双端摘要字段均保持，正式摘要缺口13不减，全文学术终审0，33关联保持。"
   },
-  "records": 208320,
-  "indicators": 885,
+  "records": 208322,
+  "indicators": 887,
   "files": [
     {
       "path": "404.html",
@@ -61,13 +61,13 @@
     },
     {
       "path": "data/library_current.json",
-      "bytes": 1473,
-      "sha256": "2a1d2b3496e0e41f1605b5a9d6bfe2e90f27ff072f1ab96c42d84e13955e324e"
+      "bytes": 1566,
+      "sha256": "0aa09eea4555ea0f48c375540b95ff931bc31d86adf9db17b3674206bc38231c"
     },
     {
-      "path": "data/literature_public_v23.json",
-      "bytes": 5382096,
-      "sha256": "e2191675e08ad41bf74b5b05ccf87d050755f2e8c0fec468dc46fe9f493a37ee"
+      "path": "data/literature_public_v24.json",
+      "bytes": 5383672,
+      "sha256": "708f52b66824caa74234d6d738169638a92b0232f86033fb954d46bf006a848e"
     },
     {
       "path": "data/part01.js",
@@ -121,8 +121,8 @@
     },
     {
       "path": "data/part11.js",
-      "bytes": 15858810,
-      "sha256": "bb23cb4cbd7687fe8e5bf3ca582db15033b89c4b72b98f51da80e8009cd9c1b0"
+      "bytes": 15867020,
+      "sha256": "a5a1fa1609bebbf7097fa69ffb9323ed6a2606d9003d62094f848e69ef184b80"
     },
     {
       "path": "data/part12.js",
@@ -165,9 +165,9 @@
       "sha256": "474c14fe50907469e1f5d15cdd35edd9fb1d3482a313d680e4e4a8d21bb90e90"
     },
     {
-      "path": "data/policy_public_v66.json",
-      "bytes": 6897265,
-      "sha256": "f2db5ed2f2402b568278ddf2f635fd7d5111ce3145d69264477765e09473821e"
+      "path": "data/policy_public_v67.json",
+      "bytes": 6898446,
+      "sha256": "e630c819278952219581de6b57673e93981cbd68e1f1c493efcd8e6370c6c555"
     },
     {
       "path": "data/portal.js",
@@ -177,7 +177,7 @@
     {
       "path": "data/version.js",
       "bytes": 109,
-      "sha256": "d0f9bb8e39b0765e3d7dfffe5826ba6e2bc1782ed140b970f9a174c86f137a4c"
+      "sha256": "2d5bb92a3cb9e5278e6e6571e4f951f089e189ada91b5e961c73ac08dcd1b467"
     },
     {
       "path": "download.js",
@@ -187,7 +187,7 @@
     {
       "path": "index.html",
       "bytes": 6969,
-      "sha256": "87b1488a61f3e712437b572f056e08a7a2750b7890aa6b1c1f10ae5d33b8fbf2"
+      "sha256": "64979404e72a7daaa4a21f0da3456cee61d410d8429d8a10e6299eb6cbf6b7d2"
     },
     {
       "path": "library_links_v02.css",
@@ -202,7 +202,7 @@
     {
       "path": "literature.html",
       "bytes": 4079,
-      "sha256": "fe652f71f9bd1260665f24ff728cb290d88fe640643ef7fb966dc3f6f9ff4e5a"
+      "sha256": "6e717730678dc4344fb7449babbe49d2f53917f71bbcaaa30e6157108bdf8341"
     },
     {
       "path": "literature_v03.css",
@@ -210,14 +210,14 @@
       "sha256": "5b33e28e92ead17755d0ebe7f24aad302eeba37d6d85216bd89364d5b5caf684"
     },
     {
-      "path": "literature_v26.js",
+      "path": "literature_v27.js",
       "bytes": 10199,
-      "sha256": "49baba8172481843b5fc85e932c06127c812267ebbfce62947b3306b1e37ab12"
+      "sha256": "9693317590205372c48481e9452b573b51fc6585083ed6cfb88e636cf7ec5978"
     },
     {
       "path": "policy.html",
       "bytes": 5490,
-      "sha256": "0a5d75e743811089587e5559a128987cd7fd31250b38036140b6fd44b4319c34"
+      "sha256": "04e66a956310fd96c423aa7940a78fa263e2ec9e024e49568d836f1aadc2cb29"
     },
     {
       "path": "policy_v51.css",
@@ -225,9 +225,9 @@
       "sha256": "95c59c21271e5b3ef121193a9fb212e5fe4611c68529c4396f77627104703a18"
     },
     {
-      "path": "policy_v69.js",
+      "path": "policy_v70.js",
       "bytes": 15930,
-      "sha256": "67e0bbe17f6ddd9d1b114752a89c6b27b503cc114ec89abca7790bfc7b339e1e"
+      "sha256": "59458351373dba5c4042c2b8a224ddca06e00ca279919ce5a8ec97c27d6659cd"
     },
     {
       "path": "research_ui_v01.css",
