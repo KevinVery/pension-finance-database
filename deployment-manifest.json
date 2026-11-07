@@ -1,8 +1,8 @@
 {
-  "version": "v180",
+  "version": "v181",
   "framework": "framework_v01",
   "libraries": {
-    "release": "libraries_20261108_v33",
+    "release": "libraries_20261108_v34",
     "updatedAt": "2026-11-08",
     "policy": {
       "data": "policy_public_v83.json",
@@ -24,20 +24,20 @@
       "css": "library_links_v02.css"
     },
     "supersedes": {
-      "statistics": "v179",
-      "policy": "policy_v82",
+      "statistics": "v180",
+      "policy": "unchanged_policy_v83",
       "literature": "unchanged_literature_v39",
       "links": "unchanged_policy_paper_links_v14"
     },
     "versionPolicy": "superseded versions are invalid for active work; historical evidence stays local and is not bundled",
-    "releaseSummary": "统计v180新增重庆2021三制度总收入、社会保险费及利息9条已核验省年记录，记录208366、指标887；只取表16决算列，预算/调整预算不作原因。政策policy83补2011年第11号固定收益95%与2020年95号135%条款对照四字段，分母与资产列举分别保留，不认同分母或2020首次提高，整体现行效力未终审。文献literature39保持，正式摘要缺口10、全文终审0；双向关联33组。",
+    "releaseSummary": "统计v181新增重庆2022表17三制度总收入、社会保险费及利息9条已核验省年记录，记录208375、指标887；只取决算列。政策policy83保持，2014/64官源仍有动态检索阻断；文献literature39保持，正式摘要缺口10。",
     "statistics": {
-      "version": "v180",
-      "records": 208366,
+      "version": "v181",
+      "records": 208375,
       "indicators": 887,
       "status": {
         "待核验": 84908,
-        "已核验": 123458
+        "已核验": 123467
       },
       "paths": [
         "养老金融数据门户/data/state.json",
@@ -46,7 +46,7 @@
       ]
     }
   },
-  "records": 208366,
+  "records": 208375,
   "indicators": 887,
   "files": [
     {
@@ -76,8 +76,8 @@
     },
     {
       "path": "data/library_current.json",
-      "bytes": 1755,
-      "sha256": "b74cd4f8ffc3c9b383bcd299e75e3905b839f92d1c4429b41d3aac59412bbcea"
+      "bytes": 1565,
+      "sha256": "b2fc32a2b5115652c3ba50890454ed8d377acf7ab5ee8bf1bd07a7708ee5b96a"
     },
     {
       "path": "data/literature_public_v39.json",
@@ -136,8 +136,8 @@
     },
     {
       "path": "data/part11.js",
-      "bytes": 15967127,
-      "sha256": "5f8a69afc336e1beaf7c6ef2f7be9529e16fefb2b3922fa49567d9a6f111f54b"
+      "bytes": 15980128,
+      "sha256": "5bbef8f8bc72deb6f16cbec48808a73b159b619f1296c9b0857b5bf27d36ada6"
     },
     {
       "path": "data/part12.js",
@@ -192,7 +192,7 @@
     {
       "path": "data/version.js",
       "bytes": 109,
-      "sha256": "99ba19b04af1611e558dade0b66040a50a002877a4d97ff8e927c6a5d4fb97cf"
+      "sha256": "2730f83727b6d912c030e05979b5755ff4fdf655c957b18e0ea29664f3bcee3a"
     },
     {
       "path": "download.js",
@@ -202,7 +202,7 @@
     {
       "path": "index.html",
       "bytes": 6969,
-      "sha256": "fb95b6c73b7c95ce9c585c04cc645ddc75f7351fccb240caa74ffd91a845c545"
+      "sha256": "305c458baa775a63994a0909985f0960d15a65e213adf5830cd03e6d1d07c9f0"
     },
     {
       "path": "library_links_v02.css",
