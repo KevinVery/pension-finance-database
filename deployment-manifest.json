@@ -1,21 +1,21 @@
 {
-  "version": "v171",
+  "version": "v172",
   "framework": "framework_v01",
   "libraries": {
-    "release": "libraries_20261108_v24",
+    "release": "libraries_20261108_v25",
     "updatedAt": "2026-11-08",
     "policy": {
-      "data": "policy_public_v73.json",
-      "page": "policy_v76.html",
-      "script": "policy_v76.js",
+      "data": "policy_public_v74.json",
+      "page": "policy_v77.html",
+      "script": "policy_v77.js",
       "css": "policy_v51.css",
-      "csv": "policies_v73.csv",
-      "sources": "policy_sources_v73.csv"
+      "csv": "policies_v74.csv",
+      "sources": "policy_sources_v74.csv"
     },
     "literature": {
-      "data": "literature_public_v30.json",
-      "page": "literature_v33.html",
-      "script": "literature_v33.js",
+      "data": "literature_public_v31.json",
+      "page": "literature_v34.html",
+      "script": "literature_v34.js",
       "css": "literature_v03.css"
     },
     "links": {
@@ -24,12 +24,12 @@
       "css": "library_links_v02.css"
     },
     "supersedes": {
-      "policy": "policy_v72",
-      "literature": "literature_v29",
+      "policy": "policy_v73",
+      "literature": "literature_v30",
       "links": "unchanged_policy_paper_links_v14"
     },
     "versionPolicy": "superseded versions are invalid for active work; historical evidence stays local and is not bundled",
-    "releaseSummary": "统计v171仅追加上海2020企业109.8/居民9.8亿元两条候选口径提示，2019与2020委托收益合并计入2020；631%/612.5%为预算完成率非同比，原值与候选身份保持。本地既有PDF1—2核读不称本轮在线回源；208339记录/887指标不变，年度解释未整体闭合。政策国函1993年149号六字段加一公报来源，550政策/839来源/134关系；PDF56/印1208整页目视交叉未见实体条款差异，逐字终审未完，全文SHA身份及效力日期保持。文献Legal Representation双版本两记录8字段，2022WP结论与2026作者定稿指定福利/成本/结论页对照，平均预期净损失与精神诊断组正收益分别保留；最终获批-7pp为统计功效不足的点估计，不称显著反转。全部摘要、固定10、全文终审0及33关联保持。"
+    "releaseSummary": "统计v172仅追加上海2019及2021企业9.4/31.9、居民0.5/2.8亿元四条候选口径提示；预算偏离非同比，2019已确认与2020合并收益逐笔范围未明，不分摊减除或改0。原值及候选身份保持，本地既有PDF核读不称在线回源；208339记录/887指标不变，年度解释未整体闭合。政策劳社部发2002年12号六字段加一官源，550政策/840来源/134关系；双官源主体2236字符归一化一致，四署名机构全称简称及长短题名差异保留，原文SHA主源和待核效力日期保持。文献Paternalism双版本两记录8字段，NBER当前42页封面2017/Revised2022与UCSD2022作者稿41页分列，完整结论三页归一一致仅限指定范围；模型优化及理性预期假设不作现实政府最优证明。全部摘要、固定10、全文终审0及33关联保持。"
   },
   "records": 208339,
   "indicators": 887,
@@ -61,13 +61,13 @@
     },
     {
       "path": "data/library_current.json",
-      "bytes": 1563,
-      "sha256": "b9f5303e9d86451faae12dbec66be06542ccce6ccb2bfb884519124dafe76634"
+      "bytes": 1587,
+      "sha256": "6fc0dc0cef42358eacac6a045768fe65f23f9f9112c65b7f4e6e23754b430cd0"
     },
     {
-      "path": "data/literature_public_v30.json",
-      "bytes": 5407473,
-      "sha256": "4201b6aa29a0a10687c2af04f11b1101c1be2b60933974eb91d28970e464b46c"
+      "path": "data/literature_public_v31.json",
+      "bytes": 5411947,
+      "sha256": "723c1eed5c8bb62acc93fc6a007dae9e3baf61277164825119a1e184392d512f"
     },
     {
       "path": "data/part01.js",
@@ -121,8 +121,8 @@
     },
     {
       "path": "data/part11.js",
-      "bytes": 15909858,
-      "sha256": "e5a648f0023fdbb8686ee541ad10de00d6eeb29ab2e157445ee30cfbc5ecfdd8"
+      "bytes": 15914845,
+      "sha256": "537df8b2035f7cda585ec0ef5fdc3bc77dbb5b761e54fd5acf618f8ae93e1457"
     },
     {
       "path": "data/part12.js",
@@ -165,9 +165,9 @@
       "sha256": "474c14fe50907469e1f5d15cdd35edd9fb1d3482a313d680e4e4a8d21bb90e90"
     },
     {
-      "path": "data/policy_public_v73.json",
-      "bytes": 6908238,
-      "sha256": "0861f36382d29ec8ffe5234f2ee0d0907bc5d491d056f243a0d21caecc87cbbb"
+      "path": "data/policy_public_v74.json",
+      "bytes": 6910317,
+      "sha256": "9bb0e9ce3421ebdaf222e7c490b2dc58eca0ed89eaa9500411d390b62c337163"
     },
     {
       "path": "data/portal.js",
@@ -177,7 +177,7 @@
     {
       "path": "data/version.js",
       "bytes": 109,
-      "sha256": "7d0f7d234b61da095701e1d3adf7dd2bb099d1e9482b87f76e6662eccbc810b4"
+      "sha256": "7343b10172bcce10f5630fd2e70f3e3123dd00884898ca69f84899dd6d674e9c"
     },
     {
       "path": "download.js",
@@ -187,7 +187,7 @@
     {
       "path": "index.html",
       "bytes": 6969,
-      "sha256": "d55a8200fc0500f73a2e9929a34a3572b783877fba38f87620f909d010f41afd"
+      "sha256": "112a80c4715d371e70adb4a8958a5abc2e59d12f5e800031cc8a3acc224c7f98"
     },
     {
       "path": "library_links_v02.css",
@@ -202,7 +202,7 @@
     {
       "path": "literature.html",
       "bytes": 4079,
-      "sha256": "daff9462afdb3247785b6c2ff105441199f315aa68afe8937818d7e3138d3884"
+      "sha256": "67af331ad7a1b6a95635cb6287d247545fc150bcbf65c4c7f946d353089eb7be"
     },
     {
       "path": "literature_v03.css",
@@ -210,14 +210,14 @@
       "sha256": "5b33e28e92ead17755d0ebe7f24aad302eeba37d6d85216bd89364d5b5caf684"
     },
     {
-      "path": "literature_v33.js",
+      "path": "literature_v34.js",
       "bytes": 10199,
-      "sha256": "e15ae8eb517830e27090f7e5e00fda9d92e54f6cfb9db0390dc3c3950a582ec3"
+      "sha256": "427c8abc03ea925fe9d9962818c78bb98b14cb9cd9a9fe7033728a2c1113dbcc"
     },
     {
       "path": "policy.html",
       "bytes": 5490,
-      "sha256": "6e8a179c107ad6a3850a1a8ad2909e07ac62526b1a7107d20bcf0b21ed5b3a8f"
+      "sha256": "642afc650102251ac9e5d6f4af882d3e49b4f5d2e5a1060ba98a0ef532fee7cc"
     },
     {
       "path": "policy_v51.css",
@@ -225,9 +225,9 @@
       "sha256": "95c59c21271e5b3ef121193a9fb212e5fe4611c68529c4396f77627104703a18"
     },
     {
-      "path": "policy_v76.js",
+      "path": "policy_v77.js",
       "bytes": 15930,
-      "sha256": "966ee1bc8aed4365ec19901b6059ef6b17e276313dbaf57329a5ead3d350666c"
+      "sha256": "627471eb43459ee1ed44338b2e77cbc20e5d8c80eeafb068461017af673b39e9"
     },
     {
       "path": "research_ui_v01.css",
