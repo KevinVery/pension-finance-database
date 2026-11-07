@@ -1,21 +1,21 @@
 {
-  "version": "v163",
+  "version": "v164",
   "framework": "framework_v01",
   "libraries": {
-    "release": "libraries_20261107_v16",
+    "release": "libraries_20261107_v17",
     "updatedAt": "2026-11-07",
     "policy": {
-      "data": "policy_public_v65.json",
-      "page": "policy_v68.html",
-      "script": "policy_v68.js",
+      "data": "policy_public_v66.json",
+      "page": "policy_v69.html",
+      "script": "policy_v69.js",
       "css": "policy_v51.css",
-      "csv": "policies_v65.csv",
-      "sources": "policy_sources_v65.csv"
+      "csv": "policies_v66.csv",
+      "sources": "policy_sources_v66.csv"
     },
     "literature": {
-      "data": "literature_public_v22.json",
-      "page": "literature_v25.html",
-      "script": "literature_v25.js",
+      "data": "literature_public_v23.json",
+      "page": "literature_v26.html",
+      "script": "literature_v26.js",
       "css": "literature_v03.css"
     },
     "links": {
@@ -24,15 +24,15 @@
       "css": "library_links_v02.css"
     },
     "supersedes": {
-      "policy": "policy_v64",
-      "literature": "literature_v20; unpublished_v21_superseded",
+      "policy": "policy_v65",
+      "literature": "literature_v22",
       "links": "unchanged_policy_paper_links_v14"
     },
     "versionPolicy": "superseded versions are invalid for active work; historical evidence stays local and is not bundled",
-    "releaseSummary": "统计v163新增广东2021企业基本养老金其中离休金支出3.8472亿元，1记录1指标，旧208318记录和883元数据不变；其中项不与基本养老金重复加总，三处1万元差额仍开放。政策2016年101号8字段据财政部2017年144号第六十二条核定整件废止和2018-01-01失效日，新增1条明确废止关系，550政策/833来源/134关系；自身全文官源交叉仍待核，后继整体现行效力未改。文献Paternalism双版本2记录11字段，补全928字符NBER工作论文摘要，核定UCSD所链41页2022-10-05作者稿第1页及正式第216卷及文章号104763；作者稿不冒充出版者正式版，正式摘要缺口14保持，全文学术终审0，33组关联证据保持。"
+    "releaseSummary": "统计v164新增广东2021个人缴费其中财政为困难人员代缴收入2.5685亿元，1记录1指标；原208319条和884项元数据保持，不与个人缴费或财政补贴重复加总，不推断人数，三处1万元差额仍开放。政策2011年16号9字段据财政部2017年144号第六十二条及既存REL-V15-39同步整件废止与2018-01-01失效日，550政策/833来源/134关系保持，2011历史官方44条原文及后继自身待核效力不变。文献Ambulance Taxis双版本2记录14字段，JPE正式42页PDF1–2完整712字符摘要及2025年133(5)1661–1702核定，电子出版2025-03-19与5月刊期分开，WP原摘要不改；正式摘要缺口14降13，全文未通读及学术终审0，33关联保持。"
   },
-  "records": 208319,
-  "indicators": 884,
+  "records": 208320,
+  "indicators": 885,
   "files": [
     {
       "path": "404.html",
@@ -61,13 +61,13 @@
     },
     {
       "path": "data/library_current.json",
-      "bytes": 1500,
-      "sha256": "660ac335ed55f3ac0afaefeed8efa47d8b13819bfd625bbfe8bd42cd8eb75b42"
+      "bytes": 1473,
+      "sha256": "2a1d2b3496e0e41f1605b5a9d6bfe2e90f27ff072f1ab96c42d84e13955e324e"
     },
     {
-      "path": "data/literature_public_v22.json",
-      "bytes": 5380280,
-      "sha256": "d889c22c2c2252a08f0e55ef4010fea663eba8f8783322858682cb4bbff25bc8"
+      "path": "data/literature_public_v23.json",
+      "bytes": 5382096,
+      "sha256": "e2191675e08ad41bf74b5b05ccf87d050755f2e8c0fec468dc46fe9f493a37ee"
     },
     {
       "path": "data/part01.js",
@@ -121,8 +121,8 @@
     },
     {
       "path": "data/part11.js",
-      "bytes": 15854561,
-      "sha256": "184be7569eca66aba7b47deecf369564b8f3fd4fbdb7534d1033df41de7f8d21"
+      "bytes": 15858810,
+      "sha256": "bb23cb4cbd7687fe8e5bf3ca582db15033b89c4b72b98f51da80e8009cd9c1b0"
     },
     {
       "path": "data/part12.js",
@@ -165,9 +165,9 @@
       "sha256": "474c14fe50907469e1f5d15cdd35edd9fb1d3482a313d680e4e4a8d21bb90e90"
     },
     {
-      "path": "data/policy_public_v65.json",
-      "bytes": 6896099,
-      "sha256": "c8f1b97cfba6d4cde9be83087f1671f864d1c02cf2772c31e5e7c32f5810f2af"
+      "path": "data/policy_public_v66.json",
+      "bytes": 6897265,
+      "sha256": "f2db5ed2f2402b568278ddf2f635fd7d5111ce3145d69264477765e09473821e"
     },
     {
       "path": "data/portal.js",
@@ -177,7 +177,7 @@
     {
       "path": "data/version.js",
       "bytes": 109,
-      "sha256": "944b36ec32cacc8116acfa3703e6636fccd982eb50d573a05b16f5666eddd391"
+      "sha256": "d0f9bb8e39b0765e3d7dfffe5826ba6e2bc1782ed140b970f9a174c86f137a4c"
     },
     {
       "path": "download.js",
@@ -187,7 +187,7 @@
     {
       "path": "index.html",
       "bytes": 6969,
-      "sha256": "fb1ed2d1a04389c63d65174807dfad0da4ba8ce9a47849c327a524d12d9cfbad"
+      "sha256": "87b1488a61f3e712437b572f056e08a7a2750b7890aa6b1c1f10ae5d33b8fbf2"
     },
     {
       "path": "library_links_v02.css",
@@ -202,7 +202,7 @@
     {
       "path": "literature.html",
       "bytes": 4079,
-      "sha256": "cd7f9637e08138659f6a94ed5bcb838b842cf891c4abd69ae28b77503956a1de"
+      "sha256": "fe652f71f9bd1260665f24ff728cb290d88fe640643ef7fb966dc3f6f9ff4e5a"
     },
     {
       "path": "literature_v03.css",
@@ -210,14 +210,14 @@
       "sha256": "5b33e28e92ead17755d0ebe7f24aad302eeba37d6d85216bd89364d5b5caf684"
     },
     {
-      "path": "literature_v25.js",
+      "path": "literature_v26.js",
       "bytes": 10199,
-      "sha256": "e341fa826dd3820d32ae36db082c8398048824792ba7489e8bf04607ec54d8f5"
+      "sha256": "49baba8172481843b5fc85e932c06127c812267ebbfce62947b3306b1e37ab12"
     },
     {
       "path": "policy.html",
       "bytes": 5490,
-      "sha256": "080e0ddc519a7da1dc0900f6107edd2578e28194f43494332e6c1bfde544401a"
+      "sha256": "0a5d75e743811089587e5559a128987cd7fd31250b38036140b6fd44b4319c34"
     },
     {
       "path": "policy_v51.css",
@@ -225,9 +225,9 @@
       "sha256": "95c59c21271e5b3ef121193a9fb212e5fe4611c68529c4396f77627104703a18"
     },
     {
-      "path": "policy_v68.js",
+      "path": "policy_v69.js",
       "bytes": 15930,
-      "sha256": "122bb7f7212c730d0ef0b46abd7c30cdbdee50bc017828fcbdbf3963ca6adafc"
+      "sha256": "67e0bbe17f6ddd9d1b114752a89c6b27b503cc114ec89abca7790bfc7b339e1e"
     },
     {
       "path": "research_ui_v01.css",
