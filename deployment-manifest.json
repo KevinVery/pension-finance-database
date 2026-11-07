@@ -1,36 +1,38 @@
 {
-  "version": "v158",
+  "version": "v159",
   "framework": "framework_v01",
   "libraries": {
-    "release": "libraries_20261107_v11",
+    "release": "libraries_20261107_v12",
     "updatedAt": "2026-11-07",
     "policy": {
-      "data": "policy_public_v60.json",
-      "page": "policy_v63.html",
-      "script": "policy_v63.js",
+      "data": "policy_public_v61.json",
+      "page": "policy_v64.html",
+      "script": "policy_v64.js",
       "css": "policy_v51.css",
-      "csv": "policies_v60.csv",
-      "sources": "policy_sources_v60.csv"
+      "csv": "policies_v61.csv",
+      "sources": "policy_sources_v61.csv"
     },
     "literature": {
-      "data": "literature_public_v16.json",
-      "page": "literature_v19.html",
-      "script": "literature_v19.js",
+      "data": "literature_public_v17.json",
+      "page": "literature_v20.html",
+      "script": "literature_v20.js",
       "css": "literature_v03.css"
     },
     "links": {
-      "data": "policy_paper_links_v13.json",
-      "script": "library_links_v14.js",
+      "data": "policy_paper_links_v14.json",
+      "script": "library_links_v15.js",
       "css": "library_links_v02.css"
     },
     "supersedes": {
-      "policy": "policy_v59"
+      "policy": "policy_v60",
+      "literature": "literature_v16",
+      "links": "policy_paper_links_v13"
     },
     "versionPolicy": "superseded versions are invalid for active work; historical evidence stays local and is not bundled",
-    "releaseSummary": "统计v158新增广东机关事业单位2022/2023年待遇支出2条，866指标不增，政府待遇覆盖2022—2024；同名科目不代表内部细项完全统一，企业居民历史不强拼。旧208298记录不变、一个指标5字段同步。政策2019年84号与岳塘区政府官方转载主体70条102段归一交叉通过，新增1来源；附表未逐格核、非部委原件逐字鉴定，法宝身份、全文、日期、待核效力和132关系均保持。文献lit16及33关联无新入库证据，正式端摘要缺口19、全文学术终审0保持。"
+    "releaseSummary": "统计v159新增广东2021在职参保及缴费人员年末数2条/1指标，旧492候选与图表限制保持；年末缴费不当全年平均。追加广东2022—2024财政/NBS桥接3说明，2022残差0.3653亿元不抹平，原值状态不变、年度解释未关闭。政策财税2006年10号财政部原站六项10段交叉，新增1来源；仅核定1997年144号第一二条部分废止、其余待核，失效日期空，增1关系。文献正式延期公共年金主文及摘要取得，2条9字段，正式端摘要缺口19降18；寿命比较措辞疑点及独立附录未审保持，终审0，33组关联不变。"
   },
-  "records": 208300,
-  "indicators": 866,
+  "records": 208302,
+  "indicators": 867,
   "files": [
     {
       "path": "404.html",
@@ -59,13 +61,13 @@
     },
     {
       "path": "data/library_current.json",
-      "bytes": 1227,
-      "sha256": "f89bf4c20dbc2da6ded56351243dfed90a6b03f08aa785638983391235c0f2a0"
+      "bytes": 1347,
+      "sha256": "1e84143ccb2277101628f838c32705b434c966b47d7d21d5a03ed2dadac5493a"
     },
     {
-      "path": "data/literature_public_v16.json",
-      "bytes": 5366876,
-      "sha256": "6cfdd30b0047df828812cbf82f8928b20c9446a432fd8977b0327b45c6f6254c"
+      "path": "data/literature_public_v17.json",
+      "bytes": 5367961,
+      "sha256": "cafe242c2f792e7808c53f5dde0cfa802c51271b5ce8b5859ded275b4e2d4e6e"
     },
     {
       "path": "data/part01.js",
@@ -119,8 +121,8 @@
     },
     {
       "path": "data/part11.js",
-      "bytes": 15784928,
-      "sha256": "6feac3f8637b70205324db84e19344e710ad4552a30aeb4430ded651bac9ed81"
+      "bytes": 15792142,
+      "sha256": "dbbf549ee567ae200be982661cd76c0697218d635d1a1784b8a28a93ff50e1b0"
     },
     {
       "path": "data/part12.js",
@@ -158,14 +160,14 @@
       "sha256": "00de5579c9d26f1f7a9806aa0ec884c06f20ce9eae08bb59d5f966b994142dad"
     },
     {
-      "path": "data/policy_paper_links_v13.json",
+      "path": "data/policy_paper_links_v14.json",
       "bytes": 751221,
-      "sha256": "42cde2f1a8564e251854dc1c904acd6746b674291c4fe216681cef910a0a8b82"
+      "sha256": "474c14fe50907469e1f5d15cdd35edd9fb1d3482a313d680e4e4a8d21bb90e90"
     },
     {
-      "path": "data/policy_public_v60.json",
-      "bytes": 6885942,
-      "sha256": "e5046dd8288a3ee4a52a3b9edb257fd366d130dac645d54e4aed9f5e331266f7"
+      "path": "data/policy_public_v61.json",
+      "bytes": 6889216,
+      "sha256": "a75a4dc39d13b3cda21faee98c6c41c003aae89e0494ef59425fa9c1557cc113"
     },
     {
       "path": "data/portal.js",
@@ -175,7 +177,7 @@
     {
       "path": "data/version.js",
       "bytes": 109,
-      "sha256": "5a5a378626dedee864ddb220c86701edb4b3cb1b64ed1259ea36198b692da2f4"
+      "sha256": "16807cc468343317804ea3c5336c2dca9f4f712cae22064bef98bf5fa1d40f0a"
     },
     {
       "path": "download.js",
@@ -185,7 +187,7 @@
     {
       "path": "index.html",
       "bytes": 6969,
-      "sha256": "a81191b6357ac89f307390171a9d3178459380c2b7080f8cda25d8654e97b354"
+      "sha256": "0f683a9997f4af150aa10085ecdfa2a0f960d7d371aba51fc0759883df5f1256"
     },
     {
       "path": "library_links_v02.css",
@@ -193,14 +195,14 @@
       "sha256": "36e5526c45f05acf1116f57fa82a8309f6903b930768fd5c74bb469f4585020f"
     },
     {
-      "path": "library_links_v14.js",
+      "path": "library_links_v15.js",
       "bytes": 5308,
-      "sha256": "0039c58e695cc214dc462121369ba2a84819ec0311b8423c4ec918777a1d2b90"
+      "sha256": "da5c6a23b3fbf655461d182feb59af4743b6415c070562c53c104622c219120f"
     },
     {
       "path": "literature.html",
       "bytes": 4079,
-      "sha256": "b60655091c3c851fbb2ad77a50f4fdec437a3b845b26213b8f6e63fd268ea214"
+      "sha256": "b789a5f1083a53c92ffb875b1a3e5eed2a422ac6d379a4e7bcdcd3788a9b2278"
     },
     {
       "path": "literature_v03.css",
@@ -208,14 +210,14 @@
       "sha256": "5b33e28e92ead17755d0ebe7f24aad302eeba37d6d85216bd89364d5b5caf684"
     },
     {
-      "path": "literature_v19.js",
+      "path": "literature_v20.js",
       "bytes": 10199,
-      "sha256": "2a9d8951ff25518e0b379f04a9a079e595ae0dfed573b96ef63d9fcaf621a7b3"
+      "sha256": "8f5e33a9bd46107d6f791eeb2cc4017cbf50443bd34e74fc920ab56c7957163e"
     },
     {
       "path": "policy.html",
       "bytes": 5490,
-      "sha256": "4a19bfdeda38f49b5166d5dd0eb1227109d50e2d173ac7caea15696dab9bc3be"
+      "sha256": "502e0ed633c58621a97967e23c7b95258f1ce9ed97207a30e415ea9ce370533f"
     },
     {
       "path": "policy_v51.css",
@@ -223,9 +225,9 @@
       "sha256": "95c59c21271e5b3ef121193a9fb212e5fe4611c68529c4396f77627104703a18"
     },
     {
-      "path": "policy_v63.js",
+      "path": "policy_v64.js",
       "bytes": 15930,
-      "sha256": "24a9378c3cd6da5cb6be8be787b9c15f715fa5b90f572343781b52a8912c876c"
+      "sha256": "cc2e1dff3da581a20b7db4844a3ce12a8a333910717b05b9b9d132d4497cc717"
     },
     {
       "path": "research_ui_v01.css",
