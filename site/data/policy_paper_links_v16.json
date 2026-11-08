@@ -1,17 +1,17 @@
 {
   "meta": {
-    "version": "policy_paper_links_v15",
+    "version": "policy_paper_links_v16",
     "updatedAt": "2026-11-08",
     "papersAssessed": 2654,
-    "policiesAssessed": 547,
-    "pairsAssessed": 1451738,
+    "policiesAssessed": 546,
+    "pairsAssessed": 1449084,
     "relations": 33,
     "papersLinked": 31,
     "policiesLinked": 3,
     "explicitRelations": 6,
     "thematicRelations": 0,
     "unmatchedPapers": 2623,
-    "unmatchedPolicies": 546,
+    "unmatchedPolicies": 545,
     "citationRecords": 51,
     "categories": [
       "养老与社保综合",
@@ -32,15 +32,15 @@
     "relationNote": "仅计入可定位文件名称、文号或具体中国改革的题名／摘要证据；同主题、国外经验与一般制度研究不计为具体政策关联。",
     "citationNote": "被引次数为Crossref按DOI匹配的登记值，核对日期2026-10-19；不代表所有平台总被引，缺失不记为0。",
     "reformRelations": 27,
-    "supersedes": "policy_paper_links_v14",
+    "supersedes": "policy_paper_links_v15",
     "currentPaperRecords": 2654,
-    "currentPolicyRecords": 549,
-    "candidateUniversePairs": 1457046,
-    "pendingNewPolicyAssessment": 3,
-    "assessmentNote": "33组稳定关系及原证据摘录保留；66号同文去重只重建政策目录索引，语义边逐条不变，不声称新增全文关联审定。",
+    "currentPolicyRecords": 548,
+    "candidateUniversePairs": 1454392,
+    "pendingNewPolicyAssessment": 2,
+    "assessmentNote": "41号同文去重并保留双源、66及41旧ID别名；政策目录546与全库548分列；33条语义边及证据不变，不新增全文关联审定。",
     "deduplication": {
-      "retiredID": "POL-V05-EXT-9970c583afa418",
-      "retainedID": "POL-V05-EXT-2148b24695c318",
+      "retiredID": "POL-V05-EXT-28e629e90f5639",
+      "retainedID": "POL-HRSS-0611",
       "oldIDsResolve": true,
       "semanticEdgesChanged": 0
     }
@@ -20362,12 +20362,6 @@
       "原文URL": "https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/zcfg/bmgz/202011/t20201102_394635.html"
     },
     {
-      "id": "POL-V05-EXT-28e629e90f5639",
-      "标题": "中华人民共和国人力资源和社会保障部 国家医疗保障局令（第41号） 香港澳门台湾居民在内地（大陆）参加社会保险暂行办法",
-      "年份": "2019",
-      "原文URL": "https://www.gov.cn/gongbao/content/2020/content_5480478.htm"
-    },
-    {
       "id": "POL-V05-EXT-8c113e8c563d29",
       "标题": "民政部关于加快建立全国统一养老机构等级评定体系的指导意见",
       "年份": "2019",
@@ -22549,6 +22543,7 @@
     }
   ],
   "policyAliases": {
-    "POL-V05-EXT-9970c583afa418": "POL-V05-EXT-2148b24695c318"
+    "POL-V05-EXT-9970c583afa418": "POL-V05-EXT-2148b24695c318",
+    "POL-V05-EXT-28e629e90f5639": "POL-HRSS-0611"
   }
 }
