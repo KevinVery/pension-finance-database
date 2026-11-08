@@ -1,40 +1,40 @@
 {
-  "release": "libraries_20261108_v47",
+  "release": "libraries_20261108_v48",
   "updatedAt": "2026-11-08",
   "policy": {
-    "data": "policy_public_v96.json",
-    "page": "policy_v99.html",
-    "script": "policy_v99.js",
+    "data": "policy_public_v97.json",
+    "page": "policy_v100.html",
+    "script": "policy_v100.js",
     "css": "policy_v51.css",
-    "csv": "policies_v96.csv",
-    "sources": "policy_sources_v96.csv"
+    "csv": "policies_v97.csv",
+    "sources": "policy_sources_v97.csv"
   },
   "literature": {
-    "data": "literature_public_v46.json",
-    "page": "literature_v49.html",
-    "script": "literature_v49.js",
+    "data": "literature_public_v47.json",
+    "page": "literature_v50.html",
+    "script": "literature_v50.js",
     "css": "literature_v03.css"
   },
   "links": {
-    "data": "policy_paper_links_v17.json",
-    "script": "library_links_v18.js",
+    "data": "policy_paper_links_v18.json",
+    "script": "library_links_v19.js",
     "css": "library_links_v02.css"
   },
   "supersedes": {
-    "statistics": "v192",
-    "policy": "policy_v95",
-    "literature": "literature_v45",
-    "links": "policy_paper_links_v16"
+    "statistics": "v193",
+    "policy": "policy_v96",
+    "literature": "literature_v46",
+    "links": "policy_paper_links_v17"
   },
   "versionPolicy": "superseded versions are invalid for active work; historical evidence stays local and is not bundled",
-  "releaseSummary": "北京2019三制度总支出三条已核入库，原208465条保持；54号同文去重双源及旧ID兼容，33语义边不变；IRP7590补LABORE机构正式发表完整英文摘要，固定19摘要缺口10降9，正式全文仍待核。",
+  "releaseSummary": "北京2018三制度九收入入库，说明八企业消歧，旧208468条不改；54对16五范围限定修改链，非整件废止；W27534国民养老金对照小节及表2两字段追加，全部摘要与33关联保持。",
   "statistics": {
-    "version": "v193",
-    "records": 208468,
+    "version": "v194",
+    "records": 208477,
     "indicators": 887,
     "status": {
       "待核验": 84908,
-      "已核验": 123560
+      "已核验": 123569
     },
     "paths": [
       "养老金融数据门户/data/state.json",

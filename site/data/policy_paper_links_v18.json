@@ -1,6 +1,6 @@
 {
   "meta": {
-    "version": "policy_paper_links_v17",
+    "version": "policy_paper_links_v18",
     "updatedAt": "2026-11-08",
     "papersAssessed": 2654,
     "policiesAssessed": 545,
@@ -32,12 +32,12 @@
     "relationNote": "仅计入可定位文件名称、文号或具体中国改革的题名／摘要证据；同主题、国外经验与一般制度研究不计为具体政策关联。",
     "citationNote": "被引次数为Crossref按DOI匹配的登记值，核对日期2026-10-19；不代表所有平台总被引，缺失不记为0。",
     "reformRelations": 27,
-    "supersedes": "policy_paper_links_v16",
+    "supersedes": "policy_paper_links_v17",
     "currentPaperRecords": 2654,
     "currentPolicyRecords": 547,
     "candidateUniversePairs": 1451738,
     "pendingNewPolicyAssessment": 2,
-    "assessmentNote": "54号同文去重并保留双源、66/41/54旧ID别名；目录545与全库547分列；33语义边和证据保持，不新增全文关联审定。",
+    "assessmentNote": "第54对16号限定修改链新增于政策库；图谱545目录及33语义边和显式证据保持，不把条款修改当文献关联。",
     "deduplication": {
       "retiredID": "POL-V05-EXT-081f0b899602d0",
       "retainedID": "POL-HRSS-0803",
