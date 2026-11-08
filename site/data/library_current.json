@@ -1,18 +1,18 @@
 {
-  "release": "libraries_20261108_v43",
+  "release": "libraries_20261108_v44",
   "updatedAt": "2026-11-08",
   "policy": {
-    "data": "policy_public_v92.json",
-    "page": "policy_v95.html",
-    "script": "policy_v95.js",
+    "data": "policy_public_v93.json",
+    "page": "policy_v96.html",
+    "script": "policy_v96.js",
     "css": "policy_v51.css",
-    "csv": "policies_v92.csv",
-    "sources": "policy_sources_v92.csv"
+    "csv": "policies_v93.csv",
+    "sources": "policy_sources_v93.csv"
   },
   "literature": {
-    "data": "literature_public_v42.json",
-    "page": "literature_v45.html",
-    "script": "literature_v45.js",
+    "data": "literature_public_v43.json",
+    "page": "literature_v46.html",
+    "script": "literature_v46.js",
     "css": "literature_v03.css"
   },
   "links": {
@@ -21,20 +21,20 @@
     "css": "library_links_v02.css"
   },
   "supersedes": {
-    "statistics": "unchanged_v189",
-    "policy": "policy_v91",
-    "literature": "literature_v41",
+    "statistics": "v189",
+    "policy": "policy_v92",
+    "literature": "literature_v42",
     "links": "unchanged_policy_paper_links_v15"
   },
   "versionPolicy": "superseded versions are invalid for active work; historical evidence stays local and is not bundled",
-  "releaseSummary": "统计v189保持，2018草案批准未核不入正式库；policy92补48号公布日期及制定机关明确废止引用（原令待取）；lit42合并Relabeling两条机构/作者证据，一字段，摘要不改。",
+  "releaseSummary": "北京2020附表六九条三制度收入，原208444条不改；policy93民政53/57日期文号15字段；literature43 NBER W27534完整结论限定页三字段，摘要及关联保持。",
   "statistics": {
-    "version": "v189",
-    "records": 208444,
+    "version": "v190",
+    "records": 208453,
     "indicators": 887,
     "status": {
       "待核验": 84908,
-      "已核验": 123536
+      "已核验": 123545
     },
     "paths": [
       "养老金融数据门户/data/state.json",

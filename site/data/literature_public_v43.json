@@ -1,6 +1,6 @@
 {
   "meta": {
-    "version": "literature_v42",
+    "version": "literature_v43",
     "updatedAt": "2026-11-08",
     "records": 2654,
     "core": 1516,
@@ -111,20 +111,17 @@
         "semanticEdgesChanged": 0
       }
     },
-    "supersedes": "literature_v41",
+    "supersedes": "literature_v42",
     "supersededVersionStatus": "v10未发布构建的年份汇总未同步，已作废；v11重算现行计数，57条题录修订保持。",
     "continuationBatch": {
       "recordsReviewed": 1,
+      "fieldsPatched": 3,
       "newRecords": 0,
-      "fieldsPatched": 1,
-      "independentEvidenceAdditions": 2,
-      "formalAbstractSourcesVerified": 0,
       "formalAbstractGapsAfterActivation": 10,
-      "fullTextAcademicFinalReviews": 0,
-      "versionRelationsChanged": 0
+      "fullTextAcademicFinalReviews": 0
     },
     "previousVersionStatus": "superseded versions are invalid for active work; local evidence only",
-    "revisionNote": "Relabeling一字段合并Tampere机构题录与机构→ORCID→作者Research身份链；作者题名异文保留，正式题名和全部摘要不改。"
+    "revisionNote": "NBER W27534完整结论限定页三字段，返工代理及雇主反应识别边界；与MIT所链稿同SHA，仅WP文件身份一致，正式摘要不变。"
   },
   "sourceEntrances": [
     {
@@ -32634,7 +32631,7 @@
       "主题词": "social_security",
       "相邻机制词": "retirement",
       "语义复核": "true",
-      "核验状态": "NBER工作论文完整作者摘要及正式版题录关系已核；正式摘要、全文内容及学术终审待续核",
+      "核验状态": "NBER工作论文完整作者摘要及正式版题录关系既有核验保持；新增July2020稿完整结论限定页核读、返工代理与雇主反应识别限制；正式摘要、正式全文及学术终审待续核",
       "来源": "NBER Working Papers（本地 NBER 数据库题录）",
       "来源页": "https://www.nber.org/papers/w27534",
       "官方PDF": "https://www.nber.org/system/files/working_papers/w27534/w27534.pdf",
@@ -32649,7 +32646,7 @@
         "退休年龄与劳动供给"
       ],
       "分类依据": "题名与摘要的双语主题规则分类；未作全文语义核验",
-      "全文状态": "原站全文链接可用性待逐篇核验",
+      "全文状态": "本轮NBER现行46页July2020稿PDF1封面及PDF28—30完整Part V结论已核，四页视觉检查；与既存MIT所链稿SHA256一致。未通读其余正文/附录或独立复算，2022期刊正式全文及完整正式摘要未取得、全文学术终审未完成。",
       "发现来源": [
         "既有底库"
       ],
@@ -32668,7 +32665,7 @@
       "关联政策数": 0,
       "明确提及政策数": 0,
       "政策关联": [],
-      "摘要来源说明": "NBER官方详情页完整原作者摘要（2026-11-07）；仅核工作论文摘要，不以此代替2022年正式期刊摘要。"
+      "摘要来源说明": "NBER官方详情页完整原作者摘要（2026-11-07）；仅核工作论文摘要，不以此代替2022年正式期刊摘要。 本轮NBER现行46页July2020工作论文PDF1封面及完整Part V结论（PDF28标题起至PDF30末，印刷27—29）文字与四页图核读。当前PDF与前轮MIT作者目录所链46页稿SHA256完全一致，仅确认这两份文件身份，不涉及2022正式期刊版。结论用未来三年返工行为作为regret的间接证据，措辞为suggests及potential welfare loss，不能当直接测量后悔或已核算福利损失；并明确无法将劳动者选择变化与雇主对法律变化的独立反应分离。表格、模型、其余正文和附录未通读或复算；正式摘要固定10及全文学术终审0保持。"
     },
     {
       "文献ID": "PENSION-W28028",
