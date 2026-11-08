@@ -1,16 +1,16 @@
 {
-  "version": "v182",
+  "version": "v183",
   "framework": "framework_v01",
   "libraries": {
-    "release": "libraries_20261108_v35",
+    "release": "libraries_20261108_v36",
     "updatedAt": "2026-11-08",
     "policy": {
-      "data": "policy_public_v84.json",
-      "page": "policy_v87.html",
-      "script": "policy_v87.js",
+      "data": "policy_public_v85.json",
+      "page": "policy_v88.html",
+      "script": "policy_v88.js",
       "css": "policy_v51.css",
-      "csv": "policies_v84.csv",
-      "sources": "policy_sources_v84.csv"
+      "csv": "policies_v85.csv",
+      "sources": "policy_sources_v85.csv"
     },
     "literature": {
       "data": "literature_public_v39.json",
@@ -24,20 +24,20 @@
       "css": "library_links_v02.css"
     },
     "supersedes": {
-      "statistics": "v181",
-      "policy": "policy_v84",
+      "statistics": "v183",
+      "policy": "policy_v85",
       "literature": "unchanged_literature_v39",
       "links": "unchanged_policy_paper_links_v14"
     },
     "versionPolicy": "superseded versions are invalid for active work; historical evidence stays local and is not bundled",
-    "releaseSummary": "统计v182新增重庆2021三制度总收入、社会保险费及利息9条已核验省年记录，记录208384、指标887；只取表16决算列，预算/调整预算不作原因。政策policy83补2011年第11号固定收益95%与2020年95号135%条款对照四字段，分母与资产列举分别保留，不认同分母或2020首次提高，整体现行效力未终审。文献literature39保持，正式摘要缺口10、全文终审0；双向关联33组。",
+    "releaseSummary": "统计v183新增重庆2024三制度总收入、社会保险费及利息9条已核验省年记录，记录208393、指标887；只取表16决算列，预算/调整预算不作原因。政策policy85补国发〔1985〕52号在线官源回源四字段，13项保护字段和日期保持，不推整体现行效力。文献literature39保持，正式摘要缺口10、全文终审0；双向关联33组。",
     "statistics": {
-      "version": "v182",
-      "records": 208384,
+      "version": "v183",
+      "records": 208393,
       "indicators": 887,
       "status": {
         "待核验": 84908,
-        "已核验": 123476
+        "已核验": 123485
       },
       "paths": [
         "养老金融数据门户/data/state.json",
@@ -46,7 +46,7 @@
       ]
     }
   },
-  "records": 208384,
+  "records": 208393,
   "indicators": 887,
   "files": [
     {
@@ -76,8 +76,8 @@
     },
     {
       "path": "data/library_current.json",
-      "bytes": 1755,
-      "sha256": "10dd19e7a0a41395d437062b07c9af02056594e1d1d1707892b1100d2d209bdc"
+      "bytes": 1692,
+      "sha256": "e8c6b037419fd0edbf633ec74b9b6f419fce4e70efb7f8ac23db14b494513963"
     },
     {
       "path": "data/literature_public_v39.json",
@@ -136,8 +136,8 @@
     },
     {
       "path": "data/part11.js",
-      "bytes": 15993131,
-      "sha256": "a60e915edf80295b7caf67d1c67aa88a0f353ad263a463f0a6c509fba3c78ba7"
+      "bytes": 16004558,
+      "sha256": "5cab1cfb1355dac646c126c16148c85694ac1930cd5dddbb2a33b94f7bbd4bf5"
     },
     {
       "path": "data/part12.js",
@@ -180,9 +180,9 @@
       "sha256": "474c14fe50907469e1f5d15cdd35edd9fb1d3482a313d680e4e4a8d21bb90e90"
     },
     {
-      "path": "data/policy_public_v84.json",
-      "bytes": 7334629,
-      "sha256": "73e8df6c081e7c69c73fa338136b6a0dfd67f00f4b3bfd167fa73b0e44dabba9"
+      "path": "data/policy_public_v85.json",
+      "bytes": 7335326,
+      "sha256": "e1b9edd03f3e7b3769439f00d3401c8194ed6918e8586a12bfd8010a2584c8ec"
     },
     {
       "path": "data/portal.js",
@@ -192,7 +192,7 @@
     {
       "path": "data/version.js",
       "bytes": 109,
-      "sha256": "e4d7a51ba2028a37dd30914b56abd1f3ae4c93d12d757460848a71178498dd42"
+      "sha256": "dc428f4f95c5752b3587edb38668770f8c4a5d9041e075e0ff5bc9b0a0271620"
     },
     {
       "path": "download.js",
@@ -202,7 +202,7 @@
     {
       "path": "index.html",
       "bytes": 6969,
-      "sha256": "7b8204577d0fddf0576fbd7e37e928be4ac4a596b20303823d9c5bf72c80887f"
+      "sha256": "0a7af5681dabc2c145b3f74ef35f21df79e9f4d84681f8956becf74f37114da5"
     },
     {
       "path": "library_links_v02.css",
@@ -232,7 +232,7 @@
     {
       "path": "policy.html",
       "bytes": 5490,
-      "sha256": "8e399c1f78b7df26d422f27f94110733da3f09aecdad25569ecd143e447ed397"
+      "sha256": "f0497067794089cabfb88f3f88b507162fd1e4477998737426609dcf8da2ab12"
     },
     {
       "path": "policy_v51.css",
@@ -240,9 +240,9 @@
       "sha256": "95c59c21271e5b3ef121193a9fb212e5fe4611c68529c4396f77627104703a18"
     },
     {
-      "path": "policy_v87.js",
+      "path": "policy_v88.js",
       "bytes": 15930,
-      "sha256": "03b5c24386a4ca263c7f0fa3a21a6f07561cdde552564eb1fdde62a985a63065"
+      "sha256": "0ff4740ec6b6c39429997d9afaca32637c39892dfec22343ea3cd6398a29f3bb"
     },
     {
       "path": "research_ui_v01.css",
