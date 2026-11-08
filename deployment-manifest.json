@@ -2,20 +2,20 @@
   "version": "v189",
   "framework": "framework_v01",
   "libraries": {
-    "release": "libraries_20261108_v42",
+    "release": "libraries_20261108_v43",
     "updatedAt": "2026-11-08",
     "policy": {
-      "data": "policy_public_v91.json",
-      "page": "policy_v94.html",
-      "script": "policy_v94.js",
+      "data": "policy_public_v92.json",
+      "page": "policy_v95.html",
+      "script": "policy_v95.js",
       "css": "policy_v51.css",
-      "csv": "policies_v91.csv",
-      "sources": "policy_sources_v91.csv"
+      "csv": "policies_v92.csv",
+      "sources": "policy_sources_v92.csv"
     },
     "literature": {
-      "data": "literature_public_v41.json",
-      "page": "literature_v44.html",
-      "script": "literature_v44.js",
+      "data": "literature_public_v42.json",
+      "page": "literature_v45.html",
+      "script": "literature_v45.js",
       "css": "literature_v03.css"
     },
     "links": {
@@ -24,13 +24,13 @@
       "css": "library_links_v02.css"
     },
     "supersedes": {
-      "statistics": "v188",
-      "policy": "policy_v90",
-      "literature": "literature_v40",
-      "links": "policy_paper_links_v14"
+      "statistics": "unchanged_v189",
+      "policy": "policy_v91",
+      "literature": "literature_v41",
+      "links": "unchanged_policy_paper_links_v15"
     },
     "versionPolicy": "superseded versions are invalid for active work; historical evidence stays local and is not bundled",
-    "releaseSummary": "重庆2019表12六条支出；policy91民政66同文去重兼容旧ID、49号明确废止链；literature41 Capitation Princeton目录一字段；links15重建索引，33语义边保持。",
+    "releaseSummary": "统计v189保持，2018草案批准未核不入正式库；policy92补48号公布日期及制定机关明确废止引用（原令待取）；lit42合并Relabeling两条机构/作者证据，一字段，摘要不改。",
     "statistics": {
       "version": "v189",
       "records": 208444,
@@ -76,13 +76,13 @@
     },
     {
       "path": "data/library_current.json",
-      "bytes": 1461,
-      "sha256": "12f6d70433616df4428653001b85ad8d284a47c8dde83a31cac0b2357e2c28d3"
+      "bytes": 1510,
+      "sha256": "dce4626392ad7cda87ef94a5ad95010bc6d79557ee1eae4395e0eda7f137e5d7"
     },
     {
-      "path": "data/literature_public_v41.json",
-      "bytes": 6577493,
-      "sha256": "06454cfc40410c7c813e002a2ba8a0e4aaae685c4fad59d7febe419d96b68159"
+      "path": "data/literature_public_v42.json",
+      "bytes": 6578422,
+      "sha256": "c8ba0bb1d039bbcb10ef7f9ed226b819f99ebda94245c2fa9a4e37243339b3dc"
     },
     {
       "path": "data/part01.js",
@@ -180,9 +180,9 @@
       "sha256": "73bb81c0bafcf452b68a21079f1070fe500b5adb73785b5c02af1fc76bbc5da0"
     },
     {
-      "path": "data/policy_public_v91.json",
-      "bytes": 7327757,
-      "sha256": "cb6dc35d7e6c6ca824ddce8ecfc32f9a0543ce1b6aedeffb29dcd6fb1ec35f11"
+      "path": "data/policy_public_v92.json",
+      "bytes": 7330377,
+      "sha256": "d400d44681e712e81f0d9983c5d08cb98e51e88cd3add4a1aed6d3b3811c31a6"
     },
     {
       "path": "data/portal.js",
@@ -202,7 +202,7 @@
     {
       "path": "index.html",
       "bytes": 6969,
-      "sha256": "1aa554d046ac04d6ea7385ad30cfec01771333f13740b5d752af229f1585fe57"
+      "sha256": "24159f9a02c54adae7b3c4544f6fb4c994fcbc243f507f9577a02f4b89840d48"
     },
     {
       "path": "library_links_v02.css",
@@ -217,7 +217,7 @@
     {
       "path": "literature.html",
       "bytes": 4079,
-      "sha256": "e92825bf67ebb55bb1f77c2c2e32cfdcdc984d915785154fd8678ae06c316456"
+      "sha256": "6b7fc56cbd22ff372a015d45c7a1ab21a974373936327cd30d115cd941ed7d56"
     },
     {
       "path": "literature_v03.css",
@@ -225,14 +225,14 @@
       "sha256": "5b33e28e92ead17755d0ebe7f24aad302eeba37d6d85216bd89364d5b5caf684"
     },
     {
-      "path": "literature_v44.js",
+      "path": "literature_v45.js",
       "bytes": 10199,
-      "sha256": "079844eb93b94ec1faef9df77d04459f5000515f81f0fec55e47dcbf944290ca"
+      "sha256": "c91adfb6ae510c75a7dc6ef5f2d16721a6e7a68d2ac6f87ffca9806dbee23f5a"
     },
     {
       "path": "policy.html",
       "bytes": 5490,
-      "sha256": "3ecf9fba2610d7a8a6ed36d1c524433eae9fea0919d87ddc970787ce0cd64ea3"
+      "sha256": "8fddb30d36f9198509b74c1ac9acf886aeaafda15a8ec956477c36270165b06e"
     },
     {
       "path": "policy_v51.css",
@@ -240,9 +240,9 @@
       "sha256": "95c59c21271e5b3ef121193a9fb212e5fe4611c68529c4396f77627104703a18"
     },
     {
-      "path": "policy_v94.js",
+      "path": "policy_v95.js",
       "bytes": 15965,
-      "sha256": "6d80c9abd90c76c1c0d8997f42441ca28da49c351fbf055686610103cbd3f91b"
+      "sha256": "408bf2de62e786d3b10e93166481165175481cbfa1c436521550ef6df80d87e9"
     },
     {
       "path": "research_ui_v01.css",

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "version": "literature_v41",
+    "version": "literature_v42",
     "updatedAt": "2026-11-08",
     "records": 2654,
     "core": 1516,
@@ -111,19 +111,20 @@
         "semanticEdgesChanged": 0
       }
     },
-    "supersedes": "literature_v40",
+    "supersedes": "literature_v41",
     "supersededVersionStatus": "v10未发布构建的年份汇总未同步，已作废；v11重算现行计数，57条题录修订保持。",
     "continuationBatch": {
       "recordsReviewed": 1,
       "newRecords": 0,
       "fieldsPatched": 1,
+      "independentEvidenceAdditions": 2,
       "formalAbstractSourcesVerified": 0,
       "formalAbstractGapsAfterActivation": 10,
       "fullTextAcademicFinalReviews": 0,
       "versionRelationsChanged": 0
     },
     "previousVersionStatus": "superseded versions are invalid for active work; local evidence only",
-    "revisionNote": "Capitation Princeton作者目录补版本身份一字段；所有摘要保持，正式摘要缺口10/全文终审0。仅同步66号去重后的关联目录元数据，33语义边不变。"
+    "revisionNote": "Relabeling一字段合并Tampere机构题录与机构→ORCID→作者Research身份链；作者题名异文保留，正式题名和全部摘要不改。"
   },
   "sourceEntrances": [
     {
@@ -120568,7 +120569,7 @@
         "检索_退休",
         "社会保险"
       ],
-      "官网核验": "出版者Crossref登记元数据与Elsevier原站API交叉核定题名、DOI、作者和发表题录；NBER官方Published Versions提供版本对应，不能视为内容相同",
+      "官网核验": "出版者Crossref登记元数据与Elsevier原站API交叉核定题名、DOI、作者和发表题录；NBER官方Published Versions提供版本对应，不能视为内容相同 新增Tampere University Research Portal官方机构题录交叉：同题、Gruber/Kanninen/Ravaska三作者、2022年Journal of Public Economics 211卷及104677文章号、同一DOI一致；机构页Access to Document仅给DOI，未列下载PDF或完整摘要。页面CC BY为所列Access to Document许可标签，本轮未取得正式文章，不能据此认定全文已核或扩大再分发范围。 作者端新增Ravaska本人研究目录：Tampere机构作者档案链接ORCID0000-0003-2057-7088，其本人登记Website指向Google Sites主页；Research在peer-reviewed条目列三作者、2022年JPubE211卷，题名写Retirement, relabeling and regret（词序异于出版者正式题名），所链ScienceDirect PII S0047272722000792与目标一致。保留作者目录题名异文，不据此改正式题名，不把其VoxEU解读链接当正式摘要；作者目录未提供此文PDF/accepted manuscript。",
       "收录路径": "iReadPaper线索",
       "全文状态": "原站全文访问条件待核验",
       "原件SHA256": "",

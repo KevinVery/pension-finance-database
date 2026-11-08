@@ -1,18 +1,18 @@
 {
-  "release": "libraries_20261108_v42",
+  "release": "libraries_20261108_v43",
   "updatedAt": "2026-11-08",
   "policy": {
-    "data": "policy_public_v91.json",
-    "page": "policy_v94.html",
-    "script": "policy_v94.js",
+    "data": "policy_public_v92.json",
+    "page": "policy_v95.html",
+    "script": "policy_v95.js",
     "css": "policy_v51.css",
-    "csv": "policies_v91.csv",
-    "sources": "policy_sources_v91.csv"
+    "csv": "policies_v92.csv",
+    "sources": "policy_sources_v92.csv"
   },
   "literature": {
-    "data": "literature_public_v41.json",
-    "page": "literature_v44.html",
-    "script": "literature_v44.js",
+    "data": "literature_public_v42.json",
+    "page": "literature_v45.html",
+    "script": "literature_v45.js",
     "css": "literature_v03.css"
   },
   "links": {
@@ -21,13 +21,13 @@
     "css": "library_links_v02.css"
   },
   "supersedes": {
-    "statistics": "v188",
-    "policy": "policy_v90",
-    "literature": "literature_v40",
-    "links": "policy_paper_links_v14"
+    "statistics": "unchanged_v189",
+    "policy": "policy_v91",
+    "literature": "literature_v41",
+    "links": "unchanged_policy_paper_links_v15"
   },
   "versionPolicy": "superseded versions are invalid for active work; historical evidence stays local and is not bundled",
-  "releaseSummary": "重庆2019表12六条支出；policy91民政66同文去重兼容旧ID、49号明确废止链；literature41 Capitation Princeton目录一字段；links15重建索引，33语义边保持。",
+  "releaseSummary": "统计v189保持，2018草案批准未核不入正式库；policy92补48号公布日期及制定机关明确废止引用（原令待取）；lit42合并Relabeling两条机构/作者证据，一字段，摘要不改。",
   "statistics": {
     "version": "v189",
     "records": 208444,
