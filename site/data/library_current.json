@@ -1,13 +1,13 @@
 {
-  "release": "libraries_20261108_v37",
+  "release": "libraries_20261108_v38",
   "updatedAt": "2026-11-08",
   "policy": {
-    "data": "policy_public_v86.json",
-    "page": "policy_v89.html",
-    "script": "policy_v89.js",
+    "data": "policy_public_v87.json",
+    "page": "policy_v90.html",
+    "script": "policy_v90.js",
     "css": "policy_v51.css",
-    "csv": "policies_v86.csv",
-    "sources": "policy_sources_v86.csv"
+    "csv": "policies_v87.csv",
+    "sources": "policy_sources_v87.csv"
   },
   "literature": {
     "data": "literature_public_v39.json",
@@ -21,20 +21,20 @@
     "css": "library_links_v02.css"
   },
   "supersedes": {
-    "statistics": "v183",
-    "policy": "policy_v85",
+    "statistics": "v184",
+    "policy": "policy_v86",
     "literature": "unchanged_literature_v39",
     "links": "unchanged_policy_paper_links_v14"
   },
   "versionPolicy": "superseded versions are invalid for active work; historical evidence stays local and is not bundled",
-  "releaseSummary": "统计v184新增重庆2025表17九条收入省年，208402条/887项；WPS只读导出PDF88、原DOC目录91差异保留，四条年度异常经济原因开放。政策v86补工资总额规定1990-01-01发布与2025-01-22网页日期四字段；不改全文效力。文献v39保持，正式摘要缺口10、全文终审0；33关联。前版描述性元数据污染已在新版本说明纠正。",
+  "releaseSummary": "重庆2025表18六条基金/待遇支出，五条广东待遇仅层级同步；部令16号与12号区分会议通过与颁布日期，共15政策字段；文献39保持，正式摘要缺口10、全文终审0。",
   "statistics": {
-    "version": "v184",
-    "records": 208402,
+    "version": "v185",
+    "records": 208408,
     "indicators": 887,
     "status": {
       "待核验": 84908,
-      "已核验": 123494
+      "已核验": 123500
     },
     "paths": [
       "养老金融数据门户/data/state.json",
