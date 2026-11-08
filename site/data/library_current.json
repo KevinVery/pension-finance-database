@@ -1,18 +1,18 @@
 {
-  "release": "libraries_20261108_v38",
+  "release": "libraries_20261108_v39",
   "updatedAt": "2026-11-08",
   "policy": {
-    "data": "policy_public_v87.json",
-    "page": "policy_v90.html",
-    "script": "policy_v90.js",
+    "data": "policy_public_v88.json",
+    "page": "policy_v91.html",
+    "script": "policy_v91.js",
     "css": "policy_v51.css",
-    "csv": "policies_v87.csv",
-    "sources": "policy_sources_v87.csv"
+    "csv": "policies_v88.csv",
+    "sources": "policy_sources_v88.csv"
   },
   "literature": {
-    "data": "literature_public_v39.json",
-    "page": "literature_v42.html",
-    "script": "literature_v42.js",
+    "data": "literature_public_v40.json",
+    "page": "literature_v43.html",
+    "script": "literature_v43.js",
     "css": "literature_v03.css"
   },
   "links": {
@@ -21,20 +21,20 @@
     "css": "library_links_v02.css"
   },
   "supersedes": {
-    "statistics": "v184",
-    "policy": "policy_v86",
-    "literature": "unchanged_literature_v39",
+    "statistics": "v185",
+    "policy": "policy_v87",
+    "literature": "literature_v39",
     "links": "unchanged_policy_paper_links_v14"
   },
   "versionPolicy": "superseded versions are invalid for active work; historical evidence stays local and is not bundled",
-  "releaseSummary": "重庆2025表18六条基金/待遇支出，五条广东待遇仅层级同步；部令16号与12号区分会议通过与颁布日期，共15政策字段；文献39保持，正式摘要缺口10、全文终审0。",
+  "releaseSummary": "重庆2024表18六条基金/待遇支出；policy88部令11号和企业年金36号共17字段日期文号机关纠正；literature40补Frames作者目录一字段，正式摘要缺口10及全文终审0保持。",
   "statistics": {
-    "version": "v185",
-    "records": 208408,
+    "version": "v186",
+    "records": 208414,
     "indicators": 887,
     "status": {
       "待核验": 84908,
-      "已核验": 123500
+      "已核验": 123506
     },
     "paths": [
       "养老金融数据门户/data/state.json",
