@@ -1,16 +1,16 @@
 {
-  "version": "v187",
+  "version": "v188",
   "framework": "framework_v01",
   "libraries": {
-    "release": "libraries_20261108_v40",
+    "release": "libraries_20261108_v41",
     "updatedAt": "2026-11-08",
     "policy": {
-      "data": "policy_public_v89.json",
-      "page": "policy_v92.html",
-      "script": "policy_v92.js",
+      "data": "policy_public_v90.json",
+      "page": "policy_v93.html",
+      "script": "policy_v93.js",
       "css": "policy_v51.css",
-      "csv": "policies_v89.csv",
-      "sources": "policy_sources_v89.csv"
+      "csv": "policies_v90.csv",
+      "sources": "policy_sources_v90.csv"
     },
     "literature": {
       "data": "literature_public_v40.json",
@@ -24,20 +24,20 @@
       "css": "library_links_v02.css"
     },
     "supersedes": {
-      "statistics": "v186",
-      "policy": "policy_v88",
+      "statistics": "v187",
+      "policy": "policy_v89",
       "literature": "unchanged_literature_v40",
       "links": "unchanged_policy_paper_links_v14"
     },
     "versionPolicy": "superseded versions are invalid for active work; historical evidence stays local and is not bundled",
-    "releaseSummary": "重庆2022—2023表18十二条基金/待遇支出；policy89部令24号及国务院667号共14字段日期文号纠正；文献40保持，正式摘要缺口10、全文终审0。",
+    "releaseSummary": "重庆2020—2021表12及17十二条基金/待遇支出；policy90国务院765号令七字段日期文号纠正；文献40保持，正式摘要缺口10、全文终审0。",
     "statistics": {
-      "version": "v187",
-      "records": 208426,
+      "version": "v188",
+      "records": 208438,
       "indicators": 887,
       "status": {
         "待核验": 84908,
-        "已核验": 123518
+        "已核验": 123530
       },
       "paths": [
         "养老金融数据门户/data/state.json",
@@ -46,7 +46,7 @@
       ]
     }
   },
-  "records": 208426,
+  "records": 208438,
   "indicators": 887,
   "files": [
     {
@@ -76,8 +76,8 @@
     },
     {
       "path": "data/library_current.json",
-      "bytes": 1471,
-      "sha256": "88c3911498ffe2f41a07fa8be77659de2d6e96b552f7da5741e7ca4671bde534"
+      "bytes": 1463,
+      "sha256": "0b7f5ab5a808e0f895676bc5350e661bb57b44c72e9cfb8095196d4766f9599f"
     },
     {
       "path": "data/literature_public_v40.json",
@@ -136,8 +136,8 @@
     },
     {
       "path": "data/part11.js",
-      "bytes": 16049712,
-      "sha256": "204f7e12cb068fd44276620a8a624e9cb708b8b0d60941f7ea992ac4b1cf7a21"
+      "bytes": 16064453,
+      "sha256": "2fd3ed0d38d26586264249a854a1f16f008808da2a4942e8d3f0f61e9a356a81"
     },
     {
       "path": "data/part12.js",
@@ -180,9 +180,9 @@
       "sha256": "474c14fe50907469e1f5d15cdd35edd9fb1d3482a313d680e4e4a8d21bb90e90"
     },
     {
-      "path": "data/policy_public_v89.json",
-      "bytes": 7342764,
-      "sha256": "0c9cf7b304d586e39ff737d0cdc6d77049d8e0ef3df33517c8fd5236be3a1718"
+      "path": "data/policy_public_v90.json",
+      "bytes": 7343696,
+      "sha256": "4b0be6ba89d17531b122a512cd6099f525cde4b471865b4f2eb801ea043dd2fb"
     },
     {
       "path": "data/portal.js",
@@ -192,7 +192,7 @@
     {
       "path": "data/version.js",
       "bytes": 109,
-      "sha256": "b92194475e877310681d122831c435b52bbe965afdcac3148d25729168da2ba9"
+      "sha256": "3a7db1b8959503da2c6a21c7cf823423f98884ce5e6a3058592d2d8e95a600bd"
     },
     {
       "path": "download.js",
@@ -202,7 +202,7 @@
     {
       "path": "index.html",
       "bytes": 6969,
-      "sha256": "964e7c041087dde9932394dd51b9b40a1af62d05ab91bc091ec9589a44e083e7"
+      "sha256": "06288e93e36bae827f3490a634c41bfeb4770d14959d20bc5460116a764be9c3"
     },
     {
       "path": "library_links_v02.css",
@@ -232,7 +232,7 @@
     {
       "path": "policy.html",
       "bytes": 5490,
-      "sha256": "9bf94551b7db05b563c7eee0c541e435ca9f3d1e0d90ad34bf6cda2ad0aecb9c"
+      "sha256": "87df96d41daaa0e07474901ee318bdb68431b3763f185f22af910be824004013"
     },
     {
       "path": "policy_v51.css",
@@ -240,9 +240,9 @@
       "sha256": "95c59c21271e5b3ef121193a9fb212e5fe4611c68529c4396f77627104703a18"
     },
     {
-      "path": "policy_v92.js",
+      "path": "policy_v93.js",
       "bytes": 15930,
-      "sha256": "f4540000ba492293a842620d788185929931f45bf244a7388bed640056b0641c"
+      "sha256": "9c1b6429b0d1f453672b499a26fb84e4916644c7d73dced41aff8267bf4ac299"
     },
     {
       "path": "research_ui_v01.css",
