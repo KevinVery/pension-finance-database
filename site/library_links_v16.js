@@ -6,18 +6,19 @@
   data:null,papers:new Map(),policies:new Map(),paperFilter:null,policyFilter:null,scores:new Map(),
   async init(){
    this.data=window.POLICY_PAPER_LINKS;
-   if(!this.data){const r=await fetch('data/policy_paper_links_v14.json?v=20261106b');if(!r.ok)throw Error('关联研究暂未加载，请刷新重试');this.data=await r.json();}
+   if(!this.data){const r=await fetch('data/policy_paper_links_v15.json?v=20261108c');if(!r.ok)throw Error('关联研究暂未加载，请刷新重试');this.data=await r.json();}
    this.data.papers.forEach((r,i)=>this.papers.set(r.id,{...r,index:i}));
    this.data.policies.forEach((p,i)=>this.policies.set(p.id,{...p,index:i}));
-   const p=params.get('policy'),r=params.get('paper');
+   const p=this.resolvePolicy(params.get('policy')),r=params.get('paper');
    if(p){this.paperFilter=new Set();const i=this.policies.get(p)?.index;for(const e of this.data.links)if(e[1]===i){const id=this.data.papers[e[0]].id;this.paperFilter.add(id);this.scores.set(id,e[2]);}}
    if(r){this.policyFilter=new Set();const i=this.papers.get(r)?.index;for(const e of this.data.links)if(e[0]===i){const id=this.data.policies[e[1]].id;this.policyFilter.add(id);this.scores.set(id,e[2]);}}
    this.explicit=new Map(this.data.explicitEvidence.map(e=>[e['文献ID']+'|'+e['政策ID'],e]));return this.data;
   },
+  resolvePolicy(id){return this.data?.policyAliases?.[id]||id;},
   relatedScore(id){return this.scores.get(id)||0;},
   paperMatches(r){return (!params.get('id')||r['文献ID']===params.get('id'))&&(!this.paperFilter||this.paperFilter.has(r['文献ID']));},
-  policyMatches(p){return (!params.get('id')||p['政策ID']===params.get('id'))&&(!this.policyFilter||this.policyFilter.has(p['政策ID']));},
-  context(type){const id=params.get(type==='paper'?'policy':'paper'),focus=params.get('id');if(!id&&!focus)return '';const source=(type==='paper'?this.policies:this.papers).get(id);return '<div class="link-context">'+esc(source?'关联研究：'+source['标题']:'指定条目')+' <a href="'+(type==='paper'?'literature.html':'policy.html')+'">返回全部条目</a></div>';},
+  policyMatches(p){return (!params.get('id')||p['政策ID']===this.resolvePolicy(params.get('id')))&&(!this.policyFilter||this.policyFilter.has(p['政策ID']));},
+  context(type){const id=params.get(type==='paper'?'policy':'paper'),focus=params.get('id');if(!id&&!focus)return '';const source=(type==='paper'?this.policies:this.papers).get(type==='paper'?this.resolvePolicy(id):id);return '<div class="link-context">'+esc(source?'关联研究：'+source['标题']:'指定条目')+' <a href="'+(type==='paper'?'literature.html':'policy.html')+'">返回全部条目</a></div>';},
   evidence(edge){
    const r=this.data.papers[edge[0]],p=this.data.policies[edge[1]],direct=this.explicit.get(r.id+'|'+p.id);
    if(direct)return '<small>'+esc(direct['关系类型'])+'</small><p>'+esc(direct['关联理由'])+'</p><blockquote>论文依据（'+esc(direct['证据字段'])+'）：'+esc(direct['证据摘录'])+'</blockquote><small>政策依据：'+esc(direct['政策依据'])+'</small>';

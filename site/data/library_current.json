@@ -1,40 +1,40 @@
 {
-  "release": "libraries_20261108_v41",
+  "release": "libraries_20261108_v42",
   "updatedAt": "2026-11-08",
   "policy": {
-    "data": "policy_public_v90.json",
-    "page": "policy_v93.html",
-    "script": "policy_v93.js",
+    "data": "policy_public_v91.json",
+    "page": "policy_v94.html",
+    "script": "policy_v94.js",
     "css": "policy_v51.css",
-    "csv": "policies_v90.csv",
-    "sources": "policy_sources_v90.csv"
+    "csv": "policies_v91.csv",
+    "sources": "policy_sources_v91.csv"
   },
   "literature": {
-    "data": "literature_public_v40.json",
-    "page": "literature_v43.html",
-    "script": "literature_v43.js",
+    "data": "literature_public_v41.json",
+    "page": "literature_v44.html",
+    "script": "literature_v44.js",
     "css": "literature_v03.css"
   },
   "links": {
-    "data": "policy_paper_links_v14.json",
-    "script": "library_links_v15.js",
+    "data": "policy_paper_links_v15.json",
+    "script": "library_links_v16.js",
     "css": "library_links_v02.css"
   },
   "supersedes": {
-    "statistics": "v187",
-    "policy": "policy_v89",
-    "literature": "unchanged_literature_v40",
-    "links": "unchanged_policy_paper_links_v14"
+    "statistics": "v188",
+    "policy": "policy_v90",
+    "literature": "literature_v40",
+    "links": "policy_paper_links_v14"
   },
   "versionPolicy": "superseded versions are invalid for active work; historical evidence stays local and is not bundled",
-  "releaseSummary": "重庆2020—2021表12及17十二条基金/待遇支出；policy90国务院765号令七字段日期文号纠正；文献40保持，正式摘要缺口10、全文终审0。",
+  "releaseSummary": "重庆2019表12六条支出；policy91民政66同文去重兼容旧ID、49号明确废止链；literature41 Capitation Princeton目录一字段；links15重建索引，33语义边保持。",
   "statistics": {
-    "version": "v188",
-    "records": 208438,
+    "version": "v189",
+    "records": 208444,
     "indicators": 887,
     "status": {
       "待核验": 84908,
-      "已核验": 123530
+      "已核验": 123536
     },
     "paths": [
       "养老金融数据门户/data/state.json",

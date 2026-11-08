@@ -125,3 +125,18 @@ assert(literatureData.records.find(r=>r['文献ID']==='PENSION-W28407')['关联�
 
 const activeJSON=new Set(['library_current.json',...['policy','literature','links'].map(k=>current[k].data)]);
 for(const name of fs.readdirSync(path.join(root,'site/data')).filter(n=>n.endsWith('.json')))assert(activeJSON.has(name),'旧JSON不得重新公开 '+name);
+
+// Stable policy IDs must survive retirement of duplicate source records.
+const aliases=data.policyAliases||{};
+assert(aliases['POL-V05-EXT-9970c583afa418']==='POL-V05-EXT-2148b24695c318','66号旧ID兼容映射丢失');
+for(const [oldID,target] of Object.entries(aliases)){
+ assert(!policyByID.has(oldID)&&policyByID.has(target),'别名须从退役ID指向活动政策');
+ assert(!aliases[target],'政策别名不得成链或成环');
+ assert(graph.policyAliases?.[oldID]===target,'政策与关联目录别名不一致');
+ assert(!graph.policies.some(p=>p.id===oldID)&&graph.policies.some(p=>p.id===target),'关联目录未退出重复政策');
+}
+assert(new Set(graph.policies.map(p=>p.id)).size===graph.policies.length,'关联政策目录ID重复');
+for(const edge of graph.links)assert(graph.papers[edge[0]]&&graph.policies[edge[1]]&&policyByID.has(graph.policies[edge[1]].id),'重建关联索引外键无效');
+assert(data.policies.find(p=>p['政策ID']==='POL-V05-EXT-5d976767b40ce1')['失效日期']==='2020-11-01','49号明确废止日期丢失');
+assert(data.relations.some(e=>e['起始政策ID']==='POL-V05-EXT-2148b24695c318'&&e['目标政策ID']==='POL-V05-EXT-5d976767b40ce1'&&e['关系类型']==='废止'),'66号废止49号关系缺失');
+console.log(JSON.stringify({policyAliasCompatibility:true,aliases:Object.keys(aliases).length,graphDirectoryPolicies:graph.policies.length,semanticRelations:graph.links.length}));

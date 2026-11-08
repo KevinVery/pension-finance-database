@@ -1,6 +1,6 @@
 {
   "meta": {
-    "version": "literature_v40",
+    "version": "literature_v41",
     "updatedAt": "2026-11-08",
     "records": 2654,
     "core": 1516,
@@ -66,8 +66,8 @@
       "社会救助与减贫": 96
     },
     "linkMetrics": {
-      "version": "policy_paper_links_v14",
-      "updatedAt": "2026-11-07",
+      "version": "policy_paper_links_v15",
+      "updatedAt": "2026-11-08",
       "papersAssessed": 2654,
       "policiesAssessed": 547,
       "pairsAssessed": 1451738,
@@ -77,7 +77,7 @@
       "explicitRelations": 6,
       "thematicRelations": 0,
       "unmatchedPapers": 2623,
-      "unmatchedPolicies": 547,
+      "unmatchedPolicies": 546,
       "citationRecords": 51,
       "categories": [
         "养老与社保综合",
@@ -98,14 +98,20 @@
       "relationNote": "仅计入可定位文件名称、文号或具体中国改革的题名／摘要证据；同主题、国外经验与一般制度研究不计为具体政策关联。",
       "citationNote": "被引次数为Crossref按DOI匹配的登记值，核对日期2026-10-19；不代表所有平台总被引，缺失不记为0。",
       "reformRelations": 27,
-      "supersedes": "policy_paper_links_v13",
+      "supersedes": "policy_paper_links_v14",
       "currentPaperRecords": 2654,
-      "currentPolicyRecords": 550,
-      "candidateUniversePairs": 1459700,
+      "currentPolicyRecords": 549,
+      "candidateUniversePairs": 1457046,
       "pendingNewPolicyAssessment": 3,
-      "assessmentNote": "33组稳定关系及原证据摘录保留；最近三项新增政策未全文关联审定，候选组合数不等于人工核读。"
+      "assessmentNote": "33组稳定关系及原证据摘录保留；66号同文去重只重建政策目录索引，语义边逐条不变，不声称新增全文关联审定。",
+      "deduplication": {
+        "retiredID": "POL-V05-EXT-9970c583afa418",
+        "retainedID": "POL-V05-EXT-2148b24695c318",
+        "oldIDsResolve": true,
+        "semanticEdgesChanged": 0
+      }
     },
-    "supersedes": "literature_v39",
+    "supersedes": "literature_v40",
     "supersededVersionStatus": "v10未发布构建的年份汇总未同步，已作废；v11重算现行计数，57条题录修订保持。",
     "continuationBatch": {
       "recordsReviewed": 1,
@@ -117,7 +123,7 @@
       "versionRelationsChanged": 0
     },
     "previousVersionStatus": "superseded versions are invalid for active work; local evidence only",
-    "revisionNote": "IRP-4209官网核验补NBER作者档案→Staubli主页→发表目录→PII S0047272725001173身份链。仅目录题录证据，摘要不变；正式摘要缺口10，全文学术终审0。"
+    "revisionNote": "Capitation Princeton作者目录补版本身份一字段；所有摘要保持，正式摘要缺口10/全文终审0。仅同步66号去重后的关联目录元数据，33语义边不变。"
   },
   "sourceEntrances": [
     {
@@ -117497,7 +117503,7 @@
         "检索_保险",
         "社会保险"
       ],
-      "官网核验": "NBER作者档案所链Chassang官网Research明示JPubE2022发表关系，Crossref登记核定两作者、2022年3月207卷/104584及DOI；实际所链PDF封面2020-03-05，不能冒充正式出版者版。 本轮NBER59页PDF外封面为February2021，正文题名页PDF3另标October19,2020；作者官网所链58页稿封面March5,2020，三日期分开，不据正文日期改工作论文首发年份。新增第6.2节实施讨论双端核读：NBER PDF34—37/印刷32—35，对照作者PDF33—36/印刷33—36，只审该节至附录标题前；相邻附录未审定。作者稿、NBER工作论文均不冒充2022出版者正式版，正式摘要尚未取得，未通读两稿其余正文或独立复算证明。 已定位实质公式字面差异：Surplus Extraction段落，作者2020-03-05稿PDF35/印刷35的r_tau定义，未在残差样本均值前乘rho(eta_i)；NBER当前稿PDF36/印刷34在该定义中明确增加rho(eta_i)乘子。两页图和原始提取字形已核，不能据此认定旧稿错误、新稿定理正确或判断其定量影响，须进一步复算。两稿实施讨论都强调动态入组时特征与入组后特征区别，以及基础模型假定医疗质量同质；质量扩展要求健康结果（含死亡）可观察并货币化。这是模型条件与机制讨论，不是Medicare已采用机制或已发生统计事实。",
+      "官网核验": "NBER作者档案所链Chassang官网Research明示JPubE2022发表关系，Crossref登记核定两作者、2022年3月207卷/104584及DOI；实际所链PDF封面2020-03-05，不能冒充正式出版者版。 本轮NBER59页PDF外封面为February2021，正文题名页PDF3另标October19,2020；作者官网所链58页稿封面March5,2020，三日期分开，不据正文日期改工作论文首发年份。新增第6.2节实施讨论双端核读：NBER PDF34—37/印刷32—35，对照作者PDF33—36/印刷33—36，只审该节至附录标题前；相邻附录未审定。作者稿、NBER工作论文均不冒充2022出版者正式版，正式摘要尚未取得，未通读两稿其余正文或独立复算证明。 已定位实质公式字面差异：Surplus Extraction段落，作者2020-03-05稿PDF35/印刷35的r_tau定义，未在残差样本均值前乘rho(eta_i)；NBER当前稿PDF36/印刷34在该定义中明确增加rho(eta_i)乘子。两页图和原始提取字形已核，不能据此认定旧稿错误、新稿定理正确或判断其定量影响，须进一步复算。两稿实施讨论都强调动态入组时特征与入组后特征区别，以及基础模型假定医疗质量同质；质量扩展要求健康结果（含死亡）可观察并货币化。这是模型条件与机制讨论，不是Medicare已采用机制或已发生统计事实。 新增Braverman本人Princeton官方主页及All Papers目录交叉：同题、两作者和Journal of Public Economics 207卷2022年，目录将NBER preprint与期刊链接分别列出；期刊项指向Elsevier作者共享链接，实际重定向识别PII S0047272721002206。共享入口本轮返回403且可见内容为ScienceDirect错误页，无摘要/正文，不据此称已取得正式全文或认定共享链接失效。",
       "收录路径": "iReadPaper线索",
       "全文状态": "NBER当前59页稿PDF1/3/34—37（外封February2021、正文题名October19,2020）与作者58页March5,2020稿PDF1/33—36封面及第6.2节实施讨论已核；rho乘子字面差异定位，数学及相邻附录/其余正文未审定；未取得出版者正式摘要或全文，全文学术终审未完成。",
       "原件SHA256": "",
