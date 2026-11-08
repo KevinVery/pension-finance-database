@@ -1,13 +1,13 @@
 {
-  "release": "libraries_20261108_v39",
+  "release": "libraries_20261108_v40",
   "updatedAt": "2026-11-08",
   "policy": {
-    "data": "policy_public_v88.json",
-    "page": "policy_v91.html",
-    "script": "policy_v91.js",
+    "data": "policy_public_v89.json",
+    "page": "policy_v92.html",
+    "script": "policy_v92.js",
     "css": "policy_v51.css",
-    "csv": "policies_v88.csv",
-    "sources": "policy_sources_v88.csv"
+    "csv": "policies_v89.csv",
+    "sources": "policy_sources_v89.csv"
   },
   "literature": {
     "data": "literature_public_v40.json",
@@ -21,20 +21,20 @@
     "css": "library_links_v02.css"
   },
   "supersedes": {
-    "statistics": "v185",
-    "policy": "policy_v87",
-    "literature": "literature_v39",
+    "statistics": "v186",
+    "policy": "policy_v88",
+    "literature": "unchanged_literature_v40",
     "links": "unchanged_policy_paper_links_v14"
   },
   "versionPolicy": "superseded versions are invalid for active work; historical evidence stays local and is not bundled",
-  "releaseSummary": "重庆2024表18六条基金/待遇支出；policy88部令11号和企业年金36号共17字段日期文号机关纠正；literature40补Frames作者目录一字段，正式摘要缺口10及全文终审0保持。",
+  "releaseSummary": "重庆2022—2023表18十二条基金/待遇支出；policy89部令24号及国务院667号共14字段日期文号纠正；文献40保持，正式摘要缺口10、全文终审0。",
   "statistics": {
-    "version": "v186",
-    "records": 208414,
+    "version": "v187",
+    "records": 208426,
     "indicators": 887,
     "status": {
       "待核验": 84908,
-      "已核验": 123506
+      "已核验": 123518
     },
     "paths": [
       "养老金融数据门户/data/state.json",

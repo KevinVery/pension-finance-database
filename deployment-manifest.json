@@ -1,16 +1,16 @@
 {
-  "version": "v186",
+  "version": "v187",
   "framework": "framework_v01",
   "libraries": {
-    "release": "libraries_20261108_v39",
+    "release": "libraries_20261108_v40",
     "updatedAt": "2026-11-08",
     "policy": {
-      "data": "policy_public_v88.json",
-      "page": "policy_v91.html",
-      "script": "policy_v91.js",
+      "data": "policy_public_v89.json",
+      "page": "policy_v92.html",
+      "script": "policy_v92.js",
       "css": "policy_v51.css",
-      "csv": "policies_v88.csv",
-      "sources": "policy_sources_v88.csv"
+      "csv": "policies_v89.csv",
+      "sources": "policy_sources_v89.csv"
     },
     "literature": {
       "data": "literature_public_v40.json",
@@ -24,20 +24,20 @@
       "css": "library_links_v02.css"
     },
     "supersedes": {
-      "statistics": "v185",
-      "policy": "policy_v87",
-      "literature": "literature_v39",
+      "statistics": "v186",
+      "policy": "policy_v88",
+      "literature": "unchanged_literature_v40",
       "links": "unchanged_policy_paper_links_v14"
     },
     "versionPolicy": "superseded versions are invalid for active work; historical evidence stays local and is not bundled",
-    "releaseSummary": "重庆2024表18六条基金/待遇支出；policy88部令11号和企业年金36号共17字段日期文号机关纠正；literature40补Frames作者目录一字段，正式摘要缺口10及全文终审0保持。",
+    "releaseSummary": "重庆2022—2023表18十二条基金/待遇支出；policy89部令24号及国务院667号共14字段日期文号纠正；文献40保持，正式摘要缺口10、全文终审0。",
     "statistics": {
-      "version": "v186",
-      "records": 208414,
+      "version": "v187",
+      "records": 208426,
       "indicators": 887,
       "status": {
         "待核验": 84908,
-        "已核验": 123506
+        "已核验": 123518
       },
       "paths": [
         "养老金融数据门户/data/state.json",
@@ -46,7 +46,7 @@
       ]
     }
   },
-  "records": 208414,
+  "records": 208426,
   "indicators": 887,
   "files": [
     {
@@ -76,8 +76,8 @@
     },
     {
       "path": "data/library_current.json",
-      "bytes": 1493,
-      "sha256": "18053fc57f1e17087f5b411d46f600569f55b7888babbfaf40f42b698c54ec4e"
+      "bytes": 1471,
+      "sha256": "88c3911498ffe2f41a07fa8be77659de2d6e96b552f7da5741e7ca4671bde534"
     },
     {
       "path": "data/literature_public_v40.json",
@@ -136,8 +136,8 @@
     },
     {
       "path": "data/part11.js",
-      "bytes": 16034908,
-      "sha256": "3be55c0a518ca31f50879b48949b5568b39654b2ef2f5e4a7b84f25e78f870f9"
+      "bytes": 16049712,
+      "sha256": "204f7e12cb068fd44276620a8a624e9cb708b8b0d60941f7ea992ac4b1cf7a21"
     },
     {
       "path": "data/part12.js",
@@ -180,9 +180,9 @@
       "sha256": "474c14fe50907469e1f5d15cdd35edd9fb1d3482a313d680e4e4a8d21bb90e90"
     },
     {
-      "path": "data/policy_public_v88.json",
-      "bytes": 7340720,
-      "sha256": "5482e56ae6a8476544ac5c60a5683f30f621140b1e9c1a16a98d9e0c7885643e"
+      "path": "data/policy_public_v89.json",
+      "bytes": 7342764,
+      "sha256": "0c9cf7b304d586e39ff737d0cdc6d77049d8e0ef3df33517c8fd5236be3a1718"
     },
     {
       "path": "data/portal.js",
@@ -192,7 +192,7 @@
     {
       "path": "data/version.js",
       "bytes": 109,
-      "sha256": "14a946e158a835f1a3d9db384ce39750ce13dff18f8b5096ba6d4f57c3c8a42b"
+      "sha256": "b92194475e877310681d122831c435b52bbe965afdcac3148d25729168da2ba9"
     },
     {
       "path": "download.js",
@@ -202,7 +202,7 @@
     {
       "path": "index.html",
       "bytes": 6969,
-      "sha256": "3f3fe204bb26bff9f020f31108911a186c98aa091b232cec325ca5182d63f2de"
+      "sha256": "964e7c041087dde9932394dd51b9b40a1af62d05ab91bc091ec9589a44e083e7"
     },
     {
       "path": "library_links_v02.css",
@@ -232,7 +232,7 @@
     {
       "path": "policy.html",
       "bytes": 5490,
-      "sha256": "1797b474fe6987167561c8bf41d1a9b297324bb87c0280497dd1cef418c487e6"
+      "sha256": "9bf94551b7db05b563c7eee0c541e435ca9f3d1e0d90ad34bf6cda2ad0aecb9c"
     },
     {
       "path": "policy_v51.css",
@@ -240,9 +240,9 @@
       "sha256": "95c59c21271e5b3ef121193a9fb212e5fe4611c68529c4396f77627104703a18"
     },
     {
-      "path": "policy_v91.js",
+      "path": "policy_v92.js",
       "bytes": 15930,
-      "sha256": "77ad4e31d5e059391f61dcfe5e440683f6e93b11dee1e47bc635af97f3641e18"
+      "sha256": "f4540000ba492293a842620d788185929931f45bf244a7388bed640056b0641c"
     },
     {
       "path": "research_ui_v01.css",
