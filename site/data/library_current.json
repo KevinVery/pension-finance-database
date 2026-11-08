@@ -1,13 +1,13 @@
 {
-  "release": "libraries_20261108_v36",
+  "release": "libraries_20261108_v37",
   "updatedAt": "2026-11-08",
   "policy": {
-    "data": "policy_public_v85.json",
-    "page": "policy_v88.html",
-    "script": "policy_v88.js",
+    "data": "policy_public_v86.json",
+    "page": "policy_v89.html",
+    "script": "policy_v89.js",
     "css": "policy_v51.css",
-    "csv": "policies_v85.csv",
-    "sources": "policy_sources_v85.csv"
+    "csv": "policies_v86.csv",
+    "sources": "policy_sources_v86.csv"
   },
   "literature": {
     "data": "literature_public_v39.json",
@@ -27,14 +27,14 @@
     "links": "unchanged_policy_paper_links_v14"
   },
   "versionPolicy": "superseded versions are invalid for active work; historical evidence stays local and is not bundled",
-  "releaseSummary": "统计v183新增重庆2024三制度总收入、社会保险费及利息9条已核验省年记录，记录208393、指标887；只取表16决算列，预算/调整预算不作原因。政策policy85补国发〔1985〕52号在线官源回源四字段，13项保护字段和日期保持，不推整体现行效力。文献literature39保持，正式摘要缺口10、全文终审0；双向关联33组。",
+  "releaseSummary": "统计v184新增重庆2025表17九条收入省年，208402条/887项；WPS只读导出PDF88、原DOC目录91差异保留，四条年度异常经济原因开放。政策v86补工资总额规定1990-01-01发布与2025-01-22网页日期四字段；不改全文效力。文献v39保持，正式摘要缺口10、全文终审0；33关联。前版描述性元数据污染已在新版本说明纠正。",
   "statistics": {
-    "version": "v183",
-    "records": 208393,
+    "version": "v184",
+    "records": 208402,
     "indicators": 887,
     "status": {
       "待核验": 84908,
-      "已核验": 123485
+      "已核验": 123494
     },
     "paths": [
       "养老金融数据门户/data/state.json",
