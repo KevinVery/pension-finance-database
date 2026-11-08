@@ -1,43 +1,43 @@
 {
-  "version": "v192",
+  "version": "v193",
   "framework": "framework_v01",
   "libraries": {
-    "release": "libraries_20261108_v46",
+    "release": "libraries_20261108_v47",
     "updatedAt": "2026-11-08",
     "policy": {
-      "data": "policy_public_v95.json",
-      "page": "policy_v98.html",
-      "script": "policy_v98.js",
+      "data": "policy_public_v96.json",
+      "page": "policy_v99.html",
+      "script": "policy_v99.js",
       "css": "policy_v51.css",
-      "csv": "policies_v95.csv",
-      "sources": "policy_sources_v95.csv"
+      "csv": "policies_v96.csv",
+      "sources": "policy_sources_v96.csv"
     },
     "literature": {
-      "data": "literature_public_v45.json",
-      "page": "literature_v48.html",
-      "script": "literature_v48.js",
+      "data": "literature_public_v46.json",
+      "page": "literature_v49.html",
+      "script": "literature_v49.js",
       "css": "literature_v03.css"
     },
     "links": {
-      "data": "policy_paper_links_v16.json",
-      "script": "library_links_v17.js",
+      "data": "policy_paper_links_v17.json",
+      "script": "library_links_v18.js",
       "css": "library_links_v02.css"
     },
     "supersedes": {
-      "statistics": "v191",
-      "policy": "policy_v94",
-      "literature": "literature_v44",
-      "links": "policy_paper_links_v15"
+      "statistics": "v192",
+      "policy": "policy_v95",
+      "literature": "literature_v45",
+      "links": "policy_paper_links_v16"
     },
     "versionPolicy": "superseded versions are invalid for active work; historical evidence stays local and is not bundled",
-    "releaseSummary": "北京2019三制度九条收入已核入库，原208456条保持；联合41号同文去重、双来源及旧ID别名保留，33语义边重索引不变；W27534完整PartII两字段，原摘要及PartIII/V保持。",
+    "releaseSummary": "北京2019三制度总支出三条已核入库，原208465条保持；54号同文去重双源及旧ID兼容，33语义边不变；IRP7590补LABORE机构正式发表完整英文摘要，固定19摘要缺口10降9，正式全文仍待核。",
     "statistics": {
-      "version": "v192",
-      "records": 208465,
+      "version": "v193",
+      "records": 208468,
       "indicators": 887,
       "status": {
         "待核验": 84908,
-        "已核验": 123557
+        "已核验": 123560
       },
       "paths": [
         "养老金融数据门户/data/state.json",
@@ -46,7 +46,7 @@
       ]
     }
   },
-  "records": 208465,
+  "records": 208468,
   "indicators": 887,
   "files": [
     {
@@ -76,13 +76,13 @@
     },
     {
       "path": "data/library_current.json",
-      "bytes": 1487,
-      "sha256": "ceceaac94369c7c2709b4f9cf4a300448b4afbf934df2481d70a25b5f5f53a22"
+      "bytes": 1511,
+      "sha256": "a1a21860135fc61d4ead30d9753bfb99faf8d40c6f335f4f0ada9335fbd48f4a"
     },
     {
-      "path": "data/literature_public_v45.json",
-      "bytes": 6581854,
-      "sha256": "0786f29fc23746d239dc720efe1835b2638aaee39b719852246118d9babdb495"
+      "path": "data/literature_public_v46.json",
+      "bytes": 6584028,
+      "sha256": "d8cb822bfdec1d6040d16409f025c1b0de1262eec410cf5e9ffd2f7b4cc7937b"
     },
     {
       "path": "data/part01.js",
@@ -136,8 +136,8 @@
     },
     {
       "path": "data/part11.js",
-      "bytes": 16103135,
-      "sha256": "5d3632cb5743a6de9277415510c15713c40191ba49520e5e88f30722ab7245f8"
+      "bytes": 16107565,
+      "sha256": "309610be294d356e9e67d3bbc652c45c61b7ace1e79439a5ef86856472bbafab"
     },
     {
       "path": "data/part12.js",
@@ -175,14 +175,14 @@
       "sha256": "00de5579c9d26f1f7a9806aa0ec884c06f20ce9eae08bb59d5f966b994142dad"
     },
     {
-      "path": "data/policy_paper_links_v16.json",
-      "bytes": 934038,
-      "sha256": "220071ab589166128e0ceecad3d3f97168d441953a4f6cbccbc85031e7cc0eb4"
+      "path": "data/policy_paper_links_v17.json",
+      "bytes": 933698,
+      "sha256": "3d7089788c342861af15c165e6cbb9ac42d0b0a6170e548f7c31312ed973fc51"
     },
     {
-      "path": "data/policy_public_v95.json",
-      "bytes": 7322682,
-      "sha256": "1c7f7acc5109cfb5129cded424ba477b2ff297c5ae93f23b403be4bd573350a7"
+      "path": "data/policy_public_v96.json",
+      "bytes": 7318822,
+      "sha256": "6b0a1360aaaf7066402a5f8d81e33ad0ecf0e43ed8ced5accad5288d5175e2f0"
     },
     {
       "path": "data/portal.js",
@@ -192,7 +192,7 @@
     {
       "path": "data/version.js",
       "bytes": 109,
-      "sha256": "8b763b655a6733403f554590c380acd22679a2b7b557dceea5489df1311b7de6"
+      "sha256": "71d660b436f99d9b6a2960b6bae6f1fdc4094c499042bbe3b80ac9685b8a41b1"
     },
     {
       "path": "download.js",
@@ -202,7 +202,7 @@
     {
       "path": "index.html",
       "bytes": 6969,
-      "sha256": "728213c5b109f8b6c1a17f4571f688c59b412a90264648101d5d13e85ee376a1"
+      "sha256": "b2eb08d9539ea17f03ce8993077aef79ffa998e89289ad98706b1348555659a7"
     },
     {
       "path": "library_links_v02.css",
@@ -210,14 +210,14 @@
       "sha256": "36e5526c45f05acf1116f57fa82a8309f6903b930768fd5c74bb469f4585020f"
     },
     {
-      "path": "library_links_v17.js",
+      "path": "library_links_v18.js",
       "bytes": 5452,
-      "sha256": "91769bed29869b7b3cb312b1176eeccddf427fcfd6b5faa8fac790fe131bd3c7"
+      "sha256": "b69f3a852fbff64cfd62af57577c56e382ac2f7260b4580d0c731c1235bcd41e"
     },
     {
       "path": "literature.html",
       "bytes": 4079,
-      "sha256": "df11956ac584b50b5379b8624d6768df963db6c5c5007639f266e4ea0236ba64"
+      "sha256": "efe0676e036d21d741ddc7a91cdfca5c4cf4d273ce98d8f0d008acb44a58c96d"
     },
     {
       "path": "literature_v03.css",
@@ -225,14 +225,14 @@
       "sha256": "5b33e28e92ead17755d0ebe7f24aad302eeba37d6d85216bd89364d5b5caf684"
     },
     {
-      "path": "literature_v48.js",
+      "path": "literature_v49.js",
       "bytes": 10199,
-      "sha256": "366470394a419f4c5a2be63c09c07bc0d5f7bfe1462634f94c6e371f6027e1f2"
+      "sha256": "390d7e37e53c2f40f63d61cc526e0ed14819473e017c632a5b2b38000874efb2"
     },
     {
       "path": "policy.html",
       "bytes": 5490,
-      "sha256": "3727ef03a155e7366a34d3cb4a831bce015e8ea66f4087923094034b4cd08699"
+      "sha256": "eb899f8df94a729a78c3e000e658453a1047dc4be8ba1b2d187fb422ce56e738"
     },
     {
       "path": "policy_v51.css",
@@ -240,9 +240,9 @@
       "sha256": "95c59c21271e5b3ef121193a9fb212e5fe4611c68529c4396f77627104703a18"
     },
     {
-      "path": "policy_v98.js",
+      "path": "policy_v99.js",
       "bytes": 15965,
-      "sha256": "2b304998e90a5b1651ca6705d3adfaa8c298277f81f1f5aeb28b7444a76938f0"
+      "sha256": "dcafb4ff004ea35c41c97ff04ac52ec92b6a78cf9bc0080138d4b379f077ef3e"
     },
     {
       "path": "research_ui_v01.css",

@@ -1,17 +1,17 @@
 {
   "meta": {
-    "version": "policy_paper_links_v16",
+    "version": "policy_paper_links_v17",
     "updatedAt": "2026-11-08",
     "papersAssessed": 2654,
-    "policiesAssessed": 546,
-    "pairsAssessed": 1449084,
+    "policiesAssessed": 545,
+    "pairsAssessed": 1446430,
     "relations": 33,
     "papersLinked": 31,
     "policiesLinked": 3,
     "explicitRelations": 6,
     "thematicRelations": 0,
     "unmatchedPapers": 2623,
-    "unmatchedPolicies": 545,
+    "unmatchedPolicies": 544,
     "citationRecords": 51,
     "categories": [
       "养老与社保综合",
@@ -32,15 +32,15 @@
     "relationNote": "仅计入可定位文件名称、文号或具体中国改革的题名／摘要证据；同主题、国外经验与一般制度研究不计为具体政策关联。",
     "citationNote": "被引次数为Crossref按DOI匹配的登记值，核对日期2026-10-19；不代表所有平台总被引，缺失不记为0。",
     "reformRelations": 27,
-    "supersedes": "policy_paper_links_v15",
+    "supersedes": "policy_paper_links_v16",
     "currentPaperRecords": 2654,
-    "currentPolicyRecords": 548,
-    "candidateUniversePairs": 1454392,
+    "currentPolicyRecords": 547,
+    "candidateUniversePairs": 1451738,
     "pendingNewPolicyAssessment": 2,
-    "assessmentNote": "41号同文去重并保留双源、66及41旧ID别名；政策目录546与全库548分列；33条语义边及证据不变，不新增全文关联审定。",
+    "assessmentNote": "54号同文去重并保留双源、66/41/54旧ID别名；目录545与全库547分列；33语义边和证据保持，不新增全文关联审定。",
     "deduplication": {
-      "retiredID": "POL-V05-EXT-28e629e90f5639",
-      "retainedID": "POL-HRSS-0611",
+      "retiredID": "POL-V05-EXT-081f0b899602d0",
+      "retainedID": "POL-HRSS-0803",
       "oldIDsResolve": true,
       "semanticEdgesChanged": 0
     }
@@ -21004,12 +21004,6 @@
       "原文URL": "https://www.gov.cn/zhengce/zhengceku/202411/content_6985707.htm"
     },
     {
-      "id": "POL-V05-EXT-081f0b899602d0",
-      "标题": "中华人民共和国人力资源和社会保障部令（第54号） 人力资源社会保障部关于修改《在中国境内就业的外国人参加社会保险暂行办法》的决定",
-      "年份": "2024",
-      "原文URL": "https://www.gov.cn/gongbao/2025/issue_11806/202501/content_6999379.html"
-    },
-    {
       "id": "POL-V05-EXT-0dd49cba3564e9",
       "标题": "国家卫生健康委办公厅 民政部办公厅 国家中医药局综合司 国家疾控局综合司关于深化医疗卫生机构与养老机构协议合作的通知",
       "年份": "2024",
@@ -22544,6 +22538,7 @@
   ],
   "policyAliases": {
     "POL-V05-EXT-9970c583afa418": "POL-V05-EXT-2148b24695c318",
-    "POL-V05-EXT-28e629e90f5639": "POL-HRSS-0611"
+    "POL-V05-EXT-28e629e90f5639": "POL-HRSS-0611",
+    "POL-V05-EXT-081f0b899602d0": "POL-HRSS-0803"
   }
 }

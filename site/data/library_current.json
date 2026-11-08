@@ -1,40 +1,40 @@
 {
-  "release": "libraries_20261108_v46",
+  "release": "libraries_20261108_v47",
   "updatedAt": "2026-11-08",
   "policy": {
-    "data": "policy_public_v95.json",
-    "page": "policy_v98.html",
-    "script": "policy_v98.js",
+    "data": "policy_public_v96.json",
+    "page": "policy_v99.html",
+    "script": "policy_v99.js",
     "css": "policy_v51.css",
-    "csv": "policies_v95.csv",
-    "sources": "policy_sources_v95.csv"
+    "csv": "policies_v96.csv",
+    "sources": "policy_sources_v96.csv"
   },
   "literature": {
-    "data": "literature_public_v45.json",
-    "page": "literature_v48.html",
-    "script": "literature_v48.js",
+    "data": "literature_public_v46.json",
+    "page": "literature_v49.html",
+    "script": "literature_v49.js",
     "css": "literature_v03.css"
   },
   "links": {
-    "data": "policy_paper_links_v16.json",
-    "script": "library_links_v17.js",
+    "data": "policy_paper_links_v17.json",
+    "script": "library_links_v18.js",
     "css": "library_links_v02.css"
   },
   "supersedes": {
-    "statistics": "v191",
-    "policy": "policy_v94",
-    "literature": "literature_v44",
-    "links": "policy_paper_links_v15"
+    "statistics": "v192",
+    "policy": "policy_v95",
+    "literature": "literature_v45",
+    "links": "policy_paper_links_v16"
   },
   "versionPolicy": "superseded versions are invalid for active work; historical evidence stays local and is not bundled",
-  "releaseSummary": "北京2019三制度九条收入已核入库，原208456条保持；联合41号同文去重、双来源及旧ID别名保留，33语义边重索引不变；W27534完整PartII两字段，原摘要及PartIII/V保持。",
+  "releaseSummary": "北京2019三制度总支出三条已核入库，原208465条保持；54号同文去重双源及旧ID兼容，33语义边不变；IRP7590补LABORE机构正式发表完整英文摘要，固定19摘要缺口10降9，正式全文仍待核。",
   "statistics": {
-    "version": "v192",
-    "records": 208465,
+    "version": "v193",
+    "records": 208468,
     "indicators": 887,
     "status": {
       "待核验": 84908,
-      "已核验": 123557
+      "已核验": 123560
     },
     "paths": [
       "养老金融数据门户/data/state.json",
