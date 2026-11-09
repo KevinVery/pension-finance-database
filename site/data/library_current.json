@@ -1,40 +1,40 @@
 {
-  "release": "libraries_20261108_v48",
-  "updatedAt": "2026-11-08",
+  "release": "libraries_20261109_v50",
+  "updatedAt": "2026-11-09",
   "policy": {
-    "data": "policy_public_v97.json",
-    "page": "policy_v100.html",
-    "script": "policy_v100.js",
+    "data": "policy_public_v99.json",
+    "page": "policy_v102.html",
+    "script": "policy_v102.js",
     "css": "policy_v51.css",
-    "csv": "policies_v97.csv",
-    "sources": "policy_sources_v97.csv"
+    "csv": "policies_v99.csv",
+    "sources": "policy_sources_v99.csv"
   },
   "literature": {
-    "data": "literature_public_v47.json",
-    "page": "literature_v50.html",
-    "script": "literature_v50.js",
+    "data": "literature_public_v49.json",
+    "page": "literature_v52.html",
+    "script": "literature_v52.js",
     "css": "literature_v03.css"
   },
   "links": {
-    "data": "policy_paper_links_v18.json",
-    "script": "library_links_v19.js",
+    "data": "policy_paper_links_v19.json",
+    "script": "library_links_v20.js",
     "css": "library_links_v02.css"
   },
   "supersedes": {
-    "statistics": "v193",
-    "policy": "policy_v96",
-    "literature": "literature_v46",
-    "links": "policy_paper_links_v17"
+    "statistics": "v194",
+    "policy": "policy_v98",
+    "literature": "literature_v48",
+    "links": "policy_paper_links_v18"
   },
   "versionPolicy": "superseded versions are invalid for active work; historical evidence stays local and is not bundled",
-  "releaseSummary": "北京2018三制度九收入入库，说明八企业消歧，旧208468条不改；54对16五范围限定修改链，非整件废止；W27534国民养老金对照小节及表2两字段追加，全部摘要与33关联保持。",
+  "releaseSummary": "北京2018三制度总支出3条；民政64原令核定48号2019-05-31整件废止；W30938教育及表7两字段核读。第49批未发布，现由第50批修正政策汇总计数、关联类型与清单日期后一并交付。",
   "statistics": {
-    "version": "v194",
-    "records": 208477,
+    "version": "v195",
+    "records": 208480,
     "indicators": 887,
     "status": {
       "待核验": 84908,
-      "已核验": 123569
+      "已核验": 123572
     },
     "paths": [
       "养老金融数据门户/data/state.json",

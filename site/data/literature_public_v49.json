@@ -1,7 +1,7 @@
 {
   "meta": {
-    "version": "literature_v47",
-    "updatedAt": "2026-11-08",
+    "version": "literature_v49",
+    "updatedAt": "2026-11-09",
     "records": 2654,
     "core": 1516,
     "adjacent": 521,
@@ -66,18 +66,18 @@
       "社会救助与减贫": 96
     },
     "linkMetrics": {
-      "version": "policy_paper_links_v18",
-      "updatedAt": "2026-11-08",
+      "version": "policy_paper_links_v19",
+      "updatedAt": "2026-11-09",
       "papersAssessed": 2654,
-      "policiesAssessed": 545,
-      "pairsAssessed": 1446430,
+      "policiesAssessed": 546,
+      "pairsAssessed": 1449084,
       "relations": 33,
       "papersLinked": 31,
       "policiesLinked": 3,
       "explicitRelations": 6,
       "thematicRelations": 0,
       "unmatchedPapers": 2623,
-      "unmatchedPolicies": 544,
+      "unmatchedPolicies": 545,
       "citationRecords": 51,
       "categories": [
         "养老与社保综合",
@@ -98,12 +98,12 @@
       "relationNote": "仅计入可定位文件名称、文号或具体中国改革的题名／摘要证据；同主题、国外经验与一般制度研究不计为具体政策关联。",
       "citationNote": "被引次数为Crossref按DOI匹配的登记值，核对日期2026-10-19；不代表所有平台总被引，缺失不记为0。",
       "reformRelations": 27,
-      "supersedes": "policy_paper_links_v17",
+      "supersedes": "policy_paper_links_v18",
       "currentPaperRecords": 2654,
-      "currentPolicyRecords": 547,
-      "candidateUniversePairs": 1451738,
+      "currentPolicyRecords": 548,
+      "candidateUniversePairs": 1454392,
       "pendingNewPolicyAssessment": 2,
-      "assessmentNote": "第54对16号限定修改链新增于政策库；图谱545目录及33语义边和显式证据保持，不把条款修改当文献关联。",
+      "assessmentNote": "新64号原令仅追加政策目录1项；policiesAssessed/pairsAssessed沿现行结构计目录组合，不代表本批新作2654篇全文人工匹配；33语义边及显式证据不变；另2现行政策仍待目录匹配。",
       "deduplication": {
         "retiredID": "POL-V05-EXT-081f0b899602d0",
         "retainedID": "POL-HRSS-0803",
@@ -111,7 +111,7 @@
         "semanticEdgesChanged": 0
       }
     },
-    "supersedes": "literature_v46",
+    "supersedes": "literature_v48",
     "supersededVersionStatus": "v10未发布构建的年份汇总未同步，已作废；v11重算现行计数，57条题录修订保持。",
     "continuationBatch": {
       "recordsReviewed": 1,
@@ -121,7 +121,7 @@
       "fullTextAcademicFinalReviews": 0
     },
     "previousVersionStatus": "superseded versions are invalid for active work; local evidence only",
-    "revisionNote": "W27534完整National Pensioners小节及表2三页核读，两字段追加；PartII/III/V及LABORE摘要状态保持，固定摘要缺口9、全文终审0。"
+    "revisionNote": "W30938完整第4节教育及表7六页核读，两字段追加；全部摘要题名和版本保持，正式摘要缺口9、全文终审0。"
   },
   "sourceEntrances": [
     {
@@ -22380,7 +22380,7 @@
         "养老保险制度与待遇"
       ],
       "分类依据": "题名与摘要的双语主题规则分类；未作全文语义核验",
-      "全文状态": "NBER现行85页修订稿封面/完整摘要及既有结论核验保持；新增完整第6节PDF32—36/印刷30—34与跨页表10 PDF37上部核读，PDV代理假设与显著性分列；全文学术终审、独立复算及正式期刊全文核验未完成。",
+      "全文状态": "NBER现行85页修订稿封面/完整摘要及既有结论核验保持；新增完整第6节PDF32—36/印刷30—34与跨页表10 PDF37上部核读，PDV代理假设与显著性分列；全文学术终审、独立复算及正式期刊全文核验未完成。 新增PDF23—28完整第4节教育干预（印刷21—26，含图5与表7）六页视觉核读，区分调查DID、异质性和生存率假设；附录D、独立复算、正式期刊全文及全文学术终审仍未完成。",
       "发现来源": [
         "既有底库"
       ],
@@ -22399,7 +22399,7 @@
       "关联政策数": 0,
       "明确提及政策数": 0,
       "政策关联": [],
-      "摘要来源说明": "NBER现行详情页完整原作者摘要，并与citation_pdf_url现行修订PDF第2页交叉；历史rev0另存不覆盖现稿 NBER现行85页February2023/RevisedFebruary2024稿新增完整第6节（PDF32第6节标题起至PDF36第7节标题前，印刷30—34）及其跨页表10（PDF37上部）核读，6页视觉核查；第7节正文不属本轮新增核验范围。未独立复算、未通读其余正文/附录，未取得2025期刊正式全文/完整原摘要，全文学术终审未完成。 第6节financial loss是相对最大化养老金给付PDV领取年龄的损失代理，不等于一般福利损失；PDF33明确无流动性约束、遗赠动机可忽略等条件，PDF35依赖模型客观生存概率贴近真实风险。表10中insurance教育平均损失-584、5%显著；break-even为-139、不显著，不能写成两教育组同等显著改善。所有framing对平均损失的作用不显著；Pr(损失下降)另一个结局的Annual loss age65为-0.046且只10%显著，不能混为平均损失显著恶化。均为调查情景和模型估计，不作已实际领取的官方统计或中国政策效果。"
+      "摘要来源说明": "NBER现行详情页完整原作者摘要，并与citation_pdf_url现行修订PDF第2页交叉；历史rev0另存不覆盖现稿 NBER现行85页February2023/RevisedFebruary2024稿新增完整第6节（PDF32第6节标题起至PDF36第7节标题前，印刷30—34）及其跨页表10（PDF37上部）核读，6页视觉核查；第7节正文不属本轮新增核验范围。未独立复算、未通读其余正文/附录，未取得2025期刊正式全文/完整原摘要，全文学术终审未完成。 第6节financial loss是相对最大化养老金给付PDV领取年龄的损失代理，不等于一般福利损失；PDF33明确无流动性约束、遗赠动机可忽略等条件，PDF35依赖模型客观生存概率贴近真实风险。表10中insurance教育平均损失-584、5%显著；break-even为-139、不显著，不能写成两教育组同等显著改善。所有framing对平均损失的作用不显著；Pr(损失下降)另一个结局的Annual loss age65为-0.046且只10%显著，不能混为平均损失显著恶化。均为调查情景和模型估计，不作已实际领取的官方统计或中国政策效果。 新增完整第4节The Role of Education（PDF23第4节标题至PDF28第5节标题前、印刷21—26；含图5、完整表7及脚注24）六页文字与页面图核读。教育组为调查中等概率随机分派的break-even、insurance和无干预对照，DID比较场景1前测与场景2—6后测的领取选择，不是行政数据中的实际领取改革实验。break-even规则明确不考虑折现；insurance提供性别化65—90岁生存概率，不能据此认定受访者个体客观生存率已测准。optimism为主观寿命相对生命表寿命的百分比偏离，并以0分组，依赖生命表准确的假设。表7为固定效应线性回归，保险干预×Post在全样本-0.007（SE0.004）、乐观组0.002（0.005），均无显著星；悲观组-0.018**（0.007，5%显著），是领取hazard变化，不是退休年龄推迟1.8年或养老金增加1.8%。break-even×Post三组均无显著星，不能写成两教育方式均显著促进总体延迟或把不显著当零效应。交互列break-even×Post×Optimism为0.068**（0.029）、insurance为0.113***（0.031），须与分组平均效应区分；100,974是模型Observations，非独立受访者人数，标准误按受访者聚类。作者明确不应期待这类教育在总体上推动延迟，潜在受益解释有赖生命表反映个体客观风险；不将该研究情景与估计当官方统计、中国效果或福利已证明改善。仅核本节，未核附录D教育原材料、独立复算或正式2025期刊全文；正式摘要缺口9、全文学术终审0保持。"
     },
     {
       "文献ID": "PENSION-W30812",
