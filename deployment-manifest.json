@@ -1,8 +1,8 @@
 {
-  "version": "v195",
+  "version": "v196",
   "framework": "framework_v01",
   "libraries": {
-    "release": "libraries_20261109_v50",
+    "release": "libraries_20261109_v51",
     "updatedAt": "2026-11-09",
     "policy": {
       "data": "policy_public_v99.json",
@@ -13,9 +13,9 @@
       "sources": "policy_sources_v99.csv"
     },
     "literature": {
-      "data": "literature_public_v49.json",
-      "page": "literature_v52.html",
-      "script": "literature_v52.js",
+      "data": "literature_public_v50.json",
+      "page": "literature_v53.html",
+      "script": "literature_v53.js",
       "css": "literature_v03.css"
     },
     "links": {
@@ -24,20 +24,18 @@
       "css": "library_links_v02.css"
     },
     "supersedes": {
-      "statistics": "v194",
-      "policy": "policy_v98",
-      "literature": "literature_v48",
-      "links": "policy_paper_links_v18"
+      "statistics": "v195",
+      "literature": "literature_v49"
     },
     "versionPolicy": "superseded versions are invalid for active work; historical evidence stays local and is not bundled",
-    "releaseSummary": "北京2018三制度总支出3条；民政64原令核定48号2019-05-31整件废止；W30938教育及表7两字段核读。第49批未发布，现由第50批修正政策汇总计数、关联类型与清单日期后一并交付。",
+    "releaseSummary": "北京2020企业和居民委托投资收益两条已核入库，与利息分列、不重复加入总收入；W26513完整6.2及表9两字段追加，全部摘要保持，正式摘要缺口9、全文终审0。政策按本批独立官源候选另核，不造效力结论。",
     "statistics": {
-      "version": "v195",
-      "records": 208480,
+      "version": "v196",
+      "records": 208482,
       "indicators": 887,
       "status": {
         "待核验": 84908,
-        "已核验": 123572
+        "已核验": 123574
       },
       "paths": [
         "养老金融数据门户/data/state.json",
@@ -46,7 +44,7 @@
       ]
     }
   },
-  "records": 208480,
+  "records": 208482,
   "indicators": 887,
   "files": [
     {
@@ -76,13 +74,13 @@
     },
     {
       "path": "data/library_current.json",
-      "bytes": 1503,
-      "sha256": "a589604ff2931aeb9cdb8be18613993c53d782c8ce979118d69a34a77565463b"
+      "bytes": 1477,
+      "sha256": "d661ab51dfb5b44059561ccda5f5d9e38af4e15fc0ce3b0547090afbe848d6d6"
     },
     {
-      "path": "data/literature_public_v49.json",
-      "bytes": 6587064,
-      "sha256": "b8d5b9694d728b4b62ab33694474ca5eba1bfbc9b90a9bba5d4a08bc10801c70"
+      "path": "data/literature_public_v50.json",
+      "bytes": 6588638,
+      "sha256": "a12cc4d5f7f5149aba3f9ec4c866c90fc4974c4c59735ea74f3bc3a29d1aed1e"
     },
     {
       "path": "data/part01.js",
@@ -136,8 +134,8 @@
     },
     {
       "path": "data/part11.js",
-      "bytes": 16126639,
-      "sha256": "1b92dff16635daec4bfe0cd81cdda3d52117666ba66c4cf03c7f83903d198ceb"
+      "bytes": 16129149,
+      "sha256": "d31f7a0e7c6ddfa265c12bbfddde1aa88c6da43944a4f63647d1ac403a947903"
     },
     {
       "path": "data/part12.js",
@@ -192,7 +190,7 @@
     {
       "path": "data/version.js",
       "bytes": 109,
-      "sha256": "5c051ea0a76ffb597b5eea37f939cae9490981c9366001a2920c3a23d0db8958"
+      "sha256": "aba952b9f94a610f7881c461eaf364c39390f2008b414b0a2200a188f5d0fbc4"
     },
     {
       "path": "download.js",
@@ -202,7 +200,7 @@
     {
       "path": "index.html",
       "bytes": 6969,
-      "sha256": "9e0105e3b72a60e798051972f54a5b455559d7d00f5cd98dec0e673002859f18"
+      "sha256": "88bab9b9ed70cb4cf4c2484bc69984350acd413a1701391295d36e0dc08b06af"
     },
     {
       "path": "library_links_v02.css",
@@ -217,7 +215,7 @@
     {
       "path": "literature.html",
       "bytes": 4079,
-      "sha256": "0cd53b0145dd44132c396db4ed953269ff3d0f5586fcbdc01abfe08a66eeed9e"
+      "sha256": "b23d43e7842f1df7d6e7dfffc4e11c7828d768b0b8239b1167a751c78bddf1b0"
     },
     {
       "path": "literature_v03.css",
@@ -225,9 +223,9 @@
       "sha256": "5b33e28e92ead17755d0ebe7f24aad302eeba37d6d85216bd89364d5b5caf684"
     },
     {
-      "path": "literature_v52.js",
+      "path": "literature_v53.js",
       "bytes": 10199,
-      "sha256": "5ff33cda3769a5ea11844be3bf63d71d69c5366c091185b1125dc7c9c0870366"
+      "sha256": "8d699dd4b0dd85b9a6fa38b716c8228cb2ee1b2e66f6a1c1b543dcd8ac466327"
     },
     {
       "path": "policy.html",

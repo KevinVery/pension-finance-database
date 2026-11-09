@@ -1,5 +1,5 @@
 {
-  "release": "libraries_20261109_v50",
+  "release": "libraries_20261109_v51",
   "updatedAt": "2026-11-09",
   "policy": {
     "data": "policy_public_v99.json",
@@ -10,9 +10,9 @@
     "sources": "policy_sources_v99.csv"
   },
   "literature": {
-    "data": "literature_public_v49.json",
-    "page": "literature_v52.html",
-    "script": "literature_v52.js",
+    "data": "literature_public_v50.json",
+    "page": "literature_v53.html",
+    "script": "literature_v53.js",
     "css": "literature_v03.css"
   },
   "links": {
@@ -21,20 +21,18 @@
     "css": "library_links_v02.css"
   },
   "supersedes": {
-    "statistics": "v194",
-    "policy": "policy_v98",
-    "literature": "literature_v48",
-    "links": "policy_paper_links_v18"
+    "statistics": "v195",
+    "literature": "literature_v49"
   },
   "versionPolicy": "superseded versions are invalid for active work; historical evidence stays local and is not bundled",
-  "releaseSummary": "北京2018三制度总支出3条；民政64原令核定48号2019-05-31整件废止；W30938教育及表7两字段核读。第49批未发布，现由第50批修正政策汇总计数、关联类型与清单日期后一并交付。",
+  "releaseSummary": "北京2020企业和居民委托投资收益两条已核入库，与利息分列、不重复加入总收入；W26513完整6.2及表9两字段追加，全部摘要保持，正式摘要缺口9、全文终审0。政策按本批独立官源候选另核，不造效力结论。",
   "statistics": {
-    "version": "v195",
-    "records": 208480,
+    "version": "v196",
+    "records": 208482,
     "indicators": 887,
     "status": {
       "待核验": 84908,
-      "已核验": 123572
+      "已核验": 123574
     },
     "paths": [
       "养老金融数据门户/data/state.json",
