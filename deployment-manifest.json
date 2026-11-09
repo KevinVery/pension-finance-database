@@ -1,9 +1,9 @@
 {
-  "version": "v198",
+  "version": "v199",
   "framework": "framework_v01",
   "libraries": {
-    "release": "libraries_20261109_v53",
-    "updatedAt": "2026-11-09",
+    "release": "libraries_20261110_v54",
+    "updatedAt": "2026-11-10",
     "policy": {
       "data": "policy_public_v99.json",
       "page": "policy_v102.html",
@@ -24,18 +24,17 @@
       "css": "library_links_v02.css"
     },
     "supersedes": {
-      "statistics": "v197",
-      "literature": "literature_v51"
+      "statistics": "v198"
     },
     "versionPolicy": "superseded versions are invalid for active work; historical evidence stays local and is not bundled",
-    "releaseSummary": "北京2018企业委托投资收益27.0702亿元1条已核入库，企业消歧、空白不补0；北京2021企业和居民两条仅补官方预决算解释，不关闭同比原因。W26513完整6.1及6.4、图2表8脚注41及表10两字段核读，保留表8/表9差异，历史未核6.1/6.4状态更正；全部摘要保持，正式摘要缺口9、全文终审0。政策99及33语义边保持，2018法律原件另续核。",
+    "releaseSummary": "北京2017三制度总收入、保险费或个人缴费收入、总支出九条官方最终公开决算原格入库，旧208484条全部保持；原表明确企业职工，2017投资收益旧科目口径待定不入委托收益，空白不补0，不关闭年度经济原因。政策99、文献52页面55及关联19保持。",
     "statistics": {
-      "version": "v198",
-      "records": 208484,
+      "version": "v199",
+      "records": 208493,
       "indicators": 887,
       "status": {
         "待核验": 84908,
-        "已核验": 123576
+        "已核验": 123585
       },
       "paths": [
         "养老金融数据门户/data/state.json",
@@ -44,7 +43,7 @@
       ]
     }
   },
-  "records": 208484,
+  "records": 208493,
   "indicators": 887,
   "files": [
     {
@@ -74,8 +73,8 @@
     },
     {
       "path": "data/library_current.json",
-      "bytes": 1630,
-      "sha256": "e7463826cfc7bc64122dc34779dc073d19c79bce5abc443fab57d9a7581da34c"
+      "bytes": 1492,
+      "sha256": "4166166be531358994e11cfc597b1b5bcf03e63c6af2e305b13a2c4fd6bf49bb"
     },
     {
       "path": "data/literature_public_v52.json",
@@ -134,8 +133,8 @@
     },
     {
       "path": "data/part11.js",
-      "bytes": 16133851,
-      "sha256": "88e6067fcab21b11069dcc0b1fe6e03155d9aabf407ed9d495064e3136e75a14"
+      "bytes": 16147874,
+      "sha256": "3ca1d01e4e17ad7c34ed2705cc000f585953cf8008262e83fad50d54a84d028f"
     },
     {
       "path": "data/part12.js",
@@ -190,7 +189,7 @@
     {
       "path": "data/version.js",
       "bytes": 109,
-      "sha256": "2b329a8ba86ce21a9efc21b9a4d4662d405eb8d985f816bd4ac20f65c7813aa8"
+      "sha256": "268b0ac95ff782df3ba50f6670d0c9f0631d519f9889de5be69deb3c35081ace"
     },
     {
       "path": "download.js",
@@ -200,7 +199,7 @@
     {
       "path": "index.html",
       "bytes": 6969,
-      "sha256": "53b585078f702b522a329b10c0fef0f73bb86350d2d33fbd21ad6246d0a8036d"
+      "sha256": "bfcb05fc2e65822007f5d0cb753194007a729ad13b7484c0075dda8faa98a92d"
     },
     {
       "path": "library_links_v02.css",
