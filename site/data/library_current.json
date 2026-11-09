@@ -1,5 +1,5 @@
 {
-  "release": "libraries_20261109_v51",
+  "release": "libraries_20261109_v52",
   "updatedAt": "2026-11-09",
   "policy": {
     "data": "policy_public_v99.json",
@@ -10,9 +10,9 @@
     "sources": "policy_sources_v99.csv"
   },
   "literature": {
-    "data": "literature_public_v50.json",
-    "page": "literature_v53.html",
-    "script": "literature_v53.js",
+    "data": "literature_public_v51.json",
+    "page": "literature_v54.html",
+    "script": "literature_v54.js",
     "css": "literature_v03.css"
   },
   "links": {
@@ -21,18 +21,18 @@
     "css": "library_links_v02.css"
   },
   "supersedes": {
-    "statistics": "v195",
-    "literature": "literature_v49"
+    "statistics": "v196",
+    "literature": "literature_v50"
   },
   "versionPolicy": "superseded versions are invalid for active work; historical evidence stays local and is not bundled",
-  "releaseSummary": "北京2020企业和居民委托投资收益两条已核入库，与利息分列、不重复加入总收入；W26513完整6.2及表9两字段追加，全部摘要保持，正式摘要缺口9、全文终审0。政策按本批独立官源候选另核，不造效力结论。",
+  "releaseSummary": "北京2019企业委托投资收益1条已核入库，居民未列及机关空白不补0，与利息分列、不重复加入总收入；W26513完整6.3图3脚注42三字段核读并清理历史状态矛盾，全部摘要保持，正式摘要缺口9、全文终审0。政策99及33语义边保持，2018法律原件仍待核。",
   "statistics": {
-    "version": "v196",
-    "records": 208482,
+    "version": "v197",
+    "records": 208483,
     "indicators": 887,
     "status": {
       "待核验": 84908,
-      "已核验": 123574
+      "已核验": 123575
     },
     "paths": [
       "养老金融数据门户/data/state.json",
