@@ -1,8 +1,8 @@
 {
-  "version": "v197",
+  "version": "v198",
   "framework": "framework_v01",
   "libraries": {
-    "release": "libraries_20261109_v52",
+    "release": "libraries_20261109_v53",
     "updatedAt": "2026-11-09",
     "policy": {
       "data": "policy_public_v99.json",
@@ -13,9 +13,9 @@
       "sources": "policy_sources_v99.csv"
     },
     "literature": {
-      "data": "literature_public_v51.json",
-      "page": "literature_v54.html",
-      "script": "literature_v54.js",
+      "data": "literature_public_v52.json",
+      "page": "literature_v55.html",
+      "script": "literature_v55.js",
       "css": "literature_v03.css"
     },
     "links": {
@@ -24,18 +24,18 @@
       "css": "library_links_v02.css"
     },
     "supersedes": {
-      "statistics": "v196",
-      "literature": "literature_v50"
+      "statistics": "v197",
+      "literature": "literature_v51"
     },
     "versionPolicy": "superseded versions are invalid for active work; historical evidence stays local and is not bundled",
-    "releaseSummary": "北京2019企业委托投资收益1条已核入库，居民未列及机关空白不补0，与利息分列、不重复加入总收入；W26513完整6.3图3脚注42三字段核读并清理历史状态矛盾，全部摘要保持，正式摘要缺口9、全文终审0。政策99及33语义边保持，2018法律原件仍待核。",
+    "releaseSummary": "北京2018企业委托投资收益27.0702亿元1条已核入库，企业消歧、空白不补0；北京2021企业和居民两条仅补官方预决算解释，不关闭同比原因。W26513完整6.1及6.4、图2表8脚注41及表10两字段核读，保留表8/表9差异，历史未核6.1/6.4状态更正；全部摘要保持，正式摘要缺口9、全文终审0。政策99及33语义边保持，2018法律原件另续核。",
     "statistics": {
-      "version": "v197",
-      "records": 208483,
+      "version": "v198",
+      "records": 208484,
       "indicators": 887,
       "status": {
         "待核验": 84908,
-        "已核验": 123575
+        "已核验": 123576
       },
       "paths": [
         "养老金融数据门户/data/state.json",
@@ -44,7 +44,7 @@
       ]
     }
   },
-  "records": 208483,
+  "records": 208484,
   "indicators": 887,
   "files": [
     {
@@ -74,13 +74,13 @@
     },
     {
       "path": "data/library_current.json",
-      "bytes": 1531,
-      "sha256": "a1a7150c0df85bd3933b3215e2fb4bcf02977cee53134b59eaf68cbd29db18ea"
+      "bytes": 1630,
+      "sha256": "e7463826cfc7bc64122dc34779dc073d19c79bce5abc443fab57d9a7581da34c"
     },
     {
-      "path": "data/literature_public_v51.json",
-      "bytes": 6590488,
-      "sha256": "d77c815ae27f4a5c1fc4d18488f9f1a317f4529ec72a0aa96489e639fd5b3a2c"
+      "path": "data/literature_public_v52.json",
+      "bytes": 6595178,
+      "sha256": "ffdd3b1b9c2cb5e09583c6d1444678a15c7ab56b4c0afd42a0175a756e4aa266"
     },
     {
       "path": "data/part01.js",
@@ -134,8 +134,8 @@
     },
     {
       "path": "data/part11.js",
-      "bytes": 16130567,
-      "sha256": "043f3ad78024d1195ef9baf9592717d90c4bf391540cf876ca613461f9a0b60a"
+      "bytes": 16133851,
+      "sha256": "88e6067fcab21b11069dcc0b1fe6e03155d9aabf407ed9d495064e3136e75a14"
     },
     {
       "path": "data/part12.js",
@@ -190,7 +190,7 @@
     {
       "path": "data/version.js",
       "bytes": 109,
-      "sha256": "af32fc306e1c1390b39b9c0a9ebdfc33177e1cce2cda348de4197ef295b8a67b"
+      "sha256": "2b329a8ba86ce21a9efc21b9a4d4662d405eb8d985f816bd4ac20f65c7813aa8"
     },
     {
       "path": "download.js",
@@ -200,7 +200,7 @@
     {
       "path": "index.html",
       "bytes": 6969,
-      "sha256": "e6c7af9ab892562f4ec506acf6d47e7b61f3543f987265b1e4eff25f7f23a56c"
+      "sha256": "53b585078f702b522a329b10c0fef0f73bb86350d2d33fbd21ad6246d0a8036d"
     },
     {
       "path": "library_links_v02.css",
@@ -215,7 +215,7 @@
     {
       "path": "literature.html",
       "bytes": 4079,
-      "sha256": "8b38f926896fda2a371de492c296bf7b6828b865a4d3136d68471dc58fb6c1ea"
+      "sha256": "b98adce6d8afe627e4b8a74d0ca241260700c739fbba2f098eeaaf908fa9516b"
     },
     {
       "path": "literature_v03.css",
@@ -223,9 +223,9 @@
       "sha256": "5b33e28e92ead17755d0ebe7f24aad302eeba37d6d85216bd89364d5b5caf684"
     },
     {
-      "path": "literature_v54.js",
+      "path": "literature_v55.js",
       "bytes": 10199,
-      "sha256": "38b22844f73c612a1f6868b299c376a5978e59b5f3f2d69122cb32ba77adf667"
+      "sha256": "bae98adc5a84ab432833340108a8501bc424df9372dc34040e261e984626ce08"
     },
     {
       "path": "policy.html",

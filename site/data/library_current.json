@@ -1,5 +1,5 @@
 {
-  "release": "libraries_20261109_v52",
+  "release": "libraries_20261109_v53",
   "updatedAt": "2026-11-09",
   "policy": {
     "data": "policy_public_v99.json",
@@ -10,9 +10,9 @@
     "sources": "policy_sources_v99.csv"
   },
   "literature": {
-    "data": "literature_public_v51.json",
-    "page": "literature_v54.html",
-    "script": "literature_v54.js",
+    "data": "literature_public_v52.json",
+    "page": "literature_v55.html",
+    "script": "literature_v55.js",
     "css": "literature_v03.css"
   },
   "links": {
@@ -21,18 +21,18 @@
     "css": "library_links_v02.css"
   },
   "supersedes": {
-    "statistics": "v196",
-    "literature": "literature_v50"
+    "statistics": "v197",
+    "literature": "literature_v51"
   },
   "versionPolicy": "superseded versions are invalid for active work; historical evidence stays local and is not bundled",
-  "releaseSummary": "北京2019企业委托投资收益1条已核入库，居民未列及机关空白不补0，与利息分列、不重复加入总收入；W26513完整6.3图3脚注42三字段核读并清理历史状态矛盾，全部摘要保持，正式摘要缺口9、全文终审0。政策99及33语义边保持，2018法律原件仍待核。",
+  "releaseSummary": "北京2018企业委托投资收益27.0702亿元1条已核入库，企业消歧、空白不补0；北京2021企业和居民两条仅补官方预决算解释，不关闭同比原因。W26513完整6.1及6.4、图2表8脚注41及表10两字段核读，保留表8/表9差异，历史未核6.1/6.4状态更正；全部摘要保持，正式摘要缺口9、全文终审0。政策99及33语义边保持，2018法律原件另续核。",
   "statistics": {
-    "version": "v197",
-    "records": 208483,
+    "version": "v198",
+    "records": 208484,
     "indicators": 887,
     "status": {
       "待核验": 84908,
-      "已核验": 123575
+      "已核验": 123576
     },
     "paths": [
       "养老金融数据门户/data/state.json",
