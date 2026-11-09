@@ -1,5 +1,5 @@
 {
-  "release": "libraries_20261110_v54",
+  "release": "libraries_20261110_v55",
   "updatedAt": "2026-11-10",
   "policy": {
     "data": "policy_public_v99.json",
@@ -10,9 +10,9 @@
     "sources": "policy_sources_v99.csv"
   },
   "literature": {
-    "data": "literature_public_v52.json",
-    "page": "literature_v55.html",
-    "script": "literature_v55.js",
+    "data": "literature_public_v53.json",
+    "page": "literature_v56.html",
+    "script": "literature_v56.js",
     "css": "literature_v03.css"
   },
   "links": {
@@ -21,12 +21,13 @@
     "css": "library_links_v02.css"
   },
   "supersedes": {
-    "statistics": "v198"
+    "statistics": "v199",
+    "literature": "literature_v52"
   },
   "versionPolicy": "superseded versions are invalid for active work; historical evidence stays local and is not bundled",
-  "releaseSummary": "北京2017三制度总收入、保险费或个人缴费收入、总支出九条官方最终公开决算原格入库，旧208484条全部保持；原表明确企业职工，2017投资收益旧科目口径待定不入委托收益，空白不补0，不关闭年度经济原因。政策99、文献52页面55及关联19保持。",
+  "releaseSummary": "北京2017至2018三制度九对相邻扫描，四条触发记录仅追加口径与来源边界，原数值和状态保持，年度经济原因及固定39099台账关闭0条；2018企业支出含中央调剂197亿元，不将2017未列补0，不据此归因全部增量。W26513式9、表7与脚注42两字段补证，保留规范化文字张力与OID borderline，摘要缺口9、全文终审0保持。北京2016草案九格隔离，不入正式库；policy99及33语义边保持。",
   "statistics": {
-    "version": "v199",
+    "version": "v200",
     "records": 208493,
     "indicators": 887,
     "status": {

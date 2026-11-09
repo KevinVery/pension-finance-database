@@ -1,8 +1,8 @@
 {
-  "version": "v199",
+  "version": "v200",
   "framework": "framework_v01",
   "libraries": {
-    "release": "libraries_20261110_v54",
+    "release": "libraries_20261110_v55",
     "updatedAt": "2026-11-10",
     "policy": {
       "data": "policy_public_v99.json",
@@ -13,9 +13,9 @@
       "sources": "policy_sources_v99.csv"
     },
     "literature": {
-      "data": "literature_public_v52.json",
-      "page": "literature_v55.html",
-      "script": "literature_v55.js",
+      "data": "literature_public_v53.json",
+      "page": "literature_v56.html",
+      "script": "literature_v56.js",
       "css": "literature_v03.css"
     },
     "links": {
@@ -24,12 +24,13 @@
       "css": "library_links_v02.css"
     },
     "supersedes": {
-      "statistics": "v198"
+      "statistics": "v199",
+      "literature": "literature_v52"
     },
     "versionPolicy": "superseded versions are invalid for active work; historical evidence stays local and is not bundled",
-    "releaseSummary": "北京2017三制度总收入、保险费或个人缴费收入、总支出九条官方最终公开决算原格入库，旧208484条全部保持；原表明确企业职工，2017投资收益旧科目口径待定不入委托收益，空白不补0，不关闭年度经济原因。政策99、文献52页面55及关联19保持。",
+    "releaseSummary": "北京2017至2018三制度九对相邻扫描，四条触发记录仅追加口径与来源边界，原数值和状态保持，年度经济原因及固定39099台账关闭0条；2018企业支出含中央调剂197亿元，不将2017未列补0，不据此归因全部增量。W26513式9、表7与脚注42两字段补证，保留规范化文字张力与OID borderline，摘要缺口9、全文终审0保持。北京2016草案九格隔离，不入正式库；policy99及33语义边保持。",
     "statistics": {
-      "version": "v199",
+      "version": "v200",
       "records": 208493,
       "indicators": 887,
       "status": {
@@ -73,13 +74,13 @@
     },
     {
       "path": "data/library_current.json",
-      "bytes": 1492,
-      "sha256": "4166166be531358994e11cfc597b1b5bcf03e63c6af2e305b13a2c4fd6bf49bb"
+      "bytes": 1689,
+      "sha256": "bd1d04a34d4c0ab51c460c97697e81159d983921283cebd17db1f713a6adfd23"
     },
     {
-      "path": "data/literature_public_v52.json",
-      "bytes": 6595178,
-      "sha256": "ffdd3b1b9c2cb5e09583c6d1444678a15c7ab56b4c0afd42a0175a756e4aa266"
+      "path": "data/literature_public_v53.json",
+      "bytes": 6596209,
+      "sha256": "8a2e9089ff422d145489b4d781938bf601f22b832ce7825611b63cb00528e388"
     },
     {
       "path": "data/part01.js",
@@ -133,8 +134,8 @@
     },
     {
       "path": "data/part11.js",
-      "bytes": 16147874,
-      "sha256": "3ca1d01e4e17ad7c34ed2705cc000f585953cf8008262e83fad50d54a84d028f"
+      "bytes": 16150463,
+      "sha256": "783ce78abcfaefb39cd89486e4b5c66e805086f68ea97129d60e7cf878b5a091"
     },
     {
       "path": "data/part12.js",
@@ -189,7 +190,7 @@
     {
       "path": "data/version.js",
       "bytes": 109,
-      "sha256": "268b0ac95ff782df3ba50f6670d0c9f0631d519f9889de5be69deb3c35081ace"
+      "sha256": "693785aa64f2f900d0a0c5612e78081ff441305a2998c5463ec7dd4bd15cc326"
     },
     {
       "path": "download.js",
@@ -199,7 +200,7 @@
     {
       "path": "index.html",
       "bytes": 6969,
-      "sha256": "bfcb05fc2e65822007f5d0cb753194007a729ad13b7484c0075dda8faa98a92d"
+      "sha256": "5dab64f49ba2e1c64447b881012d0234f1a14c198c94bd88c99fe27f46c8ea7b"
     },
     {
       "path": "library_links_v02.css",
@@ -214,7 +215,7 @@
     {
       "path": "literature.html",
       "bytes": 4079,
-      "sha256": "b98adce6d8afe627e4b8a74d0ca241260700c739fbba2f098eeaaf908fa9516b"
+      "sha256": "e5fcd82c1f618d6232cb63a4a78a92df0299e88e6886322be1c8440cd7e0ae33"
     },
     {
       "path": "literature_v03.css",
@@ -222,9 +223,9 @@
       "sha256": "5b33e28e92ead17755d0ebe7f24aad302eeba37d6d85216bd89364d5b5caf684"
     },
     {
-      "path": "literature_v55.js",
+      "path": "literature_v56.js",
       "bytes": 10199,
-      "sha256": "bae98adc5a84ab432833340108a8501bc424df9372dc34040e261e984626ce08"
+      "sha256": "f26eb18cf7d4b2f85225d654d678c17ebe23efdc2064a304a654d8b802f3c832"
     },
     {
       "path": "policy.html",
