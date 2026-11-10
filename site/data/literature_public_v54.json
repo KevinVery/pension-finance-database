@@ -1,6 +1,6 @@
 {
   "meta": {
-    "version": "literature_v53",
+    "version": "literature_v54",
     "updatedAt": "2026-11-10",
     "records": 2654,
     "core": 1516,
@@ -111,17 +111,19 @@
         "semanticEdgesChanged": 0
       }
     },
-    "supersedes": "literature_v52",
+    "supersedes": "literature_v53",
     "supersededVersionStatus": "v10未发布构建的年份汇总未同步，已作废；v11重算现行计数，57条题录修订保持。",
     "continuationBatch": {
+      "batch": 58,
+      "release": 57,
       "recordsReviewed": 1,
-      "fieldsPatched": 2,
+      "fieldsPatched": 1,
       "newRecords": 0,
       "formalAbstractGapsAfterActivation": 9,
       "fullTextAcademicFinalReviews": 0
     },
     "previousVersionStatus": "superseded versions are invalid for active work; local evidence only",
-    "revisionNote": "W26513供给与Drivers完整段、完整5.5.2及表7、式9与脚注42参数桥接核读；归一化张力及OID borderline边界保留，不作全文终审。"
+    "revisionNote": "第58批：IRP-1812仅官网核验字段新增共同作者Harvard官方CV独立题录交叉；PDF29第35项核作者顺序、2026年、259卷105661。CV演讲年份不当出版年份；未取得正式摘要/正文，摘要缺口9、全文终审0保持。统计v200、policy100及links19保持。"
   },
   "sourceEntrances": [
     {
@@ -105230,7 +105232,7 @@
         "检索_社会保障",
         "社会保险"
       ],
-      "官网核验": "NBER作者档案→Berkeley官方教师页→Hoynes作者Research，明确列JPubE259/July2026/105661及Final Draft(April2026)和prior NBER29871，Crossref一致核定正式引文；作者稿不冒充正式出版者摘要。 本轮实读NBER当前75页PDF封面明确March2022，与作者官网Final Draft(April2026)86页稿分别定位。新增指定正文核读：2022工作论文PDF45—47/印刷43—45完整结论，2026作者定稿PDF5—6结果概述、47—49福利/成本和完整结论；两封面均核，页图共10页视觉复核。其余正文、表格/附录及数学未逐项审定，不是两稿全文终审；作者定稿不是出版者正式版，固定正式摘要缺口不关闭。 指定正文实证：2022结论称最终获批率无统计显著变化，并认为边际申请者愿付高于法定费率、鼓励初次代理可有较大效率收益；2026作者定稿明列最终获批率-7个百分点点估计但统计检验力不足，不能写成已证实显著下降或最终获批结论反转。2026稿按5%贴现、研究估计点值模拟平均complier预期净损失11,589美元（合并Medicare为16,081美元），精神诊断组预期净收益109,565美元，其他诊断异质；须与申请努力/负担成本及未建模因素权衡，不能泛化为所有申请人实际损失。两稿均保留SSA处理成本约节约4亿美元/13%模拟。上述均是论文估计/情景，不是官方已发生统计。",
+      "官网核验": "NBER作者档案→Berkeley官方教师页→Hoynes作者Research，明确列JPubE259/July2026/105661及Final Draft(April2026)和prior NBER29871，Crossref一致核定正式引文；作者稿不冒充正式出版者摘要。 本轮实读NBER当前75页PDF封面明确March2022，与作者官网Final Draft(April2026)86页稿分别定位。新增指定正文核读：2022工作论文PDF45—47/印刷43—45完整结论，2026作者定稿PDF5—6结果概述、47—49福利/成本和完整结论；两封面均核，页图共10页视觉复核。其余正文、表格/附录及数学未逐项审定，不是两稿全文终审；作者定稿不是出版者正式版，固定正式摘要缺口不关闭。 指定正文实证：2022结论称最终获批率无统计显著变化，并认为边际申请者愿付高于法定费率、鼓励初次代理可有较大效率收益；2026作者定稿明列最终获批率-7个百分点点估计但统计检验力不足，不能写成已证实显著下降或最终获批结论反转。2026稿按5%贴现、研究估计点值模拟平均complier预期净损失11,589美元（合并Medicare为16,081美元），精神诊断组预期净收益109,565美元，其他诊断异质；须与申请努力/负担成本及未建模因素权衡，不能泛化为所有申请人实际损失。两稿均保留SSA处理成本约节约4亿美元/13%模拟。上述均是论文估计/情景，不是官方已发生统计。 新增共同作者机构独立交叉：经NBER Nicole Maestas实际作者链接进入Harvard Medical School官方教师页并取得所链32页CV；PDF29文献第35项列Hoynes H、Maestas N、Strand A，Legal Representation in Disability Claims，Journal of Public Economics，2026；259:105661，与既有正式题录一致。该CV仅核作者顺序、发表年、期刊卷与文章号，不含本论文正式摘要或正文；CV中2021—2023年同题演讲条目是报告年份，不是发表年份。NBER29871及April2026作者定稿与正式期刊版本仍分开，不据此认定内容一致或关闭正式摘要缺口。",
       "收录路径": "iReadPaper线索",
       "全文状态": "作者官网标Final Draft(April2026)86页稿已保存，PDF1/5—6/47—49封面、结果概述及福利/成本/完整结论指定段落已核读；正式出版者摘要与正文未取得，作者稿其余正文/附录未逐项审定，全文学术终审未完成。",
       "原件SHA256": "",

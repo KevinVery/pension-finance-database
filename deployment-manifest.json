@@ -2,7 +2,7 @@
   "version": "v200",
   "framework": "framework_v01",
   "libraries": {
-    "release": "libraries_20261110_v56",
+    "release": "libraries_20261110_v57",
     "updatedAt": "2026-11-10",
     "policy": {
       "data": "policy_public_v100.json",
@@ -13,9 +13,9 @@
       "sources": "policy_sources_v100.csv"
     },
     "literature": {
-      "data": "literature_public_v53.json",
-      "page": "literature_v56.html",
-      "script": "literature_v56.js",
+      "data": "literature_public_v54.json",
+      "page": "literature_v57.html",
+      "script": "literature_v57.js",
       "css": "literature_v03.css"
     },
     "links": {
@@ -24,10 +24,10 @@
       "css": "library_links_v02.css"
     },
     "supersedes": {
-      "policy": "policy_v99"
+      "literature": "literature_v53"
     },
     "versionPolicy": "superseded versions are invalid for active work; historical evidence stays local and is not bundled",
-    "releaseSummary": "48号令两说明字段追加国家法律法规数据库官方2018修正合并文本公报题注与第43条交叉证据；清理788补充来源中原令未取得的过时活动状态。原七法修改决定、主席令及原决定施行句仍缺；48号令2019废止日、原2013正文、842来源和146关系保持。统计v200、文献53及links19不变。",
+    "releaseSummary": "第58批：IRP-1812仅官网核验字段新增共同作者Harvard官方CV独立题录交叉；PDF29第35项核作者顺序、2026年、259卷105661。CV演讲年份不当出版年份；未取得正式摘要/正文，摘要缺口9、全文终审0保持。统计v200、policy100及links19保持。",
     "statistics": {
       "version": "v200",
       "records": 208493,
@@ -73,13 +73,13 @@
     },
     {
       "path": "data/library_current.json",
-      "bytes": 1532,
-      "sha256": "191f0cb86a2365c11c77420a4ae4614965e6a0bf11cbeeeac40dbdcfd8c806b1"
+      "bytes": 1477,
+      "sha256": "1c3786cd5d36605104081843ebfd69e43a3c6e5dd4171916af18a8c67aa07ae0"
     },
     {
-      "path": "data/literature_public_v53.json",
-      "bytes": 6596209,
-      "sha256": "8a2e9089ff422d145489b4d781938bf601f22b832ce7825611b63cb00528e388"
+      "path": "data/literature_public_v54.json",
+      "bytes": 6597015,
+      "sha256": "19523a716f0f9ec903e8b27e0cf59c67979464f02aae915b9c102cad4a10b129"
     },
     {
       "path": "data/part01.js",
@@ -199,7 +199,7 @@
     {
       "path": "index.html",
       "bytes": 6969,
-      "sha256": "d3166efdcf1ece0730dc8460b29bed145cc4e4abf8d13df940ebd206bc355fa1"
+      "sha256": "58a9d9db3d34cd20c395a1ed9cb3336c0e9d405e0d79521f644b28a3df8efcda"
     },
     {
       "path": "library_links_v02.css",
@@ -214,7 +214,7 @@
     {
       "path": "literature.html",
       "bytes": 4079,
-      "sha256": "e5fcd82c1f618d6232cb63a4a78a92df0299e88e6886322be1c8440cd7e0ae33"
+      "sha256": "f95f6c7916d9544cbebe336389899395c212d5e12a1bd9c3d8eb1e0a5fa3b760"
     },
     {
       "path": "literature_v03.css",
@@ -222,9 +222,9 @@
       "sha256": "5b33e28e92ead17755d0ebe7f24aad302eeba37d6d85216bd89364d5b5caf684"
     },
     {
-      "path": "literature_v56.js",
+      "path": "literature_v57.js",
       "bytes": 10199,
-      "sha256": "f26eb18cf7d4b2f85225d654d678c17ebe23efdc2064a304a654d8b802f3c832"
+      "sha256": "22e6c161a3ff442081f356f156783e31688a403041e47bedb179a31c94255573"
     },
     {
       "path": "policy.html",

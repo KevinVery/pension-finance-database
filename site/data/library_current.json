@@ -1,5 +1,5 @@
 {
-  "release": "libraries_20261110_v56",
+  "release": "libraries_20261110_v57",
   "updatedAt": "2026-11-10",
   "policy": {
     "data": "policy_public_v100.json",
@@ -10,9 +10,9 @@
     "sources": "policy_sources_v100.csv"
   },
   "literature": {
-    "data": "literature_public_v53.json",
-    "page": "literature_v56.html",
-    "script": "literature_v56.js",
+    "data": "literature_public_v54.json",
+    "page": "literature_v57.html",
+    "script": "literature_v57.js",
     "css": "literature_v03.css"
   },
   "links": {
@@ -21,10 +21,10 @@
     "css": "library_links_v02.css"
   },
   "supersedes": {
-    "policy": "policy_v99"
+    "literature": "literature_v53"
   },
   "versionPolicy": "superseded versions are invalid for active work; historical evidence stays local and is not bundled",
-  "releaseSummary": "48号令两说明字段追加国家法律法规数据库官方2018修正合并文本公报题注与第43条交叉证据；清理788补充来源中原令未取得的过时活动状态。原七法修改决定、主席令及原决定施行句仍缺；48号令2019废止日、原2013正文、842来源和146关系保持。统计v200、文献53及links19不变。",
+  "releaseSummary": "第58批：IRP-1812仅官网核验字段新增共同作者Harvard官方CV独立题录交叉；PDF29第35项核作者顺序、2026年、259卷105661。CV演讲年份不当出版年份；未取得正式摘要/正文，摘要缺口9、全文终审0保持。统计v200、policy100及links19保持。",
   "statistics": {
     "version": "v200",
     "records": 208493,
