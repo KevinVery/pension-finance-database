@@ -1,13 +1,13 @@
 {
-  "release": "libraries_20261110_v55",
+  "release": "libraries_20261110_v56",
   "updatedAt": "2026-11-10",
   "policy": {
-    "data": "policy_public_v99.json",
-    "page": "policy_v102.html",
-    "script": "policy_v102.js",
+    "data": "policy_public_v100.json",
+    "page": "policy_v103.html",
+    "script": "policy_v103.js",
     "css": "policy_v51.css",
-    "csv": "policies_v99.csv",
-    "sources": "policy_sources_v99.csv"
+    "csv": "policies_v100.csv",
+    "sources": "policy_sources_v100.csv"
   },
   "literature": {
     "data": "literature_public_v53.json",
@@ -21,11 +21,10 @@
     "css": "library_links_v02.css"
   },
   "supersedes": {
-    "statistics": "v199",
-    "literature": "literature_v52"
+    "policy": "policy_v99"
   },
   "versionPolicy": "superseded versions are invalid for active work; historical evidence stays local and is not bundled",
-  "releaseSummary": "北京2017至2018三制度九对相邻扫描，四条触发记录仅追加口径与来源边界，原数值和状态保持，年度经济原因及固定39099台账关闭0条；2018企业支出含中央调剂197亿元，不将2017未列补0，不据此归因全部增量。W26513式9、表7与脚注42两字段补证，保留规范化文字张力与OID borderline，摘要缺口9、全文终审0保持。北京2016草案九格隔离，不入正式库；policy99及33语义边保持。",
+  "releaseSummary": "48号令两说明字段追加国家法律法规数据库官方2018修正合并文本公报题注与第43条交叉证据；清理788补充来源中原令未取得的过时活动状态。原七法修改决定、主席令及原决定施行句仍缺；48号令2019废止日、原2013正文、842来源和146关系保持。统计v200、文献53及links19不变。",
   "statistics": {
     "version": "v200",
     "records": 208493,

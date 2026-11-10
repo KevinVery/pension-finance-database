@@ -2,15 +2,15 @@
   "version": "v200",
   "framework": "framework_v01",
   "libraries": {
-    "release": "libraries_20261110_v55",
+    "release": "libraries_20261110_v56",
     "updatedAt": "2026-11-10",
     "policy": {
-      "data": "policy_public_v99.json",
-      "page": "policy_v102.html",
-      "script": "policy_v102.js",
+      "data": "policy_public_v100.json",
+      "page": "policy_v103.html",
+      "script": "policy_v103.js",
       "css": "policy_v51.css",
-      "csv": "policies_v99.csv",
-      "sources": "policy_sources_v99.csv"
+      "csv": "policies_v100.csv",
+      "sources": "policy_sources_v100.csv"
     },
     "literature": {
       "data": "literature_public_v53.json",
@@ -24,11 +24,10 @@
       "css": "library_links_v02.css"
     },
     "supersedes": {
-      "statistics": "v199",
-      "literature": "literature_v52"
+      "policy": "policy_v99"
     },
     "versionPolicy": "superseded versions are invalid for active work; historical evidence stays local and is not bundled",
-    "releaseSummary": "北京2017至2018三制度九对相邻扫描，四条触发记录仅追加口径与来源边界，原数值和状态保持，年度经济原因及固定39099台账关闭0条；2018企业支出含中央调剂197亿元，不将2017未列补0，不据此归因全部增量。W26513式9、表7与脚注42两字段补证，保留规范化文字张力与OID borderline，摘要缺口9、全文终审0保持。北京2016草案九格隔离，不入正式库；policy99及33语义边保持。",
+    "releaseSummary": "48号令两说明字段追加国家法律法规数据库官方2018修正合并文本公报题注与第43条交叉证据；清理788补充来源中原令未取得的过时活动状态。原七法修改决定、主席令及原决定施行句仍缺；48号令2019废止日、原2013正文、842来源和146关系保持。统计v200、文献53及links19不变。",
     "statistics": {
       "version": "v200",
       "records": 208493,
@@ -74,8 +73,8 @@
     },
     {
       "path": "data/library_current.json",
-      "bytes": 1689,
-      "sha256": "bd1d04a34d4c0ab51c460c97697e81159d983921283cebd17db1f713a6adfd23"
+      "bytes": 1532,
+      "sha256": "191f0cb86a2365c11c77420a4ae4614965e6a0bf11cbeeeac40dbdcfd8c806b1"
     },
     {
       "path": "data/literature_public_v53.json",
@@ -178,9 +177,9 @@
       "sha256": "782c9831607265d273811d3cf9bec6122ee1433b564e216c860897a717b196de"
     },
     {
-      "path": "data/policy_public_v99.json",
-      "bytes": 7328927,
-      "sha256": "fc87a5e0fbd12463eb3dd22e21ed10a725cf5f8aff93c7ede0c7aec53bd88618"
+      "path": "data/policy_public_v100.json",
+      "bytes": 7330946,
+      "sha256": "abb82fe87346074a19f2f44d67070306395888bf2a721a57c7fa1fa39261056b"
     },
     {
       "path": "data/portal.js",
@@ -200,7 +199,7 @@
     {
       "path": "index.html",
       "bytes": 6969,
-      "sha256": "5dab64f49ba2e1c64447b881012d0234f1a14c198c94bd88c99fe27f46c8ea7b"
+      "sha256": "d3166efdcf1ece0730dc8460b29bed145cc4e4abf8d13df940ebd206bc355fa1"
     },
     {
       "path": "library_links_v02.css",
@@ -230,12 +229,12 @@
     {
       "path": "policy.html",
       "bytes": 5491,
-      "sha256": "5d2b8152ccac80923f64885431829ff9ec1e937361a6d525134bc91f5ec477ea"
+      "sha256": "8c39b5dbe19f5c49db5043eac0a3cfd69e041c41aae58f1780f06a98e94303de"
     },
     {
-      "path": "policy_v102.js",
-      "bytes": 15965,
-      "sha256": "b71275e63b27367ef5a4a2c9461e63eb4befb19ba055812523bf228b55dd7d9e"
+      "path": "policy_v103.js",
+      "bytes": 15966,
+      "sha256": "2765c17e90ffef3293998408d8d1b8cb6f5a4295624b6ed8283a2c6a9b4404a3"
     },
     {
       "path": "policy_v51.css",
