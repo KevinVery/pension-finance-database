@@ -1,8 +1,8 @@
 {
-  "version": "v206",
+  "version": "v207",
   "framework": "framework_v01",
   "libraries": {
-    "release": "libraries_20261111_v64",
+    "release": "libraries_20261111_v65",
     "updatedAt": "2026-11-11",
     "policy": {
       "data": "policy_public_v102.json",
@@ -24,18 +24,17 @@
       "css": "library_links_v02.css"
     },
     "supersedes": {
-      "statistics": "v205",
-      "policy": "policy_v101"
+      "statistics": "v206"
     },
     "versionPolicy": "superseded versions are invalid for active work; historical evidence stays local and is not bundled",
-    "releaseSummary": "第65批：北京2018附表六企业及机关基本养老金两格新增，原208515条字段与CSV字节前缀保持；2指标元数据延伸、其他885指标保持，企业及居民旧丧葬科目均隔离。政策102/页面105：48号令两说明字段补2018主席令24号官源全文，新增完整来源至844，2018七法修改公布施行12月29日与网页12月30日刊载分列；2013原令正文和2019废止保持。文献56/2654摘要、正式摘要缺口9、全文终审0与关联19/33语义边保持；本批经济原因关闭0。",
+    "releaseSummary": "第66批：北京2017最终附表六企业及机关基本养老金两条原格新增，原208517条字段及CSV字节前缀保持；2指标元数据延伸、其他885指标保持，覆盖扩至2017。2017企业原名明确、表题不含预算；机关基本养老金与总支出虽同值但取独立分项。企业及居民旧丧葬科目均隔离，不关闭年度经济原因。政策102、文献56、关联19全字节保持，2654摘要保持，正式摘要缺口9、全文终审0。",
     "statistics": {
-      "version": "v206",
-      "records": 208517,
+      "version": "v207",
+      "records": 208519,
       "indicators": 887,
       "status": {
         "待核验": 84908,
-        "已核验": 123609
+        "已核验": 123611
       },
       "paths": [
         "养老金融数据门户/data/state.json",
@@ -44,7 +43,7 @@
       ]
     }
   },
-  "records": 208517,
+  "records": 208519,
   "indicators": 887,
   "files": [
     {
@@ -74,8 +73,8 @@
     },
     {
       "path": "data/library_current.json",
-      "bytes": 1748,
-      "sha256": "c0a748421f2ed960dfb7a58eaeb850e8200624606c5494dd94501a5687a5dfe7"
+      "bytes": 1659,
+      "sha256": "708cd28c4b47c1d9cb59f95340c3f32771bacfee821c36136d7eaa577abb53f6"
     },
     {
       "path": "data/literature_public_v56.json",
@@ -134,8 +133,8 @@
     },
     {
       "path": "data/part11.js",
-      "bytes": 16207839,
-      "sha256": "501f697ef717d1afbc00f77e69db6c997a16ddc4afb5a21d545ede3268287ad3"
+      "bytes": 16213224,
+      "sha256": "196b2e10a9479555d7d72ff670408f136b8e7b3da1a76142016afe07676c8f85"
     },
     {
       "path": "data/part12.js",
@@ -190,7 +189,7 @@
     {
       "path": "data/version.js",
       "bytes": 109,
-      "sha256": "5fbef58643f791f4780d8e853f480f4ed1f473b97cab1830b14f98ffd06ea9d0"
+      "sha256": "097484076308e7d08c91cde820b9dbec585ffce0ebda496c371b1b18eae45580"
     },
     {
       "path": "download.js",
@@ -200,7 +199,7 @@
     {
       "path": "index.html",
       "bytes": 6969,
-      "sha256": "7de49667ea39d5c171f0aece784470ace189fb23b9407f76280ebd83ddb650c1"
+      "sha256": "2c23e24a73b2f2ac3e0f9dd8fcda4aa4892e17f14c09ccddfc90549e47c7da62"
     },
     {
       "path": "library_links_v02.css",
