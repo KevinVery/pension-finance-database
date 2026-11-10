@@ -1,8 +1,8 @@
 {
-  "version": "v207",
+  "version": "v208",
   "framework": "framework_v01",
   "libraries": {
-    "release": "libraries_20261111_v65",
+    "release": "libraries_20261111_v66",
     "updatedAt": "2026-11-11",
     "policy": {
       "data": "policy_public_v102.json",
@@ -24,17 +24,17 @@
       "css": "library_links_v02.css"
     },
     "supersedes": {
-      "statistics": "v206"
+      "statistics": "v207"
     },
     "versionPolicy": "superseded versions are invalid for active work; historical evidence stays local and is not bundled",
-    "releaseSummary": "第66批：北京2017最终附表六企业及机关基本养老金两条原格新增，原208517条字段及CSV字节前缀保持；2指标元数据延伸、其他885指标保持，覆盖扩至2017。2017企业原名明确、表题不含预算；机关基本养老金与总支出虽同值但取独立分项。企业及居民旧丧葬科目均隔离，不关闭年度经济原因。政策102、文献56、关联19全字节保持，2654摘要保持，正式摘要缺口9、全文终审0。",
+    "releaseSummary": "第67批：河北2025全省三制度基本养老保险收入、支出六条正式决算原格新增；六指标覆盖延伸至2025，省级分项隔离，其他记录保持。",
     "statistics": {
-      "version": "v207",
-      "records": 208519,
+      "version": "v208",
+      "records": 208525,
       "indicators": 887,
       "status": {
         "待核验": 84908,
-        "已核验": 123611
+        "已核验": 123617
       },
       "paths": [
         "养老金融数据门户/data/state.json",
@@ -43,7 +43,7 @@
       ]
     }
   },
-  "records": 208519,
+  "records": 208525,
   "indicators": 887,
   "files": [
     {
@@ -73,8 +73,8 @@
     },
     {
       "path": "data/library_current.json",
-      "bytes": 1659,
-      "sha256": "708cd28c4b47c1d9cb59f95340c3f32771bacfee821c36136d7eaa577abb53f6"
+      "bytes": 1347,
+      "sha256": "2a2e9f270bee2dd80663791afd8e048a3d681d326435b7af28540a6d03c18ec4"
     },
     {
       "path": "data/literature_public_v56.json",
@@ -133,8 +133,8 @@
     },
     {
       "path": "data/part11.js",
-      "bytes": 16213224,
-      "sha256": "196b2e10a9479555d7d72ff670408f136b8e7b3da1a76142016afe07676c8f85"
+      "bytes": 16221007,
+      "sha256": "023273142464b47b5efbc0349a79fe031b3bf47c87b14bda7751e9fdc83761e4"
     },
     {
       "path": "data/part12.js",
@@ -189,7 +189,7 @@
     {
       "path": "data/version.js",
       "bytes": 109,
-      "sha256": "097484076308e7d08c91cde820b9dbec585ffce0ebda496c371b1b18eae45580"
+      "sha256": "d6894b06ae55aa7fb978a23553173775d79d0db297579e3c08f3a2b4b3a9ffb0"
     },
     {
       "path": "download.js",
@@ -199,7 +199,7 @@
     {
       "path": "index.html",
       "bytes": 6969,
-      "sha256": "2c23e24a73b2f2ac3e0f9dd8fcda4aa4892e17f14c09ccddfc90549e47c7da62"
+      "sha256": "3012c05b536eb0505d3f72004577ee60a36581a26d57d95868d69c8e749a11fc"
     },
     {
       "path": "library_links_v02.css",
