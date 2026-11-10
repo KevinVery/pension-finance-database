@@ -1,5 +1,5 @@
 {
-  "release": "libraries_20261110_v57",
+  "release": "libraries_20261110_v58",
   "updatedAt": "2026-11-10",
   "policy": {
     "data": "policy_public_v100.json",
@@ -21,17 +21,17 @@
     "css": "library_links_v02.css"
   },
   "supersedes": {
-    "literature": "literature_v53"
+    "statistics": "v200"
   },
   "versionPolicy": "superseded versions are invalid for active work; historical evidence stays local and is not bundled",
-  "releaseSummary": "第58批：IRP-1812仅官网核验字段新增共同作者Harvard官方CV独立题录交叉；PDF29第35项核作者顺序、2026年、259卷105661。CV演讲年份不当出版年份；未取得正式摘要/正文，摘要缺口9、全文终审0保持。统计v200、policy100及links19保持。",
+  "releaseSummary": "第59批北京2023表九四项基本养老金及丧葬抚恤原格新增；四指标扩省级并仅同步原广东4记录层级，原数值、来源及广东1万元差异说明保留；基本养老金不等于待遇或总支出，不关闭年度原因。2015七格和2016九格继续隔离；政策、文献、关联保持。",
   "statistics": {
-    "version": "v200",
-    "records": 208493,
+    "version": "v201",
+    "records": 208497,
     "indicators": 887,
     "status": {
       "待核验": 84908,
-      "已核验": 123585
+      "已核验": 123589
     },
     "paths": [
       "养老金融数据门户/data/state.json",
