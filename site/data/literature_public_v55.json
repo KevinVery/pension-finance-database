@@ -1,6 +1,6 @@
 {
   "meta": {
-    "version": "literature_v54",
+    "version": "literature_v55",
     "updatedAt": "2026-11-10",
     "records": 2654,
     "core": 1516,
@@ -111,11 +111,11 @@
         "semanticEdgesChanged": 0
       }
     },
-    "supersedes": "literature_v53",
+    "supersedes": "literature_v54",
     "supersededVersionStatus": "v10未发布构建的年份汇总未同步，已作废；v11重算现行计数，57条题录修订保持。",
     "continuationBatch": {
-      "batch": 58,
-      "release": 57,
+      "batch": 60,
+      "release": 59,
       "recordsReviewed": 1,
       "fieldsPatched": 1,
       "newRecords": 0,
@@ -123,7 +123,7 @@
       "fullTextAcademicFinalReviews": 0
     },
     "previousVersionStatus": "superseded versions are invalid for active work; local evidence only",
-    "revisionNote": "第58批：IRP-1812仅官网核验字段新增共同作者Harvard官方CV独立题录交叉；PDF29第35项核作者顺序、2026年、259卷105661。CV演讲年份不当出版年份；未取得正式摘要/正文，摘要缺口9、全文终审0保持。统计v200、policy100及links19保持。"
+    "revisionNote": "第60批：IRP-2834仅官网核验一字段新增Pistaferri本人PUBLICATIONS目录独立交叉；作者组合、Journal of Political Economy及2025年一致，题名实际链接仅NBER w26513，目录不含正式摘要/正文或卷期页码；摘要缺口9、全文终审0保持。统计v201、policy100及links19逐字节保持。"
   },
   "sourceEntrances": [
     {
@@ -103901,7 +103901,7 @@
       "发现检索": [
         "官网独立检索"
       ],
-      "官网核验": "官方题录与摘要已核验 本轮仅核对应NBER现行May2024修订稿PDF1—2/51—52，不以其完整摘要或结论冒充2025期刊正式版；既有中文提要保持，不视为正式完整原文摘要缺口关闭。",
+      "官网核验": "官方题录与摘要已核验 本轮仅核对应NBER现行May2024修订稿PDF1—2/51—52，不以其完整摘要或结论冒充2025期刊正式版；既有中文提要保持，不视为正式完整原文摘要缺口关闭。 新增作者官方发表目录交叉：NBER所链精确HTTP Stanford作者入口经实际重定向至Luigi Pistaferri本人主页，再经Research到PUBLICATIONS，条目列Disability Insurance: Error Rates and Gender Differences, with H. Low, Journal of Political Economy 2025，与现有作者组合、期刊及发表年一致。该题名实际链接仅为NBER w26513，不是正式期刊摘要或正式全文入口；目录未列卷期与页码，不据此补页码或认定两版本内容相同，正式完整原文摘要缺口保持。",
       "收录路径": "iReadPaper线索＋官网核验",
       "全文状态": "对应NBER89页May2024修订稿封面/完整摘要与结论指定页已核；2025期刊正式全文与完整原文摘要本轮未取得，全文学术终审未完成。",
       "原件SHA256": "",

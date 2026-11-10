@@ -1,5 +1,5 @@
 {
-  "release": "libraries_20261110_v58",
+  "release": "libraries_20261110_v59",
   "updatedAt": "2026-11-10",
   "policy": {
     "data": "policy_public_v100.json",
@@ -10,9 +10,9 @@
     "sources": "policy_sources_v100.csv"
   },
   "literature": {
-    "data": "literature_public_v54.json",
-    "page": "literature_v57.html",
-    "script": "literature_v57.js",
+    "data": "literature_public_v55.json",
+    "page": "literature_v58.html",
+    "script": "literature_v58.js",
     "css": "literature_v03.css"
   },
   "links": {
@@ -21,10 +21,10 @@
     "css": "library_links_v02.css"
   },
   "supersedes": {
-    "statistics": "v200"
+    "literature": "literature_v54"
   },
   "versionPolicy": "superseded versions are invalid for active work; historical evidence stays local and is not bundled",
-  "releaseSummary": "第59批北京2023表九四项基本养老金及丧葬抚恤原格新增；四指标扩省级并仅同步原广东4记录层级，原数值、来源及广东1万元差异说明保留；基本养老金不等于待遇或总支出，不关闭年度原因。2015七格和2016九格继续隔离；政策、文献、关联保持。",
+  "releaseSummary": "第60批：IRP-2834仅官网核验一字段新增Pistaferri本人PUBLICATIONS目录独立交叉；作者组合、Journal of Political Economy及2025年一致，题名实际链接仅NBER w26513，目录不含正式摘要/正文或卷期页码；摘要缺口9、全文终审0保持。统计v201、policy100及links19逐字节保持。",
   "statistics": {
     "version": "v201",
     "records": 208497,

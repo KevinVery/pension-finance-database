@@ -2,7 +2,7 @@
   "version": "v201",
   "framework": "framework_v01",
   "libraries": {
-    "release": "libraries_20261110_v58",
+    "release": "libraries_20261110_v59",
     "updatedAt": "2026-11-10",
     "policy": {
       "data": "policy_public_v100.json",
@@ -13,9 +13,9 @@
       "sources": "policy_sources_v100.csv"
     },
     "literature": {
-      "data": "literature_public_v54.json",
-      "page": "literature_v57.html",
-      "script": "literature_v57.js",
+      "data": "literature_public_v55.json",
+      "page": "literature_v58.html",
+      "script": "literature_v58.js",
       "css": "literature_v03.css"
     },
     "links": {
@@ -24,10 +24,10 @@
       "css": "library_links_v02.css"
     },
     "supersedes": {
-      "statistics": "v200"
+      "literature": "literature_v54"
     },
     "versionPolicy": "superseded versions are invalid for active work; historical evidence stays local and is not bundled",
-    "releaseSummary": "第59批北京2023表九四项基本养老金及丧葬抚恤原格新增；四指标扩省级并仅同步原广东4记录层级，原数值、来源及广东1万元差异说明保留；基本养老金不等于待遇或总支出，不关闭年度原因。2015七格和2016九格继续隔离；政策、文献、关联保持。",
+    "releaseSummary": "第60批：IRP-2834仅官网核验一字段新增Pistaferri本人PUBLICATIONS目录独立交叉；作者组合、Journal of Political Economy及2025年一致，题名实际链接仅NBER w26513，目录不含正式摘要/正文或卷期页码；摘要缺口9、全文终审0保持。统计v201、policy100及links19逐字节保持。",
     "statistics": {
       "version": "v201",
       "records": 208497,
@@ -73,13 +73,13 @@
     },
     {
       "path": "data/library_current.json",
-      "bytes": 1497,
-      "sha256": "fdee04c7c49c930d03829e267689e916aa171fd5a3caa1650c6110d227a73587"
+      "bytes": 1514,
+      "sha256": "d8e09a8620d15b2ad9f22645e111e2b0e7919d4e7ea70c21eb6b64b2b526a771"
     },
     {
-      "path": "data/literature_public_v54.json",
-      "bytes": 6597015,
-      "sha256": "19523a716f0f9ec903e8b27e0cf59c67979464f02aae915b9c102cad4a10b129"
+      "path": "data/literature_public_v55.json",
+      "bytes": 6597593,
+      "sha256": "05224888bc5239f963ee1e6dbc83cfce22fcb6e6358aeb92324ecd4bbfeb31fe"
     },
     {
       "path": "data/part01.js",
@@ -199,7 +199,7 @@
     {
       "path": "index.html",
       "bytes": 6969,
-      "sha256": "28d80bfab7f4a7d3695a808b8745154c2315461fc7d1ab10ef11809e3f043ece"
+      "sha256": "faf75aa7e06276c520acca3fba3388b60b018b670eaa2f731650bd32de35472f"
     },
     {
       "path": "library_links_v02.css",
@@ -214,7 +214,7 @@
     {
       "path": "literature.html",
       "bytes": 4079,
-      "sha256": "f95f6c7916d9544cbebe336389899395c212d5e12a1bd9c3d8eb1e0a5fa3b760"
+      "sha256": "922b4b59a029b787d826b9e9445ceff95a3c0a4059160462f6a80a0aa6cdeacd"
     },
     {
       "path": "literature_v03.css",
@@ -222,9 +222,9 @@
       "sha256": "5b33e28e92ead17755d0ebe7f24aad302eeba37d6d85216bd89364d5b5caf684"
     },
     {
-      "path": "literature_v57.js",
+      "path": "literature_v58.js",
       "bytes": 10199,
-      "sha256": "22e6c161a3ff442081f356f156783e31688a403041e47bedb179a31c94255573"
+      "sha256": "2454e9ce2c44607d733d1957747cbac09ae0021ec49633bbb700bcc37d83f046"
     },
     {
       "path": "policy.html",
