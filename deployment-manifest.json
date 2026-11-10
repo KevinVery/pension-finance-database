@@ -1,16 +1,16 @@
 {
-  "version": "v205",
+  "version": "v206",
   "framework": "framework_v01",
   "libraries": {
-    "release": "libraries_20261110_v63",
+    "release": "libraries_20261111_v64",
     "updatedAt": "2026-11-11",
     "policy": {
-      "data": "policy_public_v101.json",
-      "page": "policy_v104.html",
-      "script": "policy_v104.js",
+      "data": "policy_public_v102.json",
+      "page": "policy_v105.html",
+      "script": "policy_v105.js",
       "css": "policy_v51.css",
-      "csv": "policies_v101.csv",
-      "sources": "policy_sources_v101.csv"
+      "csv": "policies_v102.csv",
+      "sources": "policy_sources_v102.csv"
     },
     "literature": {
       "data": "literature_public_v56.json",
@@ -24,17 +24,18 @@
       "css": "library_links_v02.css"
     },
     "supersedes": {
-      "statistics": "v204"
+      "statistics": "v205",
+      "policy": "policy_v101"
     },
     "versionPolicy": "superseded versions are invalid for active work; historical evidence stays local and is not bundled",
-    "releaseSummary": "第64批统计分支：北京2019附表六企业基本养老金、机关基本养老金、居民丧葬补助金三条原格新增，三个指标覆盖扩至2019；原208512条字段及CSV字节前缀保持，其他884指标保持。企业“丧葬抚恤补助”名称映射继续隔离，不关闭年度经济原因。待root完成三库统一核验后激活；本分支政策101、文献56、关联19保持。",
+    "releaseSummary": "第65批：北京2018附表六企业及机关基本养老金两格新增，原208515条字段与CSV字节前缀保持；2指标元数据延伸、其他885指标保持，企业及居民旧丧葬科目均隔离。政策102/页面105：48号令两说明字段补2018主席令24号官源全文，新增完整来源至844，2018七法修改公布施行12月29日与网页12月30日刊载分列；2013原令正文和2019废止保持。文献56/2654摘要、正式摘要缺口9、全文终审0与关联19/33语义边保持；本批经济原因关闭0。",
     "statistics": {
-      "version": "v205",
-      "records": 208515,
+      "version": "v206",
+      "records": 208517,
       "indicators": 887,
       "status": {
         "待核验": 84908,
-        "已核验": 123607
+        "已核验": 123609
       },
       "paths": [
         "养老金融数据门户/data/state.json",
@@ -43,7 +44,7 @@
       ]
     }
   },
-  "records": 208515,
+  "records": 208517,
   "indicators": 887,
   "files": [
     {
@@ -73,8 +74,8 @@
     },
     {
       "path": "data/library_current.json",
-      "bytes": 1583,
-      "sha256": "6d7121d0fbda9e4d05f18b6f6d040fe9988e955478b20fe7939d06dd8ec64e1b"
+      "bytes": 1748,
+      "sha256": "c0a748421f2ed960dfb7a58eaeb850e8200624606c5494dd94501a5687a5dfe7"
     },
     {
       "path": "data/literature_public_v56.json",
@@ -133,8 +134,8 @@
     },
     {
       "path": "data/part11.js",
-      "bytes": 16201830,
-      "sha256": "7fcd14135b9648f6be1e9776e443c77691035773172a17d05ba7f0442e220be4"
+      "bytes": 16207839,
+      "sha256": "501f697ef717d1afbc00f77e69db6c997a16ddc4afb5a21d545ede3268287ad3"
     },
     {
       "path": "data/part12.js",
@@ -177,9 +178,9 @@
       "sha256": "782c9831607265d273811d3cf9bec6122ee1433b564e216c860897a717b196de"
     },
     {
-      "path": "data/policy_public_v101.json",
-      "bytes": 7288163,
-      "sha256": "2ac5452a50fd5cad5c969d4b79aee1ef54e6048ef18c040e66a85d0836cab6e9"
+      "path": "data/policy_public_v102.json",
+      "bytes": 7289820,
+      "sha256": "8bb823e464ddab8d8a1eddc2ac6632ce35fe2420b6f6c27e995ddbdf605c8c49"
     },
     {
       "path": "data/portal.js",
@@ -189,7 +190,7 @@
     {
       "path": "data/version.js",
       "bytes": 109,
-      "sha256": "362d63fad325a63970f7f74179210cdab4be96e4627464870e1ca33395e3526a"
+      "sha256": "5fbef58643f791f4780d8e853f480f4ed1f473b97cab1830b14f98ffd06ea9d0"
     },
     {
       "path": "download.js",
@@ -199,7 +200,7 @@
     {
       "path": "index.html",
       "bytes": 6969,
-      "sha256": "53afe57f8bef74e711c999fbf47cadbd03a7886e5bd918ecd3b91696b9f54969"
+      "sha256": "7de49667ea39d5c171f0aece784470ace189fb23b9407f76280ebd83ddb650c1"
     },
     {
       "path": "library_links_v02.css",
@@ -229,12 +230,12 @@
     {
       "path": "policy.html",
       "bytes": 5491,
-      "sha256": "b2bae7490f364bf7bd558cacea32449beef2222c9079c497a394fb71fdff3911"
+      "sha256": "9dd400f6a76b1d359966305b651024ba12829b238b743b425f7466532148a998"
     },
     {
-      "path": "policy_v104.js",
+      "path": "policy_v105.js",
       "bytes": 15916,
-      "sha256": "7372be3139e86d0525f0a7a10d2e12646abd4b9e71c78fc044bf8fc3bff7c6dd"
+      "sha256": "ece3a4684114c22b5aa39d4e0901d79d4b0b5ef11e7e69cb5330d2c08a250311"
     },
     {
       "path": "policy_v51.css",

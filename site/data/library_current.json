@@ -1,13 +1,13 @@
 {
-  "release": "libraries_20261110_v63",
+  "release": "libraries_20261111_v64",
   "updatedAt": "2026-11-11",
   "policy": {
-    "data": "policy_public_v101.json",
-    "page": "policy_v104.html",
-    "script": "policy_v104.js",
+    "data": "policy_public_v102.json",
+    "page": "policy_v105.html",
+    "script": "policy_v105.js",
     "css": "policy_v51.css",
-    "csv": "policies_v101.csv",
-    "sources": "policy_sources_v101.csv"
+    "csv": "policies_v102.csv",
+    "sources": "policy_sources_v102.csv"
   },
   "literature": {
     "data": "literature_public_v56.json",
@@ -21,17 +21,18 @@
     "css": "library_links_v02.css"
   },
   "supersedes": {
-    "statistics": "v204"
+    "statistics": "v205",
+    "policy": "policy_v101"
   },
   "versionPolicy": "superseded versions are invalid for active work; historical evidence stays local and is not bundled",
-  "releaseSummary": "第64批统计分支：北京2019附表六企业基本养老金、机关基本养老金、居民丧葬补助金三条原格新增，三个指标覆盖扩至2019；原208512条字段及CSV字节前缀保持，其他884指标保持。企业“丧葬抚恤补助”名称映射继续隔离，不关闭年度经济原因。待root完成三库统一核验后激活；本分支政策101、文献56、关联19保持。",
+  "releaseSummary": "第65批：北京2018附表六企业及机关基本养老金两格新增，原208515条字段与CSV字节前缀保持；2指标元数据延伸、其他885指标保持，企业及居民旧丧葬科目均隔离。政策102/页面105：48号令两说明字段补2018主席令24号官源全文，新增完整来源至844，2018七法修改公布施行12月29日与网页12月30日刊载分列；2013原令正文和2019废止保持。文献56/2654摘要、正式摘要缺口9、全文终审0与关联19/33语义边保持；本批经济原因关闭0。",
   "statistics": {
-    "version": "v205",
-    "records": 208515,
+    "version": "v206",
+    "records": 208517,
     "indicators": 887,
     "status": {
       "待核验": 84908,
-      "已核验": 123607
+      "已核验": 123609
     },
     "paths": [
       "养老金融数据门户/data/state.json",
