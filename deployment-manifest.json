@@ -1,9 +1,9 @@
 {
-  "version": "v204",
+  "version": "v205",
   "framework": "framework_v01",
   "libraries": {
-    "release": "libraries_20261110_v62",
-    "updatedAt": "2026-11-10",
+    "release": "libraries_20261110_v63",
+    "updatedAt": "2026-11-11",
     "policy": {
       "data": "policy_public_v101.json",
       "page": "policy_v104.html",
@@ -24,18 +24,17 @@
       "css": "library_links_v02.css"
     },
     "supersedes": {
-      "statistics": "v203",
-      "policy": "policy_v100"
+      "statistics": "v204"
     },
     "versionPolicy": "superseded versions are invalid for active work; historical evidence stays local and is not bundled",
-    "releaseSummary": "第63批北京2020附表六三条基本养老金及居民丧葬补助金原格新增；原208509条字节前缀及字段保持，三指标覆盖扩2020，企业旧丧葬科目隔离。政策101/页面104：48号令两说明字段追加政府网刊新华社七法修改决定全文及自公布施行句，完整来源新增一行至843；548政策/146关系、2019废止日及原2013正文SHA保持；刊载与通过日不代公布日。文献56/2654摘要、9正式摘要缺口、全文终审0及关联19/33语义边保持。",
+    "releaseSummary": "第64批统计分支：北京2019附表六企业基本养老金、机关基本养老金、居民丧葬补助金三条原格新增，三个指标覆盖扩至2019；原208512条字段及CSV字节前缀保持，其他884指标保持。企业“丧葬抚恤补助”名称映射继续隔离，不关闭年度经济原因。待root完成三库统一核验后激活；本分支政策101、文献56、关联19保持。",
     "statistics": {
-      "version": "v204",
-      "records": 208512,
+      "version": "v205",
+      "records": 208515,
       "indicators": 887,
       "status": {
         "待核验": 84908,
-        "已核验": 123604
+        "已核验": 123607
       },
       "paths": [
         "养老金融数据门户/data/state.json",
@@ -44,7 +43,7 @@
       ]
     }
   },
-  "records": 208512,
+  "records": 208515,
   "indicators": 887,
   "files": [
     {
@@ -74,8 +73,8 @@
     },
     {
       "path": "data/library_current.json",
-      "bytes": 1727,
-      "sha256": "be4dab711d72c8aca07e0b428d6d7bcff6f487fc19598667a1c380a805e5b751"
+      "bytes": 1583,
+      "sha256": "6d7121d0fbda9e4d05f18b6f6d040fe9988e955478b20fe7939d06dd8ec64e1b"
     },
     {
       "path": "data/literature_public_v56.json",
@@ -134,8 +133,8 @@
     },
     {
       "path": "data/part11.js",
-      "bytes": 16194006,
-      "sha256": "3463ba57de52cd486f25195cf030b4519f5062ae72f4cf6c54ee0f4c0fba7f98"
+      "bytes": 16201830,
+      "sha256": "7fcd14135b9648f6be1e9776e443c77691035773172a17d05ba7f0442e220be4"
     },
     {
       "path": "data/part12.js",
@@ -190,7 +189,7 @@
     {
       "path": "data/version.js",
       "bytes": 109,
-      "sha256": "6f32ed74f2b67dea162c57eda6856e65ec58b411cd557269b073dcf0e011094a"
+      "sha256": "362d63fad325a63970f7f74179210cdab4be96e4627464870e1ca33395e3526a"
     },
     {
       "path": "download.js",
@@ -200,7 +199,7 @@
     {
       "path": "index.html",
       "bytes": 6969,
-      "sha256": "6908dc27e1f2612ad1ea0ea659aeb7d65d6dc2f550ac37daed7e774a760e4a47"
+      "sha256": "53afe57f8bef74e711c999fbf47cadbd03a7886e5bd918ecd3b91696b9f54969"
     },
     {
       "path": "library_links_v02.css",
