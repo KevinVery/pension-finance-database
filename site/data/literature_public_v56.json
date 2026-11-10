@@ -1,6 +1,6 @@
 {
   "meta": {
-    "version": "literature_v55",
+    "version": "literature_v56",
     "updatedAt": "2026-11-10",
     "records": 2654,
     "core": 1516,
@@ -111,11 +111,10 @@
         "semanticEdgesChanged": 0
       }
     },
-    "supersedes": "literature_v54",
+    "supersedes": "literature_v55",
     "supersededVersionStatus": "v10未发布构建的年份汇总未同步，已作废；v11重算现行计数，57条题录修订保持。",
     "continuationBatch": {
-      "batch": 60,
-      "release": 59,
+      "batch": 62,
       "recordsReviewed": 1,
       "fieldsPatched": 1,
       "newRecords": 0,
@@ -123,7 +122,7 @@
       "fullTextAcademicFinalReviews": 0
     },
     "previousVersionStatus": "superseded versions are invalid for active work; local evidence only",
-    "revisionNote": "第60批：IRP-2834仅官网核验一字段新增Pistaferri本人PUBLICATIONS目录独立交叉；作者组合、Journal of Political Economy及2025年一致，题名实际链接仅NBER w26513，目录不含正式摘要/正文或卷期页码；摘要缺口9、全文终审0保持。统计v201、policy100及links19逐字节保持。"
+    "revisionNote": "IRP4209官网核验单字段新增HEC教师页与本人HTML CV正式题录交叉；目录p1-15不替代文章号105419，CV核248卷August2025及ScienceDirect实际入口；摘要缺口9与全文终审0保持。"
   },
   "sourceEntrances": [
     {
@@ -118523,7 +118522,7 @@
         "检索_退休",
         "社会保险"
       ],
-      "官网核验": "NBER官方Published Versions列Franca Glenzer、Pierre-Carl Michaud、Stefan Staubli的2025 Journal of Public Economics 248卷正式版本，Crossref DOI10.1016/j.jpubeco.2025.105419出版者登记核同题名、三作者与2025年8月248卷，105419为文章号而非连续页码。仅本轮NBER官方Published Versions与Crossref出版者登记元数据交叉核版本对应及文章号；Crossref无abstract，未取得2025正式出版者完整摘要/全文。NBER当前85页封面February2023, RevisedFebruary2024，仅作为WP身份，修订年不改首发年份，不冒充2025正式版。现有完整WP摘要与官网一致保持，正式摘要固定缺口10不减、全文终审0。 本轮由NBER作者档案指向Staubli本人主页，再沿Research目录核见同题论文署三作者、Journal of Public Economics 248卷2025年，题名链接明确指向ScienceDirect PII S0047272725001173。仅作者发表目录及出版者入口定位，不声称已读取链接的出版者正文、摘要或accepted manuscript。",
+      "官网核验": "NBER官方Published Versions列Franca Glenzer、Pierre-Carl Michaud、Stefan Staubli的2025 Journal of Public Economics 248卷正式版本，Crossref DOI10.1016/j.jpubeco.2025.105419出版者登记核同题名、三作者与2025年8月248卷，105419为文章号而非连续页码。仅本轮NBER官方Published Versions与Crossref出版者登记元数据交叉核版本对应及文章号；Crossref无abstract，未取得2025正式出版者完整摘要/全文。NBER当前85页封面February2023, RevisedFebruary2024，仅作为WP身份，修订年不改首发年份，不冒充2025正式版。现有完整WP摘要与官网一致保持，正式摘要固定缺口10不减、全文终审0。 本轮由NBER作者档案指向Staubli本人主页，再沿Research目录核见同题论文署三作者、Journal of Public Economics 248卷2025年，题名链接明确指向ScienceDirect PII S0047272725001173。仅作者发表目录及出版者入口定位，不声称已读取链接的出版者正文、摘要或accepted manuscript。 新增共同作者机构独立交叉：NBER Pierre-Carl Michaud资料页实际HTTP HEC链接经正常重定向到HEC Montréal教师页，其Publications的Journal articles第3项列Franca Glenzer、Pierre-Carl Michaud、Stefan Staubli，同题名、Journal of Public Economics 248卷2025年，与既有正式题录一致。该机构目录另列p.1–15，仅保留为该目录显示字段，不替代出版者文章号105419、不据此修改页码。教师页没有论文摘要或正文，Personal page仅定位作者个人站及其CV导航，不据此认定工作稿与正式版内容相同。上述早期固定缺口10是历史批次表述；当前固定19正式摘要缺口为9，本次未关闭，全文学术终审仍为0。 同一机构教师页实际Personal page指向Michaud本人站，所链curriculum vitae HTML的发表条目另列Glenzer F., P.-C. Michaud and S. Staubli (2025)，Journal of Public Economics, Volume 248, August 2025, 105419；题名链接实际指向ScienceDirect PII S0047272725001173，与既有出版者文章号一致。CV只核正式题录与入口，未取得其所链出版者摘要或正文；August是期刊卷月，不推定精确上线日。",
       "收录路径": "iReadPaper线索",
       "全文状态": "原站全文访问条件待核验",
       "原件SHA256": "",

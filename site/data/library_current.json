@@ -1,5 +1,5 @@
 {
-  "release": "libraries_20261110_v60",
+  "release": "libraries_20261110_v61",
   "updatedAt": "2026-11-10",
   "policy": {
     "data": "policy_public_v100.json",
@@ -10,9 +10,9 @@
     "sources": "policy_sources_v100.csv"
   },
   "literature": {
-    "data": "literature_public_v55.json",
-    "page": "literature_v58.html",
-    "script": "literature_v58.js",
+    "data": "literature_public_v56.json",
+    "page": "literature_v59.html",
+    "script": "literature_v59.js",
     "css": "literature_v03.css"
   },
   "links": {
@@ -21,17 +21,18 @@
     "css": "library_links_v02.css"
   },
   "supersedes": {
-    "statistics": "v201"
+    "statistics": "v202",
+    "literature": "literature_v55"
   },
   "versionPolicy": "superseded versions are invalid for active work; historical evidence stays local and is not bundled",
-  "releaseSummary": "第61批北京2022及2024表九八个基本养老金和丧葬抚恤原格新增，同四指标扩实际年度覆盖；原208497记录全部字段及CSV字节前缀保持，广东说明和1万元差异保留；2022三数值列与2024二数值列分别定位。企业丧葬抚恤年度原因未关闭；政策100、文献55、关联19保持。",
+  "releaseSummary": "第62批北京2021表九四个基本养老金和丧葬抚恤原格新增，同四指标扩实际年度覆盖；原208505记录全部字段及CSV字节前缀保持，广东说明和1万元差异保留；2021第三数值列决算数独立定位。企业丧葬抚恤年度原因未关闭；IRP4209官网核验单字段新增HEC与作者CV正式题录交叉，文献56/页面59；2654摘要、正式摘要缺口9与全文终审0保持；政策100及关联19保持。",
   "statistics": {
-    "version": "v202",
-    "records": 208505,
+    "version": "v203",
+    "records": 208509,
     "indicators": 887,
     "status": {
       "待核验": 84908,
-      "已核验": 123597
+      "已核验": 123601
     },
     "paths": [
       "养老金融数据门户/data/state.json",

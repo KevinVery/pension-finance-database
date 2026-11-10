@@ -1,8 +1,8 @@
 {
-  "version": "v202",
+  "version": "v203",
   "framework": "framework_v01",
   "libraries": {
-    "release": "libraries_20261110_v60",
+    "release": "libraries_20261110_v61",
     "updatedAt": "2026-11-10",
     "policy": {
       "data": "policy_public_v100.json",
@@ -13,9 +13,9 @@
       "sources": "policy_sources_v100.csv"
     },
     "literature": {
-      "data": "literature_public_v55.json",
-      "page": "literature_v58.html",
-      "script": "literature_v58.js",
+      "data": "literature_public_v56.json",
+      "page": "literature_v59.html",
+      "script": "literature_v59.js",
       "css": "literature_v03.css"
     },
     "links": {
@@ -24,17 +24,18 @@
       "css": "library_links_v02.css"
     },
     "supersedes": {
-      "statistics": "v201"
+      "statistics": "v202",
+      "literature": "literature_v55"
     },
     "versionPolicy": "superseded versions are invalid for active work; historical evidence stays local and is not bundled",
-    "releaseSummary": "第61批北京2022及2024表九八个基本养老金和丧葬抚恤原格新增，同四指标扩实际年度覆盖；原208497记录全部字段及CSV字节前缀保持，广东说明和1万元差异保留；2022三数值列与2024二数值列分别定位。企业丧葬抚恤年度原因未关闭；政策100、文献55、关联19保持。",
+    "releaseSummary": "第62批北京2021表九四个基本养老金和丧葬抚恤原格新增，同四指标扩实际年度覆盖；原208505记录全部字段及CSV字节前缀保持，广东说明和1万元差异保留；2021第三数值列决算数独立定位。企业丧葬抚恤年度原因未关闭；IRP4209官网核验单字段新增HEC与作者CV正式题录交叉，文献56/页面59；2654摘要、正式摘要缺口9与全文终审0保持；政策100及关联19保持。",
     "statistics": {
-      "version": "v202",
-      "records": 208505,
+      "version": "v203",
+      "records": 208509,
       "indicators": 887,
       "status": {
         "待核验": 84908,
-        "已核验": 123597
+        "已核验": 123601
       },
       "paths": [
         "养老金融数据门户/data/state.json",
@@ -43,7 +44,7 @@
       ]
     }
   },
-  "records": 208505,
+  "records": 208509,
   "indicators": 887,
   "files": [
     {
@@ -73,13 +74,13 @@
     },
     {
       "path": "data/library_current.json",
-      "bytes": 1513,
-      "sha256": "16d4ecaa870804d8ffe4cb7d6f107f1ce75971104d1eebeb2c3bbda0ace037c0"
+      "bytes": 1671,
+      "sha256": "d2bf2c95a4738088630eb62ac3b686d4cfedfa27808ec1ff84076fece1ed2e84"
     },
     {
-      "path": "data/literature_public_v55.json",
-      "bytes": 6597593,
-      "sha256": "05224888bc5239f963ee1e6dbc83cfce22fcb6e6358aeb92324ecd4bbfeb31fe"
+      "path": "data/literature_public_v56.json",
+      "bytes": 6598635,
+      "sha256": "afc68746518f813365e5e8cd3b77ce7c2e5d8939eceabf50c0cbf630570b5dfd"
     },
     {
       "path": "data/part01.js",
@@ -133,8 +134,8 @@
     },
     {
       "path": "data/part11.js",
-      "bytes": 16177343,
-      "sha256": "c6503f33079ba3e3d901bd37d9df1c4c1ca1b77b6684cc5c3f377e54a9b37407"
+      "bytes": 16186224,
+      "sha256": "b5a1440992ad79d012263a97259be5fdac92d94897560479bc103b5e7594e6db"
     },
     {
       "path": "data/part12.js",
@@ -189,7 +190,7 @@
     {
       "path": "data/version.js",
       "bytes": 109,
-      "sha256": "c9ab63917584a3e44005155d6c83373a9911a5e13bb78b936e48ac5de422bbb1"
+      "sha256": "1f65f65221e9983f55b0fbd8c040099297d72f95baaf6bae01a74efb39b713bd"
     },
     {
       "path": "download.js",
@@ -199,7 +200,7 @@
     {
       "path": "index.html",
       "bytes": 6969,
-      "sha256": "60d1cb3178b8c9a01980d16dd2667894623441ddb981590eb1686f0e733dff7f"
+      "sha256": "114959484d4ff7f3fc56cb9cc3e0e55f0fd0798c9cadddfd9bfda9d5efbd9f93"
     },
     {
       "path": "library_links_v02.css",
@@ -214,7 +215,7 @@
     {
       "path": "literature.html",
       "bytes": 4079,
-      "sha256": "922b4b59a029b787d826b9e9445ceff95a3c0a4059160462f6a80a0aa6cdeacd"
+      "sha256": "2feb1ade8a0bb612c9f3b16c1b026570dd3f4a75f9cd664ea72856316f7575c0"
     },
     {
       "path": "literature_v03.css",
@@ -222,9 +223,9 @@
       "sha256": "5b33e28e92ead17755d0ebe7f24aad302eeba37d6d85216bd89364d5b5caf684"
     },
     {
-      "path": "literature_v58.js",
+      "path": "literature_v59.js",
       "bytes": 10199,
-      "sha256": "2454e9ce2c44607d733d1957747cbac09ae0021ec49633bbb700bcc37d83f046"
+      "sha256": "92dc1bc76ff628591c48fe3951ea1d8e8e03d1c92be18fbff8b4eeb83b8226e5"
     },
     {
       "path": "policy.html",
