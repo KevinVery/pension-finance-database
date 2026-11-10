@@ -1,13 +1,13 @@
 {
-  "release": "libraries_20261110_v61",
+  "release": "libraries_20261110_v62",
   "updatedAt": "2026-11-10",
   "policy": {
-    "data": "policy_public_v100.json",
-    "page": "policy_v103.html",
-    "script": "policy_v103.js",
+    "data": "policy_public_v101.json",
+    "page": "policy_v104.html",
+    "script": "policy_v104.js",
     "css": "policy_v51.css",
-    "csv": "policies_v100.csv",
-    "sources": "policy_sources_v100.csv"
+    "csv": "policies_v101.csv",
+    "sources": "policy_sources_v101.csv"
   },
   "literature": {
     "data": "literature_public_v56.json",
@@ -21,18 +21,18 @@
     "css": "library_links_v02.css"
   },
   "supersedes": {
-    "statistics": "v202",
-    "literature": "literature_v55"
+    "statistics": "v203",
+    "policy": "policy_v100"
   },
   "versionPolicy": "superseded versions are invalid for active work; historical evidence stays local and is not bundled",
-  "releaseSummary": "第62批北京2021表九四个基本养老金和丧葬抚恤原格新增，同四指标扩实际年度覆盖；原208505记录全部字段及CSV字节前缀保持，广东说明和1万元差异保留；2021第三数值列决算数独立定位。企业丧葬抚恤年度原因未关闭；IRP4209官网核验单字段新增HEC与作者CV正式题录交叉，文献56/页面59；2654摘要、正式摘要缺口9与全文终审0保持；政策100及关联19保持。",
+  "releaseSummary": "第63批北京2020附表六三条基本养老金及居民丧葬补助金原格新增；原208509条字节前缀及字段保持，三指标覆盖扩2020，企业旧丧葬科目隔离。政策101/页面104：48号令两说明字段追加政府网刊新华社七法修改决定全文及自公布施行句，完整来源新增一行至843；548政策/146关系、2019废止日及原2013正文SHA保持；刊载与通过日不代公布日。文献56/2654摘要、9正式摘要缺口、全文终审0及关联19/33语义边保持。",
   "statistics": {
-    "version": "v203",
-    "records": 208509,
+    "version": "v204",
+    "records": 208512,
     "indicators": 887,
     "status": {
       "待核验": 84908,
-      "已核验": 123601
+      "已核验": 123604
     },
     "paths": [
       "养老金融数据门户/data/state.json",
