@@ -1,5 +1,5 @@
 {
-  "release": "libraries_20261110_v59",
+  "release": "libraries_20261110_v60",
   "updatedAt": "2026-11-10",
   "policy": {
     "data": "policy_public_v100.json",
@@ -21,17 +21,17 @@
     "css": "library_links_v02.css"
   },
   "supersedes": {
-    "literature": "literature_v54"
+    "statistics": "v201"
   },
   "versionPolicy": "superseded versions are invalid for active work; historical evidence stays local and is not bundled",
-  "releaseSummary": "第60批：IRP-2834仅官网核验一字段新增Pistaferri本人PUBLICATIONS目录独立交叉；作者组合、Journal of Political Economy及2025年一致，题名实际链接仅NBER w26513，目录不含正式摘要/正文或卷期页码；摘要缺口9、全文终审0保持。统计v201、policy100及links19逐字节保持。",
+  "releaseSummary": "第61批北京2022及2024表九八个基本养老金和丧葬抚恤原格新增，同四指标扩实际年度覆盖；原208497记录全部字段及CSV字节前缀保持，广东说明和1万元差异保留；2022三数值列与2024二数值列分别定位。企业丧葬抚恤年度原因未关闭；政策100、文献55、关联19保持。",
   "statistics": {
-    "version": "v201",
-    "records": 208497,
+    "version": "v202",
+    "records": 208505,
     "indicators": 887,
     "status": {
       "待核验": 84908,
-      "已核验": 123589
+      "已核验": 123597
     },
     "paths": [
       "养老金融数据门户/data/state.json",

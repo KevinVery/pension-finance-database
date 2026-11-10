@@ -1,8 +1,8 @@
 {
-  "version": "v201",
+  "version": "v202",
   "framework": "framework_v01",
   "libraries": {
-    "release": "libraries_20261110_v59",
+    "release": "libraries_20261110_v60",
     "updatedAt": "2026-11-10",
     "policy": {
       "data": "policy_public_v100.json",
@@ -24,17 +24,17 @@
       "css": "library_links_v02.css"
     },
     "supersedes": {
-      "literature": "literature_v54"
+      "statistics": "v201"
     },
     "versionPolicy": "superseded versions are invalid for active work; historical evidence stays local and is not bundled",
-    "releaseSummary": "第60批：IRP-2834仅官网核验一字段新增Pistaferri本人PUBLICATIONS目录独立交叉；作者组合、Journal of Political Economy及2025年一致，题名实际链接仅NBER w26513，目录不含正式摘要/正文或卷期页码；摘要缺口9、全文终审0保持。统计v201、policy100及links19逐字节保持。",
+    "releaseSummary": "第61批北京2022及2024表九八个基本养老金和丧葬抚恤原格新增，同四指标扩实际年度覆盖；原208497记录全部字段及CSV字节前缀保持，广东说明和1万元差异保留；2022三数值列与2024二数值列分别定位。企业丧葬抚恤年度原因未关闭；政策100、文献55、关联19保持。",
     "statistics": {
-      "version": "v201",
-      "records": 208497,
+      "version": "v202",
+      "records": 208505,
       "indicators": 887,
       "status": {
         "待核验": 84908,
-        "已核验": 123589
+        "已核验": 123597
       },
       "paths": [
         "养老金融数据门户/data/state.json",
@@ -43,7 +43,7 @@
       ]
     }
   },
-  "records": 208497,
+  "records": 208505,
   "indicators": 887,
   "files": [
     {
@@ -73,8 +73,8 @@
     },
     {
       "path": "data/library_current.json",
-      "bytes": 1514,
-      "sha256": "d8e09a8620d15b2ad9f22645e111e2b0e7919d4e7ea70c21eb6b64b2b526a771"
+      "bytes": 1513,
+      "sha256": "16d4ecaa870804d8ffe4cb7d6f107f1ce75971104d1eebeb2c3bbda0ace037c0"
     },
     {
       "path": "data/literature_public_v55.json",
@@ -133,8 +133,8 @@
     },
     {
       "path": "data/part11.js",
-      "bytes": 16159436,
-      "sha256": "aa6d7efa90fcf084b07723ba69e6711bfd3456b762e12807783a0775fc6b6d8d"
+      "bytes": 16177343,
+      "sha256": "c6503f33079ba3e3d901bd37d9df1c4c1ca1b77b6684cc5c3f377e54a9b37407"
     },
     {
       "path": "data/part12.js",
@@ -189,7 +189,7 @@
     {
       "path": "data/version.js",
       "bytes": 109,
-      "sha256": "8e4ba1244de2d7509580780422e0ff0328e1c1f0404a80cfd1975fc4fc58464e"
+      "sha256": "c9ab63917584a3e44005155d6c83373a9911a5e13bb78b936e48ac5de422bbb1"
     },
     {
       "path": "download.js",
@@ -199,7 +199,7 @@
     {
       "path": "index.html",
       "bytes": 6969,
-      "sha256": "faf75aa7e06276c520acca3fba3388b60b018b670eaa2f731650bd32de35472f"
+      "sha256": "60d1cb3178b8c9a01980d16dd2667894623441ddb981590eb1686f0e733dff7f"
     },
     {
       "path": "library_links_v02.css",
