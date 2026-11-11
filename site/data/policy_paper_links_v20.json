@@ -1,7 +1,7 @@
 {
   "meta": {
-    "version": "policy_paper_links_v19",
-    "updatedAt": "2026-11-09",
+    "version": "policy_paper_links_v20",
+    "updatedAt": "2026-11-11",
     "papersAssessed": 2654,
     "policiesAssessed": 546,
     "pairsAssessed": 1449084,
@@ -11,7 +11,7 @@
     "explicitRelations": 6,
     "thematicRelations": 0,
     "unmatchedPapers": 2623,
-    "unmatchedPolicies": 545,
+    "unmatchedPolicies": 546,
     "citationRecords": 51,
     "categories": [
       "养老与社保综合",
@@ -32,18 +32,19 @@
     "relationNote": "仅计入可定位文件名称、文号或具体中国改革的题名／摘要证据；同主题、国外经验与一般制度研究不计为具体政策关联。",
     "citationNote": "被引次数为Crossref按DOI匹配的登记值，核对日期2026-10-19；不代表所有平台总被引，缺失不记为0。",
     "reformRelations": 27,
-    "supersedes": "policy_paper_links_v18",
+    "supersedes": "policy_paper_links_v19",
     "currentPaperRecords": 2654,
-    "currentPolicyRecords": 548,
-    "candidateUniversePairs": 1454392,
-    "pendingNewPolicyAssessment": 2,
-    "assessmentNote": "新64号原令仅追加政策目录1项；policiesAssessed/pairsAssessed沿现行结构计目录组合，不代表本批新作2654篇全文人工匹配；33语义边及显式证据不变；另2现行政策仍待目录匹配。",
+    "currentPolicyRecords": 549,
+    "candidateUniversePairs": 1457046,
+    "pendingNewPolicyAssessment": 3,
+    "assessmentNote": "政策目录补齐3项至549项；历史已评估目录546项及1449084组合保持，新增3项的语义匹配待核。33条语义边、显式证据及文献内容不变，不声称新增全文匹配。",
     "deduplication": {
       "retiredID": "POL-V05-EXT-081f0b899602d0",
       "retainedID": "POL-HRSS-0803",
       "oldIDsResolve": true,
       "semanticEdgesChanged": 0
-    }
+    },
+    "catalogPolicyRecords": 549
   },
   "topics": {},
   "fields": [
@@ -22142,6 +22143,24 @@
       "标题": "民政部关于废止部分部门规章、规范性文件和其他文件的决定",
       "年份": "2019",
       "原文URL": "https://www.mca.gov.cn/gdnps/n2445/n2573/c115992/attr/262649.pdf"
+    },
+    {
+      "id": "POL-GAZETTE-1983-141",
+      "标题": "国务院关于高级专家离休退休若干问题的暂行规定",
+      "年份": "1983",
+      "原文URL": "https://www.gov.cn/gongbao/shuju/1983/gwyb198320.pdf#page=5"
+    },
+    {
+      "id": "POL-OFFICIAL-CSTAX-2018-164",
+      "标题": "关于个人所得税法修改后有关优惠政策衔接问题的通知",
+      "年份": "2018",
+      "原文URL": "https://www.gov.cn/zhengce/zhengceku/2018-12/31/content_5440172.htm"
+    },
+    {
+      "id": "POL-MOF-SBS-2011-323",
+      "标题": "关于中央财政新型农村和城镇居民社会养老保险试点专项补助资金管理有关问题的通知",
+      "年份": "2011",
+      "原文URL": "http://sbs.mof.gov.cn/zhengcefabu/201201/t20120119_624204.htm"
     }
   ],
   "explicitEvidence": [

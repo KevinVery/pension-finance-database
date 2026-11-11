@@ -1,7 +1,7 @@
 {
   "meta": {
-    "version": "literature_v56",
-    "updatedAt": "2026-11-10",
+    "version": "literature_v57",
+    "updatedAt": "2026-11-11",
     "records": 2654,
     "core": 1516,
     "adjacent": 521,
@@ -66,8 +66,8 @@
       "社会救助与减贫": 96
     },
     "linkMetrics": {
-      "version": "policy_paper_links_v19",
-      "updatedAt": "2026-11-09",
+      "version": "policy_paper_links_v20",
+      "updatedAt": "2026-11-11",
       "papersAssessed": 2654,
       "policiesAssessed": 546,
       "pairsAssessed": 1449084,
@@ -77,7 +77,7 @@
       "explicitRelations": 6,
       "thematicRelations": 0,
       "unmatchedPapers": 2623,
-      "unmatchedPolicies": 545,
+      "unmatchedPolicies": 546,
       "citationRecords": 51,
       "categories": [
         "养老与社保综合",
@@ -98,20 +98,21 @@
       "relationNote": "仅计入可定位文件名称、文号或具体中国改革的题名／摘要证据；同主题、国外经验与一般制度研究不计为具体政策关联。",
       "citationNote": "被引次数为Crossref按DOI匹配的登记值，核对日期2026-10-19；不代表所有平台总被引，缺失不记为0。",
       "reformRelations": 27,
-      "supersedes": "policy_paper_links_v18",
+      "supersedes": "policy_paper_links_v19",
       "currentPaperRecords": 2654,
-      "currentPolicyRecords": 548,
-      "candidateUniversePairs": 1454392,
-      "pendingNewPolicyAssessment": 2,
-      "assessmentNote": "新64号原令仅追加政策目录1项；policiesAssessed/pairsAssessed沿现行结构计目录组合，不代表本批新作2654篇全文人工匹配；33语义边及显式证据不变；另2现行政策仍待目录匹配。",
+      "currentPolicyRecords": 549,
+      "candidateUniversePairs": 1457046,
+      "pendingNewPolicyAssessment": 3,
+      "assessmentNote": "政策目录补齐3项至549项；历史已评估目录546项及1449084组合保持，新增3项的语义匹配待核。33条语义边、显式证据及文献内容不变，不声称新增全文匹配。",
       "deduplication": {
         "retiredID": "POL-V05-EXT-081f0b899602d0",
         "retainedID": "POL-HRSS-0803",
         "oldIDsResolve": true,
         "semanticEdgesChanged": 0
-      }
+      },
+      "catalogPolicyRecords": 549
     },
-    "supersedes": "literature_v55",
+    "supersedes": "literature_v56",
     "supersededVersionStatus": "v10未发布构建的年份汇总未同步，已作废；v11重算现行计数，57条题录修订保持。",
     "continuationBatch": {
       "batch": 62,
@@ -122,7 +123,7 @@
       "fullTextAcademicFinalReviews": 0
     },
     "previousVersionStatus": "superseded versions are invalid for active work; local evidence only",
-    "revisionNote": "IRP4209官网核验单字段新增HEC教师页与本人HTML CV正式题录交叉；目录p1-15不替代文章号105419，CV核248卷August2025及ScienceDirect实际入口；摘要缺口9与全文终审0保持。"
+    "revisionNote": "仅同步政策目录549项与关联元数据；2654条题录、摘要及版本证据保持，9正式摘要缺口与全文学术终审0保持。"
   },
   "sourceEntrances": [
     {

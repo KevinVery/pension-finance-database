@@ -1,41 +1,41 @@
 {
-  "version": "v211",
+  "version": "v212",
   "framework": "framework_v01",
   "libraries": {
-    "release": "libraries_20261111_v69",
+    "release": "libraries_20261111_v70",
     "updatedAt": "2026-11-11",
     "policy": {
-      "data": "policy_public_v104.json",
-      "page": "policy_v107.html",
-      "script": "policy_v107.js",
+      "data": "policy_public_v107.json",
+      "page": "policy_v110.html",
+      "script": "policy_v110.js",
       "css": "policy_v51.css",
-      "csv": "policies_v104.csv",
-      "sources": "policy_sources_v104.csv"
+      "csv": "policies_v106.csv",
+      "sources": "policy_sources_v105.csv"
     },
     "literature": {
-      "data": "literature_public_v56.json",
-      "page": "literature_v59.html",
-      "script": "literature_v59.js",
+      "data": "literature_public_v57.json",
+      "page": "literature_v60.html",
+      "script": "literature_v60.js",
       "css": "literature_v03.css"
     },
     "links": {
-      "data": "policy_paper_links_v19.json",
-      "script": "library_links_v20.js",
+      "data": "policy_paper_links_v20.json",
+      "script": "library_links_v21.js",
       "css": "library_links_v02.css"
     },
     "supersedes": {
-      "statistics": "v210",
-      "release": "libraries_20261111_v68"
+      "statistics": "v211",
+      "release": "libraries_20261111_v69"
     },
     "versionPolicy": "superseded versions are invalid for active work; historical evidence stays local and is not bundled",
-    "releaseSummary": "第69批：北京2025企业及机关基本养老金、企业丧葬补助金和抚恤金及居民丧葬补助金四条全市正式决算原格新增；四指标按实际覆盖重算，其他883指标不变；原208528条字段、顺序及CSV字节前缀保持。病残津贴与旧丧葬科目隔离，不关闭年度经济原因。政策104/页面107：财社〔2015〕230号据双官源署名校正成文及排序为2015-09-23，保留法宝09-25证据；两说明与补充链接记全额/金额、附件9/12栏差异，新增3完整来源至848；原全文SHA、施行日、官方待核及效力保持，548政策/146关系不变。文献56/页面59及2654摘要、关联19/33语义边保持，正式摘要缺口9、全文终审0。",
+    "releaseSummary": "第70批：北京2024/2025城乡居民基础养老金与个人账户养老金四条全市决算原格新增，使用两既有指标扩至省级；仅广东2021两条地区层级由单省明细迁为省级，原数值、来源、口径及其余208530条全部字段保持；其他885指标保持。两分项独立不重复加总，广东1万元差异与年度经济原因未关闭。政策107/页面110新增财社〔2011〕323号官网独立全文及真实XLS附件，549政策/850来源/148关系，既有548政策字段保持；自身成文2011-12-31、网页2012-02-07，具体施行日和全面效力待核；230明确废止323、323有条件相应废止211分别登记。关联20目录补齐549项，历史已评估546项及33语义边不变；文献57/页面60仅同步关联元数据，2654题录摘要不变，正式摘要缺口9、全文终审0。",
     "statistics": {
-      "version": "v211",
-      "records": 208532,
+      "version": "v212",
+      "records": 208536,
       "indicators": 887,
       "status": {
         "待核验": 84908,
-        "已核验": 123624
+        "已核验": 123628
       },
       "paths": [
         "养老金融数据门户/data/state.json",
@@ -44,7 +44,7 @@
       ]
     }
   },
-  "records": 208532,
+  "records": 208536,
   "indicators": 887,
   "files": [
     {
@@ -74,13 +74,13 @@
     },
     {
       "path": "data/library_current.json",
-      "bytes": 1949,
-      "sha256": "734674779b565e34e835a14e4c22407ea4868053e742921f32a2654753a29ad8"
+      "bytes": 2070,
+      "sha256": "2dbb7ab405e7c7fdcae02258bd00ea63876a4956f27441a66efa4d9a761f74d0"
     },
     {
-      "path": "data/literature_public_v56.json",
-      "bytes": 6598635,
-      "sha256": "afc68746518f813365e5e8cd3b77ce7c2e5d8939eceabf50c0cbf630570b5dfd"
+      "path": "data/literature_public_v57.json",
+      "bytes": 6598581,
+      "sha256": "c9b3b2180bc10c7fe995f600d1100c179821b1349f8f1be6c6f78f30183660f4"
     },
     {
       "path": "data/part01.js",
@@ -134,8 +134,8 @@
     },
     {
       "path": "data/part11.js",
-      "bytes": 16234082,
-      "sha256": "8e7d6c4f5c33c24f37c1536ed20a82ff0f70c4378c9d6ad5d8980cc97b831df0"
+      "bytes": 16241132,
+      "sha256": "e8a2a2d15c6c601c66be17539b5896e981274f5a76e1f991585e310adcd3b6db"
     },
     {
       "path": "data/part12.js",
@@ -173,14 +173,14 @@
       "sha256": "00de5579c9d26f1f7a9806aa0ec884c06f20ce9eae08bb59d5f966b994142dad"
     },
     {
-      "path": "data/policy_paper_links_v19.json",
-      "bytes": 934039,
-      "sha256": "782c9831607265d273811d3cf9bec6122ee1433b564e216c860897a717b196de"
+      "path": "data/policy_paper_links_v20.json",
+      "bytes": 934859,
+      "sha256": "f6ac88758f5c5937b1f58f3279d41cc6387b3ad819e8f7d248c4c86ba12ec00e"
     },
     {
-      "path": "data/policy_public_v104.json",
-      "bytes": 7338851,
-      "sha256": "3c89b324fecd1c2835b0a43fc2abc0ecc53b9be516ee45ff0eac4d14d4612b76"
+      "path": "data/policy_public_v107.json",
+      "bytes": 7353897,
+      "sha256": "c4632dad6baeccdf4ded586604fdb531036333ce754e1f99f97dede49e7a8231"
     },
     {
       "path": "data/portal.js",
@@ -190,7 +190,7 @@
     {
       "path": "data/version.js",
       "bytes": 109,
-      "sha256": "fd4b6a52292ab05aa627315343e5ba3c434a54b11bd7b88d5fe15b81facea235"
+      "sha256": "063c1b1054ecaed032131e637b1ffcef6e171ab0d73af14e9cf35be1ecccf057"
     },
     {
       "path": "download.js",
@@ -200,7 +200,7 @@
     {
       "path": "index.html",
       "bytes": 6969,
-      "sha256": "0e2a64ff28607309e331c627ebef1881f4ca39520ce065e1dc802465a3911e98"
+      "sha256": "e26d675c460676d88dde224db6b679f113c27652c6b4e11b319b89c798b46d0c"
     },
     {
       "path": "library_links_v02.css",
@@ -208,14 +208,14 @@
       "sha256": "36e5526c45f05acf1116f57fa82a8309f6903b930768fd5c74bb469f4585020f"
     },
     {
-      "path": "library_links_v20.js",
+      "path": "library_links_v21.js",
       "bytes": 5452,
-      "sha256": "76cd25e1a8a10fc1eb60270623b93df3979800ab6f6c18d06540fd3f3ca5ad7c"
+      "sha256": "c016cbe7d6aaa8b94c72cdb976f4578339e0864fd825a9c2a2849b4845498a31"
     },
     {
       "path": "literature.html",
       "bytes": 4079,
-      "sha256": "2feb1ade8a0bb612c9f3b16c1b026570dd3f4a75f9cd664ea72856316f7575c0"
+      "sha256": "16bcc9482045609fcd8fae32261fd0d2060e2b4c602f2498b8f972c3373bbd6a"
     },
     {
       "path": "literature_v03.css",
@@ -223,19 +223,19 @@
       "sha256": "5b33e28e92ead17755d0ebe7f24aad302eeba37d6d85216bd89364d5b5caf684"
     },
     {
-      "path": "literature_v59.js",
+      "path": "literature_v60.js",
       "bytes": 10199,
-      "sha256": "92dc1bc76ff628591c48fe3951ea1d8e8e03d1c92be18fbff8b4eeb83b8226e5"
+      "sha256": "5a526c651b9a544ba7d3430033f8841ac97fc44778d9698cb527265a7a360935"
     },
     {
       "path": "policy.html",
       "bytes": 5491,
-      "sha256": "1afd612e27e06895bd9e8af5247abc825e9d5536135408988869aa812883dd34"
+      "sha256": "8bddbcda5f434d280f9c93097283c7f6164f5e475042a9c5666b73f8e9a7c464"
     },
     {
-      "path": "policy_v107.js",
-      "bytes": 15916,
-      "sha256": "352fa7fb0a0fec6859a6443909ccadff74cc6cf175152d0dc05e474e71aaf747"
+      "path": "policy_v110.js",
+      "bytes": 15966,
+      "sha256": "c105ec1375fe6db5440a35f1258c72d0b3c1d87a235bfa19d8ceed8befba4980"
     },
     {
       "path": "policy_v51.css",

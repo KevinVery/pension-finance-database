@@ -1,38 +1,38 @@
 {
-  "release": "libraries_20261111_v69",
+  "release": "libraries_20261111_v70",
   "updatedAt": "2026-11-11",
   "policy": {
-    "data": "policy_public_v104.json",
-    "page": "policy_v107.html",
-    "script": "policy_v107.js",
+    "data": "policy_public_v107.json",
+    "page": "policy_v110.html",
+    "script": "policy_v110.js",
     "css": "policy_v51.css",
-    "csv": "policies_v104.csv",
-    "sources": "policy_sources_v104.csv"
+    "csv": "policies_v106.csv",
+    "sources": "policy_sources_v105.csv"
   },
   "literature": {
-    "data": "literature_public_v56.json",
-    "page": "literature_v59.html",
-    "script": "literature_v59.js",
+    "data": "literature_public_v57.json",
+    "page": "literature_v60.html",
+    "script": "literature_v60.js",
     "css": "literature_v03.css"
   },
   "links": {
-    "data": "policy_paper_links_v19.json",
-    "script": "library_links_v20.js",
+    "data": "policy_paper_links_v20.json",
+    "script": "library_links_v21.js",
     "css": "library_links_v02.css"
   },
   "supersedes": {
-    "statistics": "v210",
-    "release": "libraries_20261111_v68"
+    "statistics": "v211",
+    "release": "libraries_20261111_v69"
   },
   "versionPolicy": "superseded versions are invalid for active work; historical evidence stays local and is not bundled",
-  "releaseSummary": "第69批：北京2025企业及机关基本养老金、企业丧葬补助金和抚恤金及居民丧葬补助金四条全市正式决算原格新增；四指标按实际覆盖重算，其他883指标不变；原208528条字段、顺序及CSV字节前缀保持。病残津贴与旧丧葬科目隔离，不关闭年度经济原因。政策104/页面107：财社〔2015〕230号据双官源署名校正成文及排序为2015-09-23，保留法宝09-25证据；两说明与补充链接记全额/金额、附件9/12栏差异，新增3完整来源至848；原全文SHA、施行日、官方待核及效力保持，548政策/146关系不变。文献56/页面59及2654摘要、关联19/33语义边保持，正式摘要缺口9、全文终审0。",
+  "releaseSummary": "第70批：北京2024/2025城乡居民基础养老金与个人账户养老金四条全市决算原格新增，使用两既有指标扩至省级；仅广东2021两条地区层级由单省明细迁为省级，原数值、来源、口径及其余208530条全部字段保持；其他885指标保持。两分项独立不重复加总，广东1万元差异与年度经济原因未关闭。政策107/页面110新增财社〔2011〕323号官网独立全文及真实XLS附件，549政策/850来源/148关系，既有548政策字段保持；自身成文2011-12-31、网页2012-02-07，具体施行日和全面效力待核；230明确废止323、323有条件相应废止211分别登记。关联20目录补齐549项，历史已评估546项及33语义边不变；文献57/页面60仅同步关联元数据，2654题录摘要不变，正式摘要缺口9、全文终审0。",
   "statistics": {
-    "version": "v211",
-    "records": 208532,
+    "version": "v212",
+    "records": 208536,
     "indicators": 887,
     "status": {
       "待核验": 84908,
-      "已核验": 123624
+      "已核验": 123628
     },
     "paths": [
       "养老金融数据门户/data/state.json",
