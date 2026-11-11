@@ -1,5 +1,5 @@
 {
-  "release": "libraries_20261111_v66",
+  "release": "libraries_20261111_v67",
   "updatedAt": "2026-11-11",
   "policy": {
     "data": "policy_public_v102.json",
@@ -21,12 +21,13 @@
     "css": "library_links_v02.css"
   },
   "supersedes": {
-    "statistics": "v207"
+    "statistics": "v208",
+    "release": "libraries_20261111_v66"
   },
   "versionPolicy": "superseded versions are invalid for active work; historical evidence stays local and is not bundled",
-  "releaseSummary": "第67批：河北2025全省三制度基本养老保险收入、支出六条正式决算原格新增；六指标覆盖延伸至2025，省级分项隔离，其他记录保持。",
+  "releaseSummary": "第67批：河北2025全省三制度基金收入和支出六条正式决算原格新增，统计208525条/887指标，已核123617/待核84908。v209修正六项覆盖完整性：收入各21条、支出各20条，4地区；支出北京2021缺口保留。全部记录相对v208字节不变；省级基本养老金分项隔离，不关闭年度经济原因。政策102、文献56、关联19保持。",
   "statistics": {
-    "version": "v208",
+    "version": "v209",
     "records": 208525,
     "indicators": 887,
     "status": {

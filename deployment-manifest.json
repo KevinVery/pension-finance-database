@@ -1,8 +1,8 @@
 {
-  "version": "v208",
+  "version": "v209",
   "framework": "framework_v01",
   "libraries": {
-    "release": "libraries_20261111_v66",
+    "release": "libraries_20261111_v67",
     "updatedAt": "2026-11-11",
     "policy": {
       "data": "policy_public_v102.json",
@@ -24,12 +24,13 @@
       "css": "library_links_v02.css"
     },
     "supersedes": {
-      "statistics": "v207"
+      "statistics": "v208",
+      "release": "libraries_20261111_v66"
     },
     "versionPolicy": "superseded versions are invalid for active work; historical evidence stays local and is not bundled",
-    "releaseSummary": "第67批：河北2025全省三制度基本养老保险收入、支出六条正式决算原格新增；六指标覆盖延伸至2025，省级分项隔离，其他记录保持。",
+    "releaseSummary": "第67批：河北2025全省三制度基金收入和支出六条正式决算原格新增，统计208525条/887指标，已核123617/待核84908。v209修正六项覆盖完整性：收入各21条、支出各20条，4地区；支出北京2021缺口保留。全部记录相对v208字节不变；省级基本养老金分项隔离，不关闭年度经济原因。政策102、文献56、关联19保持。",
     "statistics": {
-      "version": "v208",
+      "version": "v209",
       "records": 208525,
       "indicators": 887,
       "status": {
@@ -73,8 +74,8 @@
     },
     {
       "path": "data/library_current.json",
-      "bytes": 1347,
-      "sha256": "2a2e9f270bee2dd80663791afd8e048a3d681d326435b7af28540a6d03c18ec4"
+      "bytes": 1611,
+      "sha256": "7f83d2af95e079164b496cbeda6b45c76195d575b602522a06214074929258cf"
     },
     {
       "path": "data/literature_public_v56.json",
@@ -133,8 +134,8 @@
     },
     {
       "path": "data/part11.js",
-      "bytes": 16221007,
-      "sha256": "023273142464b47b5efbc0349a79fe031b3bf47c87b14bda7751e9fdc83761e4"
+      "bytes": 16222114,
+      "sha256": "16fc69277fe615e7d97e28f85dbef750f5ee9b736bdf3c47738a0d2f82cafea6"
     },
     {
       "path": "data/part12.js",
@@ -189,7 +190,7 @@
     {
       "path": "data/version.js",
       "bytes": 109,
-      "sha256": "d6894b06ae55aa7fb978a23553173775d79d0db297579e3c08f3a2b4b3a9ffb0"
+      "sha256": "af402ffaa9bb518d670d7b285af024cceb26e69d6bbe3dac3006ebc827c6400f"
     },
     {
       "path": "download.js",
@@ -199,7 +200,7 @@
     {
       "path": "index.html",
       "bytes": 6969,
-      "sha256": "3012c05b536eb0505d3f72004577ee60a36581a26d57d95868d69c8e749a11fc"
+      "sha256": "255366ba960b13eb9344e227d35f59905c5b393ce7a05c0b2425127b0e080be2"
     },
     {
       "path": "library_links_v02.css",
