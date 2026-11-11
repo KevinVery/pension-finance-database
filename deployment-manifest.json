@@ -1,21 +1,21 @@
 {
-  "version": "v212",
+  "version": "v213",
   "framework": "framework_v01",
   "libraries": {
-    "release": "libraries_20261111_v70",
+    "release": "libraries_20261111_v71",
     "updatedAt": "2026-11-11",
     "policy": {
-      "data": "policy_public_v107.json",
-      "page": "policy_v110.html",
-      "script": "policy_v110.js",
+      "data": "policy_public_v108.json",
+      "page": "policy_v111.html",
+      "script": "policy_v111.js",
       "css": "policy_v51.css",
-      "csv": "policies_v106.csv",
-      "sources": "policy_sources_v105.csv"
+      "csv": "policies_v107.csv",
+      "sources": "policy_sources_v106.csv"
     },
     "literature": {
-      "data": "literature_public_v57.json",
-      "page": "literature_v60.html",
-      "script": "literature_v60.js",
+      "data": "literature_public_v58.json",
+      "page": "literature_v61.html",
+      "script": "literature_v61.js",
       "css": "literature_v03.css"
     },
     "links": {
@@ -24,18 +24,18 @@
       "css": "library_links_v02.css"
     },
     "supersedes": {
-      "statistics": "v211",
-      "release": "libraries_20261111_v69"
+      "statistics": "v212",
+      "release": "libraries_20261111_v70"
     },
     "versionPolicy": "superseded versions are invalid for active work; historical evidence stays local and is not bundled",
-    "releaseSummary": "第70批：北京2024/2025城乡居民基础养老金与个人账户养老金四条全市决算原格新增，使用两既有指标扩至省级；仅广东2021两条地区层级由单省明细迁为省级，原数值、来源、口径及其余208530条全部字段保持；其他885指标保持。两分项独立不重复加总，广东1万元差异与年度经济原因未关闭。政策107/页面110新增财社〔2011〕323号官网独立全文及真实XLS附件，549政策/850来源/148关系，既有548政策字段保持；自身成文2011-12-31、网页2012-02-07，具体施行日和全面效力待核；230明确废止323、323有条件相应废止211分别登记。关联20目录补齐549项，历史已评估546项及33语义边不变；文献57/页面60仅同步关联元数据，2654题录摘要不变，正式摘要缺口9、全文终审0。",
+    "releaseSummary": "第71批：北京2023全市居民基础养老金100.4977亿元及个人账户养老金9.4016亿元两条决算原格新增，208538条/887指标，旧208536记录全部字段及其他885指标不变；两项分列、不重复加总、不关闭年度经济原因。政策108/页面111对财税〔2009〕27号补同题官页部分交叉3字段和1来源，549政策/851来源/148关系；官页未载文号，文号、原全文、日期、官方交叉待核及效力保持。文献58/页面61对IRP-1101补作者一手620字符完整五句摘要及来源说明3字段；页面同列正式DOI与NBER31834，非独立出版者正式摘要，其他2653记录及版本关系不变，正式摘要缺口9、全文终审0；关联20及33语义边不变。",
     "statistics": {
-      "version": "v212",
-      "records": 208536,
+      "version": "v213",
+      "records": 208538,
       "indicators": 887,
       "status": {
         "待核验": 84908,
-        "已核验": 123628
+        "已核验": 123630
       },
       "paths": [
         "养老金融数据门户/data/state.json",
@@ -44,7 +44,7 @@
       ]
     }
   },
-  "records": 208536,
+  "records": 208538,
   "indicators": 887,
   "files": [
     {
@@ -74,13 +74,13 @@
     },
     {
       "path": "data/library_current.json",
-      "bytes": 2070,
-      "sha256": "2dbb7ab405e7c7fdcae02258bd00ea63876a4956f27441a66efa4d9a761f74d0"
+      "bytes": 1960,
+      "sha256": "766973dd9c0a28a1149b48c075d4c24ae2912b533c7e4714583e54084ec0c852"
     },
     {
-      "path": "data/literature_public_v57.json",
-      "bytes": 6598581,
-      "sha256": "c9b3b2180bc10c7fe995f600d1100c179821b1349f8f1be6c6f78f30183660f4"
+      "path": "data/literature_public_v58.json",
+      "bytes": 6599294,
+      "sha256": "52de52948b250b31c78174f3c75f44dacd6af87a6da0c8052edcf282b0580742"
     },
     {
       "path": "data/part01.js",
@@ -134,8 +134,8 @@
     },
     {
       "path": "data/part11.js",
-      "bytes": 16241132,
-      "sha256": "e8a2a2d15c6c601c66be17539b5896e981274f5a76e1f991585e310adcd3b6db"
+      "bytes": 16244549,
+      "sha256": "02017d284ea9113b5f9d49329b05e5aef6d12045b7bcbda2f66d442951813a0c"
     },
     {
       "path": "data/part12.js",
@@ -178,9 +178,9 @@
       "sha256": "f6ac88758f5c5937b1f58f3279d41cc6387b3ad819e8f7d248c4c86ba12ec00e"
     },
     {
-      "path": "data/policy_public_v107.json",
-      "bytes": 7353897,
-      "sha256": "c4632dad6baeccdf4ded586604fdb531036333ce754e1f99f97dede49e7a8231"
+      "path": "data/policy_public_v108.json",
+      "bytes": 7355833,
+      "sha256": "05d1528ee724652d76b29c9134da050f81c08cf3e3dfe62c3c77be47972851f9"
     },
     {
       "path": "data/portal.js",
@@ -190,7 +190,7 @@
     {
       "path": "data/version.js",
       "bytes": 109,
-      "sha256": "063c1b1054ecaed032131e637b1ffcef6e171ab0d73af14e9cf35be1ecccf057"
+      "sha256": "ae97995f17777a8a790575e00f498471b3e63216bfa38e6c4c4c9913f194b1aa"
     },
     {
       "path": "download.js",
@@ -200,7 +200,7 @@
     {
       "path": "index.html",
       "bytes": 6969,
-      "sha256": "e26d675c460676d88dde224db6b679f113c27652c6b4e11b319b89c798b46d0c"
+      "sha256": "32ff29414c80354611e107ae9014d1f7570427f18ec167a3f9652664f6910a6c"
     },
     {
       "path": "library_links_v02.css",
@@ -215,7 +215,7 @@
     {
       "path": "literature.html",
       "bytes": 4079,
-      "sha256": "16bcc9482045609fcd8fae32261fd0d2060e2b4c602f2498b8f972c3373bbd6a"
+      "sha256": "bd02df8cf1e932ad8a82df64d7e472f8675d9f9650671e52abd6348be3e80c86"
     },
     {
       "path": "literature_v03.css",
@@ -223,19 +223,19 @@
       "sha256": "5b33e28e92ead17755d0ebe7f24aad302eeba37d6d85216bd89364d5b5caf684"
     },
     {
-      "path": "literature_v60.js",
+      "path": "literature_v61.js",
       "bytes": 10199,
-      "sha256": "5a526c651b9a544ba7d3430033f8841ac97fc44778d9698cb527265a7a360935"
+      "sha256": "5ffe04d3884a65024a83265974b43bc511b4bdf7ceef848c7ff7b36789a97313"
     },
     {
       "path": "policy.html",
       "bytes": 5491,
-      "sha256": "8bddbcda5f434d280f9c93097283c7f6164f5e475042a9c5666b73f8e9a7c464"
+      "sha256": "9752ba60a9d219b7eb92226fb1c8963ddbe720f01bae06a2012ced60dee17441"
     },
     {
-      "path": "policy_v110.js",
+      "path": "policy_v111.js",
       "bytes": 15966,
-      "sha256": "c105ec1375fe6db5440a35f1258c72d0b3c1d87a235bfa19d8ceed8befba4980"
+      "sha256": "45f67ca0352aba756d540292874abc9de267786527f938e960bff2dc9b264b69"
     },
     {
       "path": "policy_v51.css",

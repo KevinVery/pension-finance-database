@@ -1,6 +1,6 @@
 {
   "meta": {
-    "version": "literature_v57",
+    "version": "literature_v58",
     "updatedAt": "2026-11-11",
     "records": 2654,
     "core": 1516,
@@ -10,7 +10,7 @@
     "yearTo": 2026,
     "conferenceRecords": 229,
     "conferenceSnapshotSHA256": "cc9a753ea2f9b905e1763091792d7be0e4609497e866f0d5a967e86dcac6147f",
-    "sourceStatus": "LABORE作者所属机构正式期刊发表记录完整646字符英文摘要已核；非出版社直页，正式全文未得，固定19摘要缺口9、全文学术终审0。",
+    "sourceStatus": "IRP-1101作者一手研究页620字符五句摘要已取，页面同列正式DOI与NBER31834；非独立出版者摘要，正式摘要缺口9保持，全文学术终审0。",
     "scopeNote": "全年份与2010年及以后两种视图；全部指当前已搜集库的全年份，不代表全部期刊历年已穷尽。第三方线索与官方核验分别标注。",
     "chineseRecords": 307,
     "englishRecords": 2347,
@@ -112,18 +112,18 @@
       },
       "catalogPolicyRecords": 549
     },
-    "supersedes": "literature_v56",
+    "supersedes": "literature_v57",
     "supersededVersionStatus": "v10未发布构建的年份汇总未同步，已作废；v11重算现行计数，57条题录修订保持。",
     "continuationBatch": {
-      "batch": 62,
+      "batch": 71,
       "recordsReviewed": 1,
-      "fieldsPatched": 1,
+      "fieldsPatched": 3,
       "newRecords": 0,
       "formalAbstractGapsAfterActivation": 9,
       "fullTextAcademicFinalReviews": 0
     },
     "previousVersionStatus": "superseded versions are invalid for active work; local evidence only",
-    "revisionNote": "仅同步政策目录549项与关联元数据；2654条题录、摘要及版本证据保持，9正式摘要缺口与全文学术终审0保持。"
+    "revisionNote": "第71批IRP-1101补完整作者摘要及来源、核验说明3字段；保留作者一手与出版者身份区分，其他2653记录及版本关系不变，9个出版者正式摘要缺口不减。"
   },
   "sourceEntrances": [
     {
@@ -116053,8 +116053,8 @@
       "期号": "256卷",
       "页码": "105595（文章号）",
       "NBER编号": "",
-      "摘要": "待补充：尚未逐篇核验原站摘要；请通过论文来源入口查阅。",
-      "摘要来源说明": "正式出版者完整摘要尚未取得；作者发表目录仅题录，不把NBER工作论文摘要或单纯题录当正式摘要。NBER作者页指向Acquatella本人官网，其Publications条目明确2026年Journal of Public Economics Vol256:105595；与Crossref出版登记和NBER Published Versions交叉。Starc本人研究页仍记forthcoming，保留为作者页面更新差异，不据此回退已核期刊年份或声称精确发布日期。",
+      "摘要": "We examine cost-plus lagged-price reimbursement contracts, focusing on Medicare Part B’s payment for physician-administered drugs. Our theoretical model shows that lagged-price reimbursement can raise launch prices but lower prices in later periods. While previous research showed Part B increased launch prices, we estimate its effect on later prices (net of rebates). Drugs more exposed to Medicare have lower price growth. A drug with above median Part B exposure has a 10% lower price after 3 years than a below median exposure drug that launched at the same price, with a larger effect for newly approved molecules.",
+      "摘要来源说明": "作者Ericson本人研究目录在同一条目明确列2026年Journal of Public Economics并链接DOI10.1016/j.jpubeco.2026.105595，随后给出完整五句原作者英文摘要；同一条目亦列NBER31834。此为作者一手研究页，非出版社正式摘要直页。与已核NBER工作论文摘要仅弯直引号差异，不能单凭此认定已核得独立正式出版者摘要；正式出版者摘要缺口及正式全文待核状态保持。 作者原站：https://practicingeconomist.com/research-papers/；定位为正式DOI条目紧随五句摘要，核对日期2026-11-11。",
       "主研究主题": "医疗保险与健康",
       "研究主题": [
         "医疗保险与健康"
@@ -116066,7 +116066,7 @@
       "主题词": "医疗保险与健康",
       "相邻机制词": "",
       "原台账主题": "健康医疗；医疗市场与药品",
-      "核验状态": "三位作者、2026年JPubE256卷及105595文章号据作者官网、Crossref出版登记及NBER明示发表版本交叉；正式摘要与全文仍待取得",
+      "核验状态": "作者研究页完整五句摘要已取回，条目明确关联2026正式DOI及NBER31834；出版社正式摘要与正式全文仍待取得",
       "来源": "iReadPaper 线索",
       "来源页": "https://doi.org/10.1016/j.jpubeco.2026.105595",
       "官方PDF": "",
