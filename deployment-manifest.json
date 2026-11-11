@@ -1,16 +1,16 @@
 {
-  "version": "v209",
+  "version": "v210",
   "framework": "framework_v01",
   "libraries": {
-    "release": "libraries_20261111_v67",
+    "release": "libraries_20261111_v68",
     "updatedAt": "2026-11-11",
     "policy": {
-      "data": "policy_public_v102.json",
-      "page": "policy_v105.html",
-      "script": "policy_v105.js",
+      "data": "policy_public_v103.json",
+      "page": "policy_v106.html",
+      "script": "policy_v106.js",
       "css": "policy_v51.css",
-      "csv": "policies_v102.csv",
-      "sources": "policy_sources_v102.csv"
+      "csv": "policies_v103.csv",
+      "sources": "policy_sources_v103.csv"
     },
     "literature": {
       "data": "literature_public_v56.json",
@@ -24,18 +24,18 @@
       "css": "library_links_v02.css"
     },
     "supersedes": {
-      "statistics": "v208",
-      "release": "libraries_20261111_v66"
+      "statistics": "v209",
+      "release": "libraries_20261111_v67"
     },
     "versionPolicy": "superseded versions are invalid for active work; historical evidence stays local and is not bundled",
-    "releaseSummary": "第67批：河北2025全省三制度基金收入和支出六条正式决算原格新增，统计208525条/887指标，已核123617/待核84908。v209修正六项覆盖完整性：收入各21条、支出各20条，4地区；支出北京2021缺口保留。全部记录相对v208字节不变；省级基本养老金分项隔离，不关闭年度经济原因。政策102、文献56、关联19保持。",
+    "releaseSummary": "第68批：北京2021全市三制度总支出三格正式决算原值新增，三指标覆盖补齐北京2021各21条/4地区；原208525条所有字段及CSV字节前缀保持，其他884指标不变。企业总支出含中央调剂上解8292800万元，不重加、不等同基本养老金；河北制度背景留证不追加、不关闭年度经济原因。政策103/页面106：财社〔2016〕161号仅两字段追加财社〔2019〕168号官方后续引用证据，新增完整来源1行至845；原2016全文、日期、官源待核与效力保持，548政策和146关系不变。文献56/页面59、2654摘要及关联19/33语义边保持；RePEc正式题录摘要只留证，官源正式摘要缺口9、全文终审0。",
     "statistics": {
-      "version": "v209",
-      "records": 208525,
+      "version": "v210",
+      "records": 208528,
       "indicators": 887,
       "status": {
         "待核验": 84908,
-        "已核验": 123617
+        "已核验": 123620
       },
       "paths": [
         "养老金融数据门户/data/state.json",
@@ -44,7 +44,7 @@
       ]
     }
   },
-  "records": 208525,
+  "records": 208528,
   "indicators": 887,
   "files": [
     {
@@ -74,8 +74,8 @@
     },
     {
       "path": "data/library_current.json",
-      "bytes": 1611,
-      "sha256": "7f83d2af95e079164b496cbeda6b45c76195d575b602522a06214074929258cf"
+      "bytes": 1944,
+      "sha256": "83bf6790dd085e0ea614d492eb7e795d3cf988098e88f04c1a9114fc3d2f2dec"
     },
     {
       "path": "data/literature_public_v56.json",
@@ -134,8 +134,8 @@
     },
     {
       "path": "data/part11.js",
-      "bytes": 16222114,
-      "sha256": "16fc69277fe615e7d97e28f85dbef750f5ee9b736bdf3c47738a0d2f82cafea6"
+      "bytes": 16226691,
+      "sha256": "4ce7e03a8d31992412f3ecb7ba66c3ecd9e87ae56b2daebb32a500cdce2b3d18"
     },
     {
       "path": "data/part12.js",
@@ -178,9 +178,9 @@
       "sha256": "782c9831607265d273811d3cf9bec6122ee1433b564e216c860897a717b196de"
     },
     {
-      "path": "data/policy_public_v102.json",
-      "bytes": 7289820,
-      "sha256": "8bb823e464ddab8d8a1eddc2ac6632ce35fe2420b6f6c27e995ddbdf605c8c49"
+      "path": "data/policy_public_v103.json",
+      "bytes": 7335697,
+      "sha256": "22ef7b88d8dd2c8fed2ded4799e596b8286e8c6db98e24e476acdeed5da377e4"
     },
     {
       "path": "data/portal.js",
@@ -190,7 +190,7 @@
     {
       "path": "data/version.js",
       "bytes": 109,
-      "sha256": "af402ffaa9bb518d670d7b285af024cceb26e69d6bbe3dac3006ebc827c6400f"
+      "sha256": "a1322a264fa29fedcc8940cc4bfa3168a66dced63175d9f3000adc7b125c1447"
     },
     {
       "path": "download.js",
@@ -200,7 +200,7 @@
     {
       "path": "index.html",
       "bytes": 6969,
-      "sha256": "255366ba960b13eb9344e227d35f59905c5b393ce7a05c0b2425127b0e080be2"
+      "sha256": "fd1b092e754a193365514562e7f49ef9707c329afbda78e0c405c503078dcc8c"
     },
     {
       "path": "library_links_v02.css",
@@ -230,12 +230,12 @@
     {
       "path": "policy.html",
       "bytes": 5491,
-      "sha256": "9dd400f6a76b1d359966305b651024ba12829b238b743b425f7466532148a998"
+      "sha256": "dae19cc4844b1f37d147ecd88b18e94a4b96d9d92bfeb40adf9acac2e2833753"
     },
     {
-      "path": "policy_v105.js",
+      "path": "policy_v106.js",
       "bytes": 15916,
-      "sha256": "ece3a4684114c22b5aa39d4e0901d79d4b0b5ef11e7e69cb5330d2c08a250311"
+      "sha256": "9a0e34020785283ba97c2310e97005f38d709511c508886570834ba0615e4945"
     },
     {
       "path": "policy_v51.css",

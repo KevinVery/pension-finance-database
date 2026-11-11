@@ -1,13 +1,13 @@
 {
-  "release": "libraries_20261111_v67",
+  "release": "libraries_20261111_v68",
   "updatedAt": "2026-11-11",
   "policy": {
-    "data": "policy_public_v102.json",
-    "page": "policy_v105.html",
-    "script": "policy_v105.js",
+    "data": "policy_public_v103.json",
+    "page": "policy_v106.html",
+    "script": "policy_v106.js",
     "css": "policy_v51.css",
-    "csv": "policies_v102.csv",
-    "sources": "policy_sources_v102.csv"
+    "csv": "policies_v103.csv",
+    "sources": "policy_sources_v103.csv"
   },
   "literature": {
     "data": "literature_public_v56.json",
@@ -21,18 +21,18 @@
     "css": "library_links_v02.css"
   },
   "supersedes": {
-    "statistics": "v208",
-    "release": "libraries_20261111_v66"
+    "statistics": "v209",
+    "release": "libraries_20261111_v67"
   },
   "versionPolicy": "superseded versions are invalid for active work; historical evidence stays local and is not bundled",
-  "releaseSummary": "第67批：河北2025全省三制度基金收入和支出六条正式决算原格新增，统计208525条/887指标，已核123617/待核84908。v209修正六项覆盖完整性：收入各21条、支出各20条，4地区；支出北京2021缺口保留。全部记录相对v208字节不变；省级基本养老金分项隔离，不关闭年度经济原因。政策102、文献56、关联19保持。",
+  "releaseSummary": "第68批：北京2021全市三制度总支出三格正式决算原值新增，三指标覆盖补齐北京2021各21条/4地区；原208525条所有字段及CSV字节前缀保持，其他884指标不变。企业总支出含中央调剂上解8292800万元，不重加、不等同基本养老金；河北制度背景留证不追加、不关闭年度经济原因。政策103/页面106：财社〔2016〕161号仅两字段追加财社〔2019〕168号官方后续引用证据，新增完整来源1行至845；原2016全文、日期、官源待核与效力保持，548政策和146关系不变。文献56/页面59、2654摘要及关联19/33语义边保持；RePEc正式题录摘要只留证，官源正式摘要缺口9、全文终审0。",
   "statistics": {
-    "version": "v209",
-    "records": 208525,
+    "version": "v210",
+    "records": 208528,
     "indicators": 887,
     "status": {
       "待核验": 84908,
-      "已核验": 123617
+      "已核验": 123620
     },
     "paths": [
       "养老金融数据门户/data/state.json",
